@@ -1,6 +1,11 @@
+# Site information
 site_name: 3os.org
 site_url: https://3os.org
+site_description: 'Collocation of Guide, Technical knowledge, Security, Exmaples, Tips, at any operating system'
+site_author: 'Stas Kosatuhin'
 
+
+# Navigation
 nav:
   - Home: 'index.md'
   - Linux:
@@ -10,14 +15,16 @@ nav:
       - 'Home Brew': 'macOS/brew.md'
   - Help:
       - 'Documinatation': 'help/documinatation.md'
+      - 'MarkDown Cheat-Sheet': 'help/markdown_cheat-sheet.md'
   - About: 'about.md'
 
+
+# Repository Link Editor
 repo_url: https://github.com/fire1ce/3os.org/
 edit_uri: 'blob/master/docs/'
 
-plugins:
-  - search
 
+# Theme Configuration
 theme:
   name: 'material'
   custom_dir: 'theme'
@@ -28,9 +35,12 @@ theme:
     accent: 'teal'
   feature:
     tabs: true
+  # font:
+  #   text: 'Roboto Slab'
+  #   code: 'Roboto Mono'
 
 
-
+# Social Links and Comments
 extra:
   disqus: '3os'
   social:
@@ -41,11 +51,16 @@ extra:
     - type: 'linkedin'
       link: 'https://linkedin.com'
 
+# Markdown Rendering Extensions
 markdown_extensions:
+  - toc:
+        permalink: True
+        separator: "_"
   - admonition
   - codehilite
   - footnotes
   - meta
+  - sane_lists
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -62,3 +77,9 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.extra
+
+# Google Analytics
+# google_analytics:
+#   - 'UA-XXXXXXXX-X'
+#   - 'auto'
