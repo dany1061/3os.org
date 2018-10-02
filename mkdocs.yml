@@ -8,6 +8,8 @@ nav:
   - macOS:
       - 'General': 'macOS/macGeneral.md'
       - 'Home Brew': 'macOS/brew.md'
+  - Help:
+      - 'Documinatation': 'help/documinatation.md'
   - About: 'about.md'
 
 repo_url: https://github.com/fire1ce/3os.org/
@@ -21,8 +23,13 @@ theme:
   custom_dir: 'theme'
   logo: 'images/logo.png'
   favicon: 'images/favicon.ico'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
   feature:
     tabs: true
+
+
 
 extra:
   disqus: '3os'
