@@ -446,12 +446,12 @@
                 
                 <h1 id="nginx">Nginx</h1>
 <h2 id="show-all-domains-in-nginx-configuration">Show all domains in NGINX configuration</h2>
-<pre><code class="bash">grep -e &quot;^\s*server_name&quot; /etc/nginx/conf.d/*|sed -e 's/[\t ]*server_name//g;'|sed -e &quot;s/ /\+/g&quot;|sed -e 's/;//g'|while read line; do for i in $line; do echo -n &quot;$i &quot;|sed -e 's/://'  -e 's/\+/\n  |--/g'; done ;echo; done; echo
-</code></pre>
+<div class="codehilite"><pre><span></span>grep -e <span class="s2">&quot;^\s*server_name&quot;</span> /etc/nginx/conf.d/*<span class="p">|</span>sed -e <span class="s1">&#39;s/[\t ]*server_name//g;&#39;</span><span class="p">|</span>sed -e <span class="s2">&quot;s/ /\+/g&quot;</span><span class="p">|</span>sed -e <span class="s1">&#39;s/;//g&#39;</span><span class="p">|</span><span class="k">while</span> <span class="nb">read</span> line<span class="p">;</span> <span class="k">do</span> <span class="k">for</span> i in <span class="nv">$line</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> -n <span class="s2">&quot;</span><span class="nv">$i</span><span class="s2"> &quot;</span><span class="p">|</span>sed -e <span class="s1">&#39;s/://&#39;</span>  -e <span class="s1">&#39;s/\+/\n  |--/g&#39;</span><span class="p">;</span> <span class="k">done</span> <span class="p">;</span>echo<span class="p">;</span> <span class="k">done</span><span class="p">;</span> <span class="nb">echo</span>
+</pre></div>
 
 <h2 id="engintron-generate-custom_rules-for-all-domains-on-the-server">Engintron generate custom_rules for all domains on the server.</h2>
-<pre><code class="bash">ip=`hostname -i` &amp;&amp; for domain in `httpd -S |  grep www. | awk -F 'www.' '{print $2}'`;do printf &quot;if ( \$host ~ \&quot;%s\&quot;) {set \$PROXY_DOMAIN_OR_IP \&quot;$ip\&quot;;}\n&quot; $domain ;done &gt;&gt; /etc/nginx/custom_rules &amp;&amp; service nginx reload
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">ip</span><span class="o">=</span><span class="sb">`</span>hostname -i<span class="sb">`</span> <span class="o">&amp;&amp;</span> <span class="k">for</span> domain in <span class="sb">`</span>httpd -S <span class="p">|</span>  grep www. <span class="p">|</span> awk -F <span class="s1">&#39;www.&#39;</span> <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span><span class="p">;</span><span class="k">do</span> <span class="nb">printf</span> <span class="s2">&quot;if ( \$host ~ \&quot;%s\&quot;) {set \$PROXY_DOMAIN_OR_IP \&quot;</span><span class="nv">$ip</span><span class="s2">\&quot;;}\n&quot;</span> <span class="nv">$domain</span> <span class="p">;</span><span class="k">done</span> &gt;&gt; /etc/nginx/custom_rules <span class="o">&amp;&amp;</span> service nginx reload
+</pre></div>
                 
                   
                 

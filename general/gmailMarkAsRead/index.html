@@ -434,11 +434,11 @@
 <p>Replace it with this (written using the API reference):</p>
 </li>
 </ol>
-<pre><code class="js">function markArchivedAsRead() {
-  var threads = GmailApp.search(&quot;label:unread -label:inbox&quot;);
-  GmailApp.markThreadsRead(threads);
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="kd">function</span> <span class="nx">markArchivedAsRead</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">threads</span> <span class="o">=</span> <span class="nx">GmailApp</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="s2">&quot;label:unread -label:inbox&quot;</span><span class="p">);</span>
+  <span class="nx">GmailApp</span><span class="p">.</span><span class="nx">markThreadsRead</span><span class="p">(</span><span class="nx">threads</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
 
 <p>Save the project with File &gt; Save.</p>
 <p>Add a new version using File &gt; Manage Versions and enter "initial version" then submit that.</p>

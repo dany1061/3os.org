@@ -441,8 +441,8 @@
 <h2 id="plesk-on-centos-12-bind-fix">Plesk on CentOS 12 bind fix</h2>
 <p>The problem was nginx was attempting to bind to port 443 before the IP was initialized.
 To fix edit the /etx/sysctl.conf file and add:</p>
-<pre><code class="bash">net.ipv4.ip_nonlocal_bind = 1
-</code></pre>
+<div class="codehilite"><pre><span></span>net.ipv4.ip_nonlocal_bind <span class="o">=</span> <span class="m">1</span>
+</pre></div>
                 
                   
                 

@@ -418,20 +418,26 @@
                 <h1 id="gimmicks">Gimmicks</h1>
 <p>Gimmicks are little helper that bring plenty of dynamic features into your page. For example, you can use them to inline youtube videos, image slideshows or facebook like buttons.</p>
 <p>To use Gimmicks, all you have to do is include some specially crafted link into your markdown file. For example, if you want to embed a Youtube video (instead of linking to it), you just have to insert a link to the video:</p>
-<pre><code>[](http://www.youtube.com/watch?v=RMINSD7MmT4)
-</code></pre>
+<div class="codehilite"><pre><span></span>[](http://www.youtube.com/watch?v=RMINSD7MmT4)
+</pre></div>
+
+
 <p>Gimmicks are realized via Javascript and work out of the box. Some gimmicks can be called with parameters on them, to customize their behaviour:</p>
-<pre><code>[gimmick:ForkMeOnGitHub ({ color: 'red',  position: 'left' })](http://www.github.com/Dynalon/mdwiki)
-</code></pre>
-<p>The arguments are passed as a Javascript object. But for convienience reasons, you can omit the curly brackets <code>{ }</code>. The gimmick name after <code>gimmick:</code> is also case-insensitive:</p>
-<pre><code>[gimmick:forkmeongithub(color: 'red', position: 'left')](http://www.github.com/Dynalon/mdwiki)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:ForkMeOnGitHub ({ color: &#39;red&#39;,  position: &#39;left&#39; })](http://www.github.com/Dynalon/mdwiki)
+</pre></div>
+
+
+<p>The arguments are passed as a Javascript object. But for convienience reasons, you can omit the curly brackets <code class="codehilite">{ }</code>. The gimmick name after <code class="codehilite">gimmick:</code> is also case-insensitive:</p>
+<div class="codehilite"><pre><span></span>[gimmick:forkmeongithub(color: &#39;red&#39;, position: &#39;left&#39;)](http://www.github.com/Dynalon/mdwiki)
+</pre></div>
+
+
 <p>Gimmicks are designed to always chose sane default values when no parameters are given, therefore <em>most</em> gimmicks do not require any parameters to work.</p>
 <p>Note: Gimmicks will usually load code or stylesheets from the internet, therefore they won't work in offline mode</p>
 <h1 id="available-gimmicks">Available Gimmicks</h1>
 <hr />
 <h2 id="alerts">Alerts</h2>
-<p>Alerts are automatically placed whenever you start a paragraph with a special <em>trigger</em> word, that <em>has</em> to be followed by a colon <code>:</code> or exclamation mark <code>!</code>.</p>
+<p>Alerts are automatically placed whenever you start a paragraph with a special <em>trigger</em> word, that <em>has</em> to be followed by a colon <code class="codehilite">:</code> or exclamation mark <code class="codehilite">!</code>.</p>
 <p>Trigger words are case insensitive, and must be one of the following:</p>
 <table>
 <thead>
@@ -462,16 +468,20 @@
 <hr />
 <h2 id="github-gists">GitHub Gists</h2>
 <p>Gists on github can be embedded by passing their numeric id:</p>
-<pre><code>[gimmick:gist](5641564)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:gist](5641564)
+</pre></div>
+
+
 <p>Preview:</p>
 <p><a href="5641564">gimmick:gist</a></p>
 <hr />
 <h2 id="facebook-likebutton">Facebook Likebutton</h2>
-<p>Take any link of a profile page on facebook and put it into a regular markdown link, prefixed by <code>gimmick:FacebookLike</code>.</p>
+<p>Take any link of a profile page on facebook and put it into a regular markdown link, prefixed by <code class="codehilite"><span class="n">gimmick</span><span class="o">:</span><span class="n">FacebookLike</span></code>.</p>
 <p>Example:</p>
-<pre><code>[gimmick:FacebookLike](http://www.facebook.com)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:FacebookLike](http://www.facebook.com)
+</pre></div>
+
+
 <p>Preview:</p>
 <p><a href="http://www.facebook.com">gimmick:FacebookLike</a></p>
 <p>Arguments:</p>
@@ -486,10 +496,12 @@
 <li>default is <em>true</em></li>
 </ul>
 <p>More Examples:</p>
-<pre><code>1. [gimmick:FacebookLike ( layout: 'standard', showfaces: false) ](http://www.facebook.com)
-2. [gimmick:FacebookLike ( layout: 'boxcount', showfaces: false) ](http://www.facebook.com)
-3. [gimmick:FacebookLike ( layout: 'buttoncount') ](http://www.facebook.com)
-</code></pre>
+<div class="codehilite"><pre><span></span>1. [gimmick:FacebookLike ( layout: &#39;standard&#39;, showfaces: false) ](http://www.facebook.com)
+2. [gimmick:FacebookLike ( layout: &#39;boxcount&#39;, showfaces: false) ](http://www.facebook.com)
+3. [gimmick:FacebookLike ( layout: &#39;buttoncount&#39;) ](http://www.facebook.com)
+</pre></div>
+
+
 <ol>
 <li>
 <p><a href="http://www.facebook.com">gimmick:FacebookLike ( layout: 'standard', showfaces: false) </a></p>
@@ -506,11 +518,15 @@
 <h2 id="fork-me-on-github-ribbon">Fork me on GitHub - Ribbon</h2>
 <p>The popular github ribbon that is also present on this page. See the <a href="">github page</a> for a preview of the colors.</p>
 <p>Example:</p>
-<pre><code>[gimmick:ForkMeOnGitHub](http://www.github.com/Dynalon/mdwiki)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:ForkMeOnGitHub](http://www.github.com/Dynalon/mdwiki)
+</pre></div>
+
+
 <p>or with options:</p>
-<pre><code>[gimmick:ForkMeOnGitHub (position: 'left', color: 'darkblue') ](http://www.github.com/Dynalon/mdwiki)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:ForkMeOnGitHub (position: &#39;left&#39;, color: &#39;darkblue&#39;) ](http://www.github.com/Dynalon/mdwiki)
+</pre></div>
+
+
 <p>Arguments:</p>
 <ul>
 <li><strong>color</strong></li>
@@ -520,17 +536,19 @@
 <li>is one of [ 'left', 'right' ]</li>
 <li>defines the upper-corner position of the ribbon</li>
 </ul>
-<p>Note: To display the ribbon on every page, put the gimmick link into the <code>navigation.md</code> file.</p>
+<p>Note: To display the ribbon on every page, put the gimmick link into the <code class="codehilite">navigation.md</code> file.</p>
 <hr />
 <h2 id="google-maps">Google Maps</h2>
 <p>Allows to embed a basic map from <a href="http://maps.google.com">Google Maps</a>, centering at any given address specified via the link target.</p>
 <p>Example Code:</p>
-<pre><code>[gimmick:googlemaps](Madison Square Garden, NY)
+<div class="codehilite"><pre><span></span>[gimmick:googlemaps](Madison Square Garden, NY)
 
-[gimmick:googlemaps(maptype: 'terrain', zoom: 9, marker: 'false')](Eiffel Tower, Paris)
+[gimmick:googlemaps(maptype: &#39;terrain&#39;, zoom: 9, marker: &#39;false&#39;)](Eiffel Tower, Paris)
 
-[gimmick:googlemaps(maptype: 'satellite', zoom: 17)](Colloseum, Rome, Italy)
-</code></pre>
+[gimmick:googlemaps(maptype: &#39;satellite&#39;, zoom: 17)](Colloseum, Rome, Italy)
+</pre></div>
+
+
 <p>Arguments:</p>
 <ul>
 <li><strong>maptype</strong></li>
@@ -549,20 +567,28 @@
 <p>Embeds diagrams from the excellent <a href="http://yuml.me">yUML.me</a> service (see their website for documentation).</p>
 <p>Examples:</p>
 <p><a href="[HttpContext]uses -.-&gt;[Response]">gimmick:yuml</a></p>
-<pre><code>[gimmick:yuml]( [HttpContext]uses -.-&gt;[Response] )
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="cp">[</span><span class="nx">gimmick</span><span class="p">:</span><span class="nx">yuml</span><span class="cp">]</span><span class="o">(</span> <span class="cp">[</span><span class="nx">HttpContext</span><span class="cp">]</span><span class="nt">uses</span> <span class="nt">-</span><span class="p">.</span><span class="nc">-</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span><span class="cp">[</span><span class="nx">Response</span><span class="cp">]</span> <span class="o">)</span>
+</pre></div>
+
+
 <hr />
 <p><a href="[User|+Forename;+Surname;+HashedPassword;-Salt]">gimmick:yuml (type: 'class')</a></p>
-<pre><code>[gimmick:yuml]([User|+Forename+;Surname;+HashedPassword;-Salt|+Login();+Logout()])
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="cp">[</span><span class="nx">gimmick</span><span class="p">:</span><span class="nx">yuml</span><span class="cp">]</span><span class="o">(</span><span class="cp">[</span><span class="nx">User</span><span class="o">|+</span><span class="nx">Forename</span><span class="o">+</span><span class="p">;</span><span class="nx">Surname</span><span class="p">;</span><span class="o">+</span><span class="nx">HashedPassword</span><span class="p">;</span><span class="na">-Salt</span><span class="o">|+</span><span class="nx">Login</span><span class="p">();</span><span class="o">+</span><span class="nx">Logout</span><span class="p">()</span><span class="cp">]</span><span class="o">)</span>
+</pre></div>
+
+
 <hr />
 <p><a href="Make Coffee´-&gt;want more coffee´">gimmick:yuml (type: 'activity', style: 'plain') </a></p>
-<pre><code>[gimmick:yuml (type: 'activity', style: 'plain') ]( `Make Coffee´-&gt;`want more coffee´ )
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="cp">[</span><span class="nx">gimmick</span><span class="p">:</span><span class="nx">yuml</span> <span class="p">(</span><span class="k">type</span><span class="p">:</span> <span class="s1">&#39;activity&#39;</span><span class="p">,</span> <span class="nx">style</span><span class="p">:</span> <span class="s1">&#39;plain&#39;</span><span class="p">)</span> <span class="cp">]</span><span class="o">(</span> <span class="err">`</span><span class="nt">Make</span> <span class="nt">Coffee</span><span class="err">´</span><span class="nt">-</span><span class="o">&amp;</span><span class="nt">gt</span><span class="o">;</span><span class="err">`</span><span class="nt">want</span> <span class="nt">more</span> <span class="nt">coffee</span><span class="err">´</span> <span class="o">)</span>
+</pre></div>
+
+
 <hr />
 <p><a href="[Customer]-Sign In´, [Customer]-Buy Products´">gimmick:yuml (type: 'usecase', scale: 150) </a></p>
-<pre><code>[gimmick:yuml (diag: 'usecase', scale: 150) ]( [Customer]-`Sign In´, [Customer]-`Buy Products´ )
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:yuml (diag: &#39;usecase&#39;, scale: 150) ]( [Customer]-`Sign In´, [Customer]-`Buy Products´ )
+</pre></div>
+
+
 <p>Arguments</p>
 <ul>
 <li><strong>direction</strong></li>
@@ -580,50 +606,76 @@
 </ul>
 <h2 id="math">Math</h2>
 <p><a href="">gimmick: math</a>
-Math formulas are realized through the <a href="http://www.mathjax.org">MathJax</a> library. To enable math formulas on a page, the <code>math</code> gimmick must be loaded by adding this link anywhere in the file:</p>
-<pre><code>[gimmick: math]()
-</code></pre>
-<p>To enable math for all sites, put the above link into the <code>navigation.md</code> file. Putting this link onto the site will load MathJax dynamically from a CDN provider.</p>
+Math formulas are realized through the <a href="http://www.mathjax.org">MathJax</a> library. To enable math formulas on a page, the <code class="codehilite">math</code> gimmick must be loaded by adding this link anywhere in the file:</p>
+<div class="codehilite"><pre><span></span>[gimmick: math]()
+</pre></div>
+
+
+<p>To enable math for all sites, put the above link into the <code class="codehilite">navigation.md</code> file. Putting this link onto the site will load MathJax dynamically from a CDN provider.</p>
 <p>Note: The MathJax script is very large and loads some more dependencies like fonts. Using the math gimmick might result in slow page loads.</p>
 <h3 id="math-inserted-to-new-paragraph">Math inserted to new paragraph</h3>
-<p>You can add math formulas by putting them between to <code>$$</code> signs and use LateX syntax:</p>
-<pre><code>$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
-</code></pre>
-<p>$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$</p>
+<p>You can add math formulas by putting them between to <code class="codehilite">$$</code> signs and use LateX syntax:</p>
+<div class="codehilite"><pre><span></span>$$ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+</pre></div>
+
+
+<div>
+<div class="MathJax_Preview"> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} </div>
+<script type="math/tex; mode=display"> x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} </script>
+</div>
 <h3 id="inline-equations">Inline equations</h3>
-<p>Inline equations can be inserted by surrounding them with the delimiters <code>\\(</code> and <code>\\)</code>:</p>
-<pre><code>Diameter \\( d \\) of a circle given area \\( A \\) can by obtained via \\(d=\sqrt{\frac{4A}{\pi}}\\)
-</code></pre>
+<p>Inline equations can be inserted by surrounding them with the delimiters <code class="codehilite">\\(</code> and <code class="codehilite">\\)</code>:</p>
+<div class="codehilite"><pre><span></span>Diameter \\( d \\) of a circle given area \\( A \\) can by obtained via \\(d=\sqrt{\frac{4A}{\pi}}\\)
+</pre></div>
+
+
 <p>Will show as: Diameter \( d \) of a circle given area \( A \) can by obtained via \(d=\sqrt{\frac{4A}{\pi}}\)</p>
 <h3 id="some-examples">Some examples</h3>
-<p>$$ \frac{\partial \phi}{\partial x} \vert_b = \frac{1}{\Delta x/2}(\phi_0-\phi_b) $$</p>
-<p>$$ \int u \frac{dv}{dx}\,dx=uv-\int
+<div>
+<div class="MathJax_Preview"> \frac{\partial \phi}{\partial x} \vert_b = \frac{1}{\Delta x/2}(\phi_0-\phi_b) </div>
+<script type="math/tex; mode=display"> \frac{\partial \phi}{\partial x} \vert_b = \frac{1}{\Delta x/2}(\phi_0-\phi_b) </script>
+</div>
+<div>
+<div class="MathJax_Preview"> \int u \frac{dv}{dx}\,dx=uv-\int
 \frac{du}{dx}v\,dx\lim_{n\rightarrow \infty }
 \left (  1 +\frac{1}{n} \right )^n
-$$</p>
+</div>
+<script type="math/tex; mode=display"> \int u \frac{dv}{dx}\,dx=uv-\int
+\frac{du}{dx}v\,dx\lim_{n\rightarrow \infty }
+\left (  1 +\frac{1}{n} \right )^n
+</script>
+</div>
 <h2 id="twitter">Twitter</h2>
 <p>Creates a simple twitter follow button from a given twitter screen name.</p>
 <p>Example:</p>
-<pre><code>[gimmick:TwitterFollow](@timodoerr)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:TwitterFollow](@timodoerr)
+</pre></div>
+
+
 <p>Preview:</p>
 <p><a href="@timodoerr">gimmick:TwitterFollow</a></p>
 <h2 id="youtube">Youtube</h2>
-<p>Whenever you insert a regular link with an empty caption that points to a video on <code>youtube.com</code> or <code>youtu.be</code>, the link is automatically turned into an embedded iframe, which will display a preview thumbnail of the video on your website.</p>
+<p>Whenever you insert a regular link with an empty caption that points to a video on <code class="codehilite">youtube.com</code> or <code class="codehilite">youtu.be</code>, the link is automatically turned into an embedded iframe, which will display a preview thumbnail of the video on your website.</p>
 <p>Example:</p>
-<pre><code>This will show the video preview on your website:
+<div class="codehilite"><pre><span></span>This will show the video preview on your website:
 [](http://www.youtube.com/watch?v=RMINSD7MmT4)
-</code></pre>
+</pre></div>
+
+
 <p><a href="http://www.youtube.com/watch?v=RMINSD7MmT4"></a></p>
 <p>To omit the preview and just get a regular link, add a caption:</p>
-<pre><code>[Click to see an awesome video](http://www.youtube.com/watch?v=RMINSD7MmT4)
-</code></pre>
+<div class="codehilite"><pre><span></span>[Click to see an awesome video](http://www.youtube.com/watch?v=RMINSD7MmT4)
+</pre></div>
+
+
 <p><a href="http://www.youtube.com/watch?v=RMINSD7MmT4">Click to see an awesome video</a></p>
 <hr />
 <h2 id="disqus">Disqus</h2>
 <p>Adds comment / forum style functionality to your website. You first need to <a href="http://disqus.com">signup with disqus</a> and use your disqus shortname as the link target.</p>
-<pre><code>[gimmick:Disqus](your_disqus_shortname)
-</code></pre>
+<div class="codehilite"><pre><span></span>[gimmick:Disqus](your_disqus_shortname)
+</pre></div>
+
+
 <p>Preview:</p>
 <p><a href="mdwiki">gimmick:Disqus</a></p>
 <p>Disqus is always embedded at the bottom of a page, so scroll down this site to see a preview.</p>
@@ -638,7 +690,7 @@ $$</p>
 <li>chartType:   This string is the type of chart render. Bar, Line, or Radar. Defaults to Line.</li>
 </ul>
 <p>Note: Currently only support a single table on a page. You CAN have multiple charts from the same table.</p>
-<pre><code>| #  | Sprint          | Points | Sum | Avg  | Note |
+<div class="codehilite"><pre><span></span>| #  | Sprint          | Points | Sum | Avg  | Note |
 | -  | --------        |------- | --- | ---- | ---- |
 | 1  | Sprint 1        | 6      | 6   | 6.0  | |
 | 2  | Sprint 2        | 6      | 12  | 6.0  | |
@@ -647,10 +699,12 @@ $$</p>
 | 5  | Sprint 5        | 6      | 42  | 8.4  | |
 | 6  | Sprint 6        | 9      | 51  | 8.5  | |
 
-[gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Line', width: '660px', height: '300px'})]()
+[gimmick:chart ({dataColumns: [&#39;Avg&#39;], labelColumn: &quot;Sprint&quot;, chartType: &#39;Line&#39;, width: &#39;660px&#39;, height: &#39;300px&#39;})]()
 
-[gimmick:chart ({dataColumns: ['Avg'], labelColumn: "Sprint", chartType: 'Bar', width: '660px', height: '300px'})]()
-</code></pre>
+[gimmick:chart ({dataColumns: [&#39;Avg&#39;], labelColumn: &quot;Sprint&quot;, chartType: &#39;Bar&#39;, width: &#39;660px&#39;, height: &#39;300px&#39;})]()
+</pre></div>
+
+
 <p>Example:</p>
 <table>
 <thead>

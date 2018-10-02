@@ -454,33 +454,33 @@
                 <h1 id="csf-firewall">CSF Firewall</h1>
 <h2 id="csf-configuration">CSF configuration</h2>
 <p>Automated configuration:</p>
-<pre><code class="bash">sed -i 's/TESTING = &quot;1&quot;/TESTING = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/RESTRICT_SYSLOG = &quot;0&quot;/RESTRICT_SYSLOG = &quot;3&quot;/' /etc/csf/csf.conf
-sed -i 's/IPV6 = &quot;1&quot;/IPV6 = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/IGNORE_ALLOW = &quot;0&quot;/IGNORE_ALLOW = &quot;1&quot;/' /etc/csf/csf.conf
-sed -i 's/CONNLIMIT = &quot;&quot;/CONNLIMIT = &quot;22;5,80;70&quot;/' /etc/csf/csf.conf
-sed -i 's/PORTFLOOD = &quot;&quot;/PORTFLOOD = &quot;22;tcp;5;300,80;tcp;100;1,443;tcp;100;5&quot;/' /etc/csf/csf.conf
-sed -i 's/CT_LIMIT = &quot;0&quot;/CT_LIMIT = &quot;300&quot;/' /etc/csf/csf.conf
-</code></pre>
+<div class="codehilite"><pre><span></span>sed -i <span class="s1">&#39;s/TESTING = &quot;1&quot;/TESTING = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/RESTRICT_SYSLOG = &quot;0&quot;/RESTRICT_SYSLOG = &quot;3&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/IPV6 = &quot;1&quot;/IPV6 = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/IGNORE_ALLOW = &quot;0&quot;/IGNORE_ALLOW = &quot;1&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/CONNLIMIT = &quot;&quot;/CONNLIMIT = &quot;22;5,80;70&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PORTFLOOD = &quot;&quot;/PORTFLOOD = &quot;22;tcp;5;300,80;tcp;100;1,443;tcp;100;5&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/CT_LIMIT = &quot;0&quot;/CT_LIMIT = &quot;300&quot;/&#39;</span> /etc/csf/csf.conf
+</pre></div>
 
 <p>Disable LFD alerts: Only if you want to disable them.</p>
-<pre><code class="bash">sed -i 's/LF_EMAIL_ALERT = &quot;1&quot;/LF_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/LF_SSH_EMAIL_ALERT = &quot;1&quot;/LF_SSH_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/LF_SU_EMAIL_ALERT = &quot;1&quot;/LF_SU_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/LF_WEBMIN_EMAIL_ALERT = &quot;1&quot;/LF_WEBMIN_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/LF_CONSOLE_EMAIL_ALERT = &quot;1&quot;/LF_CONSOLE_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/LT_EMAIL_ALERT = &quot;1&quot;/LT_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/CT_EMAIL_ALERT = &quot;1&quot;/CT_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/PS_EMAIL_ALERT = &quot;1&quot;/PS_EMAIL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-</code></pre>
+<div class="codehilite"><pre><span></span>sed -i <span class="s1">&#39;s/LF_EMAIL_ALERT = &quot;1&quot;/LF_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/LF_SSH_EMAIL_ALERT = &quot;1&quot;/LF_SSH_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/LF_SU_EMAIL_ALERT = &quot;1&quot;/LF_SU_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/LF_WEBMIN_EMAIL_ALERT = &quot;1&quot;/LF_WEBMIN_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/LF_CONSOLE_EMAIL_ALERT = &quot;1&quot;/LF_CONSOLE_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/LT_EMAIL_ALERT = &quot;1&quot;/LT_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/CT_EMAIL_ALERT = &quot;1&quot;/CT_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PS_EMAIL_ALERT = &quot;1&quot;/PS_EMAIL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+</pre></div>
 
 <p>Disable PT alerts: Only if you want to disable them.</p>
-<pre><code class="bash">sed -i 's/PT_USERPROC = &quot;10&quot;/PT_USERPROC = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/PT_USERMEM = &quot;256&quot;/PT_USERMEM = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/PT_USERTIME = &quot;1800&quot;/PT_USERTIME = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/PT_USERKILL_ALERT = &quot;1&quot;/PT_USERKILL_ALERT = &quot;0&quot;/' /etc/csf/csf.conf
-sed -i 's/PT_LOAD = &quot;30&quot;/PT_LOAD = &quot;0&quot;/' /etc/csf/csf.conf
-</code></pre>
+<div class="codehilite"><pre><span></span>sed -i <span class="s1">&#39;s/PT_USERPROC = &quot;10&quot;/PT_USERPROC = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PT_USERMEM = &quot;256&quot;/PT_USERMEM = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PT_USERTIME = &quot;1800&quot;/PT_USERTIME = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PT_USERKILL_ALERT = &quot;1&quot;/PT_USERKILL_ALERT = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+sed -i <span class="s1">&#39;s/PT_LOAD = &quot;30&quot;/PT_LOAD = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
+</pre></div>
 
 <h2 id="csf-gui-on-ispconfig-3">CSF GUI on ISPCONFIG 3</h2>
 <p>nstall old CSF (before 8.13)</p>
@@ -489,15 +489,15 @@ sed -i 's/PT_LOAD = &quot;30&quot;/PT_LOAD = &quot;0&quot;/' /etc/csf/csf.conf
 <p>Upgrade CSF</p>
 <p>Copy backuped csfui* files back</p>
 <p>Run the following commands:</p>
-<pre><code class="bash">sed -i 's/checkip/ConfigServer::CheckIP::checkip/g' /usr/local/csf/bin/csfui.pl
-sed -i 's/sanity(/ConfigServer::Sanity::sanity(/g' /usr/local/csf/bin/csfui.pl
-</code></pre>
+<div class="codehilite"><pre><span></span>sed -i <span class="s1">&#39;s/checkip/ConfigServer::CheckIP::checkip/g&#39;</span> /usr/local/csf/bin/csfui.pl
+sed -i <span class="s1">&#39;s/sanity(/ConfigServer::Sanity::sanity(/g&#39;</span> /usr/local/csf/bin/csfui.pl
+</pre></div>
 
 <h2 id="unblock-invalid-packets-in-csf">Unblock Invalid packets in CSF</h2>
-<pre><code class="bash"># Drop out of order packets and packets in an INVALID state in iptables
-# connection tracking
-PACKET_FILTER = &quot;0&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1"># Drop out of order packets and packets in an INVALID state in iptables</span>
+<span class="c1"># connection tracking</span>
+<span class="nv">PACKET_FILTER</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>
+</pre></div>
                 
                   
                 

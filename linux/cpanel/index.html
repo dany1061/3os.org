@@ -495,14 +495,14 @@
                 
                 <h1 id="cpanel-whm">cPanel &amp; WHM</h1>
 <h2 id="whm-replica">WHM replica</h2>
-<pre><code class="bash">rsync -avz 192.168.1.122:/home/ /home/ --exclude=&quot;virtfs&quot; --exclude=&quot;\.cp*&quot; --exclude=&quot;cpeasyapache&quot; 
-rsync -avz 192.168.1.122:/usr/local/apache/conf/ /usr/local/apache/conf/
-rsync -avz 192.168.1.122:/var/named/ /var/named/
-rsync -avz 192.168.1.122:/usr/local/cpanel/ /usr/local/cpanel/
-rsync -avz 192.168.1.122:/var/cpanel/ /var/cpanel
-</code></pre>
+<div class="codehilite"><pre><span></span>rsync -avz <span class="m">192</span>.168.1.122:/home/ /home/ --exclude<span class="o">=</span><span class="s2">&quot;virtfs&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;\.cp*&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;cpeasyapache&quot;</span> 
+rsync -avz <span class="m">192</span>.168.1.122:/usr/local/apache/conf/ /usr/local/apache/conf/
+rsync -avz <span class="m">192</span>.168.1.122:/var/named/ /var/named/
+rsync -avz <span class="m">192</span>.168.1.122:/usr/local/cpanel/ /usr/local/cpanel/
+rsync -avz <span class="m">192</span>.168.1.122:/var/cpanel/ /var/cpanel
+</pre></div>
 
-<pre><code class="bash">chkconfig cpanel off
+<div class="codehilite"><pre><span></span>chkconfig cpanel off
 chkconfig exim off
 chkconfig dovecot off
 chkconfig pure-ftpd off
@@ -510,108 +510,108 @@ chkconfig named off
 chkconfig mysql off
 chkconfig csf off
 chkconfig iptables off
-</code></pre>
+</pre></div>
 
-<pre><code class="bash">hostname: /etc/sysconfig/network
-</code></pre>
+<div class="codehilite"><pre><span></span>hostname: /etc/sysconfig/network
+</pre></div>
 
-<pre><code class="bash">change shared ip - You can change it in /etc/wwwacct.conf infront of ADDR parameter.
-change ip - Usage: /usr/local/cpanel/bin/setsiteip [-u user | domain] ip   (/etc/trueuserowners)
+<div class="codehilite"><pre><span></span>change shared ip - You can change it in /etc/wwwacct.conf infront of ADDR parameter.
+change ip - Usage: /usr/local/cpanel/bin/setsiteip <span class="o">[</span>-u user <span class="p">|</span> domain<span class="o">]</span> ip   <span class="o">(</span>/etc/trueuserowners<span class="o">)</span>
 rebuild httpd conf
 restart apache
-</code></pre>
+</pre></div>
 
 <h2 id="disable-core-files-in-cpanel-account">Disable core files in CPanel account</h2>
 <p>Add this in /etc/sysctl.conf</p>
-<pre><code class="bash">kernel.core_uses_pid = 0
-kernel.core_pattern = /dev/null
-</code></pre>
+<div class="codehilite"><pre><span></span>kernel.core_uses_pid <span class="o">=</span> <span class="m">0</span>
+kernel.core_pattern <span class="o">=</span> /dev/null
+</pre></div>
 
 <p>And then run:</p>
-<pre><code class="bash">sysctl -p
-</code></pre>
+<div class="codehilite"><pre><span></span>sysctl -p
+</pre></div>
 
 <h2 id="add-hsts-support-in-cpanel">Add HSTS support in CPANEL</h2>
-<pre><code class="bash">cp -p /var/cpanel/templates/apache2_4/ssl_vhost.default /var/cpanel/templates/apache2_4/ssl_vhost.local
+<div class="codehilite"><pre><span></span>cp -p /var/cpanel/templates/apache2_4/ssl_vhost.default /var/cpanel/templates/apache2_4/ssl_vhost.local
 vi /var/cpanel/templates/apache2_4/ssl_vhost.local
-</code></pre>
+</pre></div>
 
 <p>Edit:</p>
-<pre><code class="bash">&lt;VirtualHost[% FOREACH ipblock IN vhost.ips %] [% ipblock.ip %]:[% ipblock.port %][% END %]&gt;
- # Enable HTTP Strict Transport Security
- Header always set Strict-Transport-Security &quot;max-age=63072000; includeSubdomains;&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>&lt;VirtualHost<span class="o">[</span>% FOREACH ipblock IN vhost.ips %<span class="o">]</span> <span class="o">[</span>% ipblock.ip %<span class="o">]</span>:<span class="o">[</span>% ipblock.port %<span class="o">][</span>% END %<span class="o">]</span>&gt;
+ <span class="c1"># Enable HTTP Strict Transport Security</span>
+ Header always <span class="nb">set</span> Strict-Transport-Security <span class="s2">&quot;max-age=63072000; includeSubdomains;&quot;</span>
+</pre></div>
 
-<pre><code class="bash">cp -p /var/cpanel/templates/apache2_4/main.default /var/cpanel/templates/apache2_4/main.local
+<div class="codehilite"><pre><span></span>cp -p /var/cpanel/templates/apache2_4/main.default /var/cpanel/templates/apache2_4/main.local
 vi /var/cpanel/templates/apache2_4/main.local
-</code></pre>
+</pre></div>
 
 <p>Edit:</p>
-<pre><code class="bash">[% IF main.sslprotocol.item.sslprotocol.length %]SSLProtocol [% main.sslprotocol.item.sslprotocol %][% END %]
+<div class="codehilite"><pre><span></span><span class="o">[</span>% IF main.sslprotocol.item.sslprotocol.length %<span class="o">]</span>SSLProtocol <span class="o">[</span>% main.sslprotocol.item.sslprotocol %<span class="o">][</span>% END %<span class="o">]</span>
 SSLHonorCipherOrder on
-</code></pre>
+</pre></div>
 
 <p>Run:</p>
-<pre><code class="bash">/scripts/rebuildhttpdconf
+<div class="codehilite"><pre><span></span>/scripts/rebuildhttpdconf
 service httpd restart
-</code></pre>
+</pre></div>
 
 <h2 id="install-mod_pagespeed-on-whm">Install mod_pagespeed on WHM</h2>
 <p>With EA3:</p>
-<pre><code class="bash">/usr/local/cpanel/3rdparty/bin/git clone https://github.com/pagespeed/cpanel.git /tmp/pagespeed/
-cd /tmp/pagespeed/Easy
+<div class="codehilite"><pre><span></span>/usr/local/cpanel/3rdparty/bin/git clone https://github.com/pagespeed/cpanel.git /tmp/pagespeed/
+<span class="nb">cd</span> /tmp/pagespeed/Easy
 tar -zcvf Speed.pm.tar.gz pagespeed
 mkdir -p /var/cpanel/easy/apache/custom_opt_mods/Cpanel/Easy
 mv Speed.pm Speed.pm.tar.gz -t /var/cpanel/easy/apache/custom_opt_mods/Cpanel/Easy/
-cd &amp;&amp; rm -rf /tmp/pagespeed
-</code></pre>
+<span class="nb">cd</span> <span class="o">&amp;&amp;</span> rm -rf /tmp/pagespeed
+</pre></div>
 
 <p>With EA4:
 Create file /etc/rpm/macros.apache2 and add the following lines of code exactly as below</p>
-<pre><code class="bash">%_httpd_mmn 20120211x8664
+<div class="codehilite"><pre><span></span>%_httpd_mmn 20120211x8664
 %_httpd_apxs /usr/bin/apxs
 %_httpd_dir /etc/apache2
-%_httpd_bindir %{_httpd_dir}/bin
-%_httpd_modconfdir %{_httpd_dir}/conf.modules.d
-%_httpd_confdir %{_httpd_dir}/conf.d
+%_httpd_bindir %<span class="o">{</span>_httpd_dir<span class="o">}</span>/bin
+%_httpd_modconfdir %<span class="o">{</span>_httpd_dir<span class="o">}</span>/conf.modules.d
+%_httpd_confdir %<span class="o">{</span>_httpd_dir<span class="o">}</span>/conf.d
 %_httpd_contentdir /usr/share/apache2
 %_httpd_moddir /usr/lib64/apache2/modules
-</code></pre>
+</pre></div>
 
 <p>Next run the following commands in order, make sure you run each command on it’s own</p>
-<pre><code class="bash">rm -rf /root/rpmbuild/RPMS/x86_64/
+<div class="codehilite"><pre><span></span>rm -rf /root/rpmbuild/RPMS/x86_64/
 wget https://github.com/pagespeed/cpanel/raw/master/EA4/ea-apache24-mod_pagespeed-latest-stable.src.rpm
 rpmbuild --rebuild ea-apache24-mod_pagespeed-latest-stable.src.rpm
 rpm -Uvh /root/rpmbuild/RPMS/x86_64/ea-apache24-mod_pagespeed*.rpm
 /etc/init.d/httpd restart
-</code></pre>
+</pre></div>
 
 <h2 id="fix-whmcpanel-templates">Fix WHM/CPanel templates</h2>
-<pre><code class="bash">cp /usr/local/apache/conf/httpd.conf{,.cptech-`date +%Y%m%d`}
+<div class="codehilite"><pre><span></span>cp /usr/local/apache/conf/httpd.conf<span class="o">{</span>,.cptech-<span class="sb">`</span>date +%Y%m%d<span class="sb">`</span><span class="o">}</span>
 mv /var/cpanel/templates/apache2_4/vhost.local /var/cpanel/templates/apache2_4/vhost.local.bak
 mv /var/cpanel/templates/apache2_4/ssl_vhost.local /var/cpanel/templates/apache2_4/ssl_vhost.local.bak
 /scripts/rebuildhttpdconf
 /scripts/restartsrv_httpd
-</code></pre>
+</pre></div>
 
 <h2 id="login-to-whm-with-link">Login to WHM with link</h2>
-<pre><code class="bash">whmapi1 create_user_session user=root service=whostmgrd locale=en
-</code></pre>
+<div class="codehilite"><pre><span></span>whmapi1 create_user_session <span class="nv">user</span><span class="o">=</span>root <span class="nv">service</span><span class="o">=</span>whostmgrd <span class="nv">locale</span><span class="o">=</span>en
+</pre></div>
 
 <h2 id="size-of-suspended-accounts-in-whm">Size of suspended accounts in WHM</h2>
-<pre><code class="bash">for i in `whmapi1 listsuspended|grep user|cut -d: -f2`; do echo &quot;Suspended account: $i - using&quot; `whmapi1 listaccts search=$i searchtype=user|grep diskused|cut -d: -f2`; done
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">for</span> i in <span class="sb">`</span>whmapi1 listsuspended<span class="p">|</span>grep user<span class="p">|</span>cut -d: -f2<span class="sb">`</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="s2">&quot;Suspended account: </span><span class="nv">$i</span><span class="s2"> - using&quot;</span> <span class="sb">`</span>whmapi1 listaccts <span class="nv">search</span><span class="o">=</span><span class="nv">$i</span> <span class="nv">searchtype</span><span class="o">=</span>user<span class="p">|</span>grep diskused<span class="p">|</span>cut -d: -f2<span class="sb">`</span><span class="p">;</span> <span class="k">done</span>
+</pre></div>
 
 <h2 id="cpanel-resources-consumption-history-per-user">Cpanel resources consumption history per user</h2>
-<pre><code class="bash">OUT=$(/usr/local/cpanel/bin/dcpumonview | grep -v Top | sed -e 's#&lt;[^&gt;]*&gt;# #g' | while read i ; do NF=`echo $i | awk {'print NF'}` ; if [[ &quot;$NF&quot; == &quot;5&quot; ]] ; then USER=`echo $i | awk {'print $1'}`; OWNER=`grep -e &quot;^OWNER=&quot; /var/cpanel/users/$USER | cut -d= -f2` ; echo &quot;$OWNER $i&quot;; fi ; done) ; (echo &quot;USER CPU&quot; ; echo &quot;$OUT&quot; | sort -nrk4 | awk '{printf &quot;%s %s%\n&quot;,$2,$4}' | head -5) | column -t ;echo;(echo -e &quot;USER MEMORY&quot; ; echo &quot;$OUT&quot; | sort -nrk5 | awk '{printf &quot;%s %s%\n&quot;,$2,$5}' | head -5) | column -t ;echo;(echo -e &quot;USER MYSQL&quot; ; echo &quot;$OUT&quot; | sort -nrk6 | awk '{printf &quot;%s %s%\n&quot;,$2,$6}' | head -5) | column -t ; 
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">OUT</span><span class="o">=</span><span class="k">$(</span>/usr/local/cpanel/bin/dcpumonview <span class="p">|</span> grep -v Top <span class="p">|</span> sed -e <span class="s1">&#39;s#&lt;[^&gt;]*&gt;# #g&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i <span class="p">;</span> <span class="k">do</span> <span class="nv">NF</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$i</span> <span class="p">|</span> awk <span class="o">{</span><span class="s1">&#39;print NF&#39;</span><span class="o">}</span><span class="sb">`</span> <span class="p">;</span> <span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$NF</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;5&quot;</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then</span> <span class="nv">USER</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$i</span> <span class="p">|</span> awk <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span><span class="sb">`</span><span class="p">;</span> <span class="nv">OWNER</span><span class="o">=</span><span class="sb">`</span>grep -e <span class="s2">&quot;^OWNER=&quot;</span> /var/cpanel/users/<span class="nv">$USER</span> <span class="p">|</span> cut -d<span class="o">=</span> -f2<span class="sb">`</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OWNER</span><span class="s2"> </span><span class="nv">$i</span><span class="s2">&quot;</span><span class="p">;</span> <span class="k">fi</span> <span class="p">;</span> <span class="k">done)</span> <span class="p">;</span> <span class="o">(</span><span class="nb">echo</span> <span class="s2">&quot;USER CPU&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk4 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$4}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span>echo<span class="p">;</span><span class="o">(</span><span class="nb">echo</span> -e <span class="s2">&quot;USER MEMORY&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk5 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$5}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span>echo<span class="p">;</span><span class="o">(</span><span class="nb">echo</span> -e <span class="s2">&quot;USER MYSQL&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk6 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$6}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span> 
+</pre></div>
 
 <h2 id="phpini-upload-big-files">PHP.INI upload big files</h2>
-<pre><code class="bash">ini_set('upload_max_filesize', '10M');
-ini_set('post_max_size', '10M');
-ini_set('max_input_time', 300);
-ini_set('max_execution_time', 300);
-</code></pre>
+<div class="codehilite"><pre><span></span>ini_set<span class="o">(</span><span class="s1">&#39;upload_max_filesize&#39;</span>, <span class="s1">&#39;10M&#39;</span><span class="o">)</span><span class="p">;</span>
+ini_set<span class="o">(</span><span class="s1">&#39;post_max_size&#39;</span>, <span class="s1">&#39;10M&#39;</span><span class="o">)</span><span class="p">;</span>
+ini_set<span class="o">(</span><span class="s1">&#39;max_input_time&#39;</span>, <span class="m">300</span><span class="o">)</span><span class="p">;</span>
+ini_set<span class="o">(</span><span class="s1">&#39;max_execution_time&#39;</span>, <span class="m">300</span><span class="o">)</span><span class="p">;</span>
+</pre></div>
                 
                   
                 

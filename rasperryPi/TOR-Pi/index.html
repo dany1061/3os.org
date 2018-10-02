@@ -515,22 +515,22 @@
 <li>Burn Image to SD-Card.</li>
 <li>Boot Raspberry Pi 3.</li>
 </ul>
-<pre><code class="bash">sudo apt-get update &amp;&amp; sudo apt-get upgrade &amp;&amp; sudo apt-get install git
+<div class="codehilite"><pre><span></span>sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade <span class="o">&amp;&amp;</span> sudo apt-get install git
 sudo raspi-config
-</code></pre>
+</pre></div>
 
 <p>Change User Password within the Config Interface
 Enable SSH In Interface Options</p>
-<pre><code class="bash">sudo reboot
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo reboot
+</pre></div>
 
 <h2 id="wifi-hotspot-configuration">Wifi Hotspot Configuration</h2>
 <p>SSH TO Raspberry Pi 3</p>
-<pre><code class="bash">ssh pi@raspberry_host
+<div class="codehilite"><pre><span></span>ssh pi@raspberry_host
 git clone https://github.com/unixabg/RPI-Wireless-Hotspot.git
-cd RPI-Wireless-Hotspot
+<span class="nb">cd</span> RPI-Wireless-Hotspot
 sudo ./install
-</code></pre>
+</pre></div>
 
 <p>"Y" to agree to terms
 "Y" to use preconfigured DNS
@@ -541,77 +541,77 @@ Type in a new SSID
 Type in your desired WiFi channel (1, 6, 11)
 Type "N" when asked - "Are you using a rtl871x chipset?"
 Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)</p>
-<pre><code class="bash">sudo reboot
-sudo apt-get update &amp;&amp; sudo apt-get upgrade
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo reboot
+sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade
+</pre></div>
 
 <h2 id="testing-wifi-hotspot">Testing Wifi Hotspot</h2>
 <p>Connect to new SSID with a Phone and check if you have full Internet Connection.</p>
 <h2 id="installing-tor-service">Installing Tor Service</h2>
-<pre><code class="bash">sudo apt-get install tor
+<div class="codehilite"><pre><span></span>sudo apt-get install tor
 sudo nano /etc/tor/torrc
-</code></pre>
+</pre></div>
 
 <p>Add the following just below the first set of comments:</p>
-<pre><code class="bash">Log notice file /var/log/tor/notices.log
-VirtualAddrNetwork 10.192.0.0/10
+<div class="codehilite"><pre><span></span>Log notice file /var/log/tor/notices.log
+VirtualAddrNetwork <span class="m">10</span>.192.0.0/10
 AutomapHostsSuffixes .onion,.exit
-AutomapHostsOnResolve 1
-TransPort 9040
-TransListenAddress 192.168.42.1
-DNSPort 53
-DNSListenAddress 192.168.42.1
-</code></pre>
+AutomapHostsOnResolve <span class="m">1</span>
+TransPort <span class="m">9040</span>
+TransListenAddress <span class="m">192</span>.168.42.1
+DNSPort <span class="m">53</span>
+DNSListenAddress <span class="m">192</span>.168.42.1
+</pre></div>
 
 <h2 id="configure-iptables">Configure iptables</h2>
-<pre><code class="bash">sudo iptables -F &amp;&amp; sudo iptables -t nat -F
-sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 53
-sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 9040
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo iptables -F <span class="o">&amp;&amp;</span> sudo iptables -t nat -F
+sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport <span class="m">53</span> -j REDIRECT --to-ports <span class="m">53</span>
+sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports <span class="m">9040</span>
+</pre></div>
 
 <p>Check iptables routes:</p>
-<pre><code class="bash">sudo iptables -t nat -L
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo iptables -t nat -L
+</pre></div>
 
 <p>if all routs looks like about run this command:</p>
-<pre><code class="bash">sudo sh -c &quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo sh -c <span class="s2">&quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;</span>
+</pre></div>
 
 <h2 id="create-log-file">Create log file</h2>
-<pre><code class="bash">sudo touch /var/log/tor/notices.log
-sudo chown debian-tor /var/log/tor/notices.log &amp;&amp; sudo chmod 644 /var/log/tor/notices.log
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo touch /var/log/tor/notices.log
+sudo chown debian-tor /var/log/tor/notices.log <span class="o">&amp;&amp;</span> sudo chmod <span class="m">644</span> /var/log/tor/notices.log
+</pre></div>
 
 <h2 id="testing-and-finishes">Testing and finishes</h2>
 <p>Start TOR service:</p>
-<pre><code class="bash">sudo service tor start
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo service tor start
+</pre></div>
 
 <p>Check to see if the service is running:</p>
-<pre><code class="bash">sudo service tor status
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo service tor status
+</pre></div>
 
 <p>Run TOR Service at Boot:</p>
-<pre><code class="bash">sudo update-rc.d tor enable
+<div class="codehilite"><pre><span></span>sudo update-rc.d tor <span class="nb">enable</span>
 sudo reboot
-</code></pre>
+</pre></div>
 
 <p>Test for TOR service is running after reboot, connect to the TOR WIFI.</p>
 <h2 id="optional-install-monit-service-to-reload-tor-serivce-if-down">Optional: Install Monit Service to reload Tor Serivce if Down</h2>
-<pre><code class="bash">sudo apt-get install monit
+<div class="codehilite"><pre><span></span>sudo apt-get install monit
 sudo nano /etc/monit/monitrc
-</code></pre>
+</pre></div>
 
 <p>Add those lines to the end of the config:</p>
-<pre><code class="bash">check process gdm with pidfile /var/run/tor/tor.pid
-   start program = &quot;/etc/init.d/tor start&quot;
-   stop program = &quot;/etc/init.d/tor stop&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>check process gdm with pidfile /var/run/tor/tor.pid
+   start <span class="nv">program</span> <span class="o">=</span> <span class="s2">&quot;/etc/init.d/tor start&quot;</span>
+   stop <span class="nv">program</span> <span class="o">=</span> <span class="s2">&quot;/etc/init.d/tor stop&quot;</span>
+</pre></div>
 
 <p>Realod and add Monit to startup:</p>
-<pre><code class="bash">sudo monit reload
-sudo update-rc.d monit enable
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo monit reload
+sudo update-rc.d monit <span class="nb">enable</span>
+</pre></div>
                 
                   
                 

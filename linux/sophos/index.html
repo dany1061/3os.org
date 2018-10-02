@@ -446,24 +446,24 @@
                 
                 <h1 id="sophos-firewall">Sophos Firewall</h1>
 <h2 id="rebuild-sophos-when-disk-full">Rebuild Sophos when disk full</h2>
-<pre><code class="bash">/etc/init.d/postgresql92 rebuild
-</code></pre>
+<div class="codehilite"><pre><span></span>/etc/init.d/postgresql92 rebuild
+</pre></div>
 
 <p>On older versions:</p>
-<pre><code class="bash">/var/mdw/scripts/smtp stop
+<div class="codehilite"><pre><span></span>/var/mdw/scripts/smtp stop
 dropdb -U postgres smtp
 createdb -U postgres smtp
 /var/mdw/scripts/smtp start
-</code></pre>
+</pre></div>
 
 <h2 id="clear-allowed-networks-on-sophos">Clear allowed networks on Sophos</h2>
 <p>Login to the Sophos</p>
-<pre><code class="bash">Type ‘cc’
-In cc, you’ll be in MAIN, if not, type ‘MAIN’
-Type ‘webadmin'
-Type ‘allowed_networks@'
-=['REF_NetworkAny']
-</code></pre>
+<div class="codehilite"><pre><span></span>Type ‘cc’
+In cc, you’ll be in MAIN, <span class="k">if</span> not, <span class="nb">type</span> ‘MAIN’
+Type ‘webadmin<span class="s1">&#39;</span>
+<span class="s1">Type ‘allowed_networks@&#39;</span>
+<span class="o">=[</span><span class="s1">&#39;REF_NetworkAny&#39;</span><span class="o">]</span>
+</pre></div>
                 
                   
                 

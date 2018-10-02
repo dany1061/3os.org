@@ -460,27 +460,27 @@
                 
                 <h1 id="linux-memory-swap">Linux Memory &amp; Swap</h1>
 <h2 id="who-uses-ram">Who uses RAM</h2>
-<pre><code class="bash">ps aux  | awk '{print $6/1024 &quot; MB\t\t&quot; $11}'  | sort -n
-</code></pre>
+<div class="codehilite"><pre><span></span>ps aux  <span class="p">|</span> awk <span class="s1">&#39;{print $6/1024 &quot; MB\t\t&quot; $11}&#39;</span>  <span class="p">|</span> sort -n
+</pre></div>
 
 <h2 id="prevent-oom-killer">Prevent OOM killer</h2>
 <p>Edit file /etc/sysctl.conf</p>
-<pre><code class="bash">vm.overcommit_memory = 2
-vm.overcommit_ratio = 100
-</code></pre>
+<div class="codehilite"><pre><span></span>vm.overcommit_memory <span class="o">=</span> <span class="m">2</span>
+vm.overcommit_ratio <span class="o">=</span> <span class="m">100</span>
+</pre></div>
 
 <p>In case of bad memory usage (php out of memory) use this settings:</p>
-<pre><code class="bash">vm.overcommit_memory = 0
-vm.overcommit_ratio = 80
-</code></pre>
+<div class="codehilite"><pre><span></span>vm.overcommit_memory <span class="o">=</span> <span class="m">0</span>
+vm.overcommit_ratio <span class="o">=</span> <span class="m">80</span>
+</pre></div>
 
 <h2 id="who-is-using-swap">Who is using SWAP</h2>
-<pre><code class="bash">grep VmSwap /proc/*/status 2&gt;/dev/null | sort -nk2 | tail -n5
-</code></pre>
+<div class="codehilite"><pre><span></span>grep VmSwap /proc/*/status <span class="m">2</span>&gt;/dev/null <span class="p">|</span> sort -nk2 <span class="p">|</span> tail -n5
+</pre></div>
 
 <h2 id="clear-cache-and-swap">Clear cache and swap</h2>
-<pre><code class="bash">echo 3 &gt; /proc/sys/vm/drop_caches &amp;&amp; swapoff -a &amp;&amp; swapon -a
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="m">3</span> &gt; /proc/sys/vm/drop_caches <span class="o">&amp;&amp;</span> swapoff -a <span class="o">&amp;&amp;</span> swapon -a
+</pre></div>
                 
                   
                 

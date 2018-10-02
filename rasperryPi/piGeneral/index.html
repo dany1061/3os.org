@@ -542,105 +542,105 @@
                 
                 <h1 id="raspberry-pi-tips-tricks">Raspberry Pi Tips &amp; Tricks</h1>
 <h2 id="defalut-user-and-password-after-installation">Defalut User and Password After Installation</h2>
-<pre><code class="bash">User: pi
+<div class="codehilite"><pre><span></span>User: pi
 Password: raspberry
-</code></pre>
+</pre></div>
 
 <h2 id="basic-raspbin-configuration">Basic Raspbin Configuration</h2>
-<pre><code class="bash">sudo raspi-config
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo raspi-config
+</pre></div>
 
 <h2 id="update-raspbian-os">Update Raspbian OS</h2>
-<pre><code class="bash">sudo apt-get update &amp;&amp; sudo apt-get upgrade -y
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade -y
+</pre></div>
 
 <h2 id="install-fish-shell-on-raspbian">Install Fish Shell on Raspbian</h2>
-<pre><code class="bash">sudo apt-get install software-properties-common
+<div class="codehilite"><pre><span></span>sudo apt-get install software-properties-common
 sudo apt-add-repository ppa:fish-shell/release-2
 sudo apt-get update
 sudo apt-get install fish
 sudo usermod -s /usr/bin/fish pi
-</code></pre>
+</pre></div>
 
 <h2 id="install-oh-my-zsh-on-raspbian">Install Oh-My-Zsh on Raspbian</h2>
-<pre><code class="bash">sudo apt-get install -y zsh &amp;&amp; sudo apt-get install -y git
-sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh &amp;&amp; chsh -s `which zsh`
+<div class="codehilite"><pre><span></span>sudo apt-get install -y zsh <span class="o">&amp;&amp;</span> sudo apt-get install -y git
+sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - <span class="p">|</span> zsh <span class="o">&amp;&amp;</span> chsh -s <span class="sb">`</span>which zsh<span class="sb">`</span>
 sudo usermod -s /usr/bin/zsh pi
-</code></pre>
+</pre></div>
 
 <p>Optioanl:
 Setting fishy skin:</p>
-<pre><code class="bash">sudo sed -i 's/robbyrussell/fishy/g' ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo sed -i <span class="s1">&#39;s/robbyrussell/fishy/g&#39;</span> ~/.zshrc
+</pre></div>
 
 <p>Its Preffered to reboot after installation:</p>
-<pre><code class="bash">sudo reboot
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo reboot
+</pre></div>
 
 <h2 id="fixing-locale-failed-for-zsh">Fixing Locale failed for ZSH</h2>
 <p>This warning pops up in terminal:</p>
-<pre><code class="bash">perl: warning: Setting locale failed.
+<div class="codehilite"><pre><span></span>perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-    LANGUAGE = (unset),
-    LC_ALL = (unset),
-    LC_CTYPE = &quot;UTF-8&quot;,
-    LANG = &quot;en_IL&quot;
+    <span class="nv">LANGUAGE</span> <span class="o">=</span> <span class="o">(</span><span class="nb">unset</span><span class="o">)</span>,
+    <span class="nv">LC_ALL</span> <span class="o">=</span> <span class="o">(</span><span class="nb">unset</span><span class="o">)</span>,
+    <span class="nv">LC_CTYPE</span> <span class="o">=</span> <span class="s2">&quot;UTF-8&quot;</span>,
+    <span class="nv">LANG</span> <span class="o">=</span> <span class="s2">&quot;en_IL&quot;</span>
     are supported and installed on your system.
-perl: warning: Falling back to a fallback locale (&quot;en_IL&quot;).
-</code></pre>
+perl: warning: Falling back to a fallback locale <span class="o">(</span><span class="s2">&quot;en_IL&quot;</span><span class="o">)</span>.
+</pre></div>
 
 <p>run this:</p>
-<pre><code class="bash">echo &quot;export LC_ALL=C&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export LC_ALL=C&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+</pre></div>
 
 <h2 id="show-respberry-temperature">Show Respberry Temperature</h2>
-<pre><code class="bash">/opt/vc/bin/vcgencmd measure_temp
-</code></pre>
+<div class="codehilite"><pre><span></span>/opt/vc/bin/vcgencmd measure_temp
+</pre></div>
 
 <h2 id="samba-for-raspberrypi">Samba for RaspberryPi</h2>
-<pre><code class="bash">sudo apt-get update
+<div class="codehilite"><pre><span></span>sudo apt-get update
 sudo apt-get install -y samba samba-common-bin smbclient cifs-utils
-sudo smbpasswd -a pi ( my-pi-samba-remote-password )
+sudo smbpasswd -a pi <span class="o">(</span> my-pi-samba-remote-password <span class="o">)</span>
 sudo nano /etc/samba/smb.conf
-</code></pre>
+</pre></div>
 
 <p>change:</p>
-<pre><code class="bash">workgroup = YOUR WINDOWS WORKGROUP NAME
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">workgroup</span> <span class="o">=</span> YOUR WINDOWS WORKGROUP NAME
+</pre></div>
 
 <p>add at end:</p>
-<pre><code class="bash">[share]
-    path = /home/pi/Desktop/share
-    available = yes
-    valid users = pi
-    read only = no
-    browsable = yes
-    public = yes
-    writable = yes
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="o">[</span>share<span class="o">]</span>
+    <span class="nv">path</span> <span class="o">=</span> /home/pi/Desktop/share
+    <span class="nv">available</span> <span class="o">=</span> yes
+    valid <span class="nv">users</span> <span class="o">=</span> pi
+    <span class="nb">read</span> <span class="nv">only</span> <span class="o">=</span> no
+    <span class="nv">browsable</span> <span class="o">=</span> yes
+    <span class="nv">public</span> <span class="o">=</span> yes
+    <span class="nv">writable</span> <span class="o">=</span> yes
+</pre></div>
 
-<p><code>the shared path must exist: ( if you work via desktop ( HDMI or VNC ) it is very convenient just to read or drop from/to this shared dir ) mkdir /home/pi/Desktop/share</code></p>
-<pre><code class="bash">sudo reboot
-</code></pre>
+<p><code class="codehilite">the shared path must exist: ( if you work via desktop ( HDMI or VNC ) it is very convenient just to read or drop from/to this shared dir ) mkdir /home/pi/Desktop/share</code></p>
+<div class="codehilite"><pre><span></span>sudo reboot
+</pre></div>
 
 <p>Start samba Server</p>
-<pre><code class="bash">sudo /usr/sbin/service smbd start
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo /usr/sbin/service smbd start
+</pre></div>
 
 <h2 id="clone-raspberry-pi-sd-card">Clone Raspberry Pi SD Card</h2>
 <h3 id="linux">Linux</h3>
 <p>On Linux, you can use the standard dd tool:</p>
-<pre><code class="bash">dd if=/dev/sdx of=/path/to/image bs=1M
-</code></pre>
+<div class="codehilite"><pre><span></span>dd <span class="k">if</span><span class="o">=</span>/dev/sdx <span class="nv">of</span><span class="o">=</span>/path/to/image <span class="nv">bs</span><span class="o">=</span>1M
+</pre></div>
 
 <h3 id="mac">Mac</h3>
 <p>On Mac, you can also use the standard dd tool with a slightly different syntax:</p>
-<pre><code class="bash">dd if=/dev/rdiskx of=/path/to/image.img bs=1m
-</code></pre>
+<div class="codehilite"><pre><span></span>dd <span class="k">if</span><span class="o">=</span>/dev/rdiskx <span class="nv">of</span><span class="o">=</span>/path/to/image.img <span class="nv">bs</span><span class="o">=</span>1m
+</pre></div>
 
-<p>Where <code>/dev/rdiskx</code> is your SD card.</p>
+<p>Where <code class="codehilite">/dev/rdiskx</code> is your SD card.</p>
 <p>(using rdisk is preferable as its the raw device - quicker)</p>
-<p>To find out which disk your device is type <code>diskutil list</code> at a command prompt - also, you may need to be root; to do this type <code>sudo -s</code> and enter your password when prompted.</p>
+<p>To find out which disk your device is type <code class="codehilite">diskutil list</code> at a command prompt - also, you may need to be root; to do this type <code class="codehilite">sudo -s</code> and enter your password when prompted.</p>
 <h3 id="windows">Windows</h3>
 <h4 id="option-1">Option 1</h4>
 <p>On Windows, you can use the reverse process that you used when flashing the SD card.</p>
@@ -650,7 +650,7 @@ sudo nano /etc/samba/smb.conf
 <h4 id="option-2">Option 2</h4>
 <p>If you don't want to back up your entire system, but only specific files, I suggest you connect to your Raspberry Pi via SFTP and copy the files to your local computer (You can use the <a href="http://winscp.net/eng/index.php">WinScp</a> client). If you have SSH enabled, SFTP usually requires no special configuration on the Raspberry Pi side.</p>
 <p>Another option is to <a href="https://raspberrypi.stackexchange.com/questions/5427/can-a-raspberry-pi-be-used-to-create-a-backup-of-itself/">copy the files to a remote system using rsync</a>.</p>
-<p>You can also install special drivers so your Windows can read <code>ext</code> filesystems (and will thus be able to read the whole SD card), such as <a href="http://www.ext2fsd.com/">ext2fsd</a> but it is probably not worth the effort.</p>
+<p>You can also install special drivers so your Windows can read <code class="codehilite">ext</code> filesystems (and will thus be able to read the whole SD card), such as <a href="http://www.ext2fsd.com/">ext2fsd</a> but it is probably not worth the effort.</p>
 <hr />
 <p><strong>Since the image will be of the same size as your SD card, you may want to compress it. This can be achieved simply by using your favorite compression tool, such as gzip, 7zip, WinZip, WinRar ...</strong></p>
                 

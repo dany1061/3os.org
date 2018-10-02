@@ -488,36 +488,36 @@
                 <h1 id="zsh-shell-on-steroids">Zsh (shell) on Steroids</h1>
 <p>This will Install oh-my-zsh shell with fish shell like history, auto suggestions and syntax highlighting.</p>
 <h2 id="requirements">Requirements:</h2>
-<pre><code class="bash">apt-get install git wget zsh
-</code></pre>
+<div class="codehilite"><pre><span></span>apt-get install git wget zsh
+</pre></div>
 
 <h2 id="install-oh-my-zsh">Install oh-my-zsh</h2>
-<pre><code class="bash">sh -c &quot;$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>sh -c <span class="s2">&quot;</span><span class="k">$(</span>wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
 
 <h2 id="install-plugins">Install Plugins</h2>
 <p>This will create ~/.zsh folder and clone plugins from git:</p>
-<pre><code class="bash">git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+<div class="codehilite"><pre><span></span>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-zsh-history-substring-search
-</code></pre>
+</pre></div>
 
 <h2 id="add-plugins-to-zshrc">Add plugins to ~/.zshrc:</h2>
-<pre><code class="bash">echo &quot;source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-echo &quot;source ~/.zsh/zsh-zsh-history-substring-search/zsh-history-substring-search.zsh&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-echo &quot;source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-zsh-history-substring-search/zsh-history-substring-search.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+<span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+</pre></div>
 
-<p><code>Note: make sure zsh-syntax-highlighting is the last one in the above list.</code></p>
+<p><code class="codehilite"><span class="n">Note</span><span class="o">:</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">zsh</span><span class="o">-</span><span class="n">syntax</span><span class="o">-</span><span class="n">highlighting</span> <span class="k">is</span> <span class="n">the</span> <span class="n">last</span> <span class="n">one</span> <span class="k">in</span> <span class="n">the</span> <span class="n">above</span> <span class="n">list</span><span class="o">.</span></code></p>
 <p>Restart zsh</p>
 <h2 id="make-zsh-default-shell">Make Zsh default shell:</h2>
-<pre><code class="bash">chsh -s $(which zsh)
-</code></pre>
+<div class="codehilite"><pre><span></span>chsh -s <span class="k">$(</span>which zsh<span class="k">)</span>
+</pre></div>
 
 <h2 id="optional">Optional:</h2>
 <h3 id="fix-background-theme-issuesnot-necessary-depends-on-your-theme">Fix background theme issues(not necessary depends on your theme.)</h3>
-<pre><code class="bash">echo &quot;ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=white&#39;&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+</pre></div>
 
 <p>Restart zsh</p>
                 

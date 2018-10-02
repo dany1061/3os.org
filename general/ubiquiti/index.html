@@ -477,106 +477,106 @@
 <p>SSH to the Edge Router:
 Copy the public key to /tmp folder</p>
 <p>Run:</p>
-<pre><code class="bash">configure
-loadkey [your user] /tmp/id_rsa.pub
-</code></pre>
+<div class="codehilite"><pre><span></span>configure
+loadkey <span class="o">[</span>your user<span class="o">]</span> /tmp/id_rsa.pub
+</pre></div>
 
 <p>Check that the keys are working by opening new session</p>
-<pre><code class="bash">set service ssh disable-password-authentication
-commit ; save
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">set</span> service ssh disable-password-authentication
+commit <span class="p">;</span> save
+</pre></div>
 
 <h2 id="hardening-edgerouter">Hardening EdgeRouter</h2>
 <p>This will change the GUI to port 8443, disable old cyphers, Only will listen on internal Network.
 Assumming your Edge Router IP is 192.168.1.1, if not change it accordingly.</p>
 <p>SSH to the Edge Router</p>
-<pre><code class="bash">configure
-set service gui listen-address 192.168.1.1
-set service gui https-port 8443
-set service gui older-ciphers disable
-set service ssh protocol-version v2
-commit ; save
-</code></pre>
+<div class="codehilite"><pre><span></span>configure
+<span class="nb">set</span> service gui listen-address <span class="m">192</span>.168.1.1
+<span class="nb">set</span> service gui https-port <span class="m">8443</span>
+<span class="nb">set</span> service gui older-ciphers disable
+<span class="nb">set</span> service ssh protocol-version v2
+commit <span class="p">;</span> save
+</pre></div>
 
 <h2 id="edgerouter-openvpn-configuration-443tcp">Edgerouter OpenVPN Configuration 443/TCP</h2>
 <p>This Guide is based on <a href="https://help.ubnt.com/hc/en-us/articles/115015971688-EdgeRouter-OpenVPN-Server">Original guide form ubnt support</a> with modifications to the VPN port and protocol</p>
 <p>For the purpose of this article, it is assumed that the routing and interface configurations are already in place and that reachability has been tested.</p>
 <p>ssh to the EdgeRouter</p>
 <p>Make sure that the date/time is set correctly on the EdgeRouter.</p>
-<pre><code class="bash">show date
-Thu Dec 28 14:35:42 UTC 2017
-</code></pre>
+<div class="codehilite"><pre><span></span>show date
+Thu Dec <span class="m">28</span> <span class="m">14</span>:35:42 UTC <span class="m">2017</span>
+</pre></div>
 
 <p>Log in as the root user.</p>
-<pre><code class="bash">sudo su
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo su
+</pre></div>
 
 <p>Generate a Diffie-Hellman (DH) key file and place it in the /config/auth directory. This Will take some time...</p>
-<pre><code class="bash">openssl dhparam -out /config/auth/dh.pem -2 2048
-</code></pre>
+<div class="codehilite"><pre><span></span>openssl dhparam -out /config/auth/dh.pem -2 <span class="m">2048</span>
+</pre></div>
 
 <p>Change the current directory.</p>
-<pre><code class="bash">cd /usr/lib/ssl/misc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> /usr/lib/ssl/misc
+</pre></div>
 
 <p>Generate a root certificate (replace <secret> with your desired passphrase).</p>
-<pre><code class="bash">./CA.sh -newca
-</code></pre>
+<div class="codehilite"><pre><span></span>./CA.sh -newca
+</pre></div>
 
 <p>exmaple:</p>
 <p>PEM Passphrase: <secret>
-Country Name: <code>US</code>
-State Or Province Name: <code>New York</code>
-Locality Name: <code>New York</code>
-Organization Name: <code>Ubiquiti</code>
-Organizational Unit Name: <code>Support</code>
-Common Name: <code>root</code>
-Email Address: <code>support@ubnt.com</code></p>
-<p><strong><code>NOTE: The Common Name needs to be unique for all certificates.</code></strong></p>
+Country Name: <code class="codehilite">US</code>
+State Or Province Name: <code class="codehilite">New York</code>
+Locality Name: <code class="codehilite">New York</code>
+Organization Name: <code class="codehilite">Ubiquiti</code>
+Organizational Unit Name: <code class="codehilite">Support</code>
+Common Name: <code class="codehilite">root</code>
+Email Address: <code class="codehilite">support@ubnt.com</code></p>
+<p><strong><code class="codehilite"><span class="n">NOTE</span><span class="o">:</span> <span class="n">The</span> <span class="n">Common</span> <span class="n">Name</span> <span class="n">needs</span> <span class="n">to</span> <span class="n">be</span> <span class="n">unique</span> <span class="k">for</span> <span class="n">all</span> <span class="n">certificates</span><span class="o">.</span></code></strong></p>
 <p>Copy the newly created certificate + key to the /config/auth directory.</p>
-<pre><code class="bash">./CA.sh -newreq
-</code></pre>
+<div class="codehilite"><pre><span></span>./CA.sh -newreq
+</pre></div>
 
 <p>exmaple:</p>
-<p>Country Name: <code>US</code>
-State Or Province Name: <code>New York</code>
-Locality Name: <code>New York</code>
-Organization Name: <code>Ubiquiti</code>
-Organizational Unit Name: <code>Support</code>
-Common Name: <code>server</code>
-Email Address: <code>support@ubnt.com</code></p>
+<p>Country Name: <code class="codehilite">US</code>
+State Or Province Name: <code class="codehilite">New York</code>
+Locality Name: <code class="codehilite">New York</code>
+Organization Name: <code class="codehilite">Ubiquiti</code>
+Organizational Unit Name: <code class="codehilite">Support</code>
+Common Name: <code class="codehilite">server</code>
+Email Address: <code class="codehilite">support@ubnt.com</code></p>
 <p>Sign the server certificate.</p>
-<pre><code class="bash">./CA.sh -sign
-</code></pre>
+<div class="codehilite"><pre><span></span>./CA.sh -sign
+</pre></div>
 
 <p>Move and rename the server certificate + key to the /config/auth directory.</p>
-<pre><code class="bash">mv newcert.pem /config/auth/server.pem
+<div class="codehilite"><pre><span></span>mv newcert.pem /config/auth/server.pem
 mv newkey.pem /config/auth/server.key
-</code></pre>
+</pre></div>
 
 <p>Generate, sign and move the client1 certificates.</p>
-<pre><code class="bash">./CA.sh -newreq
-</code></pre>
+<div class="codehilite"><pre><span></span>./CA.sh -newreq
+</pre></div>
 
 <p>Common Name: client1</p>
-<pre><code class="bash">./CA.sh -sign
+<div class="codehilite"><pre><span></span>./CA.sh -sign
 mv newcert.pem /config/auth/client1.pem
 mv newkey.pem /config/auth/client1.key
-</code></pre>
+</pre></div>
 
 <p>(Optional) Repeat the process for client2.</p>
-<pre><code class="bash">./CA.sh -newreq
-</code></pre>
+<div class="codehilite"><pre><span></span>./CA.sh -newreq
+</pre></div>
 
 <p>Common Name: client2</p>
-<pre><code class="bash">./CA.sh -sign
+<div class="codehilite"><pre><span></span>./CA.sh -sign
 mv newcert.pem /config/auth/client2.pem
 mv newkey.pem /config/auth/client2.key
-</code></pre>
+</pre></div>
 
 <p>Verify the contents of the /config/auth directory.</p>
-<pre><code class="bash">ls -l /config/auth
-</code></pre>
+<div class="codehilite"><pre><span></span>ls -l /config/auth
+</pre></div>
 
 <p>You should have those files:</p>
 <ul>
@@ -591,95 +591,95 @@ mv newkey.pem /config/auth/client2.key
 <li>server.pem</li>
 </ul>
 <p>Remove the password from the client + server keys. This allows the clients to connect using only the provided certificate.</p>
-<pre><code class="bash">openssl rsa -in /config/auth/server.key -out /config/auth/server-no-pass.key
+<div class="codehilite"><pre><span></span>openssl rsa -in /config/auth/server.key -out /config/auth/server-no-pass.key
 openssl rsa -in /config/auth/client1.key -out /config/auth/client1-no-pass.key
 openssl rsa -in /config/auth/client2.key -out /config/auth/client2-no-pass.key
-</code></pre>
+</pre></div>
 
 <p>Overwrite the existing keys with the no-pass versions.</p>
-<pre><code class="bash">mv /config/auth/server-no-pass.key /config/auth/server.key
+<div class="codehilite"><pre><span></span>mv /config/auth/server-no-pass.key /config/auth/server.key
 mv /config/auth/client1-no-pass.key /config/auth/client1.key
 mv /config/auth/client2-no-pass.key /config/auth/client2.key
-</code></pre>
+</pre></div>
 
 <p>Return to operational mode.</p>
-<pre><code class="bash">exit
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">exit</span>
+</pre></div>
 
 <p>Enter configuration mode.</p>
-<pre><code class="bash">configure
-</code></pre>
+<div class="codehilite"><pre><span></span>configure
+</pre></div>
 
 <p>If EdgeRouter's Interface is on port 433, you must change it.</p>
-<pre><code class="bash">set service gui https-port 8443
-commit ; save
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">set</span> service gui https-port <span class="m">8443</span>
+commit <span class="p">;</span> save
+</pre></div>
 
 <p>Add a firewall rule for the OpenVPN traffic to the local firewall policy.</p>
-<pre><code class="bash">set firewall name WAN_LOCAL rule 30 action accept
-set firewall name WAN_LOCAL rule 30 description OpenVPN
-set firewall name WAN_LOCAL rule 30 destination port 433
-set firewall name WAN_LOCAL rule 30 protocol tcp
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">set</span> firewall name WAN_LOCAL rule <span class="m">30</span> action accept
+<span class="nb">set</span> firewall name WAN_LOCAL rule <span class="m">30</span> description OpenVPN
+<span class="nb">set</span> firewall name WAN_LOCAL rule <span class="m">30</span> destination port <span class="m">433</span>
+<span class="nb">set</span> firewall name WAN_LOCAL rule <span class="m">30</span> protocol tcp
+</pre></div>
 
 <p>Configure the OpenVPN virtual tunnel interface.</p>
-<pre><code class="bash">set interfaces openvpn vtun0 mode server
-set interfaces openvpn vtun0 server subnet 172.16.1.0/24
-set interfaces openvpn vtun0 server push-route 192.168.1.0/24
-set interfaces openvpn vtun0 server name-server 192.168.1.1
-set interfaces openvpn vtun0 openvpn-option --duplicate-cn
-set openvpn vtun0 local-port 443
-set openvpn-option &quot;--push redirect-gateway&quot;
-set protocol tcp-passive
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">set</span> interfaces openvpn vtun0 mode server
+<span class="nb">set</span> interfaces openvpn vtun0 server subnet <span class="m">172</span>.16.1.0/24
+<span class="nb">set</span> interfaces openvpn vtun0 server push-route <span class="m">192</span>.168.1.0/24
+<span class="nb">set</span> interfaces openvpn vtun0 server name-server <span class="m">192</span>.168.1.1
+<span class="nb">set</span> interfaces openvpn vtun0 openvpn-option --duplicate-cn
+<span class="nb">set</span> openvpn vtun0 local-port <span class="m">443</span>
+<span class="nb">set</span> openvpn-option <span class="s2">&quot;--push redirect-gateway&quot;</span>
+<span class="nb">set</span> protocol tcp-passive
+</pre></div>
 
 <p>Link the server certificate/keys and DH key to the virtual tunnel interface.</p>
-<pre><code class="bash">set interfaces openvpn vtun0 tls ca-cert-file /config/auth/cacert.pem
-set interfaces openvpn vtun0 tls cert-file /config/auth/server.pem
-set interfaces openvpn vtun0 tls key-file /config/auth/server.key
-set interfaces openvpn vtun0 tls dh-file /config/auth/dh.pem
-commit ; save
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">set</span> interfaces openvpn vtun0 tls ca-cert-file /config/auth/cacert.pem
+<span class="nb">set</span> interfaces openvpn vtun0 tls cert-file /config/auth/server.pem
+<span class="nb">set</span> interfaces openvpn vtun0 tls key-file /config/auth/server.key
+<span class="nb">set</span> interfaces openvpn vtun0 tls dh-file /config/auth/dh.pem
+commit <span class="p">;</span> save
+</pre></div>
 
 <p>Exmaple for clinet.opvn config:</p>
-<pre><code class="bash">client
+<div class="codehilite"><pre><span></span>client
 dev tun
 proto udp
-remote &lt;server-ip or hostname&gt; 443
+remote &lt;server-ip or hostname&gt; <span class="m">443</span>
 float
 resolv-retry infinite
 nobind
 persist-key
 persist-tun
-verb 3
+verb <span class="m">3</span>
 ca cacert.pem
 cert client1.pem
 key client1.key
-</code></pre>
+</pre></div>
 
 <h2 id="edgerouter-free-up-space-by-cleaning-old-fireware">Edgerouter Free Up space by Cleaning Old Fireware</h2>
 <p>ssh to the EdgeRouter:</p>
-<pre><code class="bash">delete system image
-</code></pre>
+<div class="codehilite"><pre><span></span>delete system image
+</pre></div>
 
 <h2 id="edgerouer-task-scheduler">EdgeRouer task-scheduler</h2>
-<p><strong><code>Work In Progress</code></strong></p>
-<pre><code class="bash">configue
+<p><strong><code class="codehilite">Work In Progress</code></strong></p>
+<div class="codehilite"><pre><span></span>configue
 show system task-scheduler
-set system task-scheduler task SSL_UPDATE interval 1d
-</code></pre>
+<span class="nb">set</span> system task-scheduler task SSL_UPDATE interval 1d
+</pre></div>
 
 <h2 id="installing-unifi-controller-on-ubuntu-1604">Installing UniFi Controller on Ubuntu 16.04</h2>
-<pre><code class="bash">sudo apt update
+<div class="codehilite"><pre><span></span>sudo apt update
 sudo apt-get install openjdk-8-jdk-headless openjdk-8-jre-headless
-echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
+<span class="nb">echo</span> <span class="s1">&#39;deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti&#39;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
 sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ubnt.com/unifi/unifi-repo.gpg
 sudo apt update
 sudo apt install unifi
 sudo apt install haveged
 sudo update-rc.d haveged defaults
 reboot
-</code></pre>
+</pre></div>
 
 <p>Interface:
 https://[serversAdress]:8443</p>

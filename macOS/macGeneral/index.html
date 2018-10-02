@@ -598,49 +598,49 @@
                 <h1 id="macos-tips-tricks">MacOS Tips &amp; Tricks</h1>
 <h2 id="hide-all-the-icons-on-your-desktop">Hide All The Icons On Your Desktop</h2>
 <p>Disable Icons:</p>
-<pre><code class="bash">defaults write com.apple.finder CreateDesktop false
+<div class="codehilite"><pre><span></span>defaults write com.apple.finder CreateDesktop <span class="nb">false</span>
 killall Finder
-</code></pre>
+</pre></div>
 
 <p>Enable Icons:</p>
-<pre><code class="bash">defaults write com.apple.finder CreateDesktop true
+<div class="codehilite"><pre><span></span>defaults write com.apple.finder CreateDesktop <span class="nb">true</span>
 killall Finder
-</code></pre>
+</pre></div>
 
 <h2 id="force-rgb-mode-for-external-screens">Force RGB mode For External Screens</h2>
 <p>Download this script from <a href="https://gist.github.com/adaugherity/7435890">github</a>
 Extract the file and run it:</p>
-<pre><code class="bash">ruby patch-edid.rb
-</code></pre>
+<div class="codehilite"><pre><span></span>ruby patch-edid.rb
+</pre></div>
 
-<p>This will create new derectory named: <code>DisplayVendorID-*</code> at the root directory of the script.</p>
+<p>This will create new derectory named: <code class="codehilite">DisplayVendorID-*</code> at the root directory of the script.</p>
 <ul>
 <li>Power off your mac</li>
 <li>Boot to into the recovery system (Cmd+R during boot).</li>
-<li>Run Disk <code>Disk Utility</code>, choose the boot drive and hit <code>Mount</code>, exit <code>Disk Utility</code></li>
-<li>Click <code>Utilities</code> and then <code>Terminal</code></li>
+<li>Run Disk <code class="codehilite">Disk Utility</code>, choose the boot drive and hit <code class="codehilite">Mount</code>, exit <code class="codehilite">Disk Utility</code></li>
+<li>Click <code class="codehilite">Utilities</code> and then <code class="codehilite">Terminal</code></li>
 </ul>
-<p><code>Remember that every path is now prefixed by “/Volumes/Macintosh HD/”.</code></p>
+<p><code class="codehilite">Remember that every path is now prefixed by “/Volumes/Macintosh HD/”.</code></p>
 <ul>
-<li>Copy <code>DisplayVendorID-*</code> E.g. I had the Ruby script in a folder “EDID-Fix” on my desktop.</li>
+<li>Copy <code class="codehilite">DisplayVendorID-*</code> E.g. I had the Ruby script in a folder “EDID-Fix” on my desktop.</li>
 </ul>
-<pre><code class="bash">cp -r /Volumes/Macintosh\ HD/Users/marcus/Desktop/EDID-Fix/DisplayVendorID-* /Volumes/Macintosh\ HD/System/Library/Displays/Contents/Resources/Overrides/
-</code></pre>
+<div class="codehilite"><pre><span></span>cp -r /Volumes/Macintosh<span class="se">\ </span>HD/Users/marcus/Desktop/EDID-Fix/DisplayVendorID-* /Volumes/Macintosh<span class="se">\ </span>HD/System/Library/Displays/Contents/Resources/Overrides/
+</pre></div>
 
 <ul>
 <li>Reboot to your system.</li>
 <li>Go to Settings - Displays - Color.</li>
 <li>Choose the new color profile for your external screen.</li>
 </ul>
-<h2 id="set-the-same-view-options-for-all-finder-windows">Set the <code>Same View Options</code> for all Finder windows</h2>
+<h2 id="set-the-same-view-options-for-all-finder-windows">Set the <code class="codehilite">Same View Options</code> for all Finder windows</h2>
 <p>First, we want to set the default view options for all new Finder windows. To do so, open Finder and click on the view setting that you want to use. The settings are four icons and the top of your Finder window.
 If you don't see the Finder toolbar type:</p>
-<pre><code class="bash">cmd + option + t
-</code></pre>
+<div class="codehilite"><pre><span></span>cmd + option + t
+</pre></div>
 
 <p>After selecting the option you want, type:</p>
-<pre><code class="bash">cmd + j
-</code></pre>
+<div class="codehilite"><pre><span></span>cmd + j
+</pre></div>
 
 <p>to open the view options window.</p>
 <p>Make sure you check the top two checkboxes that say Always open in list view and Browse in list view. Keep in mind it will reflect whichever view you've selected.</p>
@@ -648,65 +648,64 @@ If you don't see the Finder toolbar type:</p>
 <h3 id="delete-all-ds_store-files-on-your-computer">Delete all .DS_Store files on your computer</h3>
 <p>Chances are you've opened some Finder windows in the past. Individual folder options will override this default setting that we just set.</p>
 <p>In order reset your folder settings across the entire machine we have to delete all .DS_Store files. This will ensure that all folders start fresh. Open up the Terminal application (Applications/Utilities/Terminal), and type:</p>
-<pre><code class="bash">sudo find / -name .DS_Store -delete; killall Finder
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo find / -name .DS_Store -delete<span class="p">;</span> killall Finder
+</pre></div>
 
-<p><code>Note: In the future, whenever you switch views, it will automatically save in the new .DS_Store file. This will override the default settings.</code></p>
+<p><code class="codehilite"><span class="n">Note</span><span class="o">:</span> <span class="n">In</span> <span class="n">the</span> <span class="n">future</span><span class="o">,</span> <span class="n">whenever</span> <span class="n">you</span> <span class="k">switch</span> <span class="n">views</span><span class="o">,</span> <span class="n">it</span> <span class="n">will</span> <span class="n">automatically</span> <span class="n">save</span> <span class="k">in</span> <span class="n">the</span> <span class="k">new</span> <span class="o">.</span><span class="na">DS_Store</span> <span class="n">file</span><span class="o">.</span> <span class="n">This</span> <span class="n">will</span> <span class="kd">override</span> <span class="n">the</span> <span class="k">default</span> <span class="n">settings</span><span class="o">.</span></code></p>
 <h2 id="installing-rbenv-ruby-send-box-ruby-alternative-to-the-one-that-macos-uses">Installing rbenv (ruby send box) - Ruby alternative to the one that macOS uses</h2>
 <p>Install rbenv with brew</p>
-<pre><code class="bash">brew install rbenv
-</code></pre>
+<div class="codehilite"><pre><span></span>brew install rbenv
+</pre></div>
 
-<p>Add eval <code>"$(rbenv init -)"</code> to the end of <code>~/.zshrc</code> or <code>~/.bash_profile</code></p>
+<p>Add eval <code class="codehilite">&quot;$(rbenv init -)&quot;</code> to the end of <code class="codehilite">~/.zshrc</code> or <code class="codehilite">~/.bash_profile</code></p>
 <p>Install a ruby version</p>
-<pre><code class="bash">rbenv install 2.3.1
-</code></pre>
+<div class="codehilite"><pre><span></span>rbenv install <span class="m">2</span>.3.1
+</pre></div>
 
 <p>Select a ruby version by rbenv</p>
-<pre><code class="bash">rbenv global 2.3.1
-</code></pre>
+<div class="codehilite"><pre><span></span>rbenv global <span class="m">2</span>.3.1
+</pre></div>
 
 <p>Open a new terminal window</p>
-<p>Verify that the right gem folder is being used with <code>gem env home</code>(should report something in your user folder not system wide)</p>
+<p>Verify that the right gem folder is being used with <code class="codehilite">gem env home</code>(should report something in your user folder not system wide)</p>
 <h2 id="running-multi-session-burp-suite">Running Multi Session - Burp Suite</h2>
 <p>Launch the Script Editor choose temporary folder</p>
 <p>copy this:</p>
-<pre><code class="bash">do shell script &quot;open -n /Applications/Burp\\ Suite\\ Professional.app&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">do</span> shell script <span class="s2">&quot;open -n /Applications/Burp\\ Suite\\ Professional.app&quot;</span>
+</pre></div>
 
 <p>File &gt; Export</p>
 <p>Use the following settings:</p>
-<p>Save AS As: <code>Burp Multi Session</code>
-Where: <code>Applications</code>
-File Format: <code>Application</code></p>
+<p>Save AS As: <code class="codehilite">Burp Multi Session</code>
+Where: <code class="codehilite">Applications</code>
+File Format: <code class="codehilite">Application</code></p>
 <p>Right Click on the new "Burp Multi Session" application.
 Drug the original application to the icon in the left corner of the "get info"</p>
 <h2 id="firefox-profile-manager-applicationmd">Firefox Profile Manager Application.md</h2>
 <p>Launch the Script Editor choose temporary folder</p>
 <p>copy this:</p>
-<pre><code class="bash">do shell script &quot;/Applications/Firefox.app/Contents/MacOS/firefox -ProfileManager &amp;&gt; /dev/null &amp;&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">do</span> shell script <span class="s2">&quot;/Applications/Firefox.app/Contents/MacOS/firefox -ProfileManager &amp;&gt; /dev/null &amp;&quot;</span>
+</pre></div>
 
 <p>File &gt; Export</p>
 <p>Use the following settings:</p>
-<p>Save AS As: <code>Firefox Profile Manager</code>
-Where: <code>Applications</code>
-File Format: <code>Application</code></p>
+<p>Save AS As: <code class="codehilite">Firefox Profile Manager</code>
+Where: <code class="codehilite">Applications</code>
+File Format: <code class="codehilite">Application</code></p>
 <p>Right Click on the new "Burp Multi Session" application.
 Drug the original application to the icon in the left corner of the "get info"</p>
 <h2 id="add-macbook-keybourd-layout-for-ubuntu">Add Macbook Keybourd Layout for ubuntu</h2>
 <p>for desktop:</p>
-<pre><code class="bash">gsettings set org.gnome.desktop.input-sources xkb-options &quot;['apple:badmap']&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>gsettings <span class="nb">set</span> org.gnome.desktop.input-sources xkb-options <span class="s2">&quot;[&#39;apple:badmap&#39;]&quot;</span>
+</pre></div>
 
 <p>Terminal command to disable the option:</p>
-<pre><code class="bash">gsettings reset org.gnome.desktop.input-sources xkb-options
-</code></pre>
+<div class="codehilite"><pre><span></span>gsettings reset org.gnome.desktop.input-sources xkb-options
+</pre></div>
 
 <!-- for headless (server):
 
 wzxhzdk:14
-
 
 -> MacBook / MacBookPro (Intl)
 

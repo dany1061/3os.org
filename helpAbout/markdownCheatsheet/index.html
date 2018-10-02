@@ -456,39 +456,39 @@
 <tbody>
 <tr>
 <td><strong>Bold</strong></td>
-<td><code>**text**</code></td>
+<td><code class="codehilite">**text**</code></td>
 </tr>
 <tr>
 <td><em>Emphasize</em></td>
-<td><code>*text*</code></td>
+<td><code class="codehilite">*text*</code></td>
 </tr>
 <tr>
-<td>~~Strike-through~~</td>
-<td><code>~~text~~</code></td>
+<td><del>Strike-through</del></td>
+<td><code class="codehilite">~~text~~</code></td>
 </tr>
 <tr>
 <td><a href="http://">Link</a></td>
-<td><code>[title](http://)</code></td>
+<td><code class="codehilite">[title](http://)</code></td>
 </tr>
 <tr>
-<td><code>Inline Code</code></td>
-<td><code>`code`</code></td>
+<td><code class="codehilite">Inline Code</code></td>
+<td><code class="codehilite">`code`</code></td>
 </tr>
 <tr>
 <td>image</td>
-<td><code>![alt](http://)</code></td>
+<td><code class="codehilite">![alt](http://)</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="headings">Headings</h2>
-<p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
-<pre><code class="markdown"># h1 Heading
+<p>Headings from <code class="codehilite">h1</code> through <code class="codehilite">h6</code> are constructed with a <code class="codehilite">#</code> for each level:</p>
+<div class="codehilite"><pre><span></span># h1 Heading
 ## h2 Heading
 ### h3 Heading
 #### h4 Heading
 ##### h5 Heading
 ###### h6 Heading
-</code></pre>
+</pre></div>
 
 <p>Renders to:</p>
 <h1 id="h1-heading">h1 Heading</h1>
@@ -498,33 +498,33 @@
 <h5 id="h5-heading">h5 Heading</h5>
 <h6 id="h6-heading">h6 Heading</h6>
 <p>HTML:</p>
-<pre><code class="html">&lt;h1&gt;h1 Heading&lt;/h1&gt;
-&lt;h2&gt;h2 Heading&lt;/h2&gt;
-&lt;h3&gt;h3 Heading&lt;/h3&gt;
-&lt;h4&gt;h4 Heading&lt;/h4&gt;
-&lt;h5&gt;h5 Heading&lt;/h5&gt;
-&lt;h6&gt;h6 Heading&lt;/h6&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>h1 Heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>h2 Heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>h3 Heading<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>h4 Heading<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>h5 Heading<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>h6 Heading<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</pre></div>
 
 <p><br>
 <br>
 <br></p>
 <h2 id="quoting-code">Quoting code</h2>
 <p>You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted.</p>
-<pre><code>Use `git status` to list all new or modified files that haven't yet been committed.
-</code></pre>
+<div class="codehilite"><pre><span></span>Use `git status` to list all new or modified files that haven&#39;t yet been committed.
+</pre></div>
 
 <p>will render to:</p>
-<p>Use <code>git status</code> to list all new or modified files that haven't yet been committed.</p>
+<p>Use <code class="codehilite">git status</code> to list all new or modified files that haven't yet been committed.</p>
 <p><br>
 <br>
 <br></p>
 <h2 id="horizontal-rules">Horizontal Rules</h2>
-<p>The HTML <code>&lt;hr&gt;</code> element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+<p>The HTML <code class="codehilite">&lt;hr&gt;</code> element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a <code class="codehilite">&lt;hr&gt;</code> with any of the following:</p>
 <ul>
-<li><code>___</code>: three consecutive underscores</li>
-<li><code>---</code>: three consecutive dashes</li>
-<li><code>***</code>: three consecutive asterisks</li>
+<li><code class="codehilite">___</code>: three consecutive underscores</li>
+<li><code class="codehilite">---</code>: three consecutive dashes</li>
+<li><code class="codehilite">***</code>: three consecutive asterisks</li>
 </ul>
 <p>renders to:</p>
 <hr />
@@ -534,14 +534,13 @@
 <br>
 <br></p>
 <h2 id="body-copy">Body Copy</h2>
-<p>Body copy written as normal, plain text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
+<p>Body copy written as normal, plain text will be wrapped with <code class="codehilite"><span class="nt">&lt;p&gt;&lt;/p&gt;</span></code> tags in the rendered HTML.</p>
 <p>So this body copy:</p>
-<pre><code class="markdown">Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
-</code></pre>
-
-<p>renders to this HTML:</p>
-<pre><code class="html">&lt;p&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/p&gt;
-</code></pre>
+<p><div class="codehilite"><pre><span></span>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+</pre></div>
+renders to this HTML:</p>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
 
 <p><br>
 <br>
@@ -550,61 +549,59 @@
 <h3 id="bold">Bold</h3>
 <p>For emphasizing a snippet of text with a heavier font-weight.</p>
 <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-<pre><code class="markdown">**rendered as bold text**
-</code></pre>
-
-<p>renders to:</p>
+<p><div class="codehilite"><pre><span></span>**rendered as bold text**
+</pre></div>
+renders to:</p>
 <p><strong>rendered as bold text</strong></p>
 <p>and this HTML</p>
-<pre><code class="html">&lt;strong&gt;rendered as bold text&lt;/strong&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>rendered as bold text<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="italics">Italics</h3>
 <p>For emphasizing a snippet of text with italics.</p>
 <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-<pre><code class="markdown">_rendered as italicized text_
-</code></pre>
+<div class="codehilite"><pre><span></span>_rendered as italicized text_
+</pre></div>
 
 <p>renders to:</p>
 <p><em>rendered as italicized text</em></p>
 <p>and this HTML:</p>
-<pre><code class="html">&lt;em&gt;rendered as italicized text&lt;/em&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>rendered as italicized text<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="strikethrough">strikethrough</h3>
 <p>In GFM you can do strickthroughs.</p>
-<pre><code class="markdown">~~Strike through this text.~~
-</code></pre>
-
-<p>Which renders to:</p>
-<p>~~Strike through this text.~~</p>
+<p><div class="codehilite"><pre><span></span>~~Strike through this text.~~
+</pre></div>
+Which renders to:</p>
+<p><del>Strike through this text.</del></p>
 <p><br>
 <br>
 <br></p>
 <h2 id="blockquotes">Blockquotes</h2>
 <p>For quoting blocks of content from another source within your document.</p>
-<p>Add <code>&gt;</code> before any text you want to quote.</p>
-<pre><code class="markdown">Add `&gt;` before any text you want to quote.
-</code></pre>
+<p>Add <code class="codehilite">&gt;</code> before any text you want to quote.</p>
+<div class="codehilite"><pre><span></span>Add `&gt;` before any text you want to quote.
+</pre></div>
 
 <p>Renders to:</p>
 <blockquote>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
 </blockquote>
 <p>and this HTML:</p>
-<pre><code class="html">&lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-&lt;/blockquote&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</pre></div>
 
 <p>Blockquotes can also be nested:</p>
-<pre><code class="markdown">&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+<div class="codehilite"><pre><span></span>&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
 Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 &gt;&gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
 &gt;&gt;&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
 Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
-</code></pre>
+</pre></div>
 
 <p>Renders to:</p>
 <blockquote>
@@ -626,13 +623,13 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 <h3 id="unordered">Unordered</h3>
 <p>A list of items in which the order of the items does not explicitly matter.</p>
 <p>You may use any of the following symbols to denote bullets for each list item:</p>
-<pre><code class="markdown">* valid bullet
+<div class="codehilite"><pre><span></span>* valid bullet
 - valid bullet
 + valid bullet
-</code></pre>
+</pre></div>
 
 <p>For example</p>
-<pre><code class="markdown">+ Lorem ipsum dolor sit amet
+<p><div class="codehilite"><pre><span></span>+ Lorem ipsum dolor sit amet
 + Consectetur adipiscing elit
 + Integer molestie lorem at massa
 + Facilisis in pretium nisl aliquet
@@ -644,9 +641,8 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 + Faucibus porta lacus fringilla vel
 + Aenean sit amet erat nunc
 + Eget porttitor lorem
-</code></pre>
-
-<p>Renders to:</p>
+</pre></div>
+Renders to:</p>
 <ul>
 <li>Lorem ipsum dolor sit amet</li>
 <li>Consectetur adipiscing elit</li>
@@ -662,28 +658,28 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 <li>Eget porttitor lorem</li>
 </ul>
 <p>And this HTML</p>
-<pre><code class="html">&lt;ul&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
-  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
-  &lt;li&gt;Nulla volutpat aliquam velit
-    &lt;ul&gt;
-      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
-      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
-      &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
-      &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
-  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
-  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Facilisis in pretium nisl aliquet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nulla volutpat aliquam velit
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Phasellus iaculis neque<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Purus sodales ultricies<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Vestibulum laoreet porttitor sem<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Ac tristique libero volutpat at<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Faucibus porta lacus fringilla vel<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Aenean sit amet erat nunc<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eget porttitor lorem<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="ordered">Ordered</h3>
 <p>A list of items in which the order of items does explicitly matter.</p>
-<pre><code class="markdown">1. Lorem ipsum dolor sit amet
+<p><div class="codehilite"><pre><span></span>1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 4. Facilisis in pretium nisl aliquet
@@ -691,9 +687,8 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 6. Faucibus porta lacus fringilla vel
 7. Aenean sit amet erat nunc
 8. Eget porttitor lorem
-</code></pre>
-
-<p>Renders to:</p>
+</pre></div>
+Renders to:</p>
 <ol>
 <li>Lorem ipsum dolor sit amet</li>
 <li>Consectetur adipiscing elit</li>
@@ -705,20 +700,20 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 <li>Eget porttitor lorem</li>
 </ol>
 <p>And this HTML:</p>
-<pre><code class="html">&lt;ol&gt;
-  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
-  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
-  &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
-  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
-  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
-  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Lorem ipsum dolor sit amet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Consectetur adipiscing elit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Integer molestie lorem at massa<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Facilisis in pretium nisl aliquet<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Nulla volutpat aliquam velit<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Faucibus porta lacus fringilla vel<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Aenean sit amet erat nunc<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Eget porttitor lorem<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</pre></div>
 
-<p><strong>TIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
-<pre><code class="markdown">1. Lorem ipsum dolor sit amet
+<p><strong>TIP</strong>: If you just use <code class="codehilite">1.</code> for each number, GitHub will automatically number each item. For example:</p>
+<div class="codehilite"><pre><span></span>1. Lorem ipsum dolor sit amet
 1. Consectetur adipiscing elit
 1. Integer molestie lorem at massa
 1. Facilisis in pretium nisl aliquet
@@ -726,7 +721,7 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 1. Faucibus porta lacus fringilla vel
 1. Aenean sit amet erat nunc
 1. Eget porttitor lorem
-</code></pre>
+</pre></div>
 
 <p>Renders to:</p>
 <ol>
@@ -744,103 +739,101 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
 <br></p>
 <h2 id="code">Code</h2>
 <h3 id="inline-code">Inline code</h3>
-<p>Wrap inline snippets of code with <code>`</code>.</p>
-<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as "inline".</p>
-<pre><code class="html">For example, `&lt;section&gt;&lt;/section&gt;` should be wrapped as &quot;inline&quot;.
-</code></pre>
+<p>Wrap inline snippets of code with <code class="codehilite">`</code>.</p>
+<p>For example, <code class="codehilite"><span class="nt">&lt;section&gt;&lt;/section&gt;</span></code> should be wrapped as "inline".</p>
+<div class="codehilite"><pre><span></span>For example, `<span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>` should be wrapped as &quot;inline&quot;.
+</pre></div>
 
 <h3 id="indented-code">Indented code</h3>
 <p>Or indent several lines of code by at least four spaces, as in:</p>
-<pre><code class="js">    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-</code></pre>
+<div class="codehilite"><pre><span></span>    <span class="c1">// Some comments</span>
+    <span class="nx">line</span> <span class="mi">1</span> <span class="k">of</span> <span class="nx">code</span>
+    <span class="nx">line</span> <span class="mi">2</span> <span class="k">of</span> <span class="nx">code</span>
+    <span class="nx">line</span> <span class="mi">3</span> <span class="k">of</span> <span class="nx">code</span>
+</pre></div>
 
-<pre><code>// Some comments
+<div class="codehilite"><pre><span></span>// Some comments
 line 1 of code
 line 2 of code
 line 3 of code
-</code></pre>
+</pre></div>
+
+
 <h3 id="block-code-fences">Block code "fences"</h3>
-<p>Use "fences"  <code>```</code> to block in multiple lines of code.</p>
+<p>Use "fences"  <code class="codehilite">```</code> to block in multiple lines of code.</p>
 <pre>
-
 wzxhzdk:21
-
 </pre>
 
-<pre><code>Sample text here...
-</code></pre>
+<div class="codehilite"><pre><span></span>Sample text here...
+</pre></div>
 
 <p>HTML:</p>
-<pre><code class="html">&lt;pre&gt;
-  &lt;p&gt;Sample text here...&lt;/p&gt;
-&lt;/pre&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">pre</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Sample text here...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">pre</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="syntax-highlighting">Syntax highlighting</h3>
-<p>GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code>``` js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
+<p>GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code class="codehilite">``` js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
 <pre>
-
 wzxhzdk:24
-
 </pre>
 
 <p>Renders to:</p>
-<pre><code class="javascript">grunt.initConfig({
-  assemble: {
-    options: {
-      assets: 'docs/assets',
-      data: 'src/data/*.{json,yml}',
-      helpers: 'src/custom-helpers.js',
-      partials: ['src/partials/**/*.{hbs,md}']
-    },
-    pages: {
-      options: {
-        layout: 'default.hbs'
-      },
-      files: {
-        './': ['src/templates/pages/index.hbs']
-      }
-    }
-  }
-};
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nx">grunt</span><span class="p">.</span><span class="nx">initConfig</span><span class="p">({</span>
+  <span class="nx">assemble</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">assets</span><span class="o">:</span> <span class="s1">&#39;docs/assets&#39;</span><span class="p">,</span>
+      <span class="nx">data</span><span class="o">:</span> <span class="s1">&#39;src/data/*.{json,yml}&#39;</span><span class="p">,</span>
+      <span class="nx">helpers</span><span class="o">:</span> <span class="s1">&#39;src/custom-helpers.js&#39;</span><span class="p">,</span>
+      <span class="nx">partials</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src/partials/**/*.{hbs,md}&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nx">pages</span><span class="o">:</span> <span class="p">{</span>
+      <span class="nx">options</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">layout</span><span class="o">:</span> <span class="s1">&#39;default.hbs&#39;</span>
+      <span class="p">},</span>
+      <span class="nx">files</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s1">&#39;./&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;src/templates/pages/index.hbs&#39;</span><span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+</pre></div>
 
 <p>And this complicated HTML:</p>
-<pre><code class="xml">&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;grunt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;initConfig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;assemble&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;assets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'docs/assets'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'src/data/*.{json,yml}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;helpers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'src/custom-helpers.js'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;partials&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'src/partials/**/*.{hbs,md}'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;pages&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'default.hbs'&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;s1&quot;&gt;'./'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'src/templates/pages/index.hbs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;highlight&quot;</span><span class="nt">&gt;&lt;pre&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>grunt<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>.<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>initConfig<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>({<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>assemble<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>assets<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;docs/assets&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>data<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/data/*.{json,yml}&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>helpers<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/custom-helpers.js&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>,<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>partials<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/partials/**/*.{hbs,md}&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>pages<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>options<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>layout<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;default.hbs&#39;<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>},<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;nx&quot;</span><span class="nt">&gt;</span>files<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>{<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;./&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;o&quot;</span><span class="nt">&gt;</span>:<span class="nt">&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>[<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;s1&quot;</span><span class="nt">&gt;</span>&#39;src/templates/pages/index.hbs&#39;<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>]<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>}<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;p&quot;</span><span class="nt">&gt;</span>};<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/pre&gt;&lt;/div&gt;</span>
+</pre></div>
 
 <p><br>
 <br>
 <br></p>
 <h2 id="tables">Tables</h2>
 <p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
-<pre><code class="markdown">| Option | Description |
+<div class="codehilite"><pre><span></span>| Option | Description |
 | ------ | ----------- |
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
-</code></pre>
+</pre></div>
 
 <p>Renders to:</p>
 <table>
@@ -866,34 +859,34 @@ line 3 of code
 </tbody>
 </table>
 <p>And this HTML:</p>
-<pre><code class="html">&lt;table&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Option&lt;/th&gt;
-    &lt;th&gt;Description&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;data&lt;/td&gt;
-    &lt;td&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;engine&lt;/td&gt;
-    &lt;td&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;ext&lt;/td&gt;
-    &lt;td&gt;extension to be used for dest files.&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Option<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Description<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>data<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>path to data files to supply the data that will be passed into templates.<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>engine<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>engine to be used for processing templates. Handlebars is the default.<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>ext<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>extension to be used for dest files.<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="right-aligned-text">Right aligned text</h3>
 <p>Adding a colon on the right side of the dashes below any heading will right align text for that column.</p>
-<pre><code class="markdown">| Option | Description |
+<div class="codehilite"><pre><span></span>| Option | Description |
 | ------:| -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
-</code></pre>
+</pre></div>
 
 <table>
 <thead>
@@ -922,67 +915,62 @@ line 3 of code
 <br></p>
 <h2 id="links">Links</h2>
 <h3 id="basic-link">Basic link</h3>
-<pre><code class="markdown">[Assemble](http://assemble.io)
-</code></pre>
+<div class="codehilite"><pre><span></span>[Assemble](http://assemble.io)
+</pre></div>
 
 <p>Renders to (hover over the link, there is no tooltip):</p>
 <p><a href="http://assemble.io">Assemble</a></p>
 <p>HTML:</p>
-<pre><code class="html">&lt;a href=&quot;http://assemble.io&quot;&gt;Assemble&lt;/a&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;http://assemble.io&quot;</span><span class="p">&gt;</span>Assemble<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="add-a-title">Add a title</h3>
-<pre><code class="markdown">[Upstage](https://github.com/upstage/ &quot;Visit Upstage!&quot;)
-</code></pre>
+<div class="codehilite"><pre><span></span>[Upstage](https://github.com/upstage/ &quot;Visit Upstage!&quot;)
+</pre></div>
 
 <p>Renders to (hover over the link, there should be a tooltip):</p>
 <p><a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a></p>
 <p>HTML:</p>
-<pre><code class="html">&lt;a href=&quot;https://github.com/upstage/&quot; title=&quot;Visit Upstage!&quot;&gt;Upstage&lt;/a&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://github.com/upstage/&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Visit Upstage!&quot;</span><span class="p">&gt;</span>Upstage<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</pre></div>
 
 <h3 id="named-anchors">Named Anchors</h3>
 <p>Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:</p>
-<pre><code class="markdown"># Table of Contents
+<p><div class="codehilite"><pre><span></span># Table of Contents
   * [Chapter 1](#chapter-1)
   * [Chapter 2](#chapter-2)
   * [Chapter 3](#chapter-3)
-</code></pre>
-
-<p>will jump to these sections:</p>
-<pre><code class="markdown">## Chapter 1 &lt;a id=&quot;chapter-1&quot;&gt;&lt;/a&gt;
+</pre></div>
+will jump to these sections:</p>
+<p><div class="codehilite"><pre><span></span>## Chapter 1 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;chapter-1&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
 Content for chapter one.
 
-## Chapter 2 &lt;a id=&quot;chapter-2&quot;&gt;&lt;/a&gt;
+## Chapter 2 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;chapter-2&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
 Content for chapter one.
 
-## Chapter 3 &lt;a id=&quot;chapter-3&quot;&gt;&lt;/a&gt;
+## Chapter 3 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">&quot;chapter-3&quot;</span><span class="nt">&gt;&lt;/a&gt;</span>
 Content for chapter one.
-</code></pre>
-
-<p><strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
+</pre></div>
+<strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
 <p><br>
 <br>
 <br></p>
 <h2 id="images">Images</h2>
 <p>Images have a similar syntax to links but include a preceding exclamation point.</p>
-<pre><code class="markdown">![octocat](https://octodex.github.com/images/twenty-percent-cooler-octocat.png)
-</code></pre>
-
-<p><img alt="octocat" src="https://octodex.github.com/images/twenty-percent-cooler-octocat.png" /></p>
-<p>or</p>
-<pre><code class="markdown">![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)
-</code></pre>
-
-<p><img alt="Alt text" src="http://octodex.github.com/images/stormtroopocat.jpg" title="The Stormtroopocat" /></p>
+<p><div class="codehilite"><pre><span></span>![octocat](https://octodex.github.com/images/twenty-percent-cooler-octocat.png)
+</pre></div>
+<img alt="octocat" src="https://octodex.github.com/images/twenty-percent-cooler-octocat.png" /></p>
+<p>or
+<div class="codehilite"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)</span>
+</pre></div>
+<img alt="Alt text" src="http://octodex.github.com/images/stormtroopocat.jpg" title="The Stormtroopocat" /></p>
 <p>Like links, Images also have a footnote style syntax</p>
-<pre><code class="markdown">![Alt text][id]
-</code></pre>
-
-<p><img alt="Alt text" src="http://octodex.github.com/images/dojocat.jpg" title="The Dojocat" /></p>
+<p><div class="codehilite"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">][</span><span class="kt">id</span><span class="p">]</span>
+</pre></div>
+<img alt="Alt text" src="http://octodex.github.com/images/dojocat.jpg" title="The Dojocat" /></p>
 <p>With a reference later in the document defining the URL location:</p>
-<pre><code>[id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-</code></pre>
+<div class="codehilite"><pre><span></span>[id]: http://octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;
+</pre></div>
                 
                   
                 

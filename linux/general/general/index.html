@@ -779,220 +779,220 @@
                 
                 <h1 id="linux-general">Linux General</h1>
 <h2 id="ssh-login-with-rsa-keys">SSH Login With RSA Keys</h2>
-<p>ssh to the host (<code>do not close this connaction</code>)</p>
-<pre><code class="bash">mkdir -p ~/.ssh &amp;&amp; touch .ssh/authorized_keys
-</code></pre>
+<p>ssh to the host (<code class="codehilite">do not close this connaction</code>)</p>
+<div class="codehilite"><pre><span></span>mkdir -p ~/.ssh <span class="o">&amp;&amp;</span> touch .ssh/authorized_keys
+</pre></div>
 
-<p>copy your public key usually located at <code>~/.ssh/id_rsa.pub</code></p>
-<pre><code class="bash">echo PUCLICK_Key_STRING &gt;&gt; ~/.ssh/authorized_keys
-</code></pre>
+<p>copy your public key usually located at <code class="codehilite">~/.ssh/id_rsa.pub</code></p>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> PUCLICK_Key_STRING &gt;&gt; ~/.ssh/authorized_keys
+</pre></div>
 
-<p>edit <code>/etc/ssh/sshd_config</code>
+<p>edit <code class="codehilite">/etc/ssh/sshd_config</code>
 change:</p>
-<pre><code class="bash">#PasswordAuthentication yes
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1">#PasswordAuthentication yes</span>
+</pre></div>
 
 <p>to</p>
-<pre><code class="bash">PasswordAuthentication no
-</code></pre>
+<div class="codehilite"><pre><span></span>PasswordAuthentication no
+</pre></div>
 
 <p>save&amp;exit</p>
 <p>restart ssh service:</p>
-<pre><code class="bash">sudo systemctl restart ssh
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo systemctl restart ssh
+</pre></div>
 
-<p><code>Open New SSH Season and Test RSA Login</code></p>
+<p><code class="codehilite">Open New SSH Season and Test RSA Login</code></p>
 <hr />
 <h3 id="optional-change-ssh-port">Optional: change ssh port</h3>
-<p>edit <code>/etc/ssh/sshd_config</code>
+<p>edit <code class="codehilite">/etc/ssh/sshd_config</code>
 change the port to a disaired one</p>
-<pre><code class="bash">port 1337
-</code></pre>
+<div class="codehilite"><pre><span></span>port <span class="m">1337</span>
+</pre></div>
 
 <p>save&amp;exit</p>
 <p>restart ssh service:</p>
-<pre><code class="bash">sudo systemctl restart ssh
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo systemctl restart ssh
+</pre></div>
 
 <h2 id="add-privet-id_rsa-key-to-server">Add Privet id_rsa key to Server</h2>
 <p>copy the id_rsa key to ~/.ssh folder</p>
-<pre><code class="bash">cd ~/.ssh
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> ~/.ssh
 sudo ssh-agent bash
 ssh-add id_rsa
-</code></pre>
+</pre></div>
 
 <p><strong>Open New SSH Season and Test RSA Login</strong></p>
-<pre><code class="bash">ssh root@HOSTNAME.local -p &lt;port&gt;
-</code></pre>
+<div class="codehilite"><pre><span></span>ssh root@HOSTNAME.local -p &lt;port&gt;
+</pre></div>
 
 <p>exmaple:</p>
-<pre><code class="bash">ssh exmaple@192.168.1.99 -p 1337
-</code></pre>
+<div class="codehilite"><pre><span></span>ssh exmaple@192.168.1.99 -p <span class="m">1337</span>
+</pre></div>
 
 <h2 id="add-permanent-path-to-application">Add Permanent Path to Application</h2>
 <p>First find the location of the Aplication/Service:</p>
-<pre><code class="bash">find / -name AplicationName
-</code></pre>
+<div class="codehilite"><pre><span></span>find / -name AplicationName
+</pre></div>
 
 <p>Go to the path wehere the application is located</p>
-<pre><code class="bash">cd &quot;../../../AplicationName&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> <span class="s2">&quot;../../../AplicationName&quot;</span>
+</pre></div>
 
 <p>Run this command for ZSH:</p>
-<pre><code class="bash">echo 'export PATH=&quot;'$(pwd)':$PATH&quot;' &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;&#39;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s1">&#39;:$PATH&quot;&#39;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+</pre></div>
 
 <p>Run this command for "Bash Profile":</p>
-<pre><code class="bash">echo 'export PATH=&quot;'$(pwd)':$PATH&quot;' &gt;&gt; ~/.profile &amp;&amp; source ~/.profile
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;&#39;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s1">&#39;:$PATH&quot;&#39;</span> &gt;&gt; ~/.profile <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.profile
+</pre></div>
 
 <p>Run this command for "Bash":</p>
-<pre><code class="bash">echo 'export PATH=&quot;'$(pwd)':$PATH&quot;' &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;&#39;</span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span><span class="s1">&#39;:$PATH&quot;&#39;</span> &gt;&gt; ~/.bashrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.bashrc
+</pre></div>
 
 <h2 id="update-time-zone">Update Time Zone</h2>
-<pre><code class="bash">sudo dpkg-reconfigure tzdata
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo dpkg-reconfigure tzdata
+</pre></div>
 
 <h2 id="most-accessed-sites-in-the-last-minute">Most accessed sites in the last minute</h2>
-<pre><code class="bash">cat &lt;&lt;'SCRIPT' &gt;&gt;/root/sitesLoad.sh
+<div class="codehilite"><pre><span></span>cat <span class="s">&lt;&lt;&#39;SCRIPT&#39; &gt;&gt;/root/sitesLoad.sh</span>
 
-#!/bin/bash
-if [[ `netstat -ntalp | grep :80 | awk '$4 ~ /:80/ {print $0;exit}' | grep -q httpd; echo $?` -ne 0 ]]; then echo &quot;Main web server is not Apache. Exiting...&quot;; exit 1; fi
+<span class="s">#!/bin/bash</span>
+<span class="s">if [[ `netstat -ntalp | grep :80 | awk &#39;$4 ~ /:80/ {print $0;exit}&#39; | grep -q httpd; echo $?` -ne 0 ]]; then echo &quot;Main web server is not Apache. Exiting...&quot;; exit 1; fi</span>
 
-log=/tmp/hostPop
-i=0
-find /usr/local/apache/domlogs/ -type f -mmin -1 ! -group root -exec ls -l {} \+ | awk '{print $4, $9}' | column -t&gt;$log
+<span class="s">log=/tmp/hostPop</span>
+<span class="s">i=0</span>
+<span class="s">find /usr/local/apache/domlogs/ -type f -mmin -1 ! -group root -exec ls -l {} \+ | awk &#39;{print $4, $9}&#39; | column -t&gt;$log</span>
 
-while read line; do
-((++i))
-       arr[$i]=$i
-       arr[$i*1000]=$(printf &quot;$line&quot; | awk '{print $1}')
-       arr[$i*1001]=$(printf &quot;$line&quot; | awk '{print $2}')
-       arr[$i*1002]=$(wc -l `echo $line | awk '{print $NF}'` | cut -d' ' -f 1)
-done &lt; &lt;(cat $log)
+<span class="s">while read line; do</span>
+<span class="s">((++i))</span>
+<span class="s">       arr[$i]=$i</span>
+<span class="s">       arr[$i*1000]=$(printf &quot;$line&quot; | awk &#39;{print $1}&#39;)</span>
+<span class="s">       arr[$i*1001]=$(printf &quot;$line&quot; | awk &#39;{print $2}&#39;)</span>
+<span class="s">       arr[$i*1002]=$(wc -l `echo $line | awk &#39;{print $NF}&#39;` | cut -d&#39; &#39; -f 1)</span>
+<span class="s">done &lt; &lt;(cat $log)</span>
 
-echo &quot;Analyzing apache logs in realtime for 1 minute...&quot;; sleep 60
+<span class="s">echo &quot;Analyzing apache logs in realtime for 1 minute...&quot;; sleep 60</span>
 
-for (( var=1 ; var&lt;=$i ; var++ ))
-do
-       printf &quot;${arr[$var*1000]} ${arr[$var*1001]} &quot;
-       echo $((`wc -l $(echo ${arr[$var*1001]}) | cut -d' ' -f 1` - ${arr[$var*1002]}));
-done | sed -e 's/\/usr\/local\/apache\/domlogs\///g' | sort -nrk 3 | column -t
+<span class="s">for (( var=1 ; var&lt;=$i ; var++ ))</span>
+<span class="s">do</span>
+<span class="s">       printf &quot;${arr[$var*1000]} ${arr[$var*1001]} &quot;</span>
+<span class="s">       echo $((`wc -l $(echo ${arr[$var*1001]}) | cut -d&#39; &#39; -f 1` - ${arr[$var*1002]}));</span>
+<span class="s">done | sed -e &#39;s/\/usr\/local\/apache\/domlogs\///g&#39; | sort -nrk 3 | column -t</span>
 
-SCRIPT
-chmod 700 /root/sitesLoad.sh &amp;&amp; /root/sitesLoad.sh
-</code></pre>
+<span class="s">SCRIPT</span>
+chmod <span class="m">700</span> /root/sitesLoad.sh <span class="o">&amp;&amp;</span> /root/sitesLoad.sh
+</pre></div>
 
 <h2 id="disable-ipv6">Disable IPv6</h2>
 <p>For current session:</p>
-<pre><code class="bash">echo 1 &gt; /proc/sys/net/ipv6/conf/&lt;interface-name&gt;/disable_ipv6
-echo 1 &gt; /proc/sys/net/ipv6/conf/eth0/disable_ipv6
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="m">1</span> &gt; /proc/sys/net/ipv6/conf/&lt;interface-name&gt;/disable_ipv6
+<span class="nb">echo</span> <span class="m">1</span> &gt; /proc/sys/net/ipv6/conf/eth0/disable_ipv6
+</pre></div>
 
 <p>Permanent:</p>
-<pre><code class="bash">vi /etc/sysctl.conf
-net.ipv6.conf.all.disable_ipv6 = 1
+<div class="codehilite"><pre><span></span>vi /etc/sysctl.conf
+net.ipv6.conf.all.disable_ipv6 <span class="o">=</span> <span class="m">1</span>
 sudo sysctl -p /etc/sysctl.conf
-</code></pre>
+</pre></div>
 
 <h2 id="virtual-box-boot-from-usb">Virtual box boot from USB</h2>
-<pre><code class="bash">VBoxManage internalcommands createrawvmdk -filename C:\usb.vmdk -rawdisk \\.\PhysicalDrive#
-</code></pre>
+<div class="codehilite"><pre><span></span>VBoxManage internalcommands createrawvmdk -filename C:<span class="se">\u</span>sb.vmdk -rawdisk <span class="se">\\</span>.<span class="se">\P</span>hysicalDrive#
+</pre></div>
 
 <h2 id="max-connections-on-linux">Max connections on Linux</h2>
 <p>Add to /etc/sysctl.conf:</p>
-<pre><code class="bash">fs.file-max = 70000
-net.ipv4.tcp_tw_recycle=0
-net.ipv4.tcp_fin_timeout = 10
-net.ipv4.ip_local_port_range = 15000 61000
-net.core.somaxconn = 1024
-net.core.netdev_max_backlog = 2000
-</code></pre>
+<div class="codehilite"><pre><span></span>fs.file-max <span class="o">=</span> <span class="m">70000</span>
+net.ipv4.tcp_tw_recycle<span class="o">=</span><span class="m">0</span>
+net.ipv4.tcp_fin_timeout <span class="o">=</span> <span class="m">10</span>
+net.ipv4.ip_local_port_range <span class="o">=</span> <span class="m">15000</span> <span class="m">61000</span>
+net.core.somaxconn <span class="o">=</span> <span class="m">1024</span>
+net.core.netdev_max_backlog <span class="o">=</span> <span class="m">2000</span>
+</pre></div>
 
 <h2 id="rescan-drives">Rescan drives</h2>
-<pre><code class="bash">echo &quot;- - -&quot; &gt; /sys/class/scsi_host/host0/scan
-echo 1 &gt; /sys/class/scsi_device/2\:0\:0\:0/device/rescan
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;- - -&quot;</span> &gt; /sys/class/scsi_host/host0/scan
+<span class="nb">echo</span> <span class="m">1</span> &gt; /sys/class/scsi_device/2<span class="se">\:</span><span class="m">0</span><span class="se">\:</span><span class="m">0</span><span class="se">\:</span><span class="m">0</span>/device/rescan
+</pre></div>
 
 <h2 id="find-ptr-owner-reversal">Find PTR owner - reversal</h2>
-<pre><code class="bash">dig 0.168.192.in-addr.arpa. NS
-</code></pre>
+<div class="codehilite"><pre><span></span>dig <span class="m">0</span>.168.192.in-addr.arpa. NS
+</pre></div>
 
 <h2 id="fix-locales">Fix Locales</h2>
 <p>For bash shell run:</p>
-<pre><code class="bash">echo &quot;export LC_ALL=C&quot; &gt;&gt; ~/.profile &amp;&amp; source ~/.profile
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export LC_ALL=C&quot;</span> &gt;&gt; ~/.profile <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.profile
+</pre></div>
 
 <p>For zsh shell run:</p>
-<pre><code class="bash">echo &quot;export LC_ALL=C&quot; &gt;&gt; ~/.zshrc &amp;&amp; source ~/.zshrc
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;export LC_ALL=C&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
+</pre></div>
 
 <h2 id="open-last-edited-file">Open last edited file</h2>
-<pre><code class="bash">less `ls -dx1tr /usr/local/cpanel/logs/cpbackup/*|tail -1`
-</code></pre>
+<div class="codehilite"><pre><span></span>less <span class="sb">`</span>ls -dx1tr /usr/local/cpanel/logs/cpbackup/*<span class="p">|</span>tail -1<span class="sb">`</span>
+</pre></div>
 
 <h2 id="kill-process-that-runs-more-than-x-time">Kill process that runs more than X time</h2>
 <p>Kill cgi after 30 secs:</p>
-<pre><code class="bash">for i in `ps -eo pid,etime,cmd|grep cgi|awk '$2 &gt; &quot;00:30&quot; {print $1}'`; do kill $i; done
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="k">for</span> i in <span class="sb">`</span>ps -eo pid,etime,cmd<span class="p">|</span>grep cgi<span class="p">|</span>awk <span class="s1">&#39;$2 &gt; &quot;00:30&quot; {print $1}&#39;</span><span class="sb">`</span><span class="p">;</span> <span class="k">do</span> <span class="nb">kill</span> <span class="nv">$i</span><span class="p">;</span> <span class="k">done</span>
+</pre></div>
 
 <h2 id="fix-nfs-mount-on-boot-centos-7">Fix NFS mount on boot - Centos 7</h2>
 <p>Append text to the end of /usr/lib/systemd/system/nfs-idmap.service</p>
-<pre><code class="bash">[Install]
-WantedBy=multi-user.target
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</pre></div>
 
 <p>Append text to the end of /usr/lib/systemd/system/nfs-lock.service</p>
-<pre><code class="bash">[Install]
-WantedBy=nfs.target
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>nfs.target
+</pre></div>
 
 <p>Enable related services</p>
-<pre><code class="bash">systemctl enable nfs-idmapd.service
-systemctl enable rpc-statd.service
-systemctl enable rpcbind.socket
-</code></pre>
+<div class="codehilite"><pre><span></span>systemctl <span class="nb">enable</span> nfs-idmapd.service
+systemctl <span class="nb">enable</span> rpc-statd.service
+systemctl <span class="nb">enable</span> rpcbind.socket
+</pre></div>
 
 <p>Reboot the server</p>
 <h2 id="update-date-and-time-on-linux-server">Update date and time on Linux server</h2>
-<pre><code class="bash">sudo ntpd -qg; sudo hwclock -w
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo ntpd -qg<span class="p">;</span> sudo hwclock -w
+</pre></div>
 
 <h2 id="clone-linux-user">Clone Linux user</h2>
-<pre><code class="bash">#!/bin/bash
-SRC=$1
-DEST=$2
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nv">SRC</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nv">DEST</span><span class="o">=</span><span class="nv">$2</span>
 
-SRC_GROUPS=$(id -Gn ${SRC} | sed &quot;s/${SRC} //g&quot; | sed &quot;s/ ${SRC}//g&quot; | sed &quot;s/ /,/g&quot;)
-SRC_SHELL=$(awk -F : -v name=${SRC} '(name == $1) { print $7 }' /etc/passwd)
+<span class="nv">SRC_GROUPS</span><span class="o">=</span><span class="k">$(</span>id -Gn <span class="si">${</span><span class="nv">SRC</span><span class="si">}</span> <span class="p">|</span> sed <span class="s2">&quot;s/</span><span class="si">${</span><span class="nv">SRC</span><span class="si">}</span><span class="s2"> //g&quot;</span> <span class="p">|</span> sed <span class="s2">&quot;s/ </span><span class="si">${</span><span class="nv">SRC</span><span class="si">}</span><span class="s2">//g&quot;</span> <span class="p">|</span> sed <span class="s2">&quot;s/ /,/g&quot;</span><span class="k">)</span>
+<span class="nv">SRC_SHELL</span><span class="o">=</span><span class="k">$(</span>awk -F : -v <span class="nv">name</span><span class="o">=</span><span class="si">${</span><span class="nv">SRC</span><span class="si">}</span> <span class="s1">&#39;(name == $1) { print $7 }&#39;</span> /etc/passwd<span class="k">)</span>
 
-useradd --groups ${SRC_GROUPS} --shell ${SRC_SHELL} --create-home ${DEST}
-passwd ${DEST}
-</code></pre>
+useradd --groups <span class="si">${</span><span class="nv">SRC_GROUPS</span><span class="si">}</span> --shell <span class="si">${</span><span class="nv">SRC_SHELL</span><span class="si">}</span> --create-home <span class="si">${</span><span class="nv">DEST</span><span class="si">}</span>
+passwd <span class="si">${</span><span class="nv">DEST</span><span class="si">}</span>
+</pre></div>
 
 <h2 id="clear-boot-on-ubuntu-when-100">Clear BOOT on Ubuntu when 100%</h2>
-<pre><code class="bash">dpkg --purge `dpkg --list|grep &quot;linux-&quot;|grep -v \`uname -r|sed 's/-generic//g'\`|cut -d&quot; &quot; -f3|grep &quot;[0-9]-&quot;|paste -sd &quot; &quot; -`
-</code></pre>
+<div class="codehilite"><pre><span></span>dpkg --purge <span class="sb">`</span>dpkg --list<span class="p">|</span>grep <span class="s2">&quot;linux-&quot;</span><span class="p">|</span>grep -v <span class="se">\`</span>uname -r<span class="p">|</span>sed <span class="s1">&#39;s/-generic//g&#39;</span><span class="se">\`</span><span class="p">|</span>cut -d<span class="s2">&quot; &quot;</span> -f3<span class="p">|</span>grep <span class="s2">&quot;[0-9]-&quot;</span><span class="p">|</span>paste -sd <span class="s2">&quot; &quot;</span> -<span class="sb">`</span>
+</pre></div>
 
 <h2 id="fix-installatron-error-500-or-missing-listinstall">Fix Installatron - error 500 or missing list/install</h2>
-<pre><code class="bash">/usr/local/installatron/repair -f --release --quick
-</code></pre>
+<div class="codehilite"><pre><span></span>/usr/local/installatron/repair -f --release --quick
+</pre></div>
 
 <p><a href="https://installatron.com/docs/admin/troubleshooting#missinginstalls">Installatron FIX</a></p>
 <h2 id="find-root-of-a-site-and-cd-to-it">Find root of a site and CD to it</h2>
 <p>Replace domain.com with desired domain</p>
-<pre><code class="bash">cd `grep &quot;domain.com&quot; /etc/apache2/conf/httpd.conf -A7|grep Root|head -1|awk '{print $2}'`
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> <span class="sb">`</span>grep <span class="s2">&quot;domain.com&quot;</span> /etc/apache2/conf/httpd.conf -A7<span class="p">|</span>grep Root<span class="p">|</span>head -1<span class="p">|</span>awk <span class="s1">&#39;{print $2}&#39;</span><span class="sb">`</span>
+</pre></div>
 
 <h2 id="generate-csr-with-openssl">Generate CSR with OPENSSL</h2>
 <p>Generate key:</p>
-<pre><code class="bash">openssl genrsa -out private.key 2048
-</code></pre>
+<div class="codehilite"><pre><span></span>openssl genrsa -out private.key <span class="m">2048</span>
+</pre></div>
 
 <p>Gemnerate CSR:</p>
-<pre><code class="bash">openssl req -new -sha256 -key private.key -out mycsr.csr
-</code></pre>
+<div class="codehilite"><pre><span></span>openssl req -new -sha256 -key private.key -out mycsr.csr
+</pre></div>
                 
                   
                 

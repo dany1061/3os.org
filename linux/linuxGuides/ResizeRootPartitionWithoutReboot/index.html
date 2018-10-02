@@ -417,18 +417,18 @@
                 
                 <h1 id="resize-root-partition-without-reboot">Resize Root Partition Without Reboot</h1>
 <p>Resize HD size in VC Run: (replace the device if needed)</p>
-<pre><code class="bash">echo 1 &gt; /sys/class/scsi_device/2\:0\:0\:0/device/rescan
+<div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="m">1</span> &gt; /sys/class/scsi_device/2<span class="se">\:</span><span class="m">0</span><span class="se">\:</span><span class="m">0</span><span class="se">\:</span><span class="m">0</span>/device/rescan
 run fdisk:
-</code></pre>
+</pre></div>
 
 <p>print the old partition and save the output delete the root partition create a new partition using the SAME start block and make sure that the end block is higher than previous one (enter, enter, enter…) write changes (ignore error) run:</p>
-<pre><code class="bash">partx -u /dev/sda
+<div class="codehilite"><pre><span></span>partx -u /dev/sda
 resize2fs -f /dev/sda3
-</code></pre>
+</pre></div>
 
 <p>Make sure everything is OK:</p>
-<pre><code class="bash">df -h
-</code></pre>
+<div class="codehilite"><pre><span></span>df -h
+</pre></div>
                 
                   
                 

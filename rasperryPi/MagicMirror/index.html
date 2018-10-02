@@ -481,8 +481,8 @@
                 
                 <h1 id="magic-mirror">Magic Mirror</h1>
 <h2 id="change-dispay-rotation">Change Dispay Rotation:</h2>
-<pre><code class="bash">sudo nano /boot/config.txt
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano /boot/config.txt
+</pre></div>
 
 <p>Add one of those according to your setup to the config file:</p>
 <table>
@@ -519,121 +519,120 @@
 </tr>
 </tbody>
 </table>
-<p><code>NOTE: You can rotate both the image and touch interface 180º by entering lcd_rotate=2 instead</code></p>
+<p><code class="codehilite"><span class="n">NOTE</span><span class="o">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">rotate</span> <span class="n">both</span> <span class="n">the</span> <span class="n">image</span> <span class="n">and</span> <span class="n">touch</span> <span class="kd">interface</span> <span class="mi">180</span><span class="err">º</span> <span class="n">by</span> <span class="n">entering</span> <span class="n">lcd_rotate</span><span class="o">=</span><span class="mi">2</span> <span class="n">instead</span></code></p>
 <h2 id="disabling-the-screensaver">Disabling the Screensaver</h2>
 <p>Chaning to OPEN GL Driver</p>
-<pre><code class="bash">sudo nano /boot/config.txt
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano /boot/config.txt
+</pre></div>
 
 <p>add this:</p>
-<pre><code class="bash">dtoverlay=vc4-fkms-v3d
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">dtoverlay</span><span class="o">=</span>vc4-fkms-v3d
+</pre></div>
 
 <hr />
 <p>(Please note, you will need the x11-xserver-utils package installed.)</p>
 <p>edit ~/.config/lxsession/LXDE-pi/autostart:</p>
-<pre><code class="bash">sudo nano ~/.config/lxsession/LXDE-pi/autostart
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano ~/.config/lxsession/LXDE-pi/autostart
+</pre></div>
 
 <p>Add the following lines:</p>
-<pre><code>@xset s noblank
+<div class="codehilite"><pre><span></span>@xset s noblank
 @xset s off
 @xset -dpms
-</code></pre>
+</pre></div>
 
 <p>Edit /etc/lightdm/lightdm.conf:</p>
-<pre><code class="bash">sudo nano /etc/lightdm/lightdm.conf
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano /etc/lightdm/lightdm.conf
+</pre></div>
 
 <p>Add the following line below [SeatDefaults]</p>
-<pre><code class="bash">xserver-command=X -s 0 -dpms
-</code></pre>
+<div class="codehilite"><pre><span></span>xserver-command<span class="o">=</span>X -s <span class="m">0</span> -dpms
+</pre></div>
 
 <h2 id="os-ui-finishes">OS UI Finishes</h2>
 <p>Make the Backgound Black:</p>
-<p><code>Right click the Desktop</code> -&gt; <code>Desktop Preferences</code> and Change:
-<code>Layout -&gt; no image</code>
-<code>Colour -&gt; #000000</code></p>
+<p><code class="codehilite">Right click the Desktop</code> -&gt; <code class="codehilite">Desktop Preferences</code> and Change:
+<code class="codehilite">Layout -&gt; no image</code>
+<code class="codehilite">Colour -&gt; #000000</code></p>
 <p>Hit ok.</p>
-<p><code>Right click on the top panel</code> -&gt; <code>Panel Preferences</code> -&gt; <code>Appearance</code></p>
-<p>Seclect <code>Solid Color (With Opacity)</code> make shure <code>Opacity at 0</code></p>
+<p><code class="codehilite">Right click on the top panel</code> -&gt; <code class="codehilite">Panel Preferences</code> -&gt; <code class="codehilite">Appearance</code></p>
+<p>Seclect <code class="codehilite">Solid Color (With Opacity)</code> make shure <code class="codehilite">Opacity at 0</code></p>
 <h2 id="disable-wifi-power-save">Disable WiFi Power Save</h2>
 <p>Edit /etc/modprobe.d/8192cu.conf</p>
-<pre><code class="bash">sudo nano /etc/modprobe.d/8192cu.conf
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano /etc/modprobe.d/8192cu.conf
+</pre></div>
 
 <p>Add the following lines</p>
-<pre><code class="bash"># Disable power saving
-options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1"># Disable power saving</span>
+options 8192cu <span class="nv">rtw_power_mgnt</span><span class="o">=</span><span class="m">0</span> <span class="nv">rtw_enusbss</span><span class="o">=</span><span class="m">1</span> <span class="nv">rtw_ips_mode</span><span class="o">=</span><span class="m">1</span>
+</pre></div>
 
 <p>For Raspberry Pi 3 (Jesse and below)
 Edit /etc/network/interfaces</p>
-<pre><code class="bash">sudo nano /etc/network/interfaces
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo nano /etc/network/interfaces
+</pre></div>
 
 <p>Add the following line under the wlan0 section</p>
-<pre><code class="bash">wireless-power off
-</code></pre>
+<div class="codehilite"><pre><span></span>wireless-power off
+</pre></div>
 
 <p>Reboot your PI</p>
-<pre><code class="bash">sudo reboot
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo reboot
+</pre></div>
 
 <h2 id="disbale-cursor-on-startup">Disbale Cursor on Startup</h2>
-<pre><code class="bash">sudo apt-get install unclutter
-
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo apt-get install unclutter
+</pre></div>
 
 <h2 id="installation">Installation</h2>
 <p>first install node.js and npm</p>
-<pre><code class="bash">curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+<div class="codehilite"><pre><span></span>curl -sL https://deb.nodesource.com/setup_8.x <span class="p">|</span> sudo -E bash -
 sudo apt-get install -y nodejs
-</code></pre>
+</pre></div>
 
 <p>and then run:</p>
-<pre><code class="bash">sudo npm install -g npm@latest
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo npm install -g npm@latest
+</pre></div>
 
 <p>If you need to remove node and npm run this:</p>
-<pre><code class="bash">sudo apt-get remove nodejs nodejs-legacy nodered
-</code></pre>
+<div class="codehilite"><pre><span></span>sudo apt-get remove nodejs nodejs-legacy nodered
+</pre></div>
 
 <p>Insallation:</p>
-<pre><code class="bash">bash -c &quot;$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)&quot;
-</code></pre>
+<div class="codehilite"><pre><span></span>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
 
-<p><code>say no to PM2 auto start - will be install manualy</code></p>
+<p><code class="codehilite">say no to PM2 auto start - will be install manualy</code></p>
 <p>To Start from SSH:</p>
-<pre><code class="bash">cd ~/MagicMirror &amp;&amp; DISPLAY=:0 npm start
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nb">cd</span> ~/MagicMirror <span class="o">&amp;&amp;</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0 npm start
+</pre></div>
 
 <h2 id="pm2-auto-start-installation">pm2 auto start installation</h2>
-<pre><code class="bash">sudo npm install -g pm2
-cd ~
+<div class="codehilite"><pre><span></span>sudo npm install -g pm2
+<span class="nb">cd</span> ~
 nano mm.sh
-</code></pre>
+</pre></div>
 
 <p>add this to mm.sh and save:</p>
-<pre><code class="bash">#!/bin/sh
+<div class="codehilite"><pre><span></span><span class="ch">#!/bin/sh</span>
 
-cd ~/MagicMirror
-DISPLAY=:0 npm start
-</code></pre>
+<span class="nb">cd</span> ~/MagicMirror
+<span class="nv">DISPLAY</span><span class="o">=</span>:0 npm start
+</pre></div>
 
-<pre><code class="bash">chmod +x mm.sh
+<div class="codehilite"><pre><span></span>chmod +x mm.sh
 pm2 start mm.sh
 pm2 save
 pm2 startup
-</code></pre>
+</pre></div>
 
 <p>pm2 commands:</p>
-<pre><code class="bash">pm2 restart mm
+<div class="codehilite"><pre><span></span>pm2 restart mm
 pm2 stop mm
 pm2 start mm
 pm2 log
 pm2 show mm
-</code></pre>
+</pre></div>
                 
                   
                 

@@ -453,51 +453,51 @@
                 
                 <h1 id="wordpress">WordPress</h1>
 <h2 id="wordpress-login-attack-check">Wordpress login attack check</h2>
-<pre><code class="bash">Crontab :
-0 */6 * * *  sh /root/wplogin.sh
+<div class="codehilite"><pre><span></span>Crontab :
+<span class="m">0</span> */6 * * *  sh /root/wplogin.sh
 
 Script :
-#!/bin/bash
+<span class="c1">#!/bin/bash</span>
 
-###start editing
-thold=&quot;100&quot;
-btime=&quot;359m&quot;
-###stop editing
+<span class="c1">###start editing</span>
+<span class="nv">thold</span><span class="o">=</span><span class="s2">&quot;100&quot;</span>
+<span class="nv">btime</span><span class="o">=</span><span class="s2">&quot;359m&quot;</span>
+<span class="c1">###stop editing</span>
 
-egrep 'wp-login.php' /usr/local/apache/domlogs/* | grep -v ftp_log | awk -F : '{print $2}' | awk '{print $1}' | sort | uniq -c | sort -n | awk -v limit=&quot;$thold&quot; '$1 &gt; limit{print $2}' &gt; $$_ip_$$
+egrep <span class="s1">&#39;wp-login.php&#39;</span> /usr/local/apache/domlogs/* <span class="p">|</span> grep -v ftp_log <span class="p">|</span> awk -F : <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span> awk <span class="s1">&#39;{print $1}&#39;</span> <span class="p">|</span> sort <span class="p">|</span> uniq -c <span class="p">|</span> sort -n <span class="p">|</span> awk -v <span class="nv">limit</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$thold</span><span class="s2">&quot;</span> <span class="s1">&#39;$1 &gt; limit{print $2}&#39;</span> &gt; <span class="nv">$$</span>_ip_<span class="nv">$$</span>
 
-while IFS= read -r line
-        do
-                /usr/sbin/csf -td &quot;$line&quot;  &quot;$btime&quot; &quot;banned for wordpress attack&quot;
-        done &lt; $$_ip_$$
-rm -f $$_ip_$$
-</code></pre>
+<span class="k">while</span> <span class="nv">IFS</span><span class="o">=</span> <span class="nb">read</span> -r line
+        <span class="k">do</span>
+                /usr/sbin/csf -td <span class="s2">&quot;</span><span class="nv">$line</span><span class="s2">&quot;</span>  <span class="s2">&quot;</span><span class="nv">$btime</span><span class="s2">&quot;</span> <span class="s2">&quot;banned for wordpress attack&quot;</span>
+        <span class="k">done</span> &lt; <span class="nv">$$</span>_ip_<span class="nv">$$</span>
+rm -f <span class="nv">$$</span>_ip_<span class="nv">$$</span>
+</pre></div>
 
 <h2 id="wordpress-pingback">Wordpress pingback</h2>
 <p>Nginx:</p>
-<pre><code class="bash"># WordPress Pingback Request Denial
-if ($http_user_agent ~* &quot;WordPress&quot;) {
-  return 403;
-}
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="c1"># WordPress Pingback Request Denial</span>
+<span class="k">if</span> <span class="o">(</span><span class="nv">$http_user_agent</span> ~* <span class="s2">&quot;WordPress&quot;</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="m">403</span><span class="p">;</span>
+<span class="o">}</span>
+</pre></div>
 
 <p>Apache:</p>
-<pre><code class="bash">BrowserMatchNoCase WordPress wordpress_ping
+<div class="codehilite"><pre><span></span>BrowserMatchNoCase WordPress wordpress_ping
 BrowserMatchNoCase Wordpress wordpress_ping
 Order Deny,Allow
-Deny from env=wordpress_ping
-</code></pre>
+Deny from <span class="nv">env</span><span class="o">=</span>wordpress_ping
+</pre></div>
 
 <h2 id="one-time-login-to-wordpress">One-time login to wordpress</h2>
 <p>Install wp cli:</p>
-<pre><code class="bash">curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+<div class="codehilite"><pre><span></span>curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
 mv wp-cli.phar /usr/local/bin/wp
-</code></pre>
+</pre></div>
 
 <p>Run from the WordPress installed location:</p>
-<pre><code class="bash">useradmin=`wp user list --role=administrator --format=csv --allow-root | cut -d',' -f2 | head -2 | tail -1` &amp;&amp;  wp plugin install one-time-login --activate --allow-root &amp;&amp; wp user one-time-login $useradmin --allow-root &amp;&amp; user=$(stat -c &quot;%U&quot; `pwd`) &amp;&amp; chown $user.$user wp-content/ -R
-</code></pre>
+<div class="codehilite"><pre><span></span><span class="nv">useradmin</span><span class="o">=</span><span class="sb">`</span>wp user list --role<span class="o">=</span>administrator --format<span class="o">=</span>csv --allow-root <span class="p">|</span> cut -d<span class="s1">&#39;,&#39;</span> -f2 <span class="p">|</span> head -2 <span class="p">|</span> tail -1<span class="sb">`</span> <span class="o">&amp;&amp;</span>  wp plugin install one-time-login --activate --allow-root <span class="o">&amp;&amp;</span> wp user one-time-login <span class="nv">$useradmin</span> --allow-root <span class="o">&amp;&amp;</span> <span class="nv">user</span><span class="o">=</span><span class="k">$(</span>stat -c <span class="s2">&quot;%U&quot;</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span><span class="k">)</span> <span class="o">&amp;&amp;</span> chown <span class="nv">$user</span>.<span class="nv">$user</span> wp-content/ -R
+</pre></div>
                 
                   
                 
