@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,7 +479,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#network-flow" title="Network Flow" class="md-nav__link">
+  <a href="#network_flow" title="Network Flow" class="md-nav__link">
     Network Flow
   </a>
   
@@ -475,7 +487,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#router-ethernet-port-on-raspberry-tor-service-raspberry-wifi-ac-wifi-client" title="Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT" class="md-nav__link">
+  <a href="#router_ethernet_port_on_raspberry_tor_service_raspberry_wifi_ac_wifi_client" title="Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT" class="md-nav__link">
     Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT
   </a>
   
@@ -494,49 +506,49 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#wifi-hotspot-configuration" title="Wifi Hotspot Configuration" class="md-nav__link">
+  <a href="#wifi_hotspot_configuration" title="Wifi Hotspot Configuration" class="md-nav__link">
     Wifi Hotspot Configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-wifi-hotspot" title="Testing Wifi Hotspot" class="md-nav__link">
+  <a href="#testing_wifi_hotspot" title="Testing Wifi Hotspot" class="md-nav__link">
     Testing Wifi Hotspot
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-tor-service" title="Installing Tor Service" class="md-nav__link">
+  <a href="#installing_tor_service" title="Installing Tor Service" class="md-nav__link">
     Installing Tor Service
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-iptables" title="Configure iptables" class="md-nav__link">
+  <a href="#configure_iptables" title="Configure iptables" class="md-nav__link">
     Configure iptables
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-log-file" title="Create log file" class="md-nav__link">
+  <a href="#create_log_file" title="Create log file" class="md-nav__link">
     Create log file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing-and-finishes" title="Testing and finishes" class="md-nav__link">
+  <a href="#testing_and_finishes" title="Testing and finishes" class="md-nav__link">
     Testing and finishes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#optional-install-monit-service-to-reload-tor-serivce-if-down" title="Optional: Install Monit Service to reload Tor Serivce if Down" class="md-nav__link">
+  <a href="#optional_install_monit_service_to_reload_tor_serivce_if_down" title="Optional: Install Monit Service to reload Tor Serivce if Down" class="md-nav__link">
     Optional: Install Monit Service to reload Tor Serivce if Down
   </a>
   
@@ -567,10 +579,10 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/rasperryPi/TOR-Pi.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="tor-pi">Tor-Pi</h1>
-<h2 id="network-flow">Network Flow</h2>
-<h3 id="router-ethernet-port-on-raspberry-tor-service-raspberry-wifi-ac-wifi-client">Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT</h3>
-<h2 id="preperation">Preperation</h2>
+                <h1 id="tor-pi">Tor-Pi<a class="headerlink" href="#tor-pi" title="Permanent link">&para;</a></h1>
+<h2 id="network_flow">Network Flow<a class="headerlink" href="#network_flow" title="Permanent link">&para;</a></h2>
+<h3 id="router_ethernet_port_on_raspberry_tor_service_raspberry_wifi_ac_wifi_client">Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT<a class="headerlink" href="#router_ethernet_port_on_raspberry_tor_service_raspberry_wifi_ac_wifi_client" title="Permanent link">&para;</a></h3>
+<h2 id="preperation">Preperation<a class="headerlink" href="#preperation" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Download Rasbian Strech Lite from: <a href="https://www.raspberrypi.org/downloads/raspbian/">raspberrypi.org</a></li>
 <li>Burn Image to SD-Card.</li>
@@ -585,7 +597,7 @@ Enable SSH In Interface Options</p>
 <div class="codehilite"><pre><span></span>sudo reboot
 </pre></div>
 
-<h2 id="wifi-hotspot-configuration">Wifi Hotspot Configuration</h2>
+<h2 id="wifi_hotspot_configuration">Wifi Hotspot Configuration<a class="headerlink" href="#wifi_hotspot_configuration" title="Permanent link">&para;</a></h2>
 <p>SSH TO Raspberry Pi 3</p>
 <div class="codehilite"><pre><span></span>ssh pi@raspberry_host
 git clone https://github.com/unixabg/RPI-Wireless-Hotspot.git
@@ -606,9 +618,9 @@ Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)</
 sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get upgrade
 </pre></div>
 
-<h2 id="testing-wifi-hotspot">Testing Wifi Hotspot</h2>
+<h2 id="testing_wifi_hotspot">Testing Wifi Hotspot<a class="headerlink" href="#testing_wifi_hotspot" title="Permanent link">&para;</a></h2>
 <p>Connect to new SSID with a Phone and check if you have full Internet Connection.</p>
-<h2 id="installing-tor-service">Installing Tor Service</h2>
+<h2 id="installing_tor_service">Installing Tor Service<a class="headerlink" href="#installing_tor_service" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo apt-get install tor
 sudo nano /etc/tor/torrc
 </pre></div>
@@ -624,7 +636,7 @@ DNSPort <span class="m">53</span>
 DNSListenAddress <span class="m">192</span>.168.42.1
 </pre></div>
 
-<h2 id="configure-iptables">Configure iptables</h2>
+<h2 id="configure_iptables">Configure iptables<a class="headerlink" href="#configure_iptables" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo iptables -F <span class="o">&amp;&amp;</span> sudo iptables -t nat -F
 sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport <span class="m">53</span> -j REDIRECT --to-ports <span class="m">53</span>
 sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports <span class="m">9040</span>
@@ -638,12 +650,12 @@ sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 
 <div class="codehilite"><pre><span></span>sudo sh -c <span class="s2">&quot;iptables-save &gt; /etc/iptables.ipv4.nat&quot;</span>
 </pre></div>
 
-<h2 id="create-log-file">Create log file</h2>
+<h2 id="create_log_file">Create log file<a class="headerlink" href="#create_log_file" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo touch /var/log/tor/notices.log
 sudo chown debian-tor /var/log/tor/notices.log <span class="o">&amp;&amp;</span> sudo chmod <span class="m">644</span> /var/log/tor/notices.log
 </pre></div>
 
-<h2 id="testing-and-finishes">Testing and finishes</h2>
+<h2 id="testing_and_finishes">Testing and finishes<a class="headerlink" href="#testing_and_finishes" title="Permanent link">&para;</a></h2>
 <p>Start TOR service:</p>
 <div class="codehilite"><pre><span></span>sudo service tor start
 </pre></div>
@@ -658,7 +670,7 @@ sudo reboot
 </pre></div>
 
 <p>Test for TOR service is running after reboot, connect to the TOR WIFI.</p>
-<h2 id="optional-install-monit-service-to-reload-tor-serivce-if-down">Optional: Install Monit Service to reload Tor Serivce if Down</h2>
+<h2 id="optional_install_monit_service_to_reload_tor_serivce_if_down">Optional: Install Monit Service to reload Tor Serivce if Down<a class="headerlink" href="#optional_install_monit_service_to_reload_tor_serivce_if_down" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo apt-get install monit
 sudo nano /etc/monit/monitrc
 </pre></div>

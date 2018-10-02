@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,21 +479,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wordpress-login-attack-check" title="Wordpress login attack check" class="md-nav__link">
+  <a href="#wordpress_login_attack_check" title="Wordpress login attack check" class="md-nav__link">
     Wordpress login attack check
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#wordpress-pingback" title="Wordpress pingback" class="md-nav__link">
+  <a href="#wordpress_pingback" title="Wordpress pingback" class="md-nav__link">
     Wordpress pingback
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#one-time-login-to-wordpress" title="One-time login to wordpress" class="md-nav__link">
+  <a href="#one-time_login_to_wordpress" title="One-time login to wordpress" class="md-nav__link">
     One-time login to wordpress
   </a>
   
@@ -512,8 +524,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/wordpress.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="wordpress">WordPress</h1>
-<h2 id="wordpress-login-attack-check">Wordpress login attack check</h2>
+                <h1 id="wordpress">WordPress<a class="headerlink" href="#wordpress" title="Permanent link">&para;</a></h1>
+<h2 id="wordpress_login_attack_check">Wordpress login attack check<a class="headerlink" href="#wordpress_login_attack_check" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>Crontab :
 <span class="m">0</span> */6 * * *  sh /root/wplogin.sh
 
@@ -534,7 +546,7 @@ egrep <span class="s1">&#39;wp-login.php&#39;</span> /usr/local/apache/domlogs/*
 rm -f <span class="nv">$$</span>_ip_<span class="nv">$$</span>
 </pre></div>
 
-<h2 id="wordpress-pingback">Wordpress pingback</h2>
+<h2 id="wordpress_pingback">Wordpress pingback<a class="headerlink" href="#wordpress_pingback" title="Permanent link">&para;</a></h2>
 <p>Nginx:</p>
 <div class="codehilite"><pre><span></span><span class="c1"># WordPress Pingback Request Denial</span>
 <span class="k">if</span> <span class="o">(</span><span class="nv">$http_user_agent</span> ~* <span class="s2">&quot;WordPress&quot;</span><span class="o">)</span> <span class="o">{</span>
@@ -549,7 +561,7 @@ Order Deny,Allow
 Deny from <span class="nv">env</span><span class="o">=</span>wordpress_ping
 </pre></div>
 
-<h2 id="one-time-login-to-wordpress">One-time login to wordpress</h2>
+<h2 id="one-time_login_to_wordpress">One-time login to wordpress<a class="headerlink" href="#one-time_login_to_wordpress" title="Permanent link">&para;</a></h2>
 <p>Install wp cli:</p>
 <div class="codehilite"><pre><span></span>curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar

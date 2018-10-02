@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,35 +479,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#first-things-first" title="First things first" class="md-nav__link">
+  <a href="#first_things_first" title="First things first" class="md-nav__link">
     First things first
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#one-wiki-only-fork-it" title="One Wiki Only? Fork It." class="md-nav__link">
+  <a href="#one_wiki_only_fork_it" title="One Wiki Only? Fork It." class="md-nav__link">
     One Wiki Only? Fork It.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-wikis-clone-it" title="Multiple Wikis? Clone It." class="md-nav__link">
+  <a href="#multiple_wikis_clone_it" title="Multiple Wikis? Clone It." class="md-nav__link">
     Multiple Wikis? Clone It.
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-new-wiki" title="Create a New Wiki" class="md-nav__link">
+  <a href="#create_a_new_wiki" title="Create a New Wiki" class="md-nav__link">
     Create a New Wiki
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" title="Getting Started" class="md-nav__link">
+  <a href="#getting_started" title="Getting Started" class="md-nav__link">
     Getting Started
   </a>
   
@@ -509,7 +521,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#best-practices" title="Best Practices" class="md-nav__link">
+  <a href="#best_practices" title="Best Practices" class="md-nav__link">
     Best Practices
   </a>
   
@@ -517,21 +529,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#relative-urls" title="Relative URLs" class="md-nav__link">
+  <a href="#relative_urls" title="Relative URLs" class="md-nav__link">
     Relative URLs
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#dont-host-your-uploads-in-github" title="Don't Host Your Uploads in Git(Hub)" class="md-nav__link">
+  <a href="#dont_host_your_uploads_in_github" title="Don't Host Your Uploads in Git(Hub)" class="md-nav__link">
     Don't Host Your Uploads in Git(Hub)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#add-references-to-uploads" title="Add References to Uploads" class="md-nav__link">
+  <a href="#add_references_to_uploads" title="Add References to Uploads" class="md-nav__link">
     Add References to Uploads
   </a>
   
@@ -567,13 +579,13 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/helpAbout/readme.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="readme">README</h1>
-<h2 id="first-things-first">First things first</h2>
+                <h1 id="readme">README<a class="headerlink" href="#readme" title="Permanent link">&para;</a></h1>
+<h2 id="first_things_first">First things first<a class="headerlink" href="#first_things_first" title="Permanent link">&para;</a></h2>
 <p>Learn <a href="https://help.github.com/articles/github-flavored-markdown">Markdown</a>! Then check out MDwiki's <a href="http://dynalon.github.io/mdwiki/#!quickstart.md">quick start</a>.</p>
 <p>Whenever you feel stuck, go to <a href="http://mdwiki.info">MDwiki's own site</a> for further information.</p>
-<h2 id="one-wiki-only-fork-it">One Wiki Only? Fork It.</h2>
+<h2 id="one_wiki_only_fork_it">One Wiki Only? Fork It.<a class="headerlink" href="#one_wiki_only_fork_it" title="Permanent link">&para;</a></h2>
 <p>First off fork this repo and call it something like <code class="codehilite">&lt;MyProject&gt;-wiki</code>.</p>
-<h2 id="multiple-wikis-clone-it">Multiple Wikis? Clone It.</h2>
+<h2 id="multiple_wikis_clone_it">Multiple Wikis? Clone It.<a class="headerlink" href="#multiple_wikis_clone_it" title="Permanent link">&para;</a></h2>
 <p>In case would you like to create more than one wiki for the same GitHub user or organization, then forking won't cut it. At the moment of this writing GitHub won't allow you to fork a single repository multiple times for the same account.</p>
 <p>There's a workaround to this, however on GitHub's web interface you won't see the sign that says "forked from" in your cloned repository.</p>
 <p>Below instructions how to clone this repository using the CLI:</p>
@@ -584,13 +596,13 @@ git remote add foobar &lt;HTTPS/SSH Clone URL of the New Repository&gt;
 git push foobar gh-pages
 </pre></div>
 
-<h2 id="create-a-new-wiki">Create a New Wiki</h2>
+<h2 id="create_a_new_wiki">Create a New Wiki<a class="headerlink" href="#create_a_new_wiki" title="Permanent link">&para;</a></h2>
 <p>It all begins by creating an initial file structure for any language that you would like to support. For example, if you're interested having a wiki in English, then you will duplicate <code class="codehilite">ll_CC</code> folder and rename your copy to <code class="codehilite">en</code>. (For a complete list of languages [<code class="codehilite">ll</code>] and country codes [<code class="codehilite">CC</code>] <a href="http://msdn.microsoft.com/en-us/library/ee825488">see here</a>.)</p>
 <p><code class="codehilite">ll_CC</code> is a starter template folder which you shouldn't ever edit directly, since you may loose your changes when MDwiki gets updated later.</p>
 <blockquote>
 <p>If you want to have your wiki in more than one language, then you duplicate <code class="codehilite">ll_CC</code> as many times as necessary and rename each copy with the appropriate language and country code. (Country code is optional and it is only useful if you want to distinguish, for instance, American English from British English, such as: <code class="codehilite">en_US</code> and <code class="codehilite">en_GB</code>.)</p>
 </blockquote>
-<h2 id="getting-started">Getting Started</h2>
+<h2 id="getting_started">Getting Started<a class="headerlink" href="#getting_started" title="Permanent link">&para;</a></h2>
 <p><em>You should have a language wiki folder by now, if not, go back and read above to create one.</em></p>
 <p>Suppose your first wiki is going to be in English, hence you must have a folder called <code class="codehilite">en</code>, as previously described.</p>
 <ol>
@@ -598,7 +610,7 @@ git push foobar gh-pages
 <li>Find where it says "Override <code class="codehilite">ll_CC</code> below with your default language and country code"</li>
 <li>Change refresh meta tag from <code class="codehilite">url=ll_CC/</code> to <code class="codehilite">url=en/</code> <strong>(trailing <code class="codehilite">/</code> is very important)</strong></li>
 </ol>
-<h2 id="structure">Structure</h2>
+<h2 id="structure">Structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h2>
 <p><em>All file references here are relative to their respective language folder.</em></p>
 <table>
 <thead>
@@ -636,27 +648,27 @@ git push foobar gh-pages
 </tr>
 </tbody>
 </table>
-<h2 id="best-practices">Best Practices</h2>
-<h3 id="relative-urls">Relative URLs</h3>
+<h2 id="best_practices">Best Practices<a class="headerlink" href="#best_practices" title="Permanent link">&para;</a></h2>
+<h3 id="relative_urls">Relative URLs<a class="headerlink" href="#relative_urls" title="Permanent link">&para;</a></h3>
 <p>Instead of using absolute URLs when linking one wiki page to another, use relative URLs.</p>
 <p>For instance if <code class="codehilite">en/pages/foo.md</code> page had to link to <code class="codehilite">en/pages/bar.md</code>, it is enough to just add <code class="codehilite"><span class="p">[</span><span class="n">Click</span> <span class="n">here</span><span class="p">](</span><span class="n">bar</span><span class="p">.</span><span class="n">md</span><span class="p">)</span></code> in your markdown.</p>
-<h3 id="dont-host-your-uploads-in-github">Don't Host Your Uploads in Git(Hub)</h3>
+<h3 id="dont_host_your_uploads_in_github">Don't Host Your Uploads in Git(Hub)<a class="headerlink" href="#dont_host_your_uploads_in_github" title="Permanent link">&para;</a></h3>
 <p>Instead of hosting your uploads inside the <code class="codehilite">uploads</code> folder, consider using Dropbox, Google Drive, or a CDN.</p>
-<h3 id="add-references-to-uploads">Add References to Uploads</h3>
+<h3 id="add_references_to_uploads">Add References to Uploads<a class="headerlink" href="#add_references_to_uploads" title="Permanent link">&para;</a></h3>
 <p><strong>Whenever you can, avoid hosting your uploads using Git(Hub).</strong></p>
 <p>If you <em>must</em> add references to files hosted inside the <code class="codehilite">uploads</code> folder here's how to do it, for instance: <code class="codehilite"><span class="o">!</span><span class="p">[</span><span class="n">Image</span> <span class="n">Title</span><span class="p">](</span><span class="n">uploads</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">foo</span><span class="p">.</span><span class="n">png</span><span class="p">)</span></code>. Add that in your markdown and you're good to go.</p>
-<h1 id="how-to-preview">How to Preview</h1>
+<h1 id="how_to_preview">How to Preview<a class="headerlink" href="#how_to_preview" title="Permanent link">&para;</a></h1>
 <p>In order to preview your changes locally, prior to publishing online, you may need to take some actions. Below some starting points for each operating system, also check out MDwiki's <a href="http://dynalon.github.io/mdwiki/#!faq.md">frequently asked questions</a> section for some ideas.</p>
-<h2 id="mac-os">Mac OS</h2>
+<h2 id="mac_os">Mac OS<a class="headerlink" href="#mac_os" title="Permanent link">&para;</a></h2>
 <p>The easiest way to serve up static sites on a Mac is to use <a href="http://anvilformac.com">Anvil</a>. Go ahead and download it from their website, install and add a site using the status bar icon: simply select the folder where your wiki is located on your Mac.</p>
 <p>If you don't want to download any apps, you can use the Terminal on your Mac and Python. To do this, go to your site folder in the Terminal app and type <code class="codehilite">python -m SimpleHTTPServer 8000</code>. This will start running a local server which you can navigate to by typing the URL <code class="codehilite"><span class="n">localhost</span><span class="o">:</span><span class="mi">8000</span></code> in any web browser.</p>
-<h2 id="windows">Windows</h2>
+<h2 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h2>
 <p>You can use <a href="http://fenixwebserver.com">Fenix</a> to host a static site on windows. Fenix also comes with lots of advanced functionality that you might not use. Fenix can also run on a Mac.</p>
-<h2 id="linux">Linux</h2>
+<h2 id="linux">Linux<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h2>
 <p>You can use <a href="http://ysbaddaden.github.io/prax/">Prax</a>. Prax is a pure ruby alternative to Pow!! that runs on GNU/Linux.</p>
-<h1 id="for-developers">For Developers</h1>
+<h1 id="for_developers">For Developers<a class="headerlink" href="#for_developers" title="Permanent link">&para;</a></h1>
 <p>You don't need to read below here or do anything at all if you're only interested creating your own wiki. This section is for developers or maintainers of this repository.</p>
-<h2 id="update-mdwiki">Update MDwiki</h2>
+<h2 id="update_mdwiki">Update MDwiki<a class="headerlink" href="#update_mdwiki" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Current version: <a href="http://git.io/HBH5Wg">0.6.2</a>.</p>
 </blockquote>

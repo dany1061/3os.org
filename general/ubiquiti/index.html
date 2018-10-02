@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#ubiquiti-networks" tabindex="1" class="md-skip">
+      <a href="../../#ubiquiti_networks" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,42 +479,42 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#edgerouter-ssh-via-rsa-keys" title="EdgeRouter - SSH via RSA keys" class="md-nav__link">
+  <a href="#edgerouter_-_ssh_via_rsa_keys" title="EdgeRouter - SSH via RSA keys" class="md-nav__link">
     EdgeRouter - SSH via RSA keys
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#hardening-edgerouter" title="Hardening EdgeRouter" class="md-nav__link">
+  <a href="#hardening_edgerouter" title="Hardening EdgeRouter" class="md-nav__link">
     Hardening EdgeRouter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#edgerouter-openvpn-configuration-443tcp" title="Edgerouter OpenVPN Configuration 443/TCP" class="md-nav__link">
+  <a href="#edgerouter_openvpn_configuration_443tcp" title="Edgerouter OpenVPN Configuration 443/TCP" class="md-nav__link">
     Edgerouter OpenVPN Configuration 443/TCP
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#edgerouter-free-up-space-by-cleaning-old-fireware" title="Edgerouter Free Up space by Cleaning Old Fireware" class="md-nav__link">
+  <a href="#edgerouter_free_up_space_by_cleaning_old_fireware" title="Edgerouter Free Up space by Cleaning Old Fireware" class="md-nav__link">
     Edgerouter Free Up space by Cleaning Old Fireware
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#edgerouer-task-scheduler" title="EdgeRouer task-scheduler" class="md-nav__link">
+  <a href="#edgerouer_task-scheduler" title="EdgeRouer task-scheduler" class="md-nav__link">
     EdgeRouer task-scheduler
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-unifi-controller-on-ubuntu-1604" title="Installing UniFi Controller on Ubuntu 16.04" class="md-nav__link">
+  <a href="#installing_unifi_controller_on_ubuntu_1604" title="Installing UniFi Controller on Ubuntu 16.04" class="md-nav__link">
     Installing UniFi Controller on Ubuntu 16.04
   </a>
   
@@ -533,8 +545,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/general/ubiquiti.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="ubiquiti-networks">Ubiquiti Networks</h1>
-<h2 id="edgerouter-ssh-via-rsa-keys">EdgeRouter - SSH via RSA keys</h2>
+                <h1 id="ubiquiti_networks">Ubiquiti Networks<a class="headerlink" href="#ubiquiti_networks" title="Permanent link">&para;</a></h1>
+<h2 id="edgerouter_-_ssh_via_rsa_keys">EdgeRouter - SSH via RSA keys<a class="headerlink" href="#edgerouter_-_ssh_via_rsa_keys" title="Permanent link">&para;</a></h2>
 <p>SSH to the Edge Router:
 Copy the public key to /tmp folder</p>
 <p>Run:</p>
@@ -547,7 +559,7 @@ loadkey <span class="o">[</span>your user<span class="o">]</span> /tmp/id_rsa.pu
 commit <span class="p">;</span> save
 </pre></div>
 
-<h2 id="hardening-edgerouter">Hardening EdgeRouter</h2>
+<h2 id="hardening_edgerouter">Hardening EdgeRouter<a class="headerlink" href="#hardening_edgerouter" title="Permanent link">&para;</a></h2>
 <p>This will change the GUI to port 8443, disable old cyphers, Only will listen on internal Network.
 Assumming your Edge Router IP is 192.168.1.1, if not change it accordingly.</p>
 <p>SSH to the Edge Router</p>
@@ -559,7 +571,7 @@ Assumming your Edge Router IP is 192.168.1.1, if not change it accordingly.</p>
 commit <span class="p">;</span> save
 </pre></div>
 
-<h2 id="edgerouter-openvpn-configuration-443tcp">Edgerouter OpenVPN Configuration 443/TCP</h2>
+<h2 id="edgerouter_openvpn_configuration_443tcp">Edgerouter OpenVPN Configuration 443/TCP<a class="headerlink" href="#edgerouter_openvpn_configuration_443tcp" title="Permanent link">&para;</a></h2>
 <p>This Guide is based on <a href="https://help.ubnt.com/hc/en-us/articles/115015971688-EdgeRouter-OpenVPN-Server">Original guide form ubnt support</a> with modifications to the VPN port and protocol</p>
 <p>For the purpose of this article, it is assumed that the routing and interface configurations are already in place and that reachability has been tested.</p>
 <p>ssh to the EdgeRouter</p>
@@ -718,19 +730,19 @@ cert client1.pem
 key client1.key
 </pre></div>
 
-<h2 id="edgerouter-free-up-space-by-cleaning-old-fireware">Edgerouter Free Up space by Cleaning Old Fireware</h2>
+<h2 id="edgerouter_free_up_space_by_cleaning_old_fireware">Edgerouter Free Up space by Cleaning Old Fireware<a class="headerlink" href="#edgerouter_free_up_space_by_cleaning_old_fireware" title="Permanent link">&para;</a></h2>
 <p>ssh to the EdgeRouter:</p>
 <div class="codehilite"><pre><span></span>delete system image
 </pre></div>
 
-<h2 id="edgerouer-task-scheduler">EdgeRouer task-scheduler</h2>
+<h2 id="edgerouer_task-scheduler">EdgeRouer task-scheduler<a class="headerlink" href="#edgerouer_task-scheduler" title="Permanent link">&para;</a></h2>
 <p><strong><code class="codehilite">Work In Progress</code></strong></p>
 <div class="codehilite"><pre><span></span>configue
 show system task-scheduler
 <span class="nb">set</span> system task-scheduler task SSL_UPDATE interval 1d
 </pre></div>
 
-<h2 id="installing-unifi-controller-on-ubuntu-1604">Installing UniFi Controller on Ubuntu 16.04</h2>
+<h2 id="installing_unifi_controller_on_ubuntu_1604">Installing UniFi Controller on Ubuntu 16.04<a class="headerlink" href="#installing_unifi_controller_on_ubuntu_1604" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo apt update
 sudo apt-get install openjdk-8-jdk-headless openjdk-8-jre-headless
 <span class="nb">echo</span> <span class="s1">&#39;deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti&#39;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list

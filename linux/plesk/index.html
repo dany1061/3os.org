@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,7 +479,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plesk-on-centos-12-bind-fix" title="Plesk on CentOS 12 bind fix" class="md-nav__link">
+  <a href="#plesk_on_centos_12_bind_fix" title="Plesk on CentOS 12 bind fix" class="md-nav__link">
     Plesk on CentOS 12 bind fix
   </a>
   
@@ -498,8 +510,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/plesk.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="plesk">Plesk</h1>
-<h2 id="plesk-on-centos-12-bind-fix">Plesk on CentOS 12 bind fix</h2>
+                <h1 id="plesk">Plesk<a class="headerlink" href="#plesk" title="Permanent link">&para;</a></h1>
+<h2 id="plesk_on_centos_12_bind_fix">Plesk on CentOS 12 bind fix<a class="headerlink" href="#plesk_on_centos_12_bind_fix" title="Permanent link">&para;</a></h2>
 <p>The problem was nginx was attempting to bind to port 443 before the IP was initialized.
 To fix edit the /etx/sysctl.conf file and add:</p>
 <div class="codehilite"><pre><span></span>net.ipv4.ip_nonlocal_bind <span class="o">=</span> <span class="m">1</span>

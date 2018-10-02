@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../#zsh-shell-on-steroids" tabindex="1" class="md-skip">
+      <a href="../../../#zsh_shell_on_steroids" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -474,28 +486,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-oh-my-zsh" title="Install oh-my-zsh" class="md-nav__link">
+  <a href="#install_oh-my-zsh" title="Install oh-my-zsh" class="md-nav__link">
     Install oh-my-zsh
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-plugins" title="Install Plugins" class="md-nav__link">
+  <a href="#install_plugins" title="Install Plugins" class="md-nav__link">
     Install Plugins
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-plugins-to-zshrc" title="Add plugins to ~/.zshrc:" class="md-nav__link">
+  <a href="#add_plugins_to_zshrc" title="Add plugins to ~/.zshrc:" class="md-nav__link">
     Add plugins to ~/.zshrc:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#make-zsh-default-shell" title="Make Zsh default shell:" class="md-nav__link">
+  <a href="#make_zsh_default_shell" title="Make Zsh default shell:" class="md-nav__link">
     Make Zsh default shell:
   </a>
   
@@ -510,7 +522,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#fix-background-theme-issuesnot-necessary-depends-on-your-theme" title="Fix background theme issues(not necessary depends on your theme.)" class="md-nav__link">
+  <a href="#fix_background_theme_issuesnot_necessary_depends_on_your_theme" title="Fix background theme issues(not necessary depends on your theme.)" class="md-nav__link">
     Fix background theme issues(not necessary depends on your theme.)
   </a>
   
@@ -546,24 +558,24 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/linuxGuides/zshOnSteroids.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="zsh-shell-on-steroids">Zsh (shell) on Steroids</h1>
+                <h1 id="zsh_shell_on_steroids">Zsh (shell) on Steroids<a class="headerlink" href="#zsh_shell_on_steroids" title="Permanent link">&para;</a></h1>
 <p>This will Install oh-my-zsh shell with fish shell like history, auto suggestions and syntax highlighting.</p>
-<h2 id="requirements">Requirements:</h2>
+<h2 id="requirements">Requirements:<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>apt-get install git wget zsh
 </pre></div>
 
-<h2 id="install-oh-my-zsh">Install oh-my-zsh</h2>
+<h2 id="install_oh-my-zsh">Install oh-my-zsh<a class="headerlink" href="#install_oh-my-zsh" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sh -c <span class="s2">&quot;</span><span class="k">$(</span>wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 
-<h2 id="install-plugins">Install Plugins</h2>
+<h2 id="install_plugins">Install Plugins<a class="headerlink" href="#install_plugins" title="Permanent link">&para;</a></h2>
 <p>This will create ~/.zsh folder and clone plugins from git:</p>
 <div class="codehilite"><pre><span></span>git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-zsh-history-substring-search
 </pre></div>
 
-<h2 id="add-plugins-to-zshrc">Add plugins to ~/.zshrc:</h2>
+<h2 id="add_plugins_to_zshrc">Add plugins to ~/.zshrc:<a class="headerlink" href="#add_plugins_to_zshrc" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
 <span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-zsh-history-substring-search/zsh-history-substring-search.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
 <span class="nb">echo</span> <span class="s2">&quot;source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
@@ -571,12 +583,12 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-z
 
 <p><code class="codehilite"><span class="n">Note</span><span class="o">:</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">zsh</span><span class="o">-</span><span class="n">syntax</span><span class="o">-</span><span class="n">highlighting</span> <span class="k">is</span> <span class="n">the</span> <span class="n">last</span> <span class="n">one</span> <span class="k">in</span> <span class="n">the</span> <span class="n">above</span> <span class="n">list</span><span class="o">.</span></code></p>
 <p>Restart zsh</p>
-<h2 id="make-zsh-default-shell">Make Zsh default shell:</h2>
+<h2 id="make_zsh_default_shell">Make Zsh default shell:<a class="headerlink" href="#make_zsh_default_shell" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>chsh -s <span class="k">$(</span>which zsh<span class="k">)</span>
 </pre></div>
 
-<h2 id="optional">Optional:</h2>
-<h3 id="fix-background-theme-issuesnot-necessary-depends-on-your-theme">Fix background theme issues(not necessary depends on your theme.)</h3>
+<h2 id="optional">Optional:<a class="headerlink" href="#optional" title="Permanent link">&para;</a></h2>
+<h3 id="fix_background_theme_issuesnot_necessary_depends_on_your_theme">Fix background theme issues(not necessary depends on your theme.)<a class="headerlink" href="#fix_background_theme_issuesnot_necessary_depends_on_your_theme" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE=&#39;fg=white&#39;&quot;</span> &gt;&gt; ~/.zshrc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.zshrc
 </pre></div>
 

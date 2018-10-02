@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#magic-mirror" tabindex="1" class="md-skip">
+      <a href="../../#magic_mirror" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,35 +479,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#change-dispay-rotation" title="Change Dispay Rotation:" class="md-nav__link">
+  <a href="#change_dispay_rotation" title="Change Dispay Rotation:" class="md-nav__link">
     Change Dispay Rotation:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#disabling-the-screensaver" title="Disabling the Screensaver" class="md-nav__link">
+  <a href="#disabling_the_screensaver" title="Disabling the Screensaver" class="md-nav__link">
     Disabling the Screensaver
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#os-ui-finishes" title="OS UI Finishes" class="md-nav__link">
+  <a href="#os_ui_finishes" title="OS UI Finishes" class="md-nav__link">
     OS UI Finishes
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#disable-wifi-power-save" title="Disable WiFi Power Save" class="md-nav__link">
+  <a href="#disable_wifi_power_save" title="Disable WiFi Power Save" class="md-nav__link">
     Disable WiFi Power Save
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#disbale-cursor-on-startup" title="Disbale Cursor on Startup" class="md-nav__link">
+  <a href="#disbale_cursor_on_startup" title="Disbale Cursor on Startup" class="md-nav__link">
     Disbale Cursor on Startup
   </a>
   
@@ -509,7 +521,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pm2-auto-start-installation" title="pm2 auto start installation" class="md-nav__link">
+  <a href="#pm2_auto_start_installation" title="pm2 auto start installation" class="md-nav__link">
     pm2 auto start installation
   </a>
   
@@ -540,8 +552,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/rasperryPi/MagicMirror.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="magic-mirror">Magic Mirror</h1>
-<h2 id="change-dispay-rotation">Change Dispay Rotation:</h2>
+                <h1 id="magic_mirror">Magic Mirror<a class="headerlink" href="#magic_mirror" title="Permanent link">&para;</a></h1>
+<h2 id="change_dispay_rotation">Change Dispay Rotation:<a class="headerlink" href="#change_dispay_rotation" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo nano /boot/config.txt
 </pre></div>
 
@@ -581,7 +593,7 @@
 </tbody>
 </table>
 <p><code class="codehilite"><span class="n">NOTE</span><span class="o">:</span> <span class="n">You</span> <span class="n">can</span> <span class="n">rotate</span> <span class="n">both</span> <span class="n">the</span> <span class="n">image</span> <span class="n">and</span> <span class="n">touch</span> <span class="kd">interface</span> <span class="mi">180</span><span class="err">º</span> <span class="n">by</span> <span class="n">entering</span> <span class="n">lcd_rotate</span><span class="o">=</span><span class="mi">2</span> <span class="n">instead</span></code></p>
-<h2 id="disabling-the-screensaver">Disabling the Screensaver</h2>
+<h2 id="disabling_the_screensaver">Disabling the Screensaver<a class="headerlink" href="#disabling_the_screensaver" title="Permanent link">&para;</a></h2>
 <p>Chaning to OPEN GL Driver</p>
 <div class="codehilite"><pre><span></span>sudo nano /boot/config.txt
 </pre></div>
@@ -610,7 +622,7 @@
 <div class="codehilite"><pre><span></span>xserver-command<span class="o">=</span>X -s <span class="m">0</span> -dpms
 </pre></div>
 
-<h2 id="os-ui-finishes">OS UI Finishes</h2>
+<h2 id="os_ui_finishes">OS UI Finishes<a class="headerlink" href="#os_ui_finishes" title="Permanent link">&para;</a></h2>
 <p>Make the Backgound Black:</p>
 <p><code class="codehilite">Right click the Desktop</code> -&gt; <code class="codehilite">Desktop Preferences</code> and Change:
 <code class="codehilite">Layout -&gt; no image</code>
@@ -618,7 +630,7 @@
 <p>Hit ok.</p>
 <p><code class="codehilite">Right click on the top panel</code> -&gt; <code class="codehilite">Panel Preferences</code> -&gt; <code class="codehilite">Appearance</code></p>
 <p>Seclect <code class="codehilite">Solid Color (With Opacity)</code> make shure <code class="codehilite">Opacity at 0</code></p>
-<h2 id="disable-wifi-power-save">Disable WiFi Power Save</h2>
+<h2 id="disable_wifi_power_save">Disable WiFi Power Save<a class="headerlink" href="#disable_wifi_power_save" title="Permanent link">&para;</a></h2>
 <p>Edit /etc/modprobe.d/8192cu.conf</p>
 <div class="codehilite"><pre><span></span>sudo nano /etc/modprobe.d/8192cu.conf
 </pre></div>
@@ -641,11 +653,11 @@ Edit /etc/network/interfaces</p>
 <div class="codehilite"><pre><span></span>sudo reboot
 </pre></div>
 
-<h2 id="disbale-cursor-on-startup">Disbale Cursor on Startup</h2>
+<h2 id="disbale_cursor_on_startup">Disbale Cursor on Startup<a class="headerlink" href="#disbale_cursor_on_startup" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo apt-get install unclutter
 </pre></div>
 
-<h2 id="installation">Installation</h2>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <p>first install node.js and npm</p>
 <div class="codehilite"><pre><span></span>curl -sL https://deb.nodesource.com/setup_8.x <span class="p">|</span> sudo -E bash -
 sudo apt-get install -y nodejs
@@ -668,7 +680,7 @@ sudo apt-get install -y nodejs
 <div class="codehilite"><pre><span></span><span class="nb">cd</span> ~/MagicMirror <span class="o">&amp;&amp;</span> <span class="nv">DISPLAY</span><span class="o">=</span>:0 npm start
 </pre></div>
 
-<h2 id="pm2-auto-start-installation">pm2 auto start installation</h2>
+<h2 id="pm2_auto_start_installation">pm2 auto start installation<a class="headerlink" href="#pm2_auto_start_installation" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo npm install -g pm2
 <span class="nb">cd</span> ~
 nano mm.sh

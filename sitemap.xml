@@ -2,32 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://3os.org/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/general/general/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/macGeneral/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/brew/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/help/documinatation/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/markdown_cheat-sheet/</loc>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/about/</loc>
-     <lastmod>2018-10-02</lastmod>
+     <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

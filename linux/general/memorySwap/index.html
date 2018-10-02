@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../#linux-memory-swap" tabindex="1" class="md-skip">
+      <a href="../../../#linux_memory_swap" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,28 +479,28 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#who-uses-ram" title="Who uses RAM" class="md-nav__link">
+  <a href="#who_uses_ram" title="Who uses RAM" class="md-nav__link">
     Who uses RAM
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prevent-oom-killer" title="Prevent OOM killer" class="md-nav__link">
+  <a href="#prevent_oom_killer" title="Prevent OOM killer" class="md-nav__link">
     Prevent OOM killer
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#who-is-using-swap" title="Who is using SWAP" class="md-nav__link">
+  <a href="#who_is_using_swap" title="Who is using SWAP" class="md-nav__link">
     Who is using SWAP
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#clear-cache-and-swap" title="Clear cache and swap" class="md-nav__link">
+  <a href="#clear_cache_and_swap" title="Clear cache and swap" class="md-nav__link">
     Clear cache and swap
   </a>
   
@@ -519,12 +531,12 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/general/memorySwap.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="linux-memory-swap">Linux Memory &amp; Swap</h1>
-<h2 id="who-uses-ram">Who uses RAM</h2>
+                <h1 id="linux_memory_swap">Linux Memory &amp; Swap<a class="headerlink" href="#linux_memory_swap" title="Permanent link">&para;</a></h1>
+<h2 id="who_uses_ram">Who uses RAM<a class="headerlink" href="#who_uses_ram" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>ps aux  <span class="p">|</span> awk <span class="s1">&#39;{print $6/1024 &quot; MB\t\t&quot; $11}&#39;</span>  <span class="p">|</span> sort -n
 </pre></div>
 
-<h2 id="prevent-oom-killer">Prevent OOM killer</h2>
+<h2 id="prevent_oom_killer">Prevent OOM killer<a class="headerlink" href="#prevent_oom_killer" title="Permanent link">&para;</a></h2>
 <p>Edit file /etc/sysctl.conf</p>
 <div class="codehilite"><pre><span></span>vm.overcommit_memory <span class="o">=</span> <span class="m">2</span>
 vm.overcommit_ratio <span class="o">=</span> <span class="m">100</span>
@@ -535,11 +547,11 @@ vm.overcommit_ratio <span class="o">=</span> <span class="m">100</span>
 vm.overcommit_ratio <span class="o">=</span> <span class="m">80</span>
 </pre></div>
 
-<h2 id="who-is-using-swap">Who is using SWAP</h2>
+<h2 id="who_is_using_swap">Who is using SWAP<a class="headerlink" href="#who_is_using_swap" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>grep VmSwap /proc/*/status <span class="m">2</span>&gt;/dev/null <span class="p">|</span> sort -nk2 <span class="p">|</span> tail -n5
 </pre></div>
 
-<h2 id="clear-cache-and-swap">Clear cache and swap</h2>
+<h2 id="clear_cache_and_swap">Clear cache and swap<a class="headerlink" href="#clear_cache_and_swap" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="nb">echo</span> <span class="m">3</span> &gt; /proc/sys/vm/drop_caches <span class="o">&amp;&amp;</span> swapoff -a <span class="o">&amp;&amp;</span> swapon -a
 </pre></div>
                 

@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#csf-firewall" tabindex="1" class="md-skip">
+      <a href="../../#csf_firewall" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,21 +479,21 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#csf-configuration" title="CSF configuration" class="md-nav__link">
+  <a href="#csf_configuration" title="CSF configuration" class="md-nav__link">
     CSF configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#csf-gui-on-ispconfig-3" title="CSF GUI on ISPCONFIG 3" class="md-nav__link">
+  <a href="#csf_gui_on_ispconfig_3" title="CSF GUI on ISPCONFIG 3" class="md-nav__link">
     CSF GUI on ISPCONFIG 3
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#unblock-invalid-packets-in-csf" title="Unblock Invalid packets in CSF" class="md-nav__link">
+  <a href="#unblock_invalid_packets_in_csf" title="Unblock Invalid packets in CSF" class="md-nav__link">
     Unblock Invalid packets in CSF
   </a>
   
@@ -512,8 +524,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/csf.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="csf-firewall">CSF Firewall</h1>
-<h2 id="csf-configuration">CSF configuration</h2>
+                <h1 id="csf_firewall">CSF Firewall<a class="headerlink" href="#csf_firewall" title="Permanent link">&para;</a></h1>
+<h2 id="csf_configuration">CSF configuration<a class="headerlink" href="#csf_configuration" title="Permanent link">&para;</a></h2>
 <p>Automated configuration:</p>
 <div class="codehilite"><pre><span></span>sed -i <span class="s1">&#39;s/TESTING = &quot;1&quot;/TESTING = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
 sed -i <span class="s1">&#39;s/RESTRICT_SYSLOG = &quot;0&quot;/RESTRICT_SYSLOG = &quot;3&quot;/&#39;</span> /etc/csf/csf.conf
@@ -543,7 +555,7 @@ sed -i <span class="s1">&#39;s/PT_USERKILL_ALERT = &quot;1&quot;/PT_USERKILL_ALE
 sed -i <span class="s1">&#39;s/PT_LOAD = &quot;30&quot;/PT_LOAD = &quot;0&quot;/&#39;</span> /etc/csf/csf.conf
 </pre></div>
 
-<h2 id="csf-gui-on-ispconfig-3">CSF GUI on ISPCONFIG 3</h2>
+<h2 id="csf_gui_on_ispconfig_3">CSF GUI on ISPCONFIG 3<a class="headerlink" href="#csf_gui_on_ispconfig_3" title="Permanent link">&para;</a></h2>
 <p>nstall old CSF (before 8.13)</p>
 <p>Copy the ISPCONFIG folder to /etc/csf/ and enable CSF in ISPCONFIG</p>
 <p>Backup csfui* files</p>
@@ -554,7 +566,7 @@ sed -i <span class="s1">&#39;s/PT_LOAD = &quot;30&quot;/PT_LOAD = &quot;0&quot;/
 sed -i <span class="s1">&#39;s/sanity(/ConfigServer::Sanity::sanity(/g&#39;</span> /usr/local/csf/bin/csfui.pl
 </pre></div>
 
-<h2 id="unblock-invalid-packets-in-csf">Unblock Invalid packets in CSF</h2>
+<h2 id="unblock_invalid_packets_in_csf">Unblock Invalid packets in CSF<a class="headerlink" href="#unblock_invalid_packets_in_csf" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="c1"># Drop out of order packets and packets in an INVALID state in iptables</span>
 <span class="c1"># connection tracking</span>
 <span class="nv">PACKET_FILTER</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span>

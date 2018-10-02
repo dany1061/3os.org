@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,14 +479,14 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-vm-tools-on-linux-vm" title="Installing VM Tools on Linux VM" class="md-nav__link">
+  <a href="#installing_vm_tools_on_linux_vm" title="Installing VM Tools on Linux VM" class="md-nav__link">
     Installing VM Tools on Linux VM
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#automated-ssl-using-lets-encrypt-cloudflare-api-acmesh-script" title="Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script" class="md-nav__link">
+  <a href="#automated_ssl_using_lets_encrypt_cloudflare_api_acmesh_script" title="Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script" class="md-nav__link">
     Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script
   </a>
   
@@ -482,7 +494,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#automate-the-certificate-renewal" title="Automate The Certificate Renewal" class="md-nav__link">
+  <a href="#automate_the_certificate_renewal" title="Automate The Certificate Renewal" class="md-nav__link">
     Automate The Certificate Renewal
   </a>
   
@@ -501,7 +513,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cloudflare-ddns" title="CloudFlare DDNS" class="md-nav__link">
+  <a href="#cloudflare_ddns" title="CloudFlare DDNS" class="md-nav__link">
     CloudFlare DDNS
   </a>
   
@@ -532,13 +544,13 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/general/synologyGeneral.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="synology">Synology</h1>
-<h2 id="installing-vm-tools-on-linux-vm">Installing VM Tools on Linux VM</h2>
+                <h1 id="synology">Synology<a class="headerlink" href="#synology" title="Permanent link">&para;</a></h1>
+<h2 id="installing_vm_tools_on_linux_vm">Installing VM Tools on Linux VM<a class="headerlink" href="#installing_vm_tools_on_linux_vm" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>sudo add-apt-repository universe
 sudo apt-get install qemu-guest-agent
 </pre></div>
 
-<h2 id="automated-ssl-using-lets-encrypt-cloudflare-api-acmesh-script">Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script</h2>
+<h2 id="automated_ssl_using_lets_encrypt_cloudflare_api_acmesh_script">Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script<a class="headerlink" href="#automated_ssl_using_lets_encrypt_cloudflare_api_acmesh_script" title="Permanent link">&para;</a></h2>
 <p>ssh to synology nas</p>
 <div class="codehilite"><pre><span></span>wget https://github.com/Neilpang/acme.sh/archive/master.tar.gz
 tar xvf master.tar.gz
@@ -565,7 +577,7 @@ CERT_DOMAIN= <code class="codehilite">your domain managed on cloudflare dns</cod
       --dnssleep <span class="m">20</span>
 </pre></div>
 
-<h3 id="automate-the-certificate-renewal">Automate The Certificate Renewal</h3>
+<h3 id="automate_the_certificate_renewal">Automate The Certificate Renewal<a class="headerlink" href="#automate_the_certificate_renewal" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Login to DSM</li>
 <li>Go to Control Panel - Task Scheduler</li>
@@ -601,8 +613,8 @@ Standard output/error:
 [Tue Sep 4 19:54:09 IDT 2018] ===End cron===
 </pre></div>
 
-<h3 id="done">done</h3>
-<h2 id="cloudflare-ddns">CloudFlare DDNS</h2>
+<h3 id="done">done<a class="headerlink" href="#done" title="Permanent link">&para;</a></h3>
+<h2 id="cloudflare_ddns">CloudFlare DDNS<a class="headerlink" href="#cloudflare_ddns" title="Permanent link">&para;</a></h2>
 <p>based on this <a href="https://github.com/joshuaavalon/SynologyCloudflareDDNS">SynologyCloudflareDDNS</a></p>
 <p>Ssh to synology nas as root
 Download cloudflareddns.sh from this repository to /sbin/cloudflaredns.sh</p>

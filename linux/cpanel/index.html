@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../#cpanel-whm" tabindex="1" class="md-skip">
+      <a href="../../#cpanel_whm" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -429,6 +429,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../help/markdown_cheat-sheet/" title="MarkDown Cheat-Sheet" class="md-nav__link">
+      MarkDown Cheat-Sheet
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -467,63 +479,63 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whm-replica" title="WHM replica" class="md-nav__link">
+  <a href="#whm_replica" title="WHM replica" class="md-nav__link">
     WHM replica
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#disable-core-files-in-cpanel-account" title="Disable core files in CPanel account" class="md-nav__link">
+  <a href="#disable_core_files_in_cpanel_account" title="Disable core files in CPanel account" class="md-nav__link">
     Disable core files in CPanel account
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-hsts-support-in-cpanel" title="Add HSTS support in CPANEL" class="md-nav__link">
+  <a href="#add_hsts_support_in_cpanel" title="Add HSTS support in CPANEL" class="md-nav__link">
     Add HSTS support in CPANEL
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-mod_pagespeed-on-whm" title="Install mod_pagespeed on WHM" class="md-nav__link">
+  <a href="#install_mod_pagespeed_on_whm" title="Install mod_pagespeed on WHM" class="md-nav__link">
     Install mod_pagespeed on WHM
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#fix-whmcpanel-templates" title="Fix WHM/CPanel templates" class="md-nav__link">
+  <a href="#fix_whmcpanel_templates" title="Fix WHM/CPanel templates" class="md-nav__link">
     Fix WHM/CPanel templates
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#login-to-whm-with-link" title="Login to WHM with link" class="md-nav__link">
+  <a href="#login_to_whm_with_link" title="Login to WHM with link" class="md-nav__link">
     Login to WHM with link
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#size-of-suspended-accounts-in-whm" title="Size of suspended accounts in WHM" class="md-nav__link">
+  <a href="#size_of_suspended_accounts_in_whm" title="Size of suspended accounts in WHM" class="md-nav__link">
     Size of suspended accounts in WHM
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cpanel-resources-consumption-history-per-user" title="Cpanel resources consumption history per user" class="md-nav__link">
+  <a href="#cpanel_resources_consumption_history_per_user" title="Cpanel resources consumption history per user" class="md-nav__link">
     Cpanel resources consumption history per user
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#phpini-upload-big-files" title="PHP.INI upload big files" class="md-nav__link">
+  <a href="#phpini_upload_big_files" title="PHP.INI upload big files" class="md-nav__link">
     PHP.INI upload big files
   </a>
   
@@ -554,8 +566,8 @@
                   <a href="https://github.com/fire1ce/3os.org/blob/master/docs/linux/cpanel.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="cpanel-whm">cPanel &amp; WHM</h1>
-<h2 id="whm-replica">WHM replica</h2>
+                <h1 id="cpanel_whm">cPanel &amp; WHM<a class="headerlink" href="#cpanel_whm" title="Permanent link">&para;</a></h1>
+<h2 id="whm_replica">WHM replica<a class="headerlink" href="#whm_replica" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>rsync -avz <span class="m">192</span>.168.1.122:/home/ /home/ --exclude<span class="o">=</span><span class="s2">&quot;virtfs&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;\.cp*&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;cpeasyapache&quot;</span> 
 rsync -avz <span class="m">192</span>.168.1.122:/usr/local/apache/conf/ /usr/local/apache/conf/
 rsync -avz <span class="m">192</span>.168.1.122:/var/named/ /var/named/
@@ -582,7 +594,7 @@ rebuild httpd conf
 restart apache
 </pre></div>
 
-<h2 id="disable-core-files-in-cpanel-account">Disable core files in CPanel account</h2>
+<h2 id="disable_core_files_in_cpanel_account">Disable core files in CPanel account<a class="headerlink" href="#disable_core_files_in_cpanel_account" title="Permanent link">&para;</a></h2>
 <p>Add this in /etc/sysctl.conf</p>
 <div class="codehilite"><pre><span></span>kernel.core_uses_pid <span class="o">=</span> <span class="m">0</span>
 kernel.core_pattern <span class="o">=</span> /dev/null
@@ -592,7 +604,7 @@ kernel.core_pattern <span class="o">=</span> /dev/null
 <div class="codehilite"><pre><span></span>sysctl -p
 </pre></div>
 
-<h2 id="add-hsts-support-in-cpanel">Add HSTS support in CPANEL</h2>
+<h2 id="add_hsts_support_in_cpanel">Add HSTS support in CPANEL<a class="headerlink" href="#add_hsts_support_in_cpanel" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>cp -p /var/cpanel/templates/apache2_4/ssl_vhost.default /var/cpanel/templates/apache2_4/ssl_vhost.local
 vi /var/cpanel/templates/apache2_4/ssl_vhost.local
 </pre></div>
@@ -617,7 +629,7 @@ SSLHonorCipherOrder on
 service httpd restart
 </pre></div>
 
-<h2 id="install-mod_pagespeed-on-whm">Install mod_pagespeed on WHM</h2>
+<h2 id="install_mod_pagespeed_on_whm">Install mod_pagespeed on WHM<a class="headerlink" href="#install_mod_pagespeed_on_whm" title="Permanent link">&para;</a></h2>
 <p>With EA3:</p>
 <div class="codehilite"><pre><span></span>/usr/local/cpanel/3rdparty/bin/git clone https://github.com/pagespeed/cpanel.git /tmp/pagespeed/
 <span class="nb">cd</span> /tmp/pagespeed/Easy
@@ -647,7 +659,7 @@ rpm -Uvh /root/rpmbuild/RPMS/x86_64/ea-apache24-mod_pagespeed*.rpm
 /etc/init.d/httpd restart
 </pre></div>
 
-<h2 id="fix-whmcpanel-templates">Fix WHM/CPanel templates</h2>
+<h2 id="fix_whmcpanel_templates">Fix WHM/CPanel templates<a class="headerlink" href="#fix_whmcpanel_templates" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>cp /usr/local/apache/conf/httpd.conf<span class="o">{</span>,.cptech-<span class="sb">`</span>date +%Y%m%d<span class="sb">`</span><span class="o">}</span>
 mv /var/cpanel/templates/apache2_4/vhost.local /var/cpanel/templates/apache2_4/vhost.local.bak
 mv /var/cpanel/templates/apache2_4/ssl_vhost.local /var/cpanel/templates/apache2_4/ssl_vhost.local.bak
@@ -655,19 +667,19 @@ mv /var/cpanel/templates/apache2_4/ssl_vhost.local /var/cpanel/templates/apache2
 /scripts/restartsrv_httpd
 </pre></div>
 
-<h2 id="login-to-whm-with-link">Login to WHM with link</h2>
+<h2 id="login_to_whm_with_link">Login to WHM with link<a class="headerlink" href="#login_to_whm_with_link" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>whmapi1 create_user_session <span class="nv">user</span><span class="o">=</span>root <span class="nv">service</span><span class="o">=</span>whostmgrd <span class="nv">locale</span><span class="o">=</span>en
 </pre></div>
 
-<h2 id="size-of-suspended-accounts-in-whm">Size of suspended accounts in WHM</h2>
+<h2 id="size_of_suspended_accounts_in_whm">Size of suspended accounts in WHM<a class="headerlink" href="#size_of_suspended_accounts_in_whm" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="k">for</span> i in <span class="sb">`</span>whmapi1 listsuspended<span class="p">|</span>grep user<span class="p">|</span>cut -d: -f2<span class="sb">`</span><span class="p">;</span> <span class="k">do</span> <span class="nb">echo</span> <span class="s2">&quot;Suspended account: </span><span class="nv">$i</span><span class="s2"> - using&quot;</span> <span class="sb">`</span>whmapi1 listaccts <span class="nv">search</span><span class="o">=</span><span class="nv">$i</span> <span class="nv">searchtype</span><span class="o">=</span>user<span class="p">|</span>grep diskused<span class="p">|</span>cut -d: -f2<span class="sb">`</span><span class="p">;</span> <span class="k">done</span>
 </pre></div>
 
-<h2 id="cpanel-resources-consumption-history-per-user">Cpanel resources consumption history per user</h2>
+<h2 id="cpanel_resources_consumption_history_per_user">Cpanel resources consumption history per user<a class="headerlink" href="#cpanel_resources_consumption_history_per_user" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><span class="nv">OUT</span><span class="o">=</span><span class="k">$(</span>/usr/local/cpanel/bin/dcpumonview <span class="p">|</span> grep -v Top <span class="p">|</span> sed -e <span class="s1">&#39;s#&lt;[^&gt;]*&gt;# #g&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> i <span class="p">;</span> <span class="k">do</span> <span class="nv">NF</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$i</span> <span class="p">|</span> awk <span class="o">{</span><span class="s1">&#39;print NF&#39;</span><span class="o">}</span><span class="sb">`</span> <span class="p">;</span> <span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$NF</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;5&quot;</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then</span> <span class="nv">USER</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="nv">$i</span> <span class="p">|</span> awk <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span><span class="sb">`</span><span class="p">;</span> <span class="nv">OWNER</span><span class="o">=</span><span class="sb">`</span>grep -e <span class="s2">&quot;^OWNER=&quot;</span> /var/cpanel/users/<span class="nv">$USER</span> <span class="p">|</span> cut -d<span class="o">=</span> -f2<span class="sb">`</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OWNER</span><span class="s2"> </span><span class="nv">$i</span><span class="s2">&quot;</span><span class="p">;</span> <span class="k">fi</span> <span class="p">;</span> <span class="k">done)</span> <span class="p">;</span> <span class="o">(</span><span class="nb">echo</span> <span class="s2">&quot;USER CPU&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk4 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$4}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span>echo<span class="p">;</span><span class="o">(</span><span class="nb">echo</span> -e <span class="s2">&quot;USER MEMORY&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk5 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$5}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span>echo<span class="p">;</span><span class="o">(</span><span class="nb">echo</span> -e <span class="s2">&quot;USER MYSQL&quot;</span> <span class="p">;</span> <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$OUT</span><span class="s2">&quot;</span> <span class="p">|</span> sort -nrk6 <span class="p">|</span> awk <span class="s1">&#39;{printf &quot;%s %s%\n&quot;,$2,$6}&#39;</span> <span class="p">|</span> head -5<span class="o">)</span> <span class="p">|</span> column -t <span class="p">;</span> 
 </pre></div>
 
-<h2 id="phpini-upload-big-files">PHP.INI upload big files</h2>
+<h2 id="phpini_upload_big_files">PHP.INI upload big files<a class="headerlink" href="#phpini_upload_big_files" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span>ini_set<span class="o">(</span><span class="s1">&#39;upload_max_filesize&#39;</span>, <span class="s1">&#39;10M&#39;</span><span class="o">)</span><span class="p">;</span>
 ini_set<span class="o">(</span><span class="s1">&#39;post_max_size&#39;</span>, <span class="s1">&#39;10M&#39;</span><span class="o">)</span><span class="p">;</span>
 ini_set<span class="o">(</span><span class="s1">&#39;max_input_time&#39;</span>, <span class="m">300</span><span class="o">)</span><span class="p">;</span>
