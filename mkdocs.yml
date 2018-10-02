@@ -1,8 +1,14 @@
 site_name: 3os.org
 site_url: https://3os.org
+
 nav:
-  - Home: index.md
-  - About: about.md
+  - Home: 'index.md'
+  - Linux:
+      - 'General': 'linux/general/general.md'
+  - macOS:
+      - 'General': 'macOS/macGeneral.md'
+      - 'Home Brew': 'macOS/brew.md'
+  - About: 'about.md'
 
 repo_url: https://github.com/fire1ce/3os.org/
 edit_uri: 'blob/master/docs/'
