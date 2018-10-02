@@ -6,6 +6,21 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://3os.org/linux/general/general/</loc>
+     <lastmod>2018-10-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/macOS/macGeneral/</loc>
+     <lastmod>2018-10-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/macOS/brew/</loc>
+     <lastmod>2018-10-02</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://3os.org/about/</loc>
      <lastmod>2018-10-02</lastmod>
      <changefreq>daily</changefreq>
