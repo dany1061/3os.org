@@ -115,6 +115,6 @@ markdown_extensions:
   - pymdownx.extra
 
 # Google Analytics
-# google_analytics:
-#   - 'UA-XXXXXXXX-X'
-#   - 'auto'
+google_analytics:
+  - 'UA-122318911-1'
+  - 'auto'
