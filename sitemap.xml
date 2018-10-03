@@ -111,6 +111,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://3os.org/development/python/</loc>
+     <lastmod>2018-10-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://3os.org/windows/winGeneral/</loc>
      <lastmod>2018-10-03</lastmod>
      <changefreq>daily</changefreq>
