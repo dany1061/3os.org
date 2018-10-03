@@ -90,11 +90,10 @@ extra:
   disqus: '3os'
   social:
     - type: 'github'
-      link: 'https://github.com'
-    - type: 'twitter'
-      link: 'https://twitter.com'
+      link: 'https://github.com/fire1ce'
     - type: 'linkedin'
-      link: 'https://linkedin.com'
+      link: 'https://linkedin.com/in/stas-kosatuhin
+'
 
 # Markdown Rendering Extensions
 markdown_extensions:
