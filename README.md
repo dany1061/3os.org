@@ -1,3 +1,1 @@
-# wiki
-
-[Repo from mkdocs.org ](https://www.mkdocs.org/#installation)
+# [3os.org](https://3os.org/) &middot; [![Requirements Status](https://requires.io/github/fire1ce/3os.org/requirements.svg?branch=gh-pages)](https://requires.io/github/fire1ce/3os.org/requirements/?branch=gh-pages)
