@@ -26,6 +26,8 @@ nav:
       - General: 'rasperryPi/piGeneral.md'
       - Rasperry Pi 3 Tor Access Point: 'rasperryPi/TOR-Pi.md'
       - Rasperry Pi Magic Mirror: 'rasperryPi/MagicMirror.md'
+  - Development:
+      - Python: 'development/python.md'
   - Windows:
       - Useful Links for Windows: 'windows/winGeneral.md'
       - Software for Windows: 'windows/winSoftware.md'
@@ -64,7 +66,6 @@ edit_uri: 'edit/master/docs/'
 # Theme Configuration
 theme:
   name: 'material'
-  custom_dir: 'theme'
   logo: 'images/logo.png'
   favicon: 'images/favicon.ico'
   palette:
