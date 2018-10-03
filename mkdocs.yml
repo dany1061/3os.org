@@ -6,7 +6,7 @@ nav:
       - General: 'linux/general/general.md'
       - Files: 'linux/general/files.md'
       - Memory & Swap: 'linux/general/memorySwap.md'
-      - Guides: 
+      - Guides:
             - Python Simple Web-Server: 'linux/linuxGuides/pythonWebServer.md'
             - Resize Root PartitionWithout Reboot: 'linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
             - Installing Oh My zsh: 'linux/linuxGuides/zshOnSteroids.md'
@@ -58,6 +58,10 @@ site_url: https://3os.org
 site_description: 'Collocation of Guide, Technical knowledge, Security, Exmaples, Tips, at any operating system'
 site_author: 'Stas Kosatuhin'
 
+
+# 404 page
+static_templates:
+   - 404.html
 
 
 # Repository Link Editor
