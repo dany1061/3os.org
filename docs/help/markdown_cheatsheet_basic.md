@@ -44,10 +44,6 @@ HTML:
 <h6>h6 Heading</h6>
 ```
 
-<br>
-<br>
-<br>
-
 ## Quoting code
 
 You can call out code or a command within a sentence with single backticks. The text within the backticks will not be formatted.
@@ -59,10 +55,6 @@ Use `git status` to list all new or modified files that haven't yet been committ
 will render to:
 
 Use `git status` to list all new or modified files that haven't yet been committed.
-
-<br>
-<br>
-<br>
 
 ## Horizontal Rules
 
@@ -80,12 +72,6 @@ ___
 
 ***
 
-
-<br>
-<br>
-<br>
-
-
 ## Body Copy
 
 Body copy written as normal, plain text will be wrapped with `<p></p>` tags in the rendered HTML.
@@ -100,12 +86,6 @@ renders to this HTML:
 ``` html
 <p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
 ```
-
-
-<br>
-<br>
-<br>
-
 
 ## Emphasis
 
@@ -158,11 +138,6 @@ Which renders to:
 ~~Strike through this text.~~
 
 
-<br>
-<br>
-<br>
-
-
 ## Blockquotes
 For quoting blocks of content from another source within your document.
 
@@ -203,12 +178,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
 >>> Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
 Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
-
-
-<br>
-<br>
-<br>
-
 
 ## Lists
 
@@ -276,7 +245,7 @@ And this HTML
 </ul>
 ```
 
-### Ordered
+## Ordered
 
 A list of items in which the order of items does explicitly matter.
 
@@ -341,11 +310,6 @@ Renders to:
 8. Eget porttitor lorem
 
 
-<br>
-<br>
-<br>
-
-
 ## Code
 
 ### Inline code
@@ -358,7 +322,7 @@ For example, `<section></section>` should be wrapped as "inline".
 ```
 
 
-### Indented code
+## Indented code
 
 Or indent several lines of code by at least four spaces, as in:
 
@@ -375,7 +339,7 @@ Or indent several lines of code by at least four spaces, as in:
     line 3 of code
 
 
-### Block code "fences"
+## Block code "fences"
 
 Use "fences"  ```` ``` ```` to block in multiple lines of code.
 
@@ -398,7 +362,7 @@ HTML:
 </pre>
 ```
 
-### Syntax highlighting
+## Syntax highlighting
 
 GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", ` ``` js `, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:
 
@@ -472,13 +436,6 @@ And this complicated HTML:
 </pre></div>
 ```
 
-
-<br>
-<br>
-<br>
-
-
-
 ## Tables
 Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
 
@@ -540,12 +497,6 @@ Adding a colon on the right side of the dashes below any heading will right alig
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-
-<br>
-<br>
-<br>
-
-
 ## Links
 
 ### Basic link
@@ -563,7 +514,6 @@ HTML:
 ``` html
 <a href="http://assemble.io">Assemble</a>
 ```
-
 
 ### Add a title
 
@@ -604,12 +554,6 @@ Content for chapter one.
 Content for chapter one.
 ```
 **NOTE** that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
-
-
-<br>
-<br>
-<br>
-
 
 ## Images
 Images have a similar syntax to links but include a preceding exclamation point.

@@ -1,17 +1,17 @@
 # TL;DR Cheat Sheet
 
 For a 60 second quick start on Markdown
-[commonmark has a great tutorial](http://commonmark.org/help/){.new-tab}
+[commonmark has a great tutorial](http://commonmark.org/help/){target=_blank}
 
 ### Emphasis
 
 <div markdown="1" class="two-column">
 
 ``` md
-this is _italic_ and so is *this*
+this is _italic_ and so is *this*  
 this is __bold__ and so is **this**
-^^underline^^,  ~~strike through~~
-==highlight==  and `inline code`
+^^underline^^,  ~~strike through~~  
+==highlight==  and `inline code`  
 ==*you* **can** ^^combine^^ `too`==
 
 ```
@@ -20,10 +20,10 @@ this is __bold__ and so is **this**
 
 <div markdown="1" class="two-column">
 
-this is _italic_ and so is *this*
-this is __bold__ and so is **this**
-^^underline^^,  ~~strike through~~
-==highlight==  and `inline code`
+this is _italic_ and so is *this*  
+this is __bold__ and so is **this**  
+^^underline^^,  ~~strike through~~  
+==highlight==  and `inline code`  
 ==*you* **can** ^^combine^^ ~~too~~==
 
 </div>
@@ -35,13 +35,13 @@ this is __bold__ and so is **this**
 <div markdown="1" class="two-column">
 
 ``` md
-Put 2 spaces at the end of a line
-to force a line break.
+Put 2 spaces at the end of a line  
+to force a line break.  
 If you simply
 hit enter and
 don't use 2 spaces
 it merges the lines
-like this.
+like this.  
 You can also force a break <br> anywhere
 using the `<br>` tag like we just did
 ```
@@ -50,8 +50,8 @@ using the `<br>` tag like we just did
 
 <div markdown="1" class="two-column">
 
-Put 2 spaces at the end of a line
-to force a line break.
+Put 2 spaces at the end of a line  
+to force a line break.  
 If you simply
 hit enter and
 don't use 2 spaces
@@ -178,25 +178,25 @@ using the `<br>` tag like we just did
 <div markdown="1" class="two-column">
 
 ``` md
-[simple link](https://www.google.com )
-[with optional title](https://www.google.com "Google's Homepage")
+[simple link](https://www.google.com )  
+[with optional title](https://www.google.com "Google's Homepage")  
 point to a [relative file or md](./embedding/lucid.md) or
 mail link with emoji [📧](mailto:joshdev@9ci.com) or
 click this cloud icon to see the list of icon options
 [_cloud_{.icon}](https://material.io/icons/)
 
-or [use an image ![](../images/dingus/image-small.png)](../images/dingus/image.png)
+or [use an image ![](images/dingus/image-small.png)](images/dingus/image.png)
 
 [Reference-Style Links][some reference id]
 put link at bottom of paragraph or page.
 you can use numbers or text for
-[reference-style link definitions][1]
+[reference-style link definitions][1]  
 or leave it empty and
-just use the [link text itself]
+just use the [link text itself]  
 
-to [open in new tab](sandbox.md){.new-tab}
-use `{target=_blank} or {.new-tab}` attributes
-use it on [ref links][new tab]{.new-tab} too
+to [open in new tab](documinatation.md){target=_blank}
+use `{target=_blank}` attribute
+use it on [ref links][new tab]{target=_blank} too
 
 Indenting _reference links_
 2 spaces is not required
@@ -205,32 +205,32 @@ but a recommended convention
   [some reference id]: https://daringfireball.net/projects/markdown/syntax#link
   [1]: http://reason.com/blog
   [link text itself]: ./images/material.png
-  [new tab]: sandbox.md
+  [new tab]: documinatation.md
 
 ```
 
 </div>
 <div markdown="1" class="two-column">
 
-[simple link](https://www.google.com )
-[with optional title](https://www.google.com "Google's Homepage")
+[simple link](https://www.google.com )  
+[with optional title](https://www.google.com "Google's Homepage")  
 point to a [relative file or md](./embedding/lucid.md) or
 mail link with emoji [📧](mailto:joshdev@9ci.com) or
 click this cloud icon to see the list of icon options
 [_cloud_{.icon}](https://material.io/icons/)
 
-or [use an image ![](../images/dingus/image-small.png)](../images/dingus/image.png)
+or [use an image ![](images/dingus/image-small.png)](images/dingus/image.png)
 
 [Reference-Style Links][some reference id]
 put link at bottom of paragraph or page.
 you can use numbers or text for
-[reference-style link definitions][1]
+[reference-style link definitions][1]  
 or leave it empty and
-just use the [link text itself]
+just use the [link text itself]  
 
-to [open in new tab](sandbox.md){.new-tab}
-us `{target=_blank} or {.new-tab}` attributes
-use it on [ref links][new tab]{.new-tab} too
+to [open in new tab](documinatation.md){target=_blank}
+us `{target=_blank}` attributes
+use it on [ref links][new tab]{target=_blank} too
 
 _reference links_ can be at bottom
 of paragraph. Indenting 2 spaces is not
@@ -239,7 +239,7 @@ required but a recommended convention
   [some reference id]: https://daringfireball.net/projects/markdown/syntax#link
   [1]: http://reason.com/blog
   [link text itself]: ./images/material.png
-  [new tab]: sandbox.md
+  [new tab]: documinatation.md
 
 </div>
 
@@ -250,43 +250,43 @@ required but a recommended convention
 <div markdown="1" class="two-column">
 
 ``` md
-inline ![](..images/dingus/image-small.png)
-with alt text ![foo](../images/dingus/image-small.png)
-with ref links ![img-small][]
-can use [sizing attributes](blocks/#sizing-alignment)
+inline ![](images/dingus/image-small.png)
+with alt text ![foo](images/dingus/image-small.png)  
+with ref links ![img-small][]  
+can use [sizing attributes](blocks/#sizing_alignment)
 
 Put `zoomify` in the alt text bracket to enable
-clicking to zoom. Try clicking on any of
+clicking to zoom. Try clicking on any of 
 these images ![zoomify][img-dingus]{.tiny}
 
-![zoomify](../images/dingus/image.png){.center .xsmall}
+![zoomify](images/dingus/image.png){.center .xsmall}
 
 > :camera: **Figure Title**
-> ![zoomify](../images/dingus/image.png){.center .small}
+> ![zoomify](images/dingus/image.png){.center .small}
 
-  [img-small]: ../images/dingus/image-small.png
-  [img-dingus]: ../images/dingus/image.png
+  [img-small]: ./images/dingus/image-small.png
+  [img-dingus]: ./images/dingus/image.png
 
 ```
 
 </div>
 <div markdown="1" class="two-column">
 
-inline ![](../images/dingus/image-small.png)
-with alt text ![foo](../images/dingus/image-small.png)
-with ref links ![img-small][]
-can use [sizing attributes](blocks/#sizing-alignment)
+inline ![](images/dingus/image-small.png)
+with alt text ![foo](images/dingus/image-small.png)  
+with ref links ![img-small][]  
+can use [sizing attributes](blocks/#sizing_alignment)
 
 Put `zoomify` in the alt text bracket to enable
 clicking to zoom. Try it on any of these images ![zoomify][img-dingus]{.tiny}
 
-![zoomify](../images/dingus/image.png){.center .xsmall}
+![zoomify](images/dingus/image.png){.center .xsmall}
 
 > :camera: **Figure Title**
-> ![zoomify](../images/dingus/image.png){.center .small}
+> ![zoomify](images/dingus/image.png){.center .small}
 
-  [img-small]: ../images/dingus/image-small.png
-  [img-dingus]: ../images/dingus/image.png
+  [img-small]: ./images/dingus/image-small.png
+  [img-dingus]: ./images/dingus/image.png
 
 </div>
 
@@ -346,7 +346,7 @@ just add it to end of abbr def.
 Footnotes[^1] work like reference links
 They auto-number like ordered lists[^3]
 You can use any
-reference id[^text reference]
+reference id[^text reference]  
 like ref links they can be
 organized at bottom
 of paragraph or page.
@@ -362,7 +362,7 @@ of paragraph or page.
 Footnotes[^1] work like reference links
 They auto-number like ordered lists[^3]
 You can use any
-reference id[^text reference]
+reference id[^text reference]  
 like ref links they can be
 organized at bottom
 of paragraph or page.
@@ -387,16 +387,16 @@ and you don't need to make the
 raw Markdown line up prettily.
 You can also use inline Markdown.
 
-| Tables   | Are           | Cool      |
-|----------|---------------|-----------|
-| col 3 is | right-aligned | $1600     |
-| col 2 is | centered      | $12       |
-|          | **Total**     | **$1612** |
+|  Tables  |      Are      |   Cool    |
+| -------- |:-------------:| ---------:|
+| col 3 is | right-aligned |     $1600 |
+| col 2 is |   centered    |       $12 |
+|          |   **Total**   |   **$1612** |
 
 ==Table== | **Format** | 👀 _scramble_
 --- | --- | ---
 *Still* | `renders` | **nicely**
-[with links](../images/dingus/image-small.png) | images ![zoomify](../images/dingus/image-small.png){.tiny} | emojis 🍔
+[with links](images/dingus/image-small.png) | images ![zoomify](images/dingus/image-small.png){.tiny} | emojis 🍔
 icons _cloud_{.icon} | footnotes[^1] | use `<br>` <br> for multi-line <br> line breaks
 
 ```
@@ -411,16 +411,16 @@ Outer pipes (|) are optional,
 raw Markdown line up prettily.
 You can also use inline Markdown.
 
-| Tables   | Are           | Cool      |
-|----------|---------------|-----------|
-| col 3 is | right-aligned | $1600     |
-| col 2 is | centered      | $12       |
-|          | **Total**     | **$1612** |
+|  Tables  |      Are      |   Cool    |
+| -------- |:-------------:| ---------:|
+| col 3 is | right-aligned |     $1600 |
+| col 2 is |   centered    |       $12 |
+|          |   **Total**   | **$1612** |
 
 ==Table== | **Format** | 👀 _fun_
 --- | --- | ---
 *Still* | `renders` | **nicely**
-[with links](../images/dingus/image-small.png) | images ![zoomify](../images/dingus/image-small.png){.tiny} | emojis 🍔
+[with links](images/dingus/image-small.png) | images ![zoomify](images/dingus/image-small.png){.tiny} | emojis 🍔
 icons _cloud_{.icon} | footnotes[^1] | use `<br>` <br> for multi-line <br> line breaks
 
 </div>
@@ -551,19 +551,19 @@ through out this doc we have been using a `<div markdown="1" class="two-column">
 <div markdown="1" class="two-column">
 
 ```markdown
-| foo | bar  |
-|-----|------|
-| baz | buzz |
+|foo | bar |
+|----|-----|
+|baz | buzz|
 ```
 
 </div>
 <div markdown="1" class="two-column">
 
-| foo | bar  |
-|-----|------|
-| baz | buzz |
+|foo | bar |
+|----|-----|
+|baz | buzz|
 
-</div>
+</div>  
 
 ---
 
@@ -581,13 +581,13 @@ through out this doc we have been using a `<div markdown="1" class="two-column">
 
     ---
 
-    ![](../images/dingus/image.png){.small}
+    ![](images/dingus/image.png){.small}
 
     </div>
 
 <div markdown="1" class="row">
 
-> :bug: **here is another example**
+> :bug: **here is another example**  
 well just use admonitions and a table
 
 ---
@@ -598,7 +598,7 @@ and as you can see the heights get adjusted to be equal as well
 
 ---
 
-![](../images/dingus/image.png){.small}
+![](images/dingus/image.png){.small}
 
 </div>
 

@@ -1,1 +1,0 @@
-# Firefox Tips & Tricks

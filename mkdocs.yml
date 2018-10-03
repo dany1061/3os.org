@@ -1,22 +1,67 @@
+
+# Navigation
+nav:
+  - Home: 'index.md'
+  - Linux:
+      - General: 'linux/general/general.md'
+      - Files: 'linux/general/files.md'
+      - Memory & Swap: 'linux/general/memorySwap.md'
+      - Guides: 
+            - Python Simple Web-Server: 'linux/linuxGuides/pythonWebServer.md'
+            - Resize Root PartitionWithout Reboot: 'linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
+            - Installing Oh My zsh: 'linux/linuxGuides/zshOnSteroids.md'
+      - cPanel & WHM: 'linux/cpanel.md'
+      - CSF Firewall: 'linux/csf.md'
+      - Nginx: 'linux/nginx.md'
+      - Apache: 'linux/apache.md'
+      - Sophos Firewall: 'linux/sophos.md'
+      - Wordpress: 'linux/wordpress.md'
+      - Esxi: 'linux/esxi.md'
+      - Ples: 'linux/plesk.md'
+  - macOS:
+      - General: 'macOS/macGeneral.md'
+      - Home Brew: 'macOS/brew.md'
+      - MacOS Swoftware: 'macOS/macSoftware.md'
+      - Alftred Workflows: 'macOS/alfredWorkFlows.md'
+  - Rasperry Pi:
+      - General: 'rasperryPi/piGeneral.md'
+      - Rasperry Pi 3 Tor Access Point: 'rasperryPi/TOR-Pi.md'
+      - Rasperry Pi Magic Mirror: 'rasperryPi/MagicMirror.md'
+  - Windows:
+      - Useful Links for Windows: 'windows/winGeneral.md'
+      - Software for Windows: 'windows/winSoftware.md'
+  - Browsers Extensions:
+      - Chrome: 'browsers/chromeExtensions.md'
+      - Firefox: 'browsers/firefoxExtentions.md'
+  - Android:
+      - Useful Apps for Android: 'android/androidApps.md'
+  - Penetration-Testing:
+      - General: 'penTesting/penTestingGeneral.md'
+      - Kali Linux Modifications: 'penTesting/KaliLinux.md'
+      - Installing Bettercap 1.6.2: penTesting/bettercao1.6.2.md
+
+
+
+  - Other:
+      - General: 'general/generalLinks.md'
+      - Gmail Mark As Read Script: 'general/gmailMarkAsRead.md'
+      - Synology DSM : 'general/synologyGeneral.md'
+      - Ubiquiti Networking: 'general/ubiquiti.md'
+      - WiFi QR Generator: 'general/qrwifi/index.html'
+
+  - Help:
+      - Documinatation: 'help/documinatation.md'
+      - Basic Cheat-Sheet: 'help/markdown_cheatsheet_basic.md'
+      - MarkDown Cheat-Sheet: 'help/markdown_cheat-sheet.md'
+      - Admonitions, callouts, sidebars: 'help/blocks.md'
+  - About: 'about.md'
+
 # Site information
 site_name: 3os.org
 site_url: https://3os.org
 site_description: 'Collocation of Guide, Technical knowledge, Security, Exmaples, Tips, at any operating system'
 site_author: 'Stas Kosatuhin'
 
-
-# Navigation
-nav:
-  - Home: 'index.md'
-  - Linux:
-      - 'General': 'linux/general/general.md'
-  - macOS:
-      - 'General': 'macOS/macGeneral.md'
-      - 'Home Brew': 'macOS/brew.md'
-  - Help:
-      - 'Documinatation': 'help/documinatation.md'
-      - 'MarkDown Cheat-Sheet': 'help/markdown_cheat-sheet.md'
-  - About: 'about.md'
 
 
 # Repository Link Editor
