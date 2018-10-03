@@ -39,16 +39,12 @@ nav:
       - General: 'penTesting/penTestingGeneral.md'
       - Kali Linux Modifications: 'penTesting/KaliLinux.md'
       - Installing Bettercap 1.6.2: penTesting/bettercao1.6.2.md
-
-
-
   - Other:
       - General: 'general/generalLinks.md'
       - Gmail Mark As Read Script: 'general/gmailMarkAsRead.md'
       - Synology DSM : 'general/synologyGeneral.md'
       - Ubiquiti Networking: 'general/ubiquiti.md'
       - WiFi QR Generator: 'general/qrwifi/index.html'
-
   - Help:
       - Documinatation: 'help/documinatation.md'
       - Basic Cheat-Sheet: 'help/markdown_cheatsheet_basic.md'
@@ -66,7 +62,7 @@ site_author: 'Stas Kosatuhin'
 
 # Repository Link Editor
 repo_url: https://github.com/fire1ce/3os.org/
-edit_uri: 'blob/master/docs/'
+edit_uri: 'edit/master/docs/'
 
 
 # Theme Configuration
