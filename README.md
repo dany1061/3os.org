@@ -6,11 +6,7 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
 - The 3os.org is made and built with [MkDocs](https://www.mkdocs.org/)
-- Themed with [ Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- Themed with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - The `Master` branch contains the Source code before build
 - The `gh-pages` branch contains the full deployed [website](https://3os.org)
-- Project [release notes][release-notes].
-- Visit the [MkDocs wiki](https://github.com/mkdocs/mkdocs/wiki) for community
-  resources, including third party themes and a list of MkDocs users.
-- IRC channel: `#mkdocs` on freenode.
-- Discussions and support: <https://groups.google.com/forum/#!forum/mkdocs>
+- Contributions is welcome
