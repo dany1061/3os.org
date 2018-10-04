@@ -10,7 +10,7 @@ run this at terminal:
 
 ## Brewup - Bash Script to Update & Upgrade Brew and Brew Casks
 
-Donload zip from this [gist](https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47/archive/295e72da089a4d130911007b7b61bf47a42171e1.zip)
+Download zip from this [gist](https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47/archive/295e72da089a4d130911007b7b61bf47a42171e1.zip)
 Unzip, move the "brewup" file to /usr/local/bin/
 
 ```bash
