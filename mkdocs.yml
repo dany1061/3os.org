@@ -79,7 +79,7 @@ theme:
 
 # Social Links and Comments
 extra:
-  disqus: '3os'
+#   disqus: '3os'
   social:
     - type: 'github'
       link: 'https://github.com/fire1ce'
