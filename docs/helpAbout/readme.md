@@ -8,12 +8,12 @@ Learn [Markdown](https://help.github.com/articles/github-flavored-markdown)! The
 
 Whenever you feel stuck, go to [MDwiki's own site](http://mdwiki.info) for further information.
 
-One Wiki Only? Fork It.
+One Wiki Only? Fork It
 -----------------------
 
 First off fork this repo and call it something like `<MyProject>-wiki`.
 
-Multiple Wikis? Clone It.
+Multiple Wikis? Clone It
 -------------------------
 
 In case would you like to create more than one wiki for the same GitHub user or organization, then forking won't cut it. At the moment of this writing GitHub won't allow you to fork a single repository multiple times for the same account.
