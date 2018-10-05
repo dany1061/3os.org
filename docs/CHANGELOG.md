@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.1 (06/10/2018)
+- [v0.1.3](https://github.com/fire1ce/3os.org/commit/6c90416ef6b8982d8ef58e361856cc5528249dfe) - @fire1ce
+
+---
+
 ## v0.1.3 (06/10/2018)
 - [fix: changelog ifrmae wont load. changed changelog iframe src link from relative to direct](https://github.com/fire1ce/3os.org/commit/90dcd7c4c6405283061ed82928603e7cd82e9c5f) - @fire1ce
 
