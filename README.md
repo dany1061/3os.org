@@ -11,5 +11,4 @@
 - The `Master` branch contains the Source code before build
 - The `gh-pages` branch contains the full deployed [website](https://3os.org)
 - Contributions is welcome
-
 - [Full Changelog](https://3os.org/CHANGELOG/)
