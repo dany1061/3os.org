@@ -1,6 +1,16 @@
 # Changelog
 
+## v0.1.6 (06/10/2018)
+- [updated headers at index.md](https://github.com/fire1ce/3os.org/commit/988dce0c4fe56aa06d23f74674c0484102928220) - @fire1ce
+- [updated copy rights](https://github.com/fire1ce/3os.org/commit/fd0027f46e1fb0ce2b3145d0b66536f384f30d12) - @fire1ce
+- [Updated README file with MIT Licence](https://github.com/fire1ce/3os.org/commit/48973bde0d73d6399f77809503b77cf371ee3a7e) - @fire1ce
+- [Added MIT LICENSE to the project](https://github.com/fire1ce/3os.org/commit/fc75ab6d1d6f1c507b445e93d66e17cdddb37a23) - @fire1ce
+- [v0.1.5](https://github.com/fire1ce/3os.org/commit/fe8c3b6ca5f085126d686a8797b450dde22b0277) - @fire1ce
+
+---
+
 ## v0.1.5 (06/10/2018)
+- [Update post about the progress of the site at index.md](https://github.com/fire1ce/3os.org/commit/cae9c366f7b4a2dcd5e44e1729cc11af51802829) - @fire1ce
 - [removed iframe for wifiqr link](https://github.com/fire1ce/3os.org/commit/729b1891e4dd7a4d0157260065fb70a7d0258bbd) - @fire1ce
 - [Updated information for WiFi QR Generator in other section](https://github.com/fire1ce/3os.org/commit/27e5fa94a983759e178f86ae41be1821568af8fd) - @fire1ce
 - [v0.1.4](https://github.com/fire1ce/3os.org/commit/9e5b2ebee528605a2c688aef9b23a8834e6da0db) - @fire1ce
