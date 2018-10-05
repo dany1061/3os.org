@@ -1,6 +1,7 @@
 # Navigation
 nav:
   - Home: 'index.md'
+  - Changelog: 'CHANGELOG.md'
   - Linux:
       - General: 'linux/general/general.md'
       - Files: 'linux/general/files.md'
