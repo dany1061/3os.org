@@ -120,3 +120,6 @@ markdown_extensions:
 google_analytics:
   - 'UA-122318911-1'
   - 'auto'
+
+# Copyright
+copyright: 'Copyright &copy; Stas Kosatuhin'
