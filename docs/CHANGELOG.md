@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.3 (06/10/2018)
+- [fix: changelog ifrmae wont load. changed changelog iframe src link from relative to direct](https://github.com/fire1ce/3os.org/commit/90dcd7c4c6405283061ed82928603e7cd82e9c5f) - @fire1ce
+
+---
+
+## v0.1.2 (06/10/2018)
+- [updated](https://github.com/fire1ce/3os.org/commit/ff7ae95ba123910c3533e3db5a06bc92ab780eed) - @fire1ce
+- [added changelog section to main page](https://github.com/fire1ce/3os.org/commit/844a2b33dedfc9d5d88567bd0bc2b72e9a30a3aa) - @fire1ce
+- [updated mkdocs.yml with new changelog section](https://github.com/fire1ce/3os.org/commit/2fee680985a29db452880231326c8a763ef0be5c) - @fire1ce
+- [Removed Changelog.md from root derectory](https://github.com/fire1ce/3os.org/commit/7e52b63eae00a8ab3605cbe5e44885486e70a5e5) - @fire1ce
+
+---
+
 ## 0.1.1 (05/10/2018)
 - [updated mkdcos.yal confit to new logo svg path](https://github.com/fire1ce/3os.org/commit/db13e51fd597c91d8aa6e73cc7e0d4615bd39385) - @fire1ce
 - [replaced favicon based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/d0c9654c89938ce96352e31b99209de141a2e0f6) - @fire1ce
