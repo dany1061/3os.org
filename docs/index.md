@@ -1,5 +1,7 @@
 # Welcome to 3os.org
 
+## Updates
+
 !!! info "NEW SITE IS HERE"
     Welcome To Our New Site!  
     We Have transferred all the data from the old site, but we have a lot of work ahead to make this site much more useful for everyday use.  
@@ -19,7 +21,9 @@ I’ve created [3os](https://3os.org) with the knowledge I gathered over the yea
 
 **All the information provided by this website can be obtained via the internet and I don't claim ownership of the information presented to you.**  
 
-!!! Abstract "[Changelog](/CHANGELOG)"
+## Changelog Summery
+
+!!! Abstract "summery / [full chanhgelog](/CHANGELOG)"
     <div style="overflow: hidden;">
         <iframe src="/CHANGELOG/" scrolling="no" style="border: 0px; height: 800px; margin-top: -170px; width:100%"></iframe>
     </div>
