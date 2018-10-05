@@ -46,7 +46,7 @@ nav:
       - Gmail Mark As Read Script: 'general/gmailMarkAsRead.md'
       - Synology DSM : 'general/synologyGeneral.md'
       - Ubiquiti Networking: 'general/ubiquiti.md'
-      - WiFi QR Generator: 'general/qrwifi/index.html'
+      - WiFi QR Generator: 'general/wifiQrGenerator.md'
   - Help:
       - Documinatation: 'help/documinatation.md'
       - Basic Cheat-Sheet: 'help/markdown_cheatsheet_basic.md'
