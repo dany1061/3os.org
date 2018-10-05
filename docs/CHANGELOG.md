@@ -1,11 +1,21 @@
 # Changelog
 
-## v0.1.4 (06/10/2018)
+## v0.1.5 (06/10/2018)
+- [removed iframe for wifiqr link](https://github.com/fire1ce/3os.org/commit/729b1891e4dd7a4d0157260065fb70a7d0258bbd) - @fire1ce
+- [Updated information for WiFi QR Generator in other section](https://github.com/fire1ce/3os.org/commit/27e5fa94a983759e178f86ae41be1821568af8fd) - @fire1ce
+- [v0.1.4](https://github.com/fire1ce/3os.org/commit/9e5b2ebee528605a2c688aef9b23a8834e6da0db) - @fire1ce
 
+---
+
+## v0.1.4 (06/10/2018)
+- [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
 
 ---
 
 ## 0.1.4 (06/10/2018)
+- [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
+- [Removed empy line in README.md](https://github.com/fire1ce/3os.org/commit/445d2115c60f999abbdc098c016106b50e094282) - @fire1ce
+- [New Wifi QR Generator Link in Other Category](https://github.com/fire1ce/3os.org/commit/1e21556bd0858b423d548ddd698aa7392d2772f0) - @fire1ce
 - [removed empty line at README file](https://github.com/fire1ce/3os.org/commit/61d61dd4d535a82637134d81e8d1d32109d27282) - @fire1ce
 - [fixed broken link of changelog](https://github.com/fire1ce/3os.org/commit/2c5aec3493e5dd889f9d7796e5635aac9fa23ef1) - @fire1ce
 - [updated README with link to chnaglog](https://github.com/fire1ce/3os.org/commit/c2990e0fdf5585554b065ea7ceb8d85b89554b6e) - @fire1ce
