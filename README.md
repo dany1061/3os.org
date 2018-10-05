@@ -12,4 +12,4 @@
 - The `gh-pages` branch contains the full deployed [website](https://3os.org)
 - Contributions is welcome
 
-- [full changelog](https://3os.org/CHANGELOG/)
+- [Full Changelog](https://3os.org/CHANGELOG/)
