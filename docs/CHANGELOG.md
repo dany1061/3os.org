@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.1.4 (06/10/2018)
+
+
+---
+
+## 0.1.4 (06/10/2018)
+- [removed empty line at README file](https://github.com/fire1ce/3os.org/commit/61d61dd4d535a82637134d81e8d1d32109d27282) - @fire1ce
+- [fixed broken link of changelog](https://github.com/fire1ce/3os.org/commit/2c5aec3493e5dd889f9d7796e5635aac9fa23ef1) - @fire1ce
+- [updated README with link to chnaglog](https://github.com/fire1ce/3os.org/commit/c2990e0fdf5585554b065ea7ceb8d85b89554b6e) - @fire1ce
+- [v0.1.3](https://github.com/fire1ce/3os.org/commit/b50c98fe3e836c0bf25b950847a3a0035f52e038) - @fire1ce
+
+---
+
 ## v0.1.1 (06/10/2018)
 - [v0.1.3](https://github.com/fire1ce/3os.org/commit/6c90416ef6b8982d8ef58e361856cc5528249dfe) - @fire1ce
 
