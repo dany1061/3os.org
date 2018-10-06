@@ -9,7 +9,7 @@
 - The 3os.org is made and built with [MkDocs](https://www.mkdocs.org/)
 - Themed with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
 - The `Master` branch contains the Source code before build
-- The `gh-pages` branch contains the full deployed [website](https://3os.org)
+- The `gh-pages` branch contains the fully deployed [website](https://3os.org)
 - Contributions is welcome
 - [Full Changelog](https://3os.org/CHANGELOG/)
 
