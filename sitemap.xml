@@ -151,6 +151,16 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://3os.org/penTesting/clickJacking/</loc>
+     <lastmod>2018-10-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/penTesting/IDD_Generator/</loc>
+     <lastmod>2018-10-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://3os.org/penTesting/KaliLinux/</loc>
      <lastmod>2018-10-06</lastmod>
      <changefreq>daily</changefreq>
