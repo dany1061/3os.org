@@ -39,8 +39,10 @@ nav:
       - Useful Apps for Android: 'android/androidApps.md'
   - Penetration-Testing:
       - General: 'penTesting/penTestingGeneral.md'
+      - Click-Jacking Test: 'penTesting/clickJacking.md'
+      - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
       - Kali Linux Modifications: 'penTesting/KaliLinux.md'
-      - Installing Bettercap 1.6.2: penTesting/bettercao1.6.2.md
+      - Installing Bettercap 1.6.2: 'penTesting/bettercao1.6.2.md'
   - Other:
       - General: 'general/generalLinks.md'
       - Gmail Mark As Read Script: 'general/gmailMarkAsRead.md'
