@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.1.7 (06/10/2018)
+- [assets update](https://github.com/fire1ce/3os.org/commit/46c1e0b5c749bb4cd23a18e796e452653f24f09f) - @fire1ce
+- [removed links after added all the code to the root site](https://github.com/fire1ce/3os.org/commit/4ddb384e5e5c54945182bee905fafd6ea1949af5) - @fire1ce
+- [Added new Israel ID validator and Generataor at Pen-testing](https://github.com/fire1ce/3os.org/commit/1554160fb820c58446a51a89c6b3c5388ec997f0) - @fire1ce
+- [added new Click Jacking at Pen-testing Section](https://github.com/fire1ce/3os.org/commit/2a364d6b95e49d2ed35a044c254b34333320d53a) - @fire1ce
+- [changed "Source" to "Credit & Source"](https://github.com/fire1ce/3os.org/commit/5b03e967140d559292e6ee6ae855e5ad4b1123a2) - @fire1ce
+- [Cleanup](https://github.com/fire1ce/3os.org/commit/885708bc333502b75fa45d902fc76ea61d29e8a2) - @fire1ce
+- [added new Israel ID Generator & Validator and Click-Jacking at pen test](https://github.com/fire1ce/3os.org/commit/e6f9a29ee42e5577c9fcb9966f4a464fd5e930da) - @fire1ce
+
+---
+
+## status (06/10/2018)
+- [v0.1.6](https://github.com/fire1ce/3os.org/commit/bc886f855307fd6e38428aecd2d98fd37f4fee95) - @fire1ce
+
+---
+
 ## v0.1.6 (06/10/2018)
 - [updated headers at index.md](https://github.com/fire1ce/3os.org/commit/988dce0c4fe56aa06d23f74674c0484102928220) - @fire1ce
 - [updated copy rights](https://github.com/fire1ce/3os.org/commit/fd0027f46e1fb0ce2b3145d0b66536f384f30d12) - @fire1ce
