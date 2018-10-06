@@ -23,11 +23,7 @@ I’ve created [3os](https://3os.org) with the knowledge I gathered over the yea
 
 ## Changelog Summery
 
-!!! Abstract "summery / [full chanhgelog](/CHANGELOG)"
+!!! example "Summery / [Full Chanhgelog](/CHANGELOG)"
     <div style="overflow: hidden;">
         <iframe src="/CHANGELOG/" scrolling="no" style="border: 0px; height: 800px; margin-top: -170px; width:100%"></iframe>
     </div>
-<!-- ![](images/desk.jpg) -->
-
-
-
