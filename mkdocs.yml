@@ -54,6 +54,13 @@ nav:
       - Basic Cheat-Sheet: 'help/markdown_cheatsheet_basic.md'
       - MarkDown Cheat-Sheet: 'help/markdown_cheat-sheet.md'
       - Admonitions, callouts, sidebars: 'help/blocks.md'
+      - GitHub: 'help/embedding/github.md'
+      - Evernote: 'help/embedding/evernote.md'
+      - Excel: 'help/embedding/excel.md'
+      - Lucid: 'help/embedding/lucid.md'
+      - Jing: 'help/embedding/jing.md'
+      - Gists: 'help/embedding/gist.md'
+
   - About: 'about.md'
 
 # Site information
