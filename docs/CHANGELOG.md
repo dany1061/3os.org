@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.1.8 (10/10/2018)
+- [changed "requerments" badge to master branch at README.md](https://github.com/fire1ce/3os.org/commit/4a5cb245f9c5db212df30b4c01b02760f8443e18) - @fire1ce
+- [changed images pathes in madkocs.yml](https://github.com/fire1ce/3os.org/commit/d57b2dcac34f431acfb53076d7dd04deb7f1112d) - @fire1ce
+- [images folder moved from docs to "assets folder"](https://github.com/fire1ce/3os.org/commit/d4dbb4a2ed45a4ec64712607af7c1a3d000f4544) - @fire1ce
+- [added new modduels to brew packages](https://github.com/fire1ce/3os.org/commit/057853eb9b417aed3dbe8c822b748b19be8359cc) - @fire1ce
+- [index summary misspel fix](https://github.com/fire1ce/3os.org/commit/abc9668b2c67f3254a5708cd555cb8a1bb3d0ca3) - @fire1ce
+- [testing gists embeddings](https://github.com/fire1ce/3os.org/commit/3ce281edf72aad2ae1c042f000fcdf55ffd78c36) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/e52d18741cfcd0a249c6b6c11ef33b0122d9cbc5) - @Stas Kosatuhin
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/1e23b79aa5fd9b2ec2cfa76117cceffd96106690) - @Stas Kosatuhin
+- [Summary missped fix](https://github.com/fire1ce/3os.org/commit/380f0d5fe039816645d1f1ef5d58c2ccc5ffd66d) - @fire1ce
+- [changed input of IDD to max-width: 300px to fit mobile phones](https://github.com/fire1ce/3os.org/commit/254860a3c0c150b72f66ab339585b9723792c5aa) - @fire1ce
+- [README misspell fix](https://github.com/fire1ce/3os.org/commit/c533e65dd8bcf91229a48f2003fed63b6106f022) - @fire1ce
+- [relative link added "/"](https://github.com/fire1ce/3os.org/commit/b6804d6c8e5458fa4a1cb14b22fa00058fb8ec3c) - @fire1ce
+- [Credit & Sources cleanup](https://github.com/fire1ce/3os.org/commit/0621994a399319a52c6a4079cd12fdbfa6bc448e) - @fire1ce
+- [format document](https://github.com/fire1ce/3os.org/commit/343f079bcb6e8b1561b8716a6847c4aecf56f81e) - @fire1ce
+- [cleanup clickjack index.html](https://github.com/fire1ce/3os.org/commit/d369ad012bd14e510cd95c6b64d2eb2d1e969af9) - @fire1ce
+- [Credit & Sources update](https://github.com/fire1ce/3os.org/commit/2331def66d21e907cdf972264c6ce4e16d608d46) - @fire1ce
+- [Updated Credits & Sources](https://github.com/fire1ce/3os.org/commit/bc056f1f7cdbfb2ca95f0dde82b1f64e350f4b6e) - @fire1ce
+- [ CHANGELOG.md update to v0.1.7](https://github.com/fire1ce/3os.org/commit/054ee8f5a48cd3023147171bd55b2a2085752ee0) - @fire1ce
+
+---
+
 ## v0.1.7 (06/10/2018)
 - [assets update](https://github.com/fire1ce/3os.org/commit/46c1e0b5c749bb4cd23a18e796e452653f24f09f) - @fire1ce
 - [removed links after added all the code to the root site](https://github.com/fire1ce/3os.org/commit/4ddb384e5e5c54945182bee905fafd6ea1949af5) - @fire1ce
