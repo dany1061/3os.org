@@ -76,6 +76,7 @@ edit_uri: 'edit/master/docs/'
 
 # Theme Configuration
 theme:
+  language: en
   name: 'material'
   logo: 'assets/images/logo/baseline-scatter_plot-24px.svg_white.svg'
   favicon: 'assets/images/favicon.ico'
