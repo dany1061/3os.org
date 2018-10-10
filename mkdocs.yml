@@ -76,8 +76,8 @@ edit_uri: 'edit/master/docs/'
 # Theme Configuration
 theme:
   name: 'material'
-  logo: 'images/logo/baseline-scatter_plot-24px.svg_white.svg'
-  favicon: 'images/favicon.ico'
+  logo: 'assets/images/logo/baseline-scatter_plot-24px.svg_white.svg'
+  favicon: 'assets/images/favicon.ico'
   palette:
     primary: 'teal'
     accent: 'teal'
