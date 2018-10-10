@@ -2,222 +2,252 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://3os.org/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/CHANGELOG/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/general/general/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/general/files/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/general/memorySwap/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/linuxGuides/pythonWebServer/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/linuxGuides/ResizeRootPartitionWithoutReboot/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/linuxGuides/zshOnSteroids/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/cpanel/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/csf/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/nginx/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/apache/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/sophos/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/wordpress/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/esxi/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/linux/plesk/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/macGeneral/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/brew/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/macSoftware/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/macOS/alfredWorkFlows/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/rasperryPi/piGeneral/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/rasperryPi/TOR-Pi/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/rasperryPi/MagicMirror/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/development/python/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/windows/winGeneral/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/windows/winSoftware/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/browsers/chromeExtensions/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/browsers/firefoxExtentions/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/android/androidApps/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/penTesting/penTestingGeneral/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/penTesting/clickJacking/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/penTesting/IDD_Generator/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/penTesting/KaliLinux/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/penTesting/bettercao1.6.2/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/general/generalLinks/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/general/gmailMarkAsRead/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/general/synologyGeneral/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/general/ubiquiti/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/general/wifiQrGenerator/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/help/documinatation/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/help/markdown_cheatsheet_basic/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/help/markdown_cheat-sheet/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/help/blocks/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/github/</loc>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/evernote/</loc>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/excel/</loc>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/lucid/</loc>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/jing/</loc>
+     <lastmod>2018-10-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://3os.org/help/embedding/gist/</loc>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://3os.org/about/</loc>
-     <lastmod>2018-10-06</lastmod>
+     <lastmod>2018-10-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
