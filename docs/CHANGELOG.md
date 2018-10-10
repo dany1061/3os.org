@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.2.0 (10/10/2018)
+- [ CHANGELOG.md update to v0.1.9](https://github.com/fire1ce/3os.org/commit/bf72de4e8290b0f62b715ff59a0ddea498023675) - @fire1ce
+
+---
+
 ## v0.1.9 (10/10/2018)
 - [updated "ite name"and description at mkdocs.yml](https://github.com/fire1ce/3os.org/commit/1f7cb3047993dd64c2b075ec86b0528b3aba3c17) - @fire1ce
 - [added "Update All the pip packages" to development>pyhon](https://github.com/fire1ce/3os.org/commit/b2c6e57db0dac694d186469525b2588dbb9bf7fa) - @fire1ce
