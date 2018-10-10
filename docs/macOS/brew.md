@@ -35,6 +35,8 @@ run the command 'brewup'
 | geoip         | geolocation data for an inputted IP |
 | speedtest_cli | speed test via cli                  |
 | telnet        | telnet client                       |
+| mas           | app store apps updater                       |
+| terminal-notifier        | terminal notifier for macOS                  |
 
 ## Brew Cask
 
