@@ -15,7 +15,7 @@
 
 ## License
 
-**MIT License**
+### MIT License
 
 Copyright (c) Stas Kosatuhin
 
