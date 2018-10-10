@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.9 (10/10/2018)
+- [updated "ite name"and description at mkdocs.yml](https://github.com/fire1ce/3os.org/commit/1f7cb3047993dd64c2b075ec86b0528b3aba3c17) - @fire1ce
+- [added "Update All the pip packages" to development>pyhon](https://github.com/fire1ce/3os.org/commit/b2c6e57db0dac694d186469525b2588dbb9bf7fa) - @fire1ce
+- [pymdown-extensions update 5.0 > 6.0](https://github.com/fire1ce/3os.org/commit/d097b2528e63c9aed231933ccb963f326680f98f) - @fire1ce
+- [ CHANGELOG.md update to v0.1.8](https://github.com/fire1ce/3os.org/commit/607c725d7ea4c0043ad4218a83cf3a9fc7f26e92) - @fire1ce
+
+---
+
 ## v0.1.8 (10/10/2018)
 - [changed "requerments" badge to master branch at README.md](https://github.com/fire1ce/3os.org/commit/4a5cb245f9c5db212df30b4c01b02760f8443e18) - @fire1ce
 - [changed images pathes in madkocs.yml](https://github.com/fire1ce/3os.org/commit/d57b2dcac34f431acfb53076d7dd04deb7f1112d) - @fire1ce
