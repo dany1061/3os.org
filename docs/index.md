@@ -21,9 +21,9 @@ I’ve created [3os](https://3os.org) with the knowledge I gathered over the yea
 
 **All the information provided by this website can be obtained via the internet and I don't claim ownership of the information presented to you.**  
 
-## Changelog Summery
+## Changelog Summary
 
-!!! example "Summery / [Full Chanhgelog](/CHANGELOG)"
+!!! example "Summary / [Full Chanhgelog](/CHANGELOG)"
     <div style="overflow: hidden;">
         <iframe src="/CHANGELOG/" scrolling="no" style="border: 0px; height: 800px; margin-top: -170px; width:100%"></iframe>
     </div>
