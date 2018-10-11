@@ -13,7 +13,7 @@ run this at terminal:
 This script will perform the following:
 
 - Cheeks for required packages, installs them if missing
-- Runs brew doctor - Will display if there are error in brew
+- Runs brew doctor - display if there are `errors` in brew
 - Updates brew packages
 - Updates brew casks
 - Updates macOS AppStore Apps
@@ -22,12 +22,12 @@ This script will perform the following:
 Installation: Run at Terminal
 
 ```bash
-curl -fsSL https://git.io/fxl3z -o brewup
+curl -fsSL https://git.io/fxlRD -o brewup
 mv brewup /usr/local/bin/
 chmod +x /usr/local/bin/brewup
 ```
 
-run the script:
+Run brewup:
 
 ```bash
 brewup
@@ -41,16 +41,16 @@ Source:
 
 ## Useful Packages
 
-| Package       | Description                         |
-|---------------|-------------------------------------|
-| htop          | resource monitor                    |
-| wget          |                                     |
-| nmap          |                                     |
-| geoip         | geolocation data for an inputted IP |
-| speedtest_cli | speed test via cli                  |
-| telnet        | telnet client                       |
-| mas           | app store apps updater                       |
-| terminal-notifier        | terminal notifier for macOS                  |
+| Package           | Description                         |
+|-------------------|-------------------------------------|
+| htop              | resource monitor                    |
+| wget              |                                     |
+| nmap              |                                     |
+| geoip             | geolocation data for an inputted IP |
+| speedtest_cli     | speed test via cli                  |
+| telnet            | telnet client                       |
+| mas               | app store apps updater              |
+| terminal-notifier | terminal notifier for macOS         |
 
 ## Brew Cask
 
@@ -58,7 +58,8 @@ Source:
 brew cask install 'package name'
 ```
 
-Package:
+Packages:
+
 - 1password
 - visual-studio-code
 - iterm2
