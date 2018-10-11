@@ -8,22 +8,36 @@ run this at terminal:
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Brewup - Bash Script to Update & Upgrade Brew and Brew Casks
+## BrewUP - Upgrades Brew & Casks Packages, macOS AppStore Apps
 
-Download zip from this [gist](https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47/archive/295e72da089a4d130911007b7b61bf47a42171e1.zip)
-Unzip, move the "brewup" file to /usr/local/bin/
+This script will perform the following:
+
+- Cheeks for required packages, installs them if missing
+- Runs brew doctor - Will display if there are error in brew
+- Updates brew packages
+- Updates brew casks
+- Updates macOS AppStore Apps
+- Cleanups all unused packages
+
+Installation: Run at Terminal
 
 ```bash
+curl -fsSL https://git.io/fxl3z -o brewup
 mv brewup /usr/local/bin/
-```
-
-Add executable permissions:
-
-```bash
 chmod +x /usr/local/bin/brewup
 ```
 
-run the command 'brewup'
+run the script:
+
+```bash
+brewup
+```
+
+done.
+
+Source:
+[gist](https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47)
+<script src="https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47.js"></script>
 
 ## Useful Packages
 
@@ -41,7 +55,7 @@ run the command 'brewup'
 ## Brew Cask
 
 ```bash
-brew cask install 'Packadge name'
+brew cask install 'package name'
 ```
 
 Package:
