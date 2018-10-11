@@ -1,10 +1,7 @@
-# Site generated files #
-######################
+# Site generated files
 site/
-node_modules/
 
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 **/.DS_Store
 ._.DS_Store
@@ -15,5 +12,6 @@ node_modules/
 ehthumbs.db
 Thumbs.db
 
-#vscode 
+# Configs and Modules
 .vscode
+node_modules/
