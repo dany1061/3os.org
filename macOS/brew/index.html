@@ -710,8 +710,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#brewup_-_bash_script_to_update_upgrade_brew_and_brew_casks" title="Brewup - Bash Script to Update &amp; Upgrade Brew and Brew Casks" class="md-nav__link">
-    Brewup - Bash Script to Update &amp; Upgrade Brew and Brew Casks
+  <a href="#brewup_-_upgrades_brew_casks_packages_macos_appstore_apps" title="BrewUP - Upgrades Brew &amp; Casks Packages, macOS AppStore Apps" class="md-nav__link">
+    BrewUP - Upgrades Brew &amp; Casks Packages, macOS AppStore Apps
   </a>
   
 </li>
@@ -1350,8 +1350,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#brewup_-_bash_script_to_update_upgrade_brew_and_brew_casks" title="Brewup - Bash Script to Update &amp; Upgrade Brew and Brew Casks" class="md-nav__link">
-    Brewup - Bash Script to Update &amp; Upgrade Brew and Brew Casks
+  <a href="#brewup_-_upgrades_brew_casks_packages_macos_appstore_apps" title="BrewUP - Upgrades Brew &amp; Casks Packages, macOS AppStore Apps" class="md-nav__link">
+    BrewUP - Upgrades Brew &amp; Casks Packages, macOS AppStore Apps
   </a>
   
 </li>
@@ -1395,17 +1395,30 @@
 <div class="codehilite"><pre><span></span>/usr/bin/ruby -e <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install<span class="k">)</span><span class="s2">&quot;</span>
 </pre></div>
 
-<h2 id="brewup_-_bash_script_to_update_upgrade_brew_and_brew_casks">Brewup - Bash Script to Update &amp; Upgrade Brew and Brew Casks<a class="headerlink" href="#brewup_-_bash_script_to_update_upgrade_brew_and_brew_casks" title="Permanent link">&para;</a></h2>
-<p>Download zip from this <a href="https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47/archive/295e72da089a4d130911007b7b61bf47a42171e1.zip">gist</a>
-Unzip, move the "brewup" file to /usr/local/bin/</p>
-<div class="codehilite"><pre><span></span>mv brewup /usr/local/bin/
+<h2 id="brewup_-_upgrades_brew_casks_packages_macos_appstore_apps">BrewUP - Upgrades Brew &amp; Casks Packages, macOS AppStore Apps<a class="headerlink" href="#brewup_-_upgrades_brew_casks_packages_macos_appstore_apps" title="Permanent link">&para;</a></h2>
+<p>This script will perform the following:</p>
+<ul>
+<li>Cheeks for required packages, installs them if missing</li>
+<li>Runs brew doctor - Will display if there are error in brew</li>
+<li>Updates brew packages</li>
+<li>Updates brew casks</li>
+<li>Updates macOS AppStore Apps</li>
+<li>Cleanups all unused packages</li>
+</ul>
+<p>Installation: Run at Terminal</p>
+<div class="codehilite"><pre><span></span>curl -fsSL https://git.io/fxl3z -o brewup
+mv brewup /usr/local/bin/
+chmod +x /usr/local/bin/brewup
 </pre></div>
 
-<p>Add executable permissions:</p>
-<div class="codehilite"><pre><span></span>chmod +x /usr/local/bin/brewup
+<p>run the script:</p>
+<div class="codehilite"><pre><span></span>brewup
 </pre></div>
 
-<p>run the command 'brewup'</p>
+<p>done.</p>
+<p>Source:
+<a href="https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47">gist</a>
+<script src="https://gist.github.com/fire1ce/f9b6645b4c8cff5b7229e5011a168a47.js"></script></p>
 <h2 id="useful_packages">Useful Packages<a class="headerlink" href="#useful_packages" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1450,7 +1463,7 @@ Unzip, move the "brewup" file to /usr/local/bin/</p>
 </tbody>
 </table>
 <h2 id="brew_cask">Brew Cask<a class="headerlink" href="#brew_cask" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>brew cask install <span class="s1">&#39;Packadge name&#39;</span>
+<div class="codehilite"><pre><span></span>brew cask install <span class="s1">&#39;package name&#39;</span>
 </pre></div>
 
 <p>Package:
