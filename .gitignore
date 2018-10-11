@@ -1,6 +1,7 @@
 # Site generated files #
 ######################
 site/
+node_modules/
 
 # OS generated files #
 ######################
