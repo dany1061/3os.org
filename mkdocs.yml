@@ -21,7 +21,7 @@ nav:
   - macOS:
       - General: 'macOS/macGeneral.md'
       - Home Brew: 'macOS/brew.md'
-      - MacOS Swoftware: 'macOS/macSoftware.md'
+      - MacOS Software: 'macOS/macSoftware.md'
       - Alftred Workflows: 'macOS/alfredWorkFlows.md'
   - Rasperry Pi:
       - General: 'rasperryPi/piGeneral.md'
