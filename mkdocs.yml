@@ -30,8 +30,7 @@ nav:
   - Development:
       - Python: 'development/python.md'
   - Windows:
-      - Useful Links for Windows: 'windows/winGeneral.md'
-      - Software for Windows: 'windows/winSoftware.md'
+      - Windows General: 'windows/windowsGeneral.md'
   - Browsers Extensions:
       - Chrome: 'browsers/chromeExtensions.md'
       - Firefox: 'browsers/firefoxExtentions.md'
