@@ -1,6 +1,25 @@
 # Changelog
 
+## v0.2.1 (13/10/2018)
+- [cleanup of the mac->brew doc](https://github.com/fire1ce/3os.org/commit/11a492d3e95d273d5fe8dcca172951a4c2486f0c) - @fire1ce
+- [misspell fix](https://github.com/fire1ce/3os.org/commit/1f634c0b075fd4f6af47ba3ffb926006a43c140a) - @fire1ce
+- [git ignore reorder](https://github.com/fire1ce/3os.org/commit/b12bbe11dfae03f55a3d54b49aa5ede000e9b0b0) - @fire1ce
+- [Updated BrewUP script and descriptions](https://github.com/fire1ce/3os.org/commit/e22c03a72860d6af06f3d8ba6d205f701a3ae866) - @fire1ce
+- [testing gulp](https://github.com/fire1ce/3os.org/commit/99e3e66c4429a97f2b4f06f76dea1d3d73179d0e) - @fire1ce
+- [updated to incude npm_modules](https://github.com/fire1ce/3os.org/commit/2f658dac4251d5f226b2951c2d346719c819e3be) - @fire1ce
+- [cleanup at linux>cpanel](https://github.com/fire1ce/3os.org/commit/53b81424c681d2dffd25133de9784eead6a1e0ca) - @fire1ce
+- [chaned CNAME to include "https://"](https://github.com/fire1ce/3os.org/commit/5d18d0b5b621e37503a75c07ece49cf1b1a34b8d) - @fire1ce
+- [changed ** to ### at README.md](https://github.com/fire1ce/3os.org/commit/613531f336cda958e62ae96f4e66ff929d8894ef) - @fire1ce
+- [fix typo at site_description](https://github.com/fire1ce/3os.org/commit/e6f6a3fd950627d0aa7e58ab4c7686f33a58a242) - @fire1ce
+- [ CHANGELOG.md update to v0.2.1](https://github.com/fire1ce/3os.org/commit/466676506dca4497e9f61fc54d008d3e6dc89653) - @fire1ce
+
+---
+
 ## v0.2.0 (10/10/2018)
+- [added "language: en" to mkdocs.yml](https://github.com/fire1ce/3os.org/commit/3afcb8e36c6bca9b8dccb37f4b01585b7e89f08e) - @fire1ce
+- [fix for upercase of "Packages"](https://github.com/fire1ce/3os.org/commit/721cbfe64f06fa318f28b2c7001d5990230539d3) - @fire1ce
+- [added Repo Name at mkdocs.yml](https://github.com/fire1ce/3os.org/commit/97bb36e1da838e9721ed9f8c62d9ab9a5f2d0676) - @fire1ce
+- [revert back "site name"](https://github.com/fire1ce/3os.org/commit/01945c611f7f698d8bd5f007041cd5bc40d17795) - @fire1ce
 - [ CHANGELOG.md update to v0.1.9](https://github.com/fire1ce/3os.org/commit/bf72de4e8290b0f62b715ff59a0ddea498023675) - @fire1ce
 
 ---
@@ -68,12 +87,12 @@
 
 ---
 
-## v0.1.4 (06/10/2018)
+## 0.1.4 (06/10/2018)
 - [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
 
 ---
 
-## 0.1.4 (06/10/2018)
+## v0.1.4 (06/10/2018)
 - [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
 - [Removed empy line in README.md](https://github.com/fire1ce/3os.org/commit/445d2115c60f999abbdc098c016106b50e094282) - @fire1ce
 - [New Wifi QR Generator Link in Other Category](https://github.com/fire1ce/3os.org/commit/1e21556bd0858b423d548ddd698aa7392d2772f0) - @fire1ce
