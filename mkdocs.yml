@@ -8,7 +8,6 @@ nav:
       - Files: 'Linux/general/files.md'
       - Memory & Swap: 'Linux/general/memorySwap.md'
       - Guides:
-            - Python Simple Web-Server: 'Linux/linuxGuides/pythonWebServer.md'
             - Resize Root PartitionWithout Reboot: 'Linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
             - Installing Oh My zsh: 'Linux/linuxGuides/zshOnSteroids.md'
       - Linux-Services:
@@ -50,17 +49,14 @@ nav:
       - Synology DSM : 'general/synologyGeneral.md'
       - Ubiquiti Networking: 'general/ubiquiti.md'
       - WiFi QR Generator: 'general/wifiQrGenerator.md'
-  - Help:
-      - Documinatation: 'help/documinatation.md'
-      - Basic Cheat-Sheet: 'help/markdown_cheatsheet_basic.md'
-      - MarkDown Cheat-Sheet: 'help/markdown_cheat-sheet.md'
-      - Admonitions, callouts, sidebars: 'help/blocks.md'
-      - GitHub: 'help/embedding/github.md'
-      - Evernote: 'help/embedding/evernote.md'
-      - Excel: 'help/embedding/excel.md'
-      - Lucid: 'help/embedding/lucid.md'
-      - Jing: 'help/embedding/jing.md'
-      - Gists: 'help/embedding/gist.md'
+  - Markdown Cheatsheet:
+      - Basic: 'Markdown_Cheatsheet/Basics.md'
+      - MarkDown Cheat-Sheet: 'Markdown_Cheatsheet/markdown_cheat-sheet.md'
+      - Admonitions, callouts, sidebars: 'Markdown_Cheatsheet/blocks.md'
+      - Excel: 'Markdown_Cheatsheet/embedding/excel.md'
+      - Lucid: 'Markdown_Cheatsheet/embedding/lucid.md'
+      - Jing: 'Markdown_Cheatsheet/embedding/jing.md'
+      - Gists: 'Markdown_Cheatsheet/embedding/gist.md'
 
   - About: 'about.md'
 
