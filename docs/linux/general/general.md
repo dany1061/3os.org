@@ -2,7 +2,7 @@
 
 ## SSH Login With RSA Keys
 
-ssh to the host (`do not close this connaction`)
+ssh to the host (`do not close this connection`)
 
 ```bash
 mkdir -p ~/.ssh && touch .ssh/authorized_keys
@@ -42,7 +42,7 @@ sudo systemctl restart ssh
 ### Optional: change ssh port
 
 edit `/etc/ssh/sshd_config`
-change the port to a disaired one
+change the port to a desired one
 
 ```bash
 port 1337
@@ -72,24 +72,24 @@ ssh-add id_rsa
 ssh root@HOSTNAME.local -p <port>
 ```
 
-exmaple:
+example:
 
 ```bash
-ssh exmaple@192.168.1.99 -p 1337
+ssh example@192.168.1.99 -p 1337
 ```
 
 ## Add Permanent Path to Application
 
-First find the location of the Aplication/Service:
+First find the location of the Application/Service:
 
 ```bash
-find / -name AplicationName
+find / -name ApplicationName
 ```
 
-Go to the path wehere the application is located
+Go to the path where the application is located
 
 ```bash
-cd "../../../AplicationName"
+cd "../../../ApplicationName"
 ```
 
 Run this command for ZSH:
