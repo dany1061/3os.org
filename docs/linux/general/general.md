@@ -66,7 +66,7 @@ sudo ssh-agent bash
 ssh-add id_rsa
 ```
 
-**Open New SSH Season and Test RSA Login**
+### Open New SSH Season and Test RSA Login
 
 ```bash
 ssh root@HOSTNAME.local -p <port>
@@ -116,38 +116,6 @@ echo 'export PATH="'$(pwd)':$PATH"' >> ~/.bashrc && source ~/.bashrc
 sudo dpkg-reconfigure tzdata
 ```
 
-## Most accessed sites in the last minute
-
-```bash
-cat <<'SCRIPT' >>/root/sitesLoad.sh
-
-#!/bin/bash
-if [[ `netstat -ntalp | grep :80 | awk '$4 ~ /:80/ {print $0;exit}' | grep -q httpd; echo $?` -ne 0 ]]; then echo "Main web server is not Apache. Exiting..."; exit 1; fi
-
-log=/tmp/hostPop
-i=0
-find /usr/local/apache/domlogs/ -type f -mmin -1 ! -group root -exec ls -l {} \+ | awk '{print $4, $9}' | column -t>$log
-
-while read line; do
-((++i))
-       arr[$i]=$i
-       arr[$i*1000]=$(printf "$line" | awk '{print $1}')
-       arr[$i*1001]=$(printf "$line" | awk '{print $2}')
-       arr[$i*1002]=$(wc -l `echo $line | awk '{print $NF}'` | cut -d' ' -f 1)
-done < <(cat $log)
-
-echo "Analyzing apache logs in realtime for 1 minute..."; sleep 60
-
-for (( var=1 ; var<=$i ; var++ ))
-do
-       printf "${arr[$var*1000]} ${arr[$var*1001]} "
-       echo $((`wc -l $(echo ${arr[$var*1001]}) | cut -d' ' -f 1` - ${arr[$var*1002]}));
-done | sed -e 's/\/usr\/local\/apache\/domlogs\///g' | sort -nrk 3 | column -t
-
-SCRIPT
-chmod 700 /root/sitesLoad.sh && /root/sitesLoad.sh
-```
-
 ## Disable IPv6
 
 For current session:
@@ -163,12 +131,6 @@ Permanent:
 vi /etc/sysctl.conf
 net.ipv6.conf.all.disable_ipv6 = 1
 sudo sysctl -p /etc/sysctl.conf
-```
-
-## Virtual box boot from USB
-
-```bash
-VBoxManage internalcommands createrawvmdk -filename C:\usb.vmdk -rawdisk \\.\PhysicalDrive#
 ```
 
 ## Max connections on Linux
