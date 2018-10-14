@@ -1,6 +1,6 @@
 # Magic Mirror
 
-## Change Dispay Rotation:
+## Change Display Rotation
 
 ```bash
 sudo nano /boot/config.txt
@@ -21,7 +21,7 @@ Add one of those according to your setup to the config file:
 
 ## Disabling the Screensaver
 
-Chaning to OPEN GL Driver
+Change to OPEN GL Driver
 
 ```bash
 sudo nano /boot/config.txt
@@ -44,7 +44,7 @@ sudo nano ~/.config/lxsession/LXDE-pi/autostart
 
 Add the following lines:
 
-```
+```bash
 @xset s noblank
 @xset s off
 @xset -dpms
@@ -64,7 +64,7 @@ xserver-command=X -s 0 -dpms
 
 ## OS UI Finishes
 
-Make the Backgound Black:
+Make the Background Black:
 
 `Right click the Desktop` -> `Desktop Preferences` and Change:
 `Layout -> no image`
@@ -74,7 +74,7 @@ Hit ok.
 
 `Right click on the top panel` -> `Panel Preferences` -> `Appearance`
 
-Seclect `Solid Color (With Opacity)` make shure `Opacity at 0`
+Select `Solid Color (With Opacity)` make sure `Opacity at 0`
 
 ## Disable WiFi Power Save
 
@@ -110,7 +110,7 @@ Reboot your PI
 sudo reboot
 ```
 
-## Disbale Cursor on Startup
+## Disable Cursor on Startup
 
 ```bash
 sudo apt-get install unclutter
@@ -138,7 +138,7 @@ If you need to remove node and npm run this:
 sudo apt-get remove nodejs nodejs-legacy nodered
 ```
 
-Insallation:
+Installation:
 
 ```bash
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
