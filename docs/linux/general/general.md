@@ -1,83 +1,5 @@
 # Linux General
 
-## SSH Login With RSA Keys
-
-ssh to the host (`do not close this connection`)
-
-```bash
-mkdir -p ~/.ssh && touch .ssh/authorized_keys
-```
-
-copy your public key usually located at `~/.ssh/id_rsa.pub`
-
-```bash
-echo PUCLICK_Key_STRING >> ~/.ssh/authorized_keys
-```
-
-edit `/etc/ssh/sshd_config`
-change:
-
-```bash
-#PasswordAuthentication yes
-```
-
-to
-
-```bash
-PasswordAuthentication no
-```
-
-save&exit
-
-restart ssh service:
-
-```bash
-sudo systemctl restart ssh
-```
-
-`Open New SSH Season and Test RSA Login`
-
----
-
-### Optional: change ssh port
-
-edit `/etc/ssh/sshd_config`
-change the port to a desired one
-
-```bash
-port 1337
-```
-
-save&exit
-
-restart ssh service:
-
-```bash
-sudo systemctl restart ssh
-```
-
-## Add Privet id_rsa key to Server
-
-copy the id_rsa key to ~/.ssh folder
-
-```bash
-cd ~/.ssh
-sudo ssh-agent bash
-ssh-add id_rsa
-```
-
-### Open New SSH Season and Test RSA Login
-
-```bash
-ssh root@HOSTNAME.local -p <port>
-```
-
-example:
-
-```bash
-ssh example@192.168.1.99 -p 1337
-```
-
 ## Add Permanent Path to Application
 
 First find the location of the Application/Service:
@@ -238,14 +160,6 @@ passwd ${DEST}
 ```bash
 dpkg --purge `dpkg --list|grep "linux-"|grep -v \`uname -r|sed 's/-generic//g'\`|cut -d" " -f3|grep "[0-9]-"|paste -sd " " -`
 ```
-
-## Fix Installatron - error 500 or missing list/install
-
-```bash
-/usr/local/installatron/repair -f --release --quick
-```
-
-[Installatron FIX](https://installatron.com/docs/admin/troubleshooting#missinginstalls)
 
 ## Find root of a site and CD to it
 

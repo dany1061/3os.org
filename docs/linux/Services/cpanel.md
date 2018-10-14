@@ -47,6 +47,14 @@ And then run:
 sysctl -p
 ```
 
+## Fix Installatron - error 500 or missing list/install
+
+```bash
+/usr/local/installatron/repair -f --release --quick
+```
+
+[Installatron FIX](https://installatron.com/docs/admin/troubleshooting#missinginstalls)
+
 ## Add HSTS support in CPANEL
 
 ```bash

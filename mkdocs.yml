@@ -3,6 +3,7 @@ nav:
   - Home: 'index.md'
   - Changelog: 'CHANGELOG.md'
   - Linux:
+      - SSH Service Security: 'Linux/SSH_Service_Security.md'
       - General: 'Linux/general/general.md'
       - Files: 'Linux/general/files.md'
       - Memory & Swap: 'Linux/general/memorySwap.md'
