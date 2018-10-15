@@ -1,6 +1,34 @@
 # Changelog
 
+## v0.2.2 (16/10/2018)
+- [Markdown CheatSheet Initial Release](https://github.com/fire1ce/3os.org/commit/0e582f16af100e2580ef07ba6db6bd6c09aee621) - @fire1ce
+- [fix bold tag, add "open in new window" for full version](https://github.com/fire1ce/3os.org/commit/90fcb3fd82bb1988425825a06bbad72fcf922a1b) - @fire1ce
+- [lucid html image](https://github.com/fire1ce/3os.org/commit/2f74fd362a9e94db98100c5b9526f7fc7cc22b7a) - @fire1ce
+- [new images for examples](https://github.com/fire1ce/3os.org/commit/1ee29416b8b184e57ac553e94e271b87d4cb33e9) - @fire1ce
+- [updated](https://github.com/fire1ce/3os.org/commit/b7fe6575bb4ea6594e6d63c71ddc5f8b9e834ce2) - @fire1ce
+- [cleanup & rearranged](https://github.com/fire1ce/3os.org/commit/807a620dc80cb5a0899e1bace784fe7fde5c8910) - @fire1ce
+- [updated with new plugins](https://github.com/fire1ce/3os.org/commit/6823c99ab7e6b426636413e7f8afe7bbc33baffc) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/772bfd0d6a6a7a0c5515b255ca920952d6a2915b) - @Stas Kosatuhin
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/ba6795ec2a4735b9beebf14cd54bd262083dd01e) - @Stas Kosatuhin
+- [removed "vscode"](https://github.com/fire1ce/3os.org/commit/243ee649a751a671c86897886a6c75c92cff636d) - @fire1ce
+- [Structure Cleanup](https://github.com/fire1ce/3os.org/commit/efb73eb2d7518f207e687374cd7bba94d55f6911) - @fire1ce
+- [writing basic Markdown Cheatsheet](https://github.com/fire1ce/3os.org/commit/dd21fec86786461f0c315c6cafdce7a5895de993) - @fire1ce
+- [rewok and guides rearaneged](https://github.com/fire1ce/3os.org/commit/cb93604f0809cfd84705ccbb1f715a873d384120) - @fire1ce
+- [new linux section, SSH Service Securrity](https://github.com/fire1ce/3os.org/commit/e04a7b0f102035d13a7d283c2f0df48fcfb163b7) - @fire1ce
+- [added simple http web server](https://github.com/fire1ce/3os.org/commit/9cef40d45017c4611f41ea1f870e50e04def1309) - @fire1ce
+- [structure rearrange](https://github.com/fire1ce/3os.org/commit/264939037b3680e136bfc82a659395a2e744cb5b) - @fire1ce
+- [Rearanged Navigation menu of "Linux"](https://github.com/fire1ce/3os.org/commit/7d65212c81c7025997225d5416d61f43849f7793) - @fire1ce
+- [Magic-Mirror Guide - Misspell Fixes](https://github.com/fire1ce/3os.org/commit/15c4b7a81dbe6ae64cb7ba4077b08d7d84379696) - @fire1ce
+- [misspell fixes](https://github.com/fire1ce/3os.org/commit/b957652a9e5a204c6152f088a892948ef5277ed7) - @fire1ce
+- [removeed gulpfile.js](https://github.com/fire1ce/3os.org/commit/bb322db6bcf8c5604302e3a5f1cc0a2966ef792d) - @fire1ce
+- [ CHANGELOG.md update to v0.2.2](https://github.com/fire1ce/3os.org/commit/811743dbe90e3e955e41649c0556e12e7a6904b4) - @fire1ce
+
+---
+
 ## v0.2.1 (13/10/2018)
+- [Replaced old structure. not is cleand and has one file](https://github.com/fire1ce/3os.org/commit/e137c1bc829034f9bf17115ffcbbcc2d31d1b1e4) - @fire1ce
+- [removed and replaced with Windows General](https://github.com/fire1ce/3os.org/commit/b5405727a10bf69119a34c16085618e5f69852c2) - @fire1ce
+- [CleanUp Windwos Section](https://github.com/fire1ce/3os.org/commit/70b36cf8957a297eb66af7b17799fdadf48dff1a) - @fire1ce
 - [cleanup of the mac->brew doc](https://github.com/fire1ce/3os.org/commit/11a492d3e95d273d5fe8dcca172951a4c2486f0c) - @fire1ce
 - [misspell fix](https://github.com/fire1ce/3os.org/commit/1f634c0b075fd4f6af47ba3ffb926006a43c140a) - @fire1ce
 - [git ignore reorder](https://github.com/fire1ce/3os.org/commit/b12bbe11dfae03f55a3d54b49aa5ede000e9b0b0) - @fire1ce
