@@ -2,6 +2,9 @@
 
 ## Updates
 
+!!! Warning "Markdown CheatSheet Initial Release 16/10/18"
+    I've made new section __[Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")__ It Replaced the old __help__ section. I've been working on this for few good hours to make it as easy to use. Hope you all can enjoy it and use it to make this site even better. 
+
 !!! info "NEW SITE IS HERE"
     Welcome To Our New Site!  
     We Have transferred all the data from the old site, but we have a lot of work ahead to make this site much more useful for everyday use.  
