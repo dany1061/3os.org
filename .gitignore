@@ -13,5 +13,5 @@ ehthumbs.db
 Thumbs.db
 
 # Configs and Modules
-.vscode
+# .vscode
 node_modules/
