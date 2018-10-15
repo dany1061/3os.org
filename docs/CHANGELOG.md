@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.2.3 (16/10/2018)
+- [New Logo, Based on Icons - Material Design - "donut_small"](https://github.com/fire1ce/3os.org/commit/1ee8b8a3e08efb6c00eb443fa30974981ad0b868) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/e2c45df9492556b1faa56e030895b20b33fc30c9) - @Stas Kosatuhin
+- [Update LICENSE](https://github.com/fire1ce/3os.org/commit/7f88580bd89e5dc18c1cb17a922145a1c4bafbd1) - @Stas Kosatuhin
+- [cname fix](https://github.com/fire1ce/3os.org/commit/74fc3e81596a0816ec97c70810fd8972ffdddb3e) - @fire1ce
+- [update about Markdown CheatSheet Initial Release 16/10/18](https://github.com/fire1ce/3os.org/commit/57f0cb2a4e8763eefb6f0bad517caa8582dedffb) - @fire1ce
+- [ CHANGELOG.md update to v0.2.3](https://github.com/fire1ce/3os.org/commit/f3d11291d390e02b7ac51b2dc96a969845729521) - @fire1ce
+
+---
+
 ## v0.2.2 (16/10/2018)
 - [Markdown CheatSheet Initial Release](https://github.com/fire1ce/3os.org/commit/0e582f16af100e2580ef07ba6db6bd6c09aee621) - @fire1ce
 - [fix bold tag, add "open in new window" for full version](https://github.com/fire1ce/3os.org/commit/90fcb3fd82bb1988425825a06bbad72fcf922a1b) - @fire1ce
@@ -115,12 +125,12 @@
 
 ---
 
-## 0.1.4 (06/10/2018)
+## v0.1.4 (06/10/2018)
 - [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
 
 ---
 
-## v0.1.4 (06/10/2018)
+## 0.1.4 (06/10/2018)
 - [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
 - [Removed empy line in README.md](https://github.com/fire1ce/3os.org/commit/445d2115c60f999abbdc098c016106b50e094282) - @fire1ce
 - [New Wifi QR Generator Link in Other Category](https://github.com/fire1ce/3os.org/commit/1e21556bd0858b423d548ddd698aa7392d2772f0) - @fire1ce
