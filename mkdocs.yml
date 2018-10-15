@@ -3,22 +3,22 @@ nav:
   - Home: 'index.md'
   - Changelog: 'CHANGELOG.md'
   - Linux:
-      - SSH Service Security: 'Linux/SSH_Service_Security.md'
-      - General: 'Linux/general/general.md'
-      - Files: 'Linux/general/files.md'
-      - Memory & Swap: 'Linux/general/memorySwap.md'
+      - SSH Service Security: 'linux/SSH_Service_Security.md'
+      - General: 'linux/general/general.md'
+      - Files: 'linux/general/files.md'
+      - Memory & Swap: 'linux/general/memorySwap.md'
       - Guides:
-            - Resize Root PartitionWithout Reboot: 'Linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
-            - Installing Oh My zsh: 'Linux/linuxGuides/zshOnSteroids.md'
-      - Linux-Services:
-            - cPanel & WHM: 'Linux/Services/cpanel.md'
-            - CSF Firewall: 'Linux/Services/csf.md'
-            - Nginx: 'Linux/Services/nginx.md'
-            - Apache: 'Linux/Services/apache.md'
-            - Sophos Firewall: 'Linux/Services/sophos.md'
-            - Wordpress: 'Linux/Services/wordpress.md'
-            - Esxi: 'Linux/Services/esxi.md'
-            - Plesk: 'Linux/Services/plesk.md'
+            - Resize Root PartitionWithout Reboot: 'linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
+            - Installing Oh My zsh: 'linux/linuxGuides/zshOnSteroids.md'
+      - Linux Services:
+            - cPanel & WHM: 'linux/Services/cpanel.md'
+            - CSF Firewall: 'linux/Services/csf.md'
+            - Nginx: 'linux/Services/nginx.md'
+            - Apache: 'linux/Services/apache.md'
+            - Sophos Firewall: 'linux/Services/sophos.md'
+            - Wordpress: 'linux/Services/wordpress.md'
+            - Esxi: 'linux/Services/esxi.md'
+            - Plesk: 'linux/Services/plesk.md'
   - macOS:
       - General: 'macOS/macGeneral.md'
       - Home Brew: 'macOS/brew.md'
@@ -41,7 +41,7 @@ nav:
       - General: 'penTesting/penTestingGeneral.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
       - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
-      - Kali Linux Modifications: 'penTesting/KaliLinux.md'
+      - Kali linux Modifications: 'penTesting/kaliLinux.md'
       - Installing Bettercap 1.6.2: 'penTesting/bettercao1.6.2.md'
   - Other:
       - General: 'general/generalLinks.md'
@@ -49,15 +49,26 @@ nav:
       - Synology DSM : 'general/synologyGeneral.md'
       - Ubiquiti Networking: 'general/ubiquiti.md'
       - WiFi QR Generator: 'general/wifiQrGenerator.md'
-  - Markdown Cheatsheet:
-      - Basic: 'Markdown_Cheatsheet/Basics.md'
-      - MarkDown Cheat-Sheet: 'Markdown_Cheatsheet/markdown_cheat-sheet.md'
-      - Admonitions, callouts, sidebars: 'Markdown_Cheatsheet/blocks.md'
-      - Excel: 'Markdown_Cheatsheet/embedding/excel.md'
-      - Lucid: 'Markdown_Cheatsheet/embedding/lucid.md'
-      - Jing: 'Markdown_Cheatsheet/embedding/jing.md'
-      - Gists: 'Markdown_Cheatsheet/embedding/gist.md'
-
+      - vscode: 'general/vscode.md'
+      - Home Assistent: 'general/homeAssistent.md'
+  - Markdown CheatSheet:
+      - Welcome: 'markdownCheatSheet/welcome.md'
+      - Headings: 'markdownCheatSheet/headings.md'
+      - Emphasis: 'markdownCheatSheet/emphasis.md'
+      - Line Breaks: 'markdownCheatSheet/lineBreaks.md'
+      - Lists: 'markdownCheatSheet/lists.md'
+      - Tables: 'markdownCheatSheet/tables.md'
+      - Links: 'markdownCheatSheet/links.md'
+      - Images: 'markdownCheatSheet/images.md'
+      - Admonition: 'markdownCheatSheet/admonition.md'
+      - Block Quotes: 'markdownCheatSheet/blockQuotes.md'
+      - Emojis List: 'markdownCheatSheet/emoji.md'
+      - Embed External Sources:
+            - Gists: 'markdownCheatSheet/embedGists.md'
+            - YouTube Videos: 'markdownCheatSheet/embedYouTubeVideos.md'
+            - Lucid Chart: 'markdownCheatSheet/embedLucidChart.md'
+      - Extra:
+            - Metadata per Page: 'markdownCheatSheet/metaData.md'
   - About: 'about.md'
 
 # Site information
@@ -89,40 +100,52 @@ theme:
 # Social Links and Comments
 extra:
 #   disqus: '3os'
+  search:
+    tokenizer: '[\s\-\.]+'
   social:
     - type: 'github'
       link: 'https://github.com/fire1ce'
     - type: 'linkedin'
-      link: 'https://linkedin.com/in/stas-kosatuhin
-'
+      link: 'https://linkedin.com/in/stas-kosatuhin'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 # Markdown Rendering Extensions
 markdown_extensions:
-  - toc:
-        permalink: True
-        separator: "_"
-  - admonition
-  - codehilite
-  - footnotes
-  - meta
-  - sane_lists
+  - markdown.extensions.admonition
+  - markdown.extensions.sane_lists
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.def_list
+  - markdown.extensions.abbr
+  - markdown.extensions.tables
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.toc:
+      permalink: True
+      separator: "_"
+  - pymdownx.extra
   - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
+  - pymdownx.keys
   - pymdownx.smartsymbols
   - pymdownx.superfences
+  - pymdownx.tilde
+  - pyembed.markdown
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tilde
-  - pymdownx.extra
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+  # list of extensions https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
 
 # Google Analytics
 google_analytics:
@@ -130,4 +153,4 @@ google_analytics:
   - 'auto'
 
 # Copyright
-copyright: 'Copyright &copy; Stas Kosatuhin'
+copyright: 'Copyright &copy; Stas Kosatuhin @2018'
