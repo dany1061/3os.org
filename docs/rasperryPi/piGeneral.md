@@ -37,7 +37,7 @@ sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh 
 sudo usermod -s /usr/bin/zsh pi
 ```
 
-Optioanl:
+Optional:
 Setting fishy skin:
 
 ```bash
