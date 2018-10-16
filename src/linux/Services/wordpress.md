@@ -1,6 +1,6 @@
 # WordPress
 
-## Wordpress login attack check
+## WordPress login attack check
 
 ```bash
 Crontab :
@@ -23,7 +23,7 @@ while IFS= read -r line
 rm -f $$_ip_$$
 ```
 
-## Wordpress pingback
+## WordPress Pingback
 
 Nginx:
 
@@ -43,7 +43,7 @@ Order Deny,Allow
 Deny from env=wordpress_ping
 ```
 
-## One-time login to wordpress
+## One-time login to WordPress
 
 Install wp cli:
 
