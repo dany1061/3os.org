@@ -1,6 +1,13 @@
 # Changelog
 
+## v0.2.5 (16/10/2018)
+- [ CHANGELOG.md update to v0.2.5](https://github.com/fire1ce/3os.org/commit/620bb93c215544353084f9b7dd5407f458bcd4a9) - @fire1ce
+
+---
+
 ## v0.2.4 (16/10/2018)
+- [new 500x500 png logos](https://github.com/fire1ce/3os.org/commit/a79382a024e9e6e8d250e0af0a84c9bfdc0c24c7) - @fire1ce
+- [types fixes & clean ups](https://github.com/fire1ce/3os.org/commit/dfb2732005ea3c26e1a2aa38c9f39413e2ada54c) - @fire1ce
 - [changed default doc_dir from "docs" to src](https://github.com/fire1ce/3os.org/commit/3bcf25baf00f306a128b447d17e313b3b5fff6a9) - @fire1ce
 - [changed default doc_dir from "docs" to src](https://github.com/fire1ce/3os.org/commit/f6405269036304fe5bc92f6d606886f24c109b1a) - @fire1ce
 - [Update piGeneral.md](https://github.com/fire1ce/3os.org/commit/944bccce492bb68f71f4ab8560081d438ad14a86) - @dany1061
