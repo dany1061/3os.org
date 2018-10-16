@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.2.4 (16/10/2018)
+- [changed default doc_dir from "docs" to src](https://github.com/fire1ce/3os.org/commit/3bcf25baf00f306a128b447d17e313b3b5fff6a9) - @fire1ce
+- [changed default doc_dir from "docs" to src](https://github.com/fire1ce/3os.org/commit/f6405269036304fe5bc92f6d606886f24c109b1a) - @fire1ce
+- [Update piGeneral.md](https://github.com/fire1ce/3os.org/commit/944bccce492bb68f71f4ab8560081d438ad14a86) - @dany1061
+- [Update index.md](https://github.com/fire1ce/3os.org/commit/9d5b59ecff4131b1d274471483587a6fc152657a) - @dany1061
+- [changed favicon from png to svg](https://github.com/fire1ce/3os.org/commit/71ec2d6179519c427382fb2c592e1d82bbd005f3) - @fire1ce
+- [ CHANGELOG.md update to v0.2.4](https://github.com/fire1ce/3os.org/commit/dde0f6f31e39a26a4071dfc42bae4e3f29ed5576) - @fire1ce
+
+---
+
 ## v0.2.3 (16/10/2018)
 - [New Logo, Based on Icons - Material Design - "donut_small"](https://github.com/fire1ce/3os.org/commit/1ee8b8a3e08efb6c00eb443fa30974981ad0b868) - @fire1ce
 - [Update README.md](https://github.com/fire1ce/3os.org/commit/e2c45df9492556b1faa56e030895b20b33fc30c9) - @Stas Kosatuhin
