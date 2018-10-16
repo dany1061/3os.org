@@ -1,6 +1,6 @@
 # Raspberry Pi Tips & Tricks
 
-## Defalut User and Password After Installation
+## Default User and Password After Installation
 
 ```bash
 User: pi
