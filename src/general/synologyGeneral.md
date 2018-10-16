@@ -19,13 +19,13 @@ cd acme.sh-master/
 cd /usr/local/share/acme.sh
 ```
 
-CF_Key= `your cloadflare Global API key`
+CF_Key= `your cloudflare Global API key`
 CF_Email= `your cloudflare email account`
 CERT_DOMAIN= `your domain managed on cloudflare dns`, you can use wilde card domain like `*.your-domain.tld`
 
 ```bash
 export CF_Key="MY_SECRET_KEY_SUCH_SECRET"
-export CF_Email="<myemail@example.com>"
+export CF_Email="<myEmail@example.com>"
 export CERT_DOMAIN="your-domain.tld"
 export CERT_DNS="dns_cf"
 ```

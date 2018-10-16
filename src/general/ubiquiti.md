@@ -22,7 +22,7 @@ commit ; save
 ## Hardening EdgeRouter
 
 This will change the GUI to port 8443, disable old cyphers, Only will listen on internal Network.
-Assumming your Edge Router IP is 192.168.1.1, if not change it accordingly.
+assuming your Edge Router IP is 192.168.1.1, if not change it accordingly.
 
 SSH to the Edge Router
 
@@ -35,7 +35,7 @@ set service ssh protocol-version v2
 commit ; save
 ```
 
-## Edgerouter OpenVPN Configuration 443/TCP
+## EdgeRouter OpenVPN Configuration 443/TCP
 
 This Guide is based on [Original guide form ubnt support](https://help.ubnt.com/hc/en-us/articles/115015971688-EdgeRouter-OpenVPN-Server) with modifications to the VPN port and protocol
 
@@ -247,7 +247,7 @@ cert client1.pem
 key client1.key
 ```
 
-## Edgerouter Free Up space by Cleaning Old Fireware
+## EdgeRouter Free Up space by Cleaning Old Firmware
 
 ssh to the EdgeRouter:
 
@@ -255,12 +255,12 @@ ssh to the EdgeRouter:
 delete system image
 ```
 
-## EdgeRouer task-scheduler
+## EdgeRouter task-scheduler
 
 **`Work In Progress`**
 
 ```bash
-configue
+configure
 show system task-scheduler
 set system task-scheduler task SSL_UPDATE interval 1d
 ```
@@ -280,4 +280,7 @@ reboot
 ```
 
 Interface:
-https://[serversAdress]:8443
+
+```markdown
+https://<serversAdress>:8443
+```

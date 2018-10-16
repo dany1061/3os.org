@@ -1,5 +1,4 @@
-# Resize Root Partition Without Reboot#
-
+# Resize Root Partition Without Reboot
 
 Resize HD size in VC Run: (replace the device if needed)
 
@@ -20,4 +19,3 @@ Make sure everything is OK:
 ```bash
 df -h
 ```
-

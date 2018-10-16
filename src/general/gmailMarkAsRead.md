@@ -1,20 +1,12 @@
-# Marking Gmail read with Apps Script
+# Gmail Mark Archived Mail as Read
 
-Recent versions of Android give you the ability to Archive an email right from the notification bar:
+1. Head to script.google.com to start a script.
 
-I use this like 30 times a day, for emails that I can tell from the subject that I don't need to read. It's awesome. The only issue is that these message stay unread, and seeing a bunch of unread messages in my archive or labels annoys me, so every morning I search "label:unread" and mark all as read. It's a total first world problem, but annoying nonetheless.
+2. Choose to create a script for Gmail in the little popup.
 
-I've been looking for some sort of app or something to auto-mark-as-read any messages not in the inbox for months now. Then someone recently pointed me to Google Apps Script and 10 minutes later I had a script running which automatically marks all archived messages as read every minute. I was blown away at how easy this was.
+3. Delete all the sample code it gives you.
 
-Here's how it's done.
-
-1.  Head to script.google.com to start a script.
-
-2.  Choose to create a script for Gmail in the little popup.
-
-3.  Delete all the sample code it gives you.
-
-4.  Replace it with this (written using the API reference):
+4. Replace it with this (written using the API reference):
 
 ```js
 function markArchivedAsRead() {

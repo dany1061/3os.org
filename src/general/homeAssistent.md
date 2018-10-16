@@ -1,4 +1,4 @@
-## [Home-Assistant.io](https://www.home-assistant.io/) Installation on Ubuntu 18.04
+# [Home-Assistant.io](https://www.home-assistant.io/) Installation on Ubuntu 18.04
 
 ```bash
 sudo apt-get update
@@ -7,7 +7,7 @@ sudo -H pip3 install --upgrade virtualenv
 python3 --version
 ```
 
-Make Shure Python >= 3.5.3
+Make sure Python >= 3.5.3
 
 Create a user and group "homeassistant". Give the user access to serial lines (zwave, insteon, etc)
 

@@ -39,7 +39,7 @@ sed -i 's/PT_LOAD = "30"/PT_LOAD = "0"/' /etc/csf/csf.conf
 
 ## CSF GUI on ISPCONFIG 3
 
-nstall old CSF (before 8.13)
+Install old CSF (before 8.13)
 
 Copy the ISPCONFIG folder to /etc/csf/ and enable CSF in ISPCONFIG
 

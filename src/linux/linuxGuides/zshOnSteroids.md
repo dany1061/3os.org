@@ -2,7 +2,7 @@
 
 This will Install oh-my-zsh shell with fish shell like history, auto suggestions and syntax highlighting.
 
-## Requirements:
+## Requirements
 
 ```bash
 apt-get install git wget zsh
@@ -24,7 +24,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-zsh-history-substring-search
 ```
 
-## Add plugins to ~/.zshrc:
+## Add plugins to ~/.zshrc
 
 ```bash
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc && source ~/.zshrc
@@ -36,13 +36,13 @@ echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.z
 
 Restart zsh
 
-## Make Zsh default shell:
+## Make Zsh default shell
 
 ```bash
 chsh -s $(which zsh)
 ```
 
-## Optional:
+## Optional
 
 ### Fix background theme issues(not necessary depends on your theme.)
 

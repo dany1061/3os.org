@@ -135,13 +135,13 @@ systemctl enable rpcbind.socket
 
 Reboot the server
 
-## Update date and time on Linux server
+## Update Date and Time on Linux Server
 
 ```bash
 sudo ntpd -qg; sudo hwclock -w
 ```
 
-## Clone Linux user
+## Clone Linux User
 
 ```bash
 #!/bin/bash
@@ -177,7 +177,7 @@ Generate key:
 openssl genrsa -out private.key 2048
 ```
 
-Gemnerate CSR:
+Generate CSR:
 
 ```bash
 openssl req -new -sha256 -key private.key -out mycsr.csr

@@ -6,7 +6,7 @@ Install the following Extension:
 
 [code-settings-sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
 
-**All the descriptions of the plugin and functionality at the link above**
+All the descriptions of the plugin and functionality at the link above
 
 ### When running the first time
 
@@ -17,7 +17,7 @@ Run the Following command at vscode command line:
 >Sync
 ```
 
-You will be promted to enter the Personal Token you generated before
+You will be prompted to enter the Personal Token you generated before
 
 ### Toggle Auto-Upload on change in Settings config
 

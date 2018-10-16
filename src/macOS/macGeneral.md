@@ -25,7 +25,7 @@ Extract the file and run it:
 ruby patch-edid.rb
 ```
 
-This will create new derectory named: `DisplayVendorID-*` at the root directory of the script.
+This will create new directory named: `DisplayVendorID-*` at the root directory of the script.
 
 - Power off your mac
 - Boot to into the recovery system (Cmd+R during boot).
