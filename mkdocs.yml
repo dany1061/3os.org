@@ -80,7 +80,7 @@ site_author: 'Stas Kosatuhin'
 # Repository Link Editor
 repo_name: 'fire1ce/3os.org'
 repo_url: 'https://github.com/fire1ce/3os.org/'
-edit_uri: 'edit/master/docs/'
+edit_uri: 'edit/master/scr/'
 
 # Theme Configuration
 theme:
