@@ -4,6 +4,7 @@ nav:
   - Changelog: 'CHANGELOG.md'
   - Linux:
       - SSH Service Security: 'linux/SSH_Service_Security.md'
+      - Centos 7: 'linux/centos7.md'
       - General: 'linux/general/general.md'
       - Files: 'linux/general/files.md'
       - Memory & Swap: 'linux/general/memorySwap.md'
