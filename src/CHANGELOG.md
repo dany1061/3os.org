@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.2.7 (17/10/2018)
+- [added meta data for better organic search](https://github.com/fire1ce/3os.org/commit/def49b6294328bb4e52d0b6ce380b748afbf65bc) - @fire1ce
+- [change to Ubuntu fonts](https://github.com/fire1ce/3os.org/commit/be803d8f983087e4807150cfc38bef650d9a45b9) - @fire1ce
+- [removed costume theme fonts](https://github.com/fire1ce/3os.org/commit/d71178e54f60c801ee1a6d5173376a2ab144f444) - @fire1ce
+- [fonts chnages](https://github.com/fire1ce/3os.org/commit/4afec06da7a4de414b057a7274d1f0fad6a68308) - @fire1ce
+- [testing local fonts](https://github.com/fire1ce/3os.org/commit/e48f3edbf1996cd43fba52a9bdc235efc9c813e0) - @fire1ce
+- [ CHANGELOG.md update to v0.2.7](https://github.com/fire1ce/3os.org/commit/208ff380dd6a8af78e25e01479a94429e5d9bd14) - @fire1ce
+
+---
+
 ## v0.2.6 (17/10/2018)
 - [ CHANGELOG.md update to v0.2.6](https://github.com/fire1ce/3os.org/commit/1eadb37cf6e85e5d6e4f4aa2ad01d1fc14bb03fa) - @fire1ce
 - [New sections at centos 7 - Service Control, Enabling Automatic Updates In Centos 7 & rhel 7¶](https://github.com/fire1ce/3os.org/commit/11e6bd2452e71be53539fab2a7712ee6d7255c0b) - @fire1ce
