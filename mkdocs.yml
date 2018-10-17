@@ -87,7 +87,6 @@ edit_uri: 'edit/master/src/'
 docs_dir: src
 theme:
   name: 'material'
-  custom_dir: 'theme'
   language: en
   logo:
     icon: 'donut_small'
@@ -97,11 +96,9 @@ theme:
     accent: 'teal'
   feature:
     tabs: 'true'
-    
-
-  # font:
-  #   text: 'Roboto Slab'
-  #   code: 'Roboto Mono'
+  font:
+    text: 'Ubuntu'
+    code: 'Roboto Mono'
 
 # Social Links and Comments
 extra:
