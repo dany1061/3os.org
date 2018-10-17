@@ -84,9 +84,11 @@ repo_url: 'https://github.com/fire1ce/3os.org/'
 edit_uri: 'edit/master/src/'
 
 # Theme Configuration
+docs_dir: src
 theme:
-  language: en
   name: 'material'
+  custom_dir: 'theme'
+  language: en
   logo:
     icon: 'donut_small'
   favicon: 'assets/images/favicon.ico'
@@ -95,6 +97,8 @@ theme:
     accent: 'teal'
   feature:
     tabs: 'true'
+    
+
   # font:
   #   text: 'Roboto Slab'
   #   code: 'Roboto Mono'
@@ -112,7 +116,6 @@ extra:
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-docs_dir: src
 
 # Markdown Rendering Extensions
 markdown_extensions:
