@@ -1,10 +1,5 @@
 # Changelog
 
-## v0.2.5 (16/10/2018)
-- [ CHANGELOG.md update to v0.2.5](https://github.com/fire1ce/3os.org/commit/620bb93c215544353084f9b7dd5407f458bcd4a9) - @fire1ce
-
----
-
 ## v0.2.4 (16/10/2018)
 - [new 500x500 png logos](https://github.com/fire1ce/3os.org/commit/a79382a024e9e6e8d250e0af0a84c9bfdc0c24c7) - @fire1ce
 - [types fixes & clean ups](https://github.com/fire1ce/3os.org/commit/dfb2732005ea3c26e1a2aa38c9f39413e2ada54c) - @fire1ce
