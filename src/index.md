@@ -3,7 +3,7 @@
 ## Updates
 
 !!! Warning "Markdown CheatSheet Initial Release 16/10/18"
-    I've made new section __[Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")__ It Replaced the old __help__ section. I've been working on this for few good hours to make it as easy to use. Hope you all can enjoy it and use it to make this site even better. 
+    I've made new section __[Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")__ It Replaced the old __help__ section. I've been working on this for few good hours to make it as easy to use. Hope you all can enjoy it and use it to make this site even better.
 
 !!! info "NEW SITE IS HERE"
     Welcome To Our New Site!  
@@ -28,5 +28,5 @@ I’ve created [3os](https://3os.org) with the knowledge I gathered over the yea
 
 !!! example "Summary / [Full Changelog](/CHANGELOG)"
     <div style="overflow: hidden;">
-        <iframe src="/CHANGELOG/" scrolling="no" style="border: 0px; height: 800px; margin-top: -170px; width:100%"></iframe>
+        <iframe title="Changelog" src="/CHANGELOG/" scrolling="no" style="border: 0px; height: 800px; margin-top: -170px; width:100%"></iframe>
     </div>
