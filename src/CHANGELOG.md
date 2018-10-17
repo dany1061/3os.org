@@ -1,5 +1,24 @@
 # Changelog
 
+## push (17/10/2018)
+- [more optimized  favicon](https://github.com/fire1ce/3os.org/commit/9ad1df226b831c403a752016e6c82f6ca0445a62) - @fire1ce
+- [updated to urllib3==1.24](https://github.com/fire1ce/3os.org/commit/c2071d137032321299d5f3dd41d5184c885429bd) - @fire1ce
+
+---
+
+## list (16/10/2018)
+- [fix edit_uri: 'edit/master/src/'](https://github.com/fire1ce/3os.org/commit/da51c601b1088b120a482d7390e72155dce8ac21) - @fire1ce
+- [fix for edit_uri: 'edit/master/scr/' with scr directory](https://github.com/fire1ce/3os.org/commit/e3c4bca941df607599c24a87ffda96a5280703ae) - @fire1ce
+- [fix typos](https://github.com/fire1ce/3os.org/commit/0e20f2106c7efd7e13a71f50f795c7ac75f2d1d8) - @fire1ce
+- [ CHANGELOG.md update to v0.2.6](https://github.com/fire1ce/3os.org/commit/def810ddd5b9b6f84d793f2909c8ae9bcde46923) - @fire1ce
+
+---
+
+## v0.2.5 (16/10/2018)
+- [ CHANGELOG.md update to v0.2.5](https://github.com/fire1ce/3os.org/commit/620bb93c215544353084f9b7dd5407f458bcd4a9) - @fire1ce
+
+---
+
 ## v0.2.4 (16/10/2018)
 - [new 500x500 png logos](https://github.com/fire1ce/3os.org/commit/a79382a024e9e6e8d250e0af0a84c9bfdc0c24c7) - @fire1ce
 - [types fixes & clean ups](https://github.com/fire1ce/3os.org/commit/dfb2732005ea3c26e1a2aa38c9f39413e2ada54c) - @fire1ce
