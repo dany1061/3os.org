@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.6 (17/10/2018)
+- [ CHANGELOG.md update to v0.2.6](https://github.com/fire1ce/3os.org/commit/1eadb37cf6e85e5d6e4f4aa2ad01d1fc14bb03fa) - @fire1ce
+- [New sections at centos 7 - Service Control, Enabling Automatic Updates In Centos 7 & rhel 7¶](https://github.com/fire1ce/3os.org/commit/11e6bd2452e71be53539fab2a7712ee6d7255c0b) - @fire1ce
+- [New section uner linux - centos 7](https://github.com/fire1ce/3os.org/commit/ace716da11444f93c8f2b945edcce8a157985187) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/6f1edd83e468aa79bcf85c2e57fb6df4788e3aeb) - @fire1ce
+
+---
+
 ## push (17/10/2018)
 - [more optimized  favicon](https://github.com/fire1ce/3os.org/commit/9ad1df226b831c403a752016e6c82f6ca0445a62) - @fire1ce
 - [updated to urllib3==1.24](https://github.com/fire1ce/3os.org/commit/c2071d137032321299d5f3dd41d5184c885429bd) - @fire1ce
