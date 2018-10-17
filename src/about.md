@@ -1,3 +1,6 @@
+title: About 3os.org
+description: My name is Stas Kosatuhin I’ve created 3os website with the knowledge I gather in my everyday life and my work. All the Guides and the Information can be obtained via the internet and I don't claim to be the owner of the information presented to you.
+
 # About
 
 ## Who We Are

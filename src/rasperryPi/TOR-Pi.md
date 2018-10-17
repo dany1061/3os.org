@@ -1,10 +1,13 @@
+title: Raspberry Pi - Tor-Pi Installation Guide
+description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Point Guide
+
 # Tor-Pi
 
 ## Network Flow
 
 ### Router ⇆ Ethernet Port on Raspberry ⇆ TOR Service ⇆ Raspberry WIFI AC ⇆ WIFI CLIENT
 
-## Preperation
+## Preparation
 
 - Download Rasbian Strech Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
 - Burn Image to SD-Card.
@@ -137,7 +140,7 @@ check process gdm with pidfile /var/run/tor/tor.pid
    stop program = "/etc/init.d/tor stop"
 ```
 
-Realod and add Monit to startup:
+Reload and add Monit to startup:
 
 ```bash
 sudo monit reload

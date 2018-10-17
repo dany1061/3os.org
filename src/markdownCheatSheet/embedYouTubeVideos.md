@@ -1,4 +1,7 @@
-# Embed YouTube Videos
+title: Markdown CheatSheet For MkDocs - Embedding YouTube Videos
+description: Markdown cheatSheet for MkDocs. Embedding YouTube Videos examples and simple usage
+
+# Embedding YouTube Videos
 
 Default: Width=480 Hight=270
 

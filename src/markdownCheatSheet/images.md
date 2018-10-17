@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Images
+description: Markdown cheatSheet for MkDocs. Images examples and simple usage
+
 # Images
 
 Images have a similar syntax to [links](links.md "links markdowns") but include a preceding exclamation point.  

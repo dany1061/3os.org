@@ -1,3 +1,6 @@
+title: Linux - Raspberry Pi Tips & Tricks
+description: Raspberry Pi Tips & Tricks how to, guides, examples, and simple usage
+
 # Raspberry Pi Tips & Tricks
 
 ## Default User and Password After Installation
@@ -7,7 +10,7 @@ User: pi
 Password: raspberry
 ```
 
-## Basic Raspbin Configuration
+## Basic Raspbian Configuration
 
 ```bash
 sudo raspi-config
@@ -44,7 +47,7 @@ Setting fishy skin:
 sudo sed -i 's/robbyrussell/fishy/g' ~/.zshrc
 ```
 
-Its Preffered to reboot after installation:
+Its preferred to reboot after installation:
 
 ```bash
 sudo reboot
@@ -57,10 +60,10 @@ This warning pops up in terminal:
 ```bash
 perl: warning: Setting locale failed.
 perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_IL"
+    LANGUAGE = (unset),
+    LC_ALL = (unset),
+    LC_CTYPE = "UTF-8",
+    LANG = "en_IL"
     are supported and installed on your system.
 perl: warning: Falling back to a fallback locale ("en_IL").
 ```
@@ -71,7 +74,7 @@ run this:
 echo "export LC_ALL=C" >> ~/.zshrc && source ~/.zshrc
 ```
 
-## Show Respberry Temperature
+## Show Raspberry Temperature
 
 ```bash
 /opt/vc/bin/vcgencmd measure_temp
@@ -149,7 +152,7 @@ On Windows, you can use the reverse process that you used when flashing the SD c
 
 You can use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/), which is the preferred tool for flashing a SD card of the Foundation. Just enter the filename (the location and name of the backup image file to be saved), select the device (the SD card) and press read:
 
-![](https://i.stack.imgur.com/89CMl.png)
+![89CMl.png](https://i.stack.imgur.com/89CMl.png)
 
 Of course, you can also use [RawWrite](http://www.chrysocome.net/rawwrite), [dd for Windows](http://www.chrysocome.net/dd) or similar tools, the process is quite similar.
 

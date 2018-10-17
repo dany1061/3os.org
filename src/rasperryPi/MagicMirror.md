@@ -1,3 +1,6 @@
+title: Raspberry Pi - Magic Mirror Installation Guide
+description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples, and simple usage
+
 # Magic Mirror
 
 ## Change Display Rotation
@@ -144,7 +147,7 @@ Installation:
 bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
 ```
 
-`say no to PM2 auto start - will be install manualy`
+`say no to PM2 auto start - will be install manually`
 
 To Start from SSH:
 

@@ -1,3 +1,6 @@
+title: Linux - Sophos Firewall
+description: Linux - Sophos Firewall how to, guides, examples, and simple usage
+
 # Sophos Firewall
 
 ## Rebuild Sophos when disk full

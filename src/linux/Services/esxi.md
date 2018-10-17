@@ -1,4 +1,7 @@
-# Esxi
+title: Linux - ESXi
+description: Linux - ESXi how to, guides, examples, and simple usage
+
+# ESXi
 
 ## Reload VM after UUID change
 

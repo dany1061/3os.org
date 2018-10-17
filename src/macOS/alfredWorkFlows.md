@@ -1,4 +1,7 @@
-# List of Alfred Workflows
+title: Alfred Workflows
+description: Useful Alfred Workflows im using on every day bases
+
+# Alfred Workflows
 
 `You need to have Powerpack for workflows to work`
 

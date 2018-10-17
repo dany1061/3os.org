@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Headings
+description: Markdown cheatSheet for MkDocs. Headings examples and simple usage
+
 # Headings
 
 Headings from `h1` through `h6` are constructed with a `#` for each level:

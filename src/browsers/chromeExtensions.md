@@ -1,3 +1,6 @@
+title: Chrome Useful Extensions
+description: Useful Chrome Extensions im using on every day bases
+
 # Chrome Useful Extensions
 
 | Extensions                                                                                                                              | Description                             |

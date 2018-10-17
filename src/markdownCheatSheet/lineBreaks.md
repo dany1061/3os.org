@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Line Breaks
+description: Markdown cheatSheet for MkDocs. Line Breaks examples and simple usage
+
 # Line Breaks
 
 ## Line Break With 2 Spaces

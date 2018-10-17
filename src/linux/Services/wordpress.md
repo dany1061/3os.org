@@ -1,3 +1,6 @@
+title: Linux - WordPress
+description: Linux - WordPress how to, guides, examples, and simple usage
+
 # WordPress
 
 ## WordPress login attack check

@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Emojis List
+description: Markdown cheatSheet for MkDocs. Emojis List examples and simple usage
+
 # Emojis List
 
 ## People

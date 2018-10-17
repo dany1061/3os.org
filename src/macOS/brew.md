@@ -1,3 +1,6 @@
+title: Home Brew
+description: Home Brew, examples and simple usage
+
 # Home Brew
 
 ## Installing Homebrew

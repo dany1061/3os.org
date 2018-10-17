@@ -1,3 +1,6 @@
+title: Linux - Resize Root Partition Without Reboot
+description: Linux - Resize Root Partition Without Reboot how to, guides, examples, and simple usage
+
 # Resize Root Partition Without Reboot
 
 Resize HD size in VC Run: (replace the device if needed)

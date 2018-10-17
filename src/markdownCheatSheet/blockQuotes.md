@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Block Quotes
+description: Markdown cheatSheet for MkDocs. Block Quotes examples and simple usage
+
 # Block Quotes
 
 For quoting blocks of content from another source within your document.

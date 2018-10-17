@@ -1,4 +1,7 @@
-# Linux Files
+title: Linux Files Handling
+description: Linux - Files Handling how to, guides, examples, and simple usage
+
+# Linux Files Handling
 
 ## Find big files and folders
 

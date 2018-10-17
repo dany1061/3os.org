@@ -1,3 +1,6 @@
+title: MacOS Useful Software
+description: Useful MacOS software im using on every day bases
+
 # MacOS Useful Software
 
 This list contains the software I personaly use on my mac.

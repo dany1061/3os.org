@@ -1,3 +1,6 @@
+title: Linux Memory & Swap
+description: Linux Memory & Swap how to, guides, examples, and simple usage
+
 # Linux Memory & Swap
 
 ## Who uses RAM

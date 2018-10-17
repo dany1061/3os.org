@@ -1,3 +1,6 @@
+title: Windows Tips & Guides
+description: Windows Tips & Guides, examples and simple usage
+
 # Windows General
 
 ## Win 10 ISO Official Download

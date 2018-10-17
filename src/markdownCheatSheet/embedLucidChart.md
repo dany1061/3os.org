@@ -1,4 +1,7 @@
-# Through the hoops
+title: Markdown CheatSheet For MkDocs - Lucid Charts Embedding
+description: Markdown cheatSheet for MkDocs. Lucid Charts Embedding examples and simple usage
+
+# Lucid Charts Embedding
 
 open the Lucid chart and select the share -> embed menu item. click the `activate embed code` and copy and past the HTML.
 

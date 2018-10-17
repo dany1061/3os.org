@@ -1,3 +1,6 @@
+title: Linux - CSF Firewall
+description: Linux - CSF Firewall how to, guides, examples, and simple usage
+
 # CSF Firewall
 
 ## CSF configuration

@@ -1,3 +1,6 @@
+title: Linux - cPanel & WHM
+description: Linux - cPanel & WHM how to, guides, examples, and simple usage
+
 # cPanel & WHM
 
 ## WHM replica

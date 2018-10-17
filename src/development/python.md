@@ -1,3 +1,6 @@
+title: Development - Python
+description: Development - Python how to, guides, examples, and simple usage
+
 # Python
 
 ## Update All the pip Packages

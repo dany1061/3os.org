@@ -1,3 +1,6 @@
+title: Linux - Nginx
+description: Linux - Nginx how to, guides, examples, and simple usage
+
 # Nginx
 
 ## Show all domains in NGINX configuration

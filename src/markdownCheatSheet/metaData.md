@@ -1,5 +1,5 @@
 title: Meta Data
-description: Editing Meta Data for each page for mkdocs.
+description: Editing Meta Data for each page for MkDocs.
 
 # Metadata
 

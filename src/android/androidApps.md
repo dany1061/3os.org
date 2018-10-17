@@ -1,3 +1,6 @@
+title: Android Useful Apps
+description: Useful Android apps im using on my android phone
+
 # Android Useful Apps
 
 | Application                                                                                     | Description                                 |

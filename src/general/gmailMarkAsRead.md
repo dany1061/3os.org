@@ -1,3 +1,4 @@
+
 # Gmail Mark Archived Mail as Read
 
 1. Head to script.google.com to start a script.

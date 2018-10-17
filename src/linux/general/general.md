@@ -1,3 +1,6 @@
+title: Linux General
+description: Linux General how to, guides, examples, and simple usage
+
 # Linux General
 
 ## Add Permanent Path to Application

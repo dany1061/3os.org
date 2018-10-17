@@ -1,4 +1,7 @@
-# Gist
+title: Markdown CheatSheet For MkDocs - Gists Embedding
+description: Markdown cheatSheet for MkDocs. Gists Embedding examples and simple usage
+
+# Gists Embedding
 
 Example:
 

@@ -1,4 +1,7 @@
-# Zsh (shell) on Steroids
+title: Linux - Installing oh-my-zsh Shell
+description: Linux - Installing oh-my-zsh Shell how to, guides, examples, and simple usage
+
+# Installing oh-my-zsh Shell
 
 This will Install oh-my-zsh shell with fish shell like history, auto suggestions and syntax highlighting.
 
@@ -14,40 +17,28 @@ apt-get install git wget zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-## Install Plugins
-
-This will create ~/.zsh folder and clone plugins from git:
-
-```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-zsh-history-substring-search
-```
-
-## Add plugins to ~/.zshrc
-
-```bash
-echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc && source ~/.zshrc
-echo "source ~/.zsh/zsh-zsh-history-substring-search/zsh-history-substring-search.zsh" >> ~/.zshrc && source ~/.zshrc
-echo "source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc && source ~/.zshrc
-```
-
-`Note: make sure zsh-syntax-highlighting is the last one in the above list.`
-
-Restart zsh
-
 ## Make Zsh default shell
 
 ```bash
 chsh -s $(which zsh)
 ```
 
-## Optional
+## Bonus
 
-### Fix background theme issues(not necessary depends on your theme.)
+Edit `zshrc`
+ and choose one of those themes from this [list](https://github.com/robbyrussell/oh-my-zsh/wiki/themes "oh-my-zsh themes")  
+My favorite one is `fishy`
 
 ```bash
-echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'" >> ~/.zshrc && source ~/.zshrc
+nano ~/.zshrc
 ```
 
-Restart zsh
+look for the `ZSH_THEME=""` it should look like this:
+
+```bash
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="fishy"
+```

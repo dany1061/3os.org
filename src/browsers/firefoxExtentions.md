@@ -1,4 +1,7 @@
-# Firefox Useful Extensions
+title: Firefox Useful Extensions
+description: Useful Firefox Extensions im using on every day bases
+
+ Firefox Useful Extensions
 
 | Extensions                                                                                             | Description                     |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------- |

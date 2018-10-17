@@ -1,3 +1,5 @@
+title: Linux - Centos 7
+description: Linux - Centos 7 how to, guides, examples, and simple usage
 
 # Centos 7
 

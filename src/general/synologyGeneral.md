@@ -1,3 +1,6 @@
+title: Synology
+description: Synology how to, guides, examples, and simple usage
+
 # Synology
 
 ## Installing VM Tools on Linux VM

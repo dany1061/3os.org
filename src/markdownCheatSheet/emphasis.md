@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Emphasis
+description: Markdown cheatSheet for MkDocs. Emphasis examples and simple usage
+
 # Emphasis
 
 | __Markdown Syntax__                      | __Result__                          |

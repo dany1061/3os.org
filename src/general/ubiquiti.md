@@ -1,3 +1,6 @@
+title: Ubiquiti Networks
+description: Ubiquiti Networks how to, guides, examples, and simple usage
+
 # Ubiquiti Networks
 
 ## EdgeRouter - SSH via RSA keys

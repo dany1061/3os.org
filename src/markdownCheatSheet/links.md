@@ -1,3 +1,6 @@
+title: Markdown CheatSheet For MkDocs - Links
+description: Markdown cheatSheet for MkDocs. Links examples and simple usage
+
 # Links
 
 ## Basic link

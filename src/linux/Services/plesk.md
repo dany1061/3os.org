@@ -1,3 +1,6 @@
+title: Linux - Plesk
+description: Linux - Plesk how to, guides, examples, and simple usage
+
 # Plesk
 
 ## Plesk on CentOS 12 bind fix

@@ -1,4 +1,7 @@
-# MacOS Tips & Tricks
+title: MacOS Tips & Guides
+description: MacOS Tips & Guides, examples and simple usage
+
+# MacOS Tips & Guides
 
 ## Hide All The Icons On Your Desktop
 
