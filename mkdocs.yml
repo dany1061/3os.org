@@ -12,14 +12,14 @@ nav:
             - Resize Root PartitionWithout Reboot: 'linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
             - Installing Oh My zsh: 'linux/linuxGuides/zshOnSteroids.md'
       - Linux Services:
-            - cPanel & WHM: 'linux/Services/cpanel.md'
-            - CSF Firewall: 'linux/Services/csf.md'
-            - Nginx: 'linux/Services/nginx.md'
-            - Apache: 'linux/Services/apache.md'
-            - Sophos Firewall: 'linux/Services/sophos.md'
-            - Wordpress: 'linux/Services/wordpress.md'
-            - Esxi: 'linux/Services/esxi.md'
-            - Plesk: 'linux/Services/plesk.md'
+            - cPanel & WHM: 'linux/services/cpanel.md'
+            - CSF Firewall: 'linux/services/csf.md'
+            - Nginx: 'linux/services/nginx.md'
+            - Apache: 'linux/services/apache.md'
+            - Sophos Firewall: 'linux/services/sophos.md'
+            - Wordpress: 'linux/services/wordpress.md'
+            - Esxi: 'linux/services/esxi.md'
+            - Plesk: 'linux/services/plesk.md'
   - macOS:
       - General: 'macOS/macGeneral.md'
       - Home Brew: 'macOS/brew.md'
@@ -98,7 +98,7 @@ theme:
     tabs: 'true'
   font:
     text: 'Ubuntu'
-    code: 'Roboto Mono'
+    code: 'Ubuntu Mono'
 
 # Social Links and Comments
 extra:
