@@ -1,0 +1,22 @@
+{
+  "projectName": "3os.org",
+  "projectOwner": "fire1ce",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "contributors.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "jfmengels",
+      "name": "Jeroen Engels",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3869412?v=4",
+      "profile": "https://github.com/jfmengels",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
+}
