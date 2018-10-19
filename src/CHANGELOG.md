@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.2.8 (19/10/2018)
+- [added title atribute to iframe tags](https://github.com/fire1ce/3os.org/commit/11da41071d1f8e6d4e3043fb4feeb0b49803dd78) - @fire1ce
+- [ CHANGELOG.md update to v0.2.8](https://github.com/fire1ce/3os.org/commit/82ad5c3b85cf15cb0238030f39e031b926cc1d5c) - @fire1ce
+
+---
+
 ## v0.2.7 (17/10/2018)
 - [added meta data for better organic search](https://github.com/fire1ce/3os.org/commit/def49b6294328bb4e52d0b6ce380b748afbf65bc) - @fire1ce
 - [change to Ubuntu fonts](https://github.com/fire1ce/3os.org/commit/be803d8f983087e4807150cfc38bef650d9a45b9) - @fire1ce
