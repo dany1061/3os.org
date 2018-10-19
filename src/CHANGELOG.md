@@ -1,6 +1,15 @@
 # Changelog
 
+## v0.2.9 (19/10/2018)
+- [add disqus comments](https://github.com/fire1ce/3os.org/commit/21ca1923e2c9efdbb1d74cf47ca718b80f587aa4) - @fire1ce
+- [ CHANGELOG.md update to v0.2.9](https://github.com/fire1ce/3os.org/commit/9b83b22f37637ebd733747b8ad42bb794b152689) - @fire1ce
+
+---
+
 ## v0.2.8 (19/10/2018)
+- [added Contributions list for 3os project](https://github.com/fire1ce/3os.org/commit/20e44efeb98acbd8980427b5a2f407e4b387aa97) - @fire1ce
+- [Add @jfmengels as a contributor](https://github.com/fire1ce/3os.org/commit/6f0ac85f2ac8b241164d013de019094e7bbbf82f) - @fire1ce
+- [Update @jfmengels as a contributor](https://github.com/fire1ce/3os.org/commit/a0e371bd763b19f2553af4c2aab7baf7262c963d) - @fire1ce
 - [added title atribute to iframe tags](https://github.com/fire1ce/3os.org/commit/11da41071d1f8e6d4e3043fb4feeb0b49803dd78) - @fire1ce
 - [ CHANGELOG.md update to v0.2.8](https://github.com/fire1ce/3os.org/commit/82ad5c3b85cf15cb0238030f39e031b926cc1d5c) - @fire1ce
 
