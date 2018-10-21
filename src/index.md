@@ -6,7 +6,7 @@ __3os Project's__ main purpose is to provide simple knowledge base for IT, Secur
 This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"){target=_blank} with [Material theme](https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs¶"){target=_blank}, It's being generated from markdowns files of `main branch` of [3os.org repository](https://github.com/fire1ce/3os.org/ "Github fire1ce/3os.org/ repository"){target=_blank} and hosted on [Github-Pages](https://pages.github.com/ "Github-Pages"){target=_blank}.  
 I would like you and others to contribute your knowledge to 3os Project to preserved and improve any guide or information provided here for you and others.
 
-### How to contribute
+### How To Contribute
 
 You can contribute by submitting pull requests for any topic by hitting the _`edit`_ :pencil2: icon on top right corner of each page, you will be redirected to the github source markdown page.  
 Edit, add, or remove any content commit and explain the proposed change and submit for review. After the approval you will be automatically added to the [Contributions Wall](contributions.md "Contributions Wall").  
