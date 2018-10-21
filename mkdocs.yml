@@ -36,6 +36,7 @@ nav:
       - Python: 'development/python.md'
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
+      - Windows Guides and How-To: 'windows/windowsGuides.md'
   - Browsers Extensions:
       - Chrome: 'browsers/chromeExtensions.md'
       - Firefox: 'browsers/firefoxExtentions.md'
