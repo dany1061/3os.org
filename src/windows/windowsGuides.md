@@ -48,4 +48,3 @@ Force Shutdown
 ```cmd
 shutdown /s /f /t 0
 ```
-
