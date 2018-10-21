@@ -3,8 +3,8 @@
 # Navigation
 nav:
   - Home: 'index.md'
-  - Changelog: 'CHANGELOG.md'
   - Contributions Wall: 'contributions.md'
+  - Changelog: 'CHANGELOG.md'
   - Linux:
       - SSH Service Security: 'linux/SSH_Service_Security.md'
       - Centos 7: 'linux/centos7.md'
