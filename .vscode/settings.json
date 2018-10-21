@@ -173,6 +173,7 @@
     "modulepath",
     "mycsr",
     "netdev",
+    "netplwiz",
     "netstat",
     "newca",
     "newcert",
