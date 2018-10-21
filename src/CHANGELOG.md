@@ -1,6 +1,16 @@
 # Changelog
 
+## v0.3.2 (21/10/2018)
+- [ CHANGELOG.md update to v0.3.2](https://github.com/fire1ce/3os.org/commit/929b92c2a0579872aefb82472d4271729dd90222) - @fire1ce
+
+---
+
 ## v0.3.1 (21/10/2018)
+- [added new screenshots for guides to assets -> images -> windwos](https://github.com/fire1ce/3os.org/commit/ce5b0b2c05c9e048af0a706f5f8a999abe2240a9) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/9c80c0370ebec6c52ccb343b265d41107b09e45e) - @fire1ce
+- [added new guides Add Program to Startup - Any Windows, Auto Login Without Password at Boot](https://github.com/fire1ce/3os.org/commit/17ff6dd14e09fc0a1681f1d2627870bfbaeb18a3) - @fire1ce
+- [added new section - windwos guides and how to](https://github.com/fire1ce/3os.org/commit/6b4d64f93062549aacc55af8682bd6896d9f2b74) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/6d83e116deef7f6967eb6f813304ce9c922c493a) - @fire1ce
 - [ CHANGELOG.md update to v0.3.1](https://github.com/fire1ce/3os.org/commit/cde6da2e8f7c48aefb02a94f40c7daa5c4b9fd42) - @fire1ce
 
 ---
