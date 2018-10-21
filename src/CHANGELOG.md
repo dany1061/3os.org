@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.3 (21/10/2018)
+- [ CHANGELOG.md update to v0.3.3](https://github.com/fire1ce/3os.org/commit/115a8adb1c10ec7507b9da5d7f9449c1d02aa612) - @fire1ce
+
+---
+
 ## v0.3.2 (21/10/2018)
 - [ CHANGELOG.md update to v0.3.2](https://github.com/fire1ce/3os.org/commit/929b92c2a0579872aefb82472d4271729dd90222) - @fire1ce
 
