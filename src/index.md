@@ -2,7 +2,7 @@
 
 ## 3os Project
 
-__3os is an open source project__ it's main purpose is to provide simple knowledge base for IT, Security, Penetration Testing, useful guides, links and tools for the vast system admins, technology enthusiasts and practically any one who is looking for the some technical%)Wf1r9nm^ information.  
+__3os is an open source project__ it's main purpose is to provide simple knowledge base for IT, Security, Penetration Testing, useful guides, links and tools for the vast system admins, technology enthusiasts and practically any one who is looking for the some technical information.  
 This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"){target=_blank} with [Material theme](https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs¶"){target=_blank}, It's being generated from markdowns files of `main branch` of [3os.org repository](https://github.com/fire1ce/3os.org/ "Github fire1ce/3os.org/ repository"){target=_blank} and hosted on [Github-Pages](https://pages.github.com/ "Github-Pages"){target=_blank}.  
 I would like you and others to contribute your knowledge to 3os Project to preserved and improve any guide or information provided here for you and others.
 
