@@ -1,6 +1,15 @@
 # Changelog
 
+## v0.3.4 (21/10/2018)
+- [ CHANGELOG.md update to v0.3.4](https://github.com/fire1ce/3os.org/commit/f3a86e58c2840c475b9c3a4d9008a6e05eebc819) - @fire1ce
+
+---
+
 ## v0.3.3 (21/10/2018)
+- [Chnaged Title of a guide](https://github.com/fire1ce/3os.org/commit/ce2739b41515285c14996e1dc6a0f70a11531f6f) - @fire1ce
+- [new index structure and content](https://github.com/fire1ce/3os.org/commit/91e15fed6987ff5b7786d41142a7b7f407859d97) - @fire1ce
+- [removed about tab](https://github.com/fire1ce/3os.org/commit/fce9c2d388b8434636d62c7c8c4f257ae4a7fbd2) - @fire1ce
+- [removed](https://github.com/fire1ce/3os.org/commit/27456d68e8e8ce1ddca6d66856e675eb2f61262c) - @fire1ce
 - [ CHANGELOG.md update to v0.3.3](https://github.com/fire1ce/3os.org/commit/115a8adb1c10ec7507b9da5d7f9449c1d02aa612) - @fire1ce
 
 ---
