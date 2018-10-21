@@ -13,7 +13,7 @@ I would like you and others to contribute your knowledge to 3os Project to prese
 
 You can contribute by submitting pull requests for any topic by hitting the `edit` :pencil2: icon on top right corner of each page, you will be redirected to the github source markdown page.  
 Edit, write the proposed change and submit for review. After the approval you will be automatically added to the [Contributions Wall](contributions.md "Contributions Wall").  
-You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") for better understanding how to use __Markdown syntax__ to edit or create new content.
+You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") for better understanding how to use __Markdown Syntax__ to edit or create new content.
 
 ### Disclaimer
 
@@ -32,4 +32,4 @@ _All the information provided by this website can be obtained via the internet a
     I've made new section __[Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")__ It Replaced the old __help__ section. I've been working on this for few good hours to make it as easy to use. Hope you all can enjoy it and use it to make this site even better.
 
 !!! warning ""
-    Full Changelog of all commits to the project can be found [here](CHANGELOG.md "Full CHANGELOG")
+    Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")
