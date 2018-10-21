@@ -18,7 +18,7 @@ At run dialog enter `netplwiz`:
 
 The next time you restart the computer, it will automatically log on with the local user account you selected. Configuring automatic logon stores the user’s password in the registry unencrypted, where someone might be able to retrieve it.
 
-## Add Program to Startup - Any Windows
+## Add Program to Startup - Windows 7/8/10 & Servers
 
 Hit WIN+R or from start menu search `run` and press enter.  
 At run dialog enter `shell:common startup`:
