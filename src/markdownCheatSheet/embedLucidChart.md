@@ -9,7 +9,7 @@ open the Lucid chart and select the share -> embed menu item. click the `activat
 
 ![lucid](../assets/images/MarkdownCheatSheet/lucid_char_html.png)
 
-> :bulb: its recomended to change the width to 100% and remove the margin and relative setting under style
+> :bulb: its recommended to change the width to 100% and remove the margin and relative setting under style
 
 ```html
 <div style="width: 100%; height: 520px;">  

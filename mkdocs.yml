@@ -29,10 +29,10 @@ nav:
       - Home Brew: 'macOS/brew.md'
       - MacOS Software: 'macOS/macSoftware.md'
       - Alftred Workflows: 'macOS/alfredWorkFlows.md'
-  - Rasperry Pi:
-      - General: 'rasperryPi/piGeneral.md'
-      - Rasperry Pi 3 Tor Access Point: 'rasperryPi/TOR-Pi.md'
-      - Rasperry Pi Magic Mirror: 'rasperryPi/MagicMirror.md'
+  - Raspberry Pi:
+      - General: 'raspberryPi/piGeneral.md'
+      - Raspberry Pi 3 Tor Access Point: 'raspberryPi/TOR-Pi.md'
+      - raspberry Pi Magic Mirror: 'raspberryPi/MagicMirror.md'
   - Development:
       - Python: 'development/python.md'
   - Windows:
