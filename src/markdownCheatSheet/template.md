@@ -1,6 +1,6 @@
 title: Markdown CheatSheet For MkDocs - Basic Page Template
 description: This is a basic template for how to use Markdown page
-<!-- Meta Data for search engines -->
+<!-- Meta Data for search engines - NOT Visible -->
 
 # Simple MarkDown Template
 
