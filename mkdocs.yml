@@ -5,6 +5,7 @@ nav:
   - Home: 'index.md'
   - Contributions Wall: 'contributions.md'
   - Changelog: 'CHANGELOG.md'
+  - Donate: 'donation.md'
   - Linux:
       - SSH Service Security: 'linux/SSH_Service_Security.md'
       - Centos 7: 'linux/centos7.md'
@@ -75,6 +76,8 @@ nav:
       - Simple Template: 'markdownCheatSheet/template.md'
       - Extra:
             - Metadata per Page: 'markdownCheatSheet/metaData.md'
+  - Donate: 
+      - Donttion: 'donation.md'
 
 # Site information
 site_name: '3os.org'
