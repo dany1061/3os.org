@@ -1,6 +1,6 @@
 # Welcome to 3os
 
-## 3os Project is an open source project
+## 3os Project is an Open Source Project
 
 Our main purpose is to provide simple knowledge base on various topics such as IT, Security, Penetration Testing, useful guides, links and tools for the vast system admins, technology enthusiasts and practically anyone who is looking for the some technical information and more. Our goal is to share useful guides, links and tools.
 
