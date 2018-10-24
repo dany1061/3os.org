@@ -1,15 +1,17 @@
-# Welcome to 3os.org
+# Welcome to 3os
 
 ## 3os Project
 
-__3os is an open source project__ it's main purpose is to provide simple knowledge base for IT, Security, Penetration Testing, useful guides, links and tools for the vast system admins, technology enthusiasts and practically any one who is looking for the some technical information.  
-This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"){target=_blank} with [Material theme](https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs¶"){target=_blank}, It's being generated from markdowns files of `main branch` of [3os.org repository](https://github.com/fire1ce/3os.org/ "Github fire1ce/3os.org/ repository"){target=_blank} and hosted on [Github-Pages](https://pages.github.com/ "Github-Pages"){target=_blank}.  
-I would like you and others to contribute your knowledge to 3os Project to preserved and improve any guide or information provided here for you and others.
+__3os is an open source project__, it's main purpose is to provide a simple knowledge base for system admins, technology enthusiasts and practically any one who is looking for some technical information. The topics will include IT, Security, Penetration Testing, and more. Our goal is to share useful guides, links and tools.
+
+This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"){target=_blank} with [Material Theme](https://squidfunk.github.io/mkdocs-material/ "Material for MkDocs¶"){target=_blank}, generated from markdowns files of `main branch` of [3os.org repository](https://github.com/fire1ce/3os.org/ "Github fire1ce/3os.org/ repository"){target=_blank} and hosted on [Github-Pages](https://pages.github.com/ "Github-Pages"){target=_blank} and hosted on Github-Pages.
+
+You are more than welcome to contribute your knowledge to 3os Project, to add new materials, and to improve any guide or information provided here for our raising community.
 
 ### How To Contribute
 
-You can contribute by submitting pull requests for any topic by hitting the _`edit`_ :pencil2: icon on top right corner of each page, you will be redirected to the github source markdown page.  
-Edit, add, or remove any content commit and explain the proposed change and submit for review. After the approval you will be automatically added to the [Contributions Wall](contributions.md "Contributions Wall").  
+You can contribute by submitting pull requests for any topic by hitting the `edit` :pencil2: icon on the top right corner of each page. When doing so, you will be redirected to the Github source markdown page (Github account required).
+Edit, add, or remove any content, than commit,  explain the proposed change, and submit for review. After the approval you will be automatically added to the [Contributions Wall](contributions.md "Contributions Wall").
 You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") for better understanding how to use _Markdown Syntax_ to edit or create new content.
 
 ### Disclaimer
@@ -17,6 +19,14 @@ You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Mark
 _All the information provided by this website can be obtained via the internet and we don't claim ownership of the information presented to you._
 
 ## Updates
+
+!!! info "24/10/18 Donation Button"
+
+    * We have added a donation button based on Paypal  
+     If you think our work owned as a beer we would be glad to have have :beer:
+    * Added [Template](src/markdownCheatSheet/template.md "Markdown Template") page to [Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")
+    * Main page content remake
+    * Beta test section inside [Template](src/markdownCheatSheet/template.md "Markdown Template") for our team to test new features
 
 !!! info "21/10/18 New Windows Guides and How-To"
     New section added to Windows - Windows Guides and How-To  
