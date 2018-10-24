@@ -72,6 +72,7 @@ nav:
             - Gists: 'markdownCheatSheet/embedGists.md'
             - YouTube Videos: 'markdownCheatSheet/embedYouTubeVideos.md'
             - Lucid Chart: 'markdownCheatSheet/embedLucidChart.md'
+      - Simple Template: 'markdownCheatSheet/template.md'
       - Extra:
             - Metadata per Page: 'markdownCheatSheet/metaData.md'
 
