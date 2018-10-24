@@ -24,9 +24,9 @@ _All the information provided by this website can be obtained via the internet a
 
     * We have added a donation button based on Paypal  
      If you think our work owned as a beer we would be glad to have have :beer:
-    * Added [Template](src/markdownCheatSheet/template.md "Markdown Template") page to [Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")
+    * Added [Template](markdownCheatSheet/template.md "Markdown Template") page to [Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")
     * Main page content remake
-    * Beta test section inside [Template](src/markdownCheatSheet/template.md "Markdown Template") for our team to test new features
+    * Beta test section inside [Template](markdownCheatSheet/template.md "Markdown Template") for our team to test new features
 
 !!! info "21/10/18 New Windows Guides and How-To"
     New section added to Windows - Windows Guides and How-To  
@@ -41,3 +41,7 @@ _All the information provided by this website can be obtained via the internet a
 
 !!! warning ""
     Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")
+
+<!-- Donation Button -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="220px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+<!-- Donation Button -->

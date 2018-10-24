@@ -167,3 +167,7 @@ You can also install special drivers so your Windows can read `ext` filesystems 
 ---
 
 **Since the image will be of the same size as your SD card, you may want to compress it. This can be achieved simply by using your favorite compression tool, such as gzip, 7zip, WinZip, WinRar ...**
+
+<!-- Donation Button -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="220px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"><img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></form>
+<!-- Donation Button -->
