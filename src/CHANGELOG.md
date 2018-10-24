@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.3.6 (24/10/2018)
+- [meta tag change](https://github.com/fire1ce/3os.org/commit/c0d6e196cd2ccd1acd5ea9069ed12d9697d575d3) - @fire1ce
+- [added donation button](https://github.com/fire1ce/3os.org/commit/12ac875405faaac9a7ab7d497008ceae2479bc23) - @fire1ce
+- [content rephrase](https://github.com/fire1ce/3os.org/commit/1e4b2c6b8a416ee90e62818c451498ab6c35b8bd) - @fire1ce
+- [new donation page](https://github.com/fire1ce/3os.org/commit/a43f4f728afd7eb08a9872ed483e65cd60b1b39b) - @fire1ce
+- [added Donate page and section](https://github.com/fire1ce/3os.org/commit/66f4ff18c097fa2d7dc194e91317511e7f045556) - @fire1ce
+- [new donation page](https://github.com/fire1ce/3os.org/commit/2697c39447269fa182a48def5a45ac1111ca50de) - @fire1ce
+- [added meta data](https://github.com/fire1ce/3os.org/commit/a52ab3889b1a1688b6730ce303a408ffda4a63e0) - @fire1ce
+- [updated to mkdocs-material 3.0.5](https://github.com/fire1ce/3os.org/commit/87f7836cdbaa03e8bdb24a2df008d887c35b214d) - @fire1ce
+- [ CHANGELOG.md update to v0.3.6](https://github.com/fire1ce/3os.org/commit/85af03b5aad61688d40f77147c28e6d762126dd4) - @fire1ce
+
+---
+
 ## v0.3.5 (24/10/2018)
 - [added "buy as a beer" button](https://github.com/fire1ce/3os.org/commit/90554515063d99c8bdda778f92332e21ccbfe4e7) - @fire1ce
 - [new temaplate section](https://github.com/fire1ce/3os.org/commit/5ff37ff9d71985e2eb5c16cff3e300dd79626c97) - @fire1ce
