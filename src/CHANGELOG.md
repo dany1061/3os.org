@@ -1,6 +1,25 @@
 # Changelog
 
+## v0.3.5 (24/10/2018)
+- [added "buy as a beer" button](https://github.com/fire1ce/3os.org/commit/90554515063d99c8bdda778f92332e21ccbfe4e7) - @fire1ce
+- [new temaplate section](https://github.com/fire1ce/3os.org/commit/5ff37ff9d71985e2eb5c16cff3e300dd79626c97) - @fire1ce
+- [images](https://github.com/fire1ce/3os.org/commit/16625522e5c3328f919c8a336c11f0ec06325f79) - @fire1ce
+- [update content and changelog](https://github.com/fire1ce/3os.org/commit/c18a7f989e0562f2cb5de5a257b334836f76c86e) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/65693100e1a71c867c426c47d5ea99bcfb5ce81f) - @fire1ce
+- [added Temaplate to CheatSheet section](https://github.com/fire1ce/3os.org/commit/31ded18ddb9af64d242fc0b6b22671015f21dc10) - @fire1ce
+- [typo fix](https://github.com/fire1ce/3os.org/commit/db8464099dba84ca0c54113140123a90cc2459d1) - @fire1ce
+- [content cleanup](https://github.com/fire1ce/3os.org/commit/0ea13981badda48607aa5a313457abf3a8572f05) - @fire1ce
+- [ CHANGELOG.md update to v0.3.5](https://github.com/fire1ce/3os.org/commit/3d217f87500046a6bafa22175ed04e8e61254c85) - @fire1ce
+
+---
+
 ## v0.3.4 (21/10/2018)
+- [added new guide "Reboot or Shutdown Windows From Command Line (CMD)"](https://github.com/fire1ce/3os.org/commit/d0d2ad1f071f80bd87344601c984e609077c5d92) - @fire1ce
+- [fix capital letters](https://github.com/fire1ce/3os.org/commit/87e2c249c14d320bbb4be9e6eb4395eb9433120c) - @fire1ce
+- [cleanup content](https://github.com/fire1ce/3os.org/commit/69827e2a452d6e7ad0a7d93476482256bd4d7a99) - @fire1ce
+- [content cleanup](https://github.com/fire1ce/3os.org/commit/be46b4e602a79dbefc9c6064ab55b9575c579895) - @fire1ce
+- [Menu order swap of Contributions Wall and Changelog](https://github.com/fire1ce/3os.org/commit/63e699fb5670607b04f22aa6f984f81751e92a2d) - @fire1ce
+- [content cleanup](https://github.com/fire1ce/3os.org/commit/a8dffdc4fe8361a2975f391a01af5cf9d1610018) - @fire1ce
 - [ CHANGELOG.md update to v0.3.4](https://github.com/fire1ce/3os.org/commit/f3a86e58c2840c475b9c3a4d9008a6e05eebc819) - @fire1ce
 
 ---
