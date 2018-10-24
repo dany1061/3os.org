@@ -3,9 +3,11 @@ description: Markdown cheatSheet for MkDocs. Lucid Charts Embedding examples and
 
 # Lucid Charts Embedding
 
+[lucidchart.com](https://www.lucidchart.com/ "lucidchart.com")
+
 open the Lucid chart and select the share -> embed menu item. click the `activate embed code` and copy and past the HTML.
 
-![lucid](../assets/images/lucid-137df.png)
+![lucid](../assets/images/MarkdownCheatSheet/lucid_char_html.png)
 
 > :bulb: its recomended to change the width to 100% and remove the margin and relative setting under style
 

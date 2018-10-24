@@ -75,7 +75,7 @@ nav:
             - Lucid Chart: 'markdownCheatSheet/embedLucidChart.md'
       - Simple Template: 'markdownCheatSheet/template.md'
       - Extra:
-            - Metadata per Page: 'markdownCheatSheet/metaData.md'
+            - Metadata Per Page: 'markdownCheatSheet/metaData.md'
   - Donate: 
       - Donttion: 'donation.md'
 
