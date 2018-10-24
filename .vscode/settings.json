@@ -36,6 +36,7 @@
     "PORTFLOOD",
     "PREROUTING",
     "PUCLICK",
+    "Paypal",
     "Pingback",
     "Plesk",
     "Powerpack",
@@ -276,6 +277,7 @@
     "wplogin",
     "wwwacct",
     "xargs",
+    "xclick",
     "xserver",
     "xset",
     "zcvf"
