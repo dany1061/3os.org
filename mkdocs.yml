@@ -38,9 +38,6 @@ nav:
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'
-  - Browsers Extensions:
-      - Chrome: 'browsers/chromeExtensions.md'
-      - Firefox: 'browsers/firefoxExtentions.md'
   - Android:
       - Useful Apps for Android: 'android/androidApps.md'
   - Penetration-Testing:
@@ -49,14 +46,17 @@ nav:
       - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
       - Installing Bettercap 1.6.2: 'penTesting/bettercao1.6.2.md'
-  - Other:
-      - General: 'general/generalLinks.md'
-      - Gmail Mark As Read Script: 'general/gmailMarkAsRead.md'
-      - Synology DSM : 'general/synologyGeneral.md'
-      - Ubiquiti Networking: 'general/ubiquiti.md'
-      - WiFi QR Generator: 'general/wifiQrGenerator.md'
-      - vscode: 'general/vscode.md'
-      - Home Assistent: 'general/homeAssistent.md'
+  - More Categories:
+      - General: 'moreCategories/generalLinks.md'
+      - Browsers Extensions:
+             - Chrome: 'moreCategories/browsers/chromeExtensions.md'
+             - Firefox: 'moreCategories/browsers/firefoxExtentions.md'
+      - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
+      - Synology DSM : 'moreCategories/synologyGeneral.md'
+      - Ubiquiti Networking: 'moreCategories/ubiquiti.md'
+      - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
+      - vscode: 'moreCategories/vscode.md'
+      - Home Assistent: 'moreCategories/homeAssistent.md'
   - Markdown CheatSheet:
       - Welcome: 'markdownCheatSheet/welcome.md'
       - Headings: 'markdownCheatSheet/headings.md'
