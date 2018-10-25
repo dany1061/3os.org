@@ -3,7 +3,7 @@ description: Useful MacOS software im using on every day bases
 
 # MacOS Useful Software
 
-This list contains the software I personaly use on my mac.
+This list contains the software I personally use on my mac.
 
 | Application                                                                                                | Description                                                 |
 | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
