@@ -20,6 +20,12 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "25/10/18 Refinements"
+
+    * "Other" Section renamed to "More Categories"
+    * "Browsers" moved to "More Categories"
+    * more Typos and headers fixes and refinements
+
 !!! info "24/10/18 Donation Button"
 
     * We have added a donation button based on Paypal  
