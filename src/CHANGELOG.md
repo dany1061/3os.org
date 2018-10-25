@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.3.7 (25/10/2018)
+- [added new update](https://github.com/fire1ce/3os.org/commit/898b62e805bb3272c5d2dc6cec13cdbdede288df) - @fire1ce
+- [typo fix](https://github.com/fire1ce/3os.org/commit/bd7e819f044bc29811137e8085e29408a1338074) - @fire1ce
+- [resized "buy as a beer" to 150px](https://github.com/fire1ce/3os.org/commit/8c9323df0d04ba64e90c39d93786aa184ce4f470) - @fire1ce
+- [menus rearrange](https://github.com/fire1ce/3os.org/commit/1fce8c1d48e217b85e6a8f73f4781e436a6630bb) - @fire1ce
+- [typos fixes](https://github.com/fire1ce/3os.org/commit/8d571dd677a428611e15cbe7a4151e297f1a08ee) - @fire1ce
+- [fixed diagram](https://github.com/fire1ce/3os.org/commit/ccd3117d9687a3066db88c42ab783d24b667a2b2) - @fire1ce
+- [updated Network Flow](https://github.com/fire1ce/3os.org/commit/17a20cfcb63ee2983043096afd09975d2113521e) - @fire1ce
+- [add network flow for respberry pi tor guide](https://github.com/fire1ce/3os.org/commit/7e1ee437f2d152cc2709b6b03a9ee4504746dd53) - @fire1ce
+- [uper case fix](https://github.com/fire1ce/3os.org/commit/8ad54208e88bde292a86264f20f031b15e8a07b0) - @fire1ce
+- [new lucid char html exmaple](https://github.com/fire1ce/3os.org/commit/4920388b155c6ffa5893724e3a7329491a965cd0) - @fire1ce
+- [replaced](https://github.com/fire1ce/3os.org/commit/f8c06c628874ca4c47d0d01aef1b6c36629b7dd9) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/9649eca900a4336af2be0d181696089b66a46acc) - @fire1ce
+- [fix for upercase title](https://github.com/fire1ce/3os.org/commit/d1cbb7077cfb1a4dbfe14b7ae0d2080e4b98f9ba) - @fire1ce
+- [ CHANGELOG.md update to v0.3.7](https://github.com/fire1ce/3os.org/commit/4dffb118f95dfd9fc5a9da0a1b7772988ad18d70) - @fire1ce
+
+---
+
 ## v0.3.6 (24/10/2018)
 - [meta tag change](https://github.com/fire1ce/3os.org/commit/c0d6e196cd2ccd1acd5ea9069ed12d9697d575d3) - @fire1ce
 - [added donation button](https://github.com/fire1ce/3os.org/commit/12ac875405faaac9a7ab7d497008ceae2479bc23) - @fire1ce
