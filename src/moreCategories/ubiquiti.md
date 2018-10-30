@@ -258,34 +258,45 @@ ssh to the EdgeRouter:
 delete system image
 ```
 
-## EdgeRouter task-scheduler
+## Installing Docker Container Unifi Controller On Synology NAS
 
-**`Work In Progress`**
-
-```bash
-configure
-show system task-scheduler
-set system task-scheduler task SSL_UPDATE interval 1d
-```
-
-## Installing UniFi Controller on Ubuntu 16.04
+based on _jacobalberty/unifi:latest_ image
 
 ```bash
-sudo apt update
-sudo apt-get install openjdk-8-jdk-headless openjdk-8-jre-headless
-echo 'deb http://www.ubnt.com/downloads/unifi/debian stable ubiquiti' | sudo tee /etc/apt/sources.list.d/100-ubnt-unifi.list
-sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ubnt.com/unifi/unifi-repo.gpg
-sudo apt update
-sudo apt install unifi
-sudo apt install haveged
-sudo update-rc.d haveged defaults
-reboot
+docker run \
+-d \
+--restart always \
+--name=unifi-controller \
+--net=host \
+-h unifi \
+--volume=/volume1/docker/unifi:/var/lib/unifi \
+-p 8080:8080/tcp \
+-p 8081:8081/tcp \
+-p 8443:8443/tcp \
+-p 8843:8843/tcp \
+-p 8880:8880/tcp \
+-p 3478:3478/udp \
+-e TZ=Asia/Jerusalem \
+jacobalberty/unifi:latest
 ```
 
-Interface:
+## Installing Docker Container UNMS Controller On Synology NAS
 
-```markdown
-https://<serversAdress>:8443
+Based on _oznu/unms:latest_ image
+
+```bash
+docker run \
+-d \
+--restart always \
+--name=unms-controller \
+-h unms \
+--volume=/volume1/docker/unms:/config \
+-p 9080:80 \
+-p 9443:443 \
+-e PUBLIC_HTTPS_PORT=9443 \
+-e PUBLIC_WS_PORT=9443 \
+-e TZ=Asia/Jerusalem \
+oznu/unms:latest
 ```
 
 <!-- Donation Button -->
