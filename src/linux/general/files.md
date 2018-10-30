@@ -3,6 +3,43 @@ description: Linux - Files Handling how to, guides, examples, and simple usage
 
 # Linux Files Handling
 
+## SMB Mount on Linux With Credentials
+
+```bash
+sudo apt-get install cifs-utils
+nano ~/.smbcredentials
+```
+
+add this to the config.
+
+```bash
+username=msusername
+password=mspassword
+```
+
+Save the file, exit the editor.
+Change the permissions of the file to prevent unwanted access to your credentials:
+
+```bash
+chmod 600 ~/.smbcredentials
+```
+
+Then edit your /etc/fstab file (with root privileges) to add this line (replacing the insecure line in the example above, if you added it):
+
+```bash
+//servername/sharename /media/windowsshare cifs vers=1.0,credentials=/home/ubuntuusername/.smbcredentials,iocharset=utf8,sec=ntlm 0 0
+```
+
+Save the file, exit the editor.
+
+Finally, test the fstab entry by issuing:
+
+```bash
+sudo mount -a
+```
+
+If there are no errors, you should test how it works after a reboot. Your remote share should mount automatically.
+
 ## Find big files and folders
 
 ```bash
