@@ -145,39 +145,29 @@ Save AS As: `Firefox Profile Manager`
 Where: `Applications`
 File Format: `Application`
 
-Right Click on the new "Burp Multi Session" application.
+Right Click on the new "Firefox Profile Manager" application.
 Drug the original application to the icon in the left corner of the "get info"
 
-## Add Macbook Keybourd Layout for ubuntu
+## Disable/Enable SIP (System Integrity Protection)
 
-for desktop:
+Reboot your Mac into Recovery Mode by restarting your computer and holding down __Command+R__ until the Apple logo appears on your screen.  
+Click _Utilities > Terminal._  
+In the Terminal window, type in:
 
-```bash
-gsettings set org.gnome.desktop.input-sources xkb-options "['apple:badmap']"
-```
-
-Terminal command to disable the option:
+To Disable:
 
 ```bash
-gsettings reset org.gnome.desktop.input-sources xkb-options
+csrutil disable
 ```
 
-<!-- for headless (server):
+To Enable:
 
 ```bash
-sudo apt-get install keyboard-configuration console-data console-setup console-locales
-sudo dpkg-reconfigure keyboard-configuration
+csrutil enable
 ```
 
--> MacBook / MacBookPro (Intl)
+Press Enter and restart your Mac.
 
--> English
-
--> English
-
--> Right Alt (AltGr)
-
--> No Compose Key -->
 
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
