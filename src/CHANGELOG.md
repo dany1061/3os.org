@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.3.8 (31/10/2018)
+- [added  Disable/Enable SIP (System Integrity Protection)](https://github.com/fire1ce/3os.org/commit/b35c5a6435c642b311a9615dad556b331462d18c) - @fire1ce
+- [added SMB Mount on Linux With Credentials](https://github.com/fire1ce/3os.org/commit/4eec3d022fd15b913d7b80246dce2dd1fead9fdf) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/a291e418e25dfd6ccff673ac05881bd9af41d501) - @fire1ce
+- [added docker for UNIFI, UNMS](https://github.com/fire1ce/3os.org/commit/f9ee747aa38fd2aacb7151b7c904e79557bc156a) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/6022fe3b93d420212a4153ac204eb182c7d70737) - @fire1ce
+- [removed tag from donataion button](https://github.com/fire1ce/3os.org/commit/d9564e920651d1f5c293e6a2af96ad2293f6ccc0) - @fire1ce
+- [remove empty line](https://github.com/fire1ce/3os.org/commit/1de842393014b2559bb8c8d7685eb514b7f1bd1a) - @fire1ce
+- [path fixed](https://github.com/fire1ce/3os.org/commit/c388ad9e620a4f5ac1d9412ef94b1d3e1cd6b4b9) - @fire1ce
+- [updated mkdocs-material==3.0.6](https://github.com/fire1ce/3os.org/commit/59ae51acf74c82fc3db63b4e4d1d9dfac8ddb098) - @fire1ce
+- [added docker category](https://github.com/fire1ce/3os.org/commit/412fbed2f1ed61a08884680c49dbca731a5d62c6) - @fire1ce
+- [ CHANGELOG.md update to v0.3.8](https://github.com/fire1ce/3os.org/commit/4ff6aee9624eaf91d2bc08883434a005c2c85281) - @fire1ce
+
+---
+
 ## v0.3.7 (25/10/2018)
 - [added new update](https://github.com/fire1ce/3os.org/commit/898b62e805bb3272c5d2dc6cec13cdbdede288df) - @fire1ce
 - [typo fix](https://github.com/fire1ce/3os.org/commit/bd7e819f044bc29811137e8085e29408a1338074) - @fire1ce
