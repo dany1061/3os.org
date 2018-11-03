@@ -3,6 +3,7 @@ certifi==2018.10.15
 chardet==3.0.4
 Click==7.0
 click-man==0.2.2
+css-html-js-minify==2.5.5
 idna==2.7
 Jinja2==2.10
 livereload==2.5.2
@@ -18,4 +19,4 @@ PyYAML==3.13
 requests==2.20.0
 six==1.11.0
 tornado==5.1.1
-urllib3==1.24
+urllib3==1.24.1
