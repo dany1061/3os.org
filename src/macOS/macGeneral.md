@@ -80,6 +80,12 @@ sudo find / -name .DS_Store -delete; killall Finder
 
 `Note: In the future, whenever you switch views, it will automatically save in the new .DS_Store file. This will override the default settings.`
 
+## List listening Ports and Programs and Users
+
+```bash
+sudo lsof -i -P | grep -i "listen"
+```
+
 ## Installing rbenv (ruby send box) - Ruby alternative to the one that macOS uses
 
 Install rbenv with brew
