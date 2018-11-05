@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.3.9 (05/11/2018)
+- [Added Send Emails From The Windows Task Scheduler](https://github.com/fire1ce/3os.org/commit/e4618557f0fe51345bf9b46951d9337aee7374bc) - @fire1ce
+- [added List listening Ports and Programs and Users](https://github.com/fire1ce/3os.org/commit/00f0d3794057e076baad9f35146954b92461aa9e) - @fire1ce
+- [updated node version](https://github.com/fire1ce/3os.org/commit/324b058ede3c5d1699369b6ccf4e43ec1d069ee6) - @fire1ce
+- [updated](https://github.com/fire1ce/3os.org/commit/5398ed0e5404d880cd39590de21b7c3073f2d25a) - @fire1ce
+- [added astatus to SIP section](https://github.com/fire1ce/3os.org/commit/ea6ef7b991fad2ee8d112e1719bbc4c0213c9f87) - @fire1ce
+- [ CHANGELOG.md update to v0.3.9](https://github.com/fire1ce/3os.org/commit/e5fd68dc4531ac8af44e357c3cbe2fb4937ec578) - @fire1ce
+
+---
+
 ## v0.3.8 (31/10/2018)
 - [added  Disable/Enable SIP (System Integrity Protection)](https://github.com/fire1ce/3os.org/commit/b35c5a6435c642b311a9615dad556b331462d18c) - @fire1ce
 - [added SMB Mount on Linux With Credentials](https://github.com/fire1ce/3os.org/commit/4eec3d022fd15b913d7b80246dce2dd1fead9fdf) - @fire1ce
