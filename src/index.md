@@ -20,6 +20,11 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "05/11/18 New Content Added"
+
+    * New [guide](/windows/windowsGuides/#send_emails_from_the_windows_task_scheduler "send emails from the windows task scheduler) how to send mails from Windows Task Scheduler
+    * New commands to run docker [UNIFI](moreCategories/ubiquiti/#installing_docker_container_unifi_controller_on_synology_nas) and [UNMS](moreCategories/ubiquiti/#installing_docker_container_unms_controller_on_synology_nas) controllers on Synology NAS (guide for full use and how to update will be added soon).
+
 !!! info "25/10/18 Refinements"
 
     * "Other" Section renamed to "More Categories"
@@ -41,9 +46,6 @@ _All the information provided by this website can be obtained via the internet. 
     * Auto Login Without Password at Boot
     * Add Program to Startup - Windows 7, 8, 10 & Servers
     * Reboot or Shutdown Windows From Command Line (CMD)
-
-!!! info "16/10/18 Markdown CheatSheet Initial Release"
-    I've made new section __[Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")__ It Replaced the old __help__ section. I've been working on this for few good hours to make it as easy to use. Hope you all can enjoy it and use it to make this site even better.
 
 !!! warning ""
     Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")
