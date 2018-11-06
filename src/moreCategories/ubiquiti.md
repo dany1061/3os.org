@@ -299,6 +299,25 @@ docker run \
 oznu/unms:latest
 ```
 
+## SpeedTest Cli on Edge Router
+
+ssh to the Edge Router.  
+installation:
+
+```bash
+curl -Lo speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+chmod +x speedtest-cli
+```
+
+run from the same directory:
+
+```bash
+./speedtest-cli --no-pre-allocate
+```
+
+based on [https://github.com/sivel/speedtest-cli](https://github.com/sivel/speedtest-cli "speedtest-cli")
+
+
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
 <!-- Donation Button -->
