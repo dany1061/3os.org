@@ -293,6 +293,7 @@ docker run \
 --volume=/volume1/docker/unms:/config \
 -p 9080:80 \
 -p 9443:443 \
+-p 2055:2055/udp \
 -e PUBLIC_HTTPS_PORT=9443 \
 -e PUBLIC_WS_PORT=9443 \
 -e TZ=Asia/Jerusalem \
@@ -316,6 +317,41 @@ run from the same directory:
 ```
 
 based on [https://github.com/sivel/speedtest-cli](https://github.com/sivel/speedtest-cli "speedtest-cli")
+
+## Enable NetFlow on EdgeRouter to UNMS
+
+The most suitable place to enable NetFlow is your Default gateway router. UNMS supports NetFlow version 5 and 9. UNMS only record flow data for IP ranges defined below. Whenever UNMS receives any data from a router, the status of NetFlow changes to `Active`.
+
+To show interfaces and pick the right interface:\
+
+```bash
+show interfaces
+```
+
+Example configuration for EdgeRouter:
+
+```bash
+configure
+set system flow-accounting interface pppoe0
+set system flow-accounting ingress-capture post-dnat
+set system flow-accounting disable-memory-table
+set system flow-accounting netflow server 192.168.1.10 port 2055
+set system flow-accounting netflow version 9
+set system flow-accounting netflow engine-id 0
+set system flow-accounting netflow enable-egress engine-id 1
+set system flow-accounting netflow timeout expiry-interval 60
+set system flow-accounting netflow timeout flow-generic 60
+set system flow-accounting netflow timeout icmp 60
+set system flow-accounting netflow timeout max-active-life 60
+set system flow-accounting netflow timeout tcp-fin 10
+set system flow-accounting netflow timeout tcp-generic 60
+set system flow-accounting netflow timeout tcp-rst 10
+set system flow-accounting netflow timeout udp 60
+commit
+save
+```
+
+10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,100.64.0.0/10
 
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
