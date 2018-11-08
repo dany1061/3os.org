@@ -5,9 +5,17 @@ description: Synology how to, guides, examples, and simple usage
 
 ## Installing VM Tools on Linux VM
 
+On Debian:
+
 ```bash
 sudo add-apt-repository universe
 sudo apt-get install qemu-guest-agent
+```
+
+On Centos:
+
+```bash
+yum install qemu-guest-agent -y
 ```
 
 ## Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script
