@@ -1,6 +1,21 @@
 # Changelog
 
+## v0.4.0 (08/11/2018)
+- [beautify commands for docker](https://github.com/fire1ce/3os.org/commit/2c70ba66b53ed7b52564b1af02677b4cbecfa602) - @fire1ce
+- [added centos guide to Installing VM Tools on Linux VM](https://github.com/fire1ce/3os.org/commit/d8e42c6d88f76db89d054c0fa0bcbdfdbc24a8cc) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/1bcbd0c1b36770fab9bc9c6a6d17203e698f4ed6) - @fire1ce
+- [new guides](https://github.com/fire1ce/3os.org/commit/cd27918ed9e3843544fe2b91a06c60fc48e3fd08) - @fire1ce
+- [added "network flow" for unms and edgerouter configuration](https://github.com/fire1ce/3os.org/commit/497e76cf57379ff96be8489b2aa90b59dea00eeb) - @fire1ce
+- [updated meta data](https://github.com/fire1ce/3os.org/commit/c447d98140f0b238392f4ce917b809a632fba4c4) - @fire1ce
+- [removed empty line](https://github.com/fire1ce/3os.org/commit/4e340aa408fcbf588ff807e3f17d499bfd568a19) - @fire1ce
+- [added SpeedTest Cli on Edge Router](https://github.com/fire1ce/3os.org/commit/c1e8c17ad6a106d832f1be65b2df53f2ce4124f2) - @fire1ce
+- [updated MarkupSafe-1.1.0](https://github.com/fire1ce/3os.org/commit/1c864545304b5260a4c359b8951a029225f16350) - @fire1ce
+- [ CHANGELOG.md update to v0.4.0](https://github.com/fire1ce/3os.org/commit/76ffe80a10768619c9a3b5765dc34210cb414497) - @fire1ce
+
+---
+
 ## v0.3.9 (05/11/2018)
+- [new updates](https://github.com/fire1ce/3os.org/commit/0c4191a5af2172dbdaa74a1ee812493fac7f9c95) - @fire1ce
 - [Added Send Emails From The Windows Task Scheduler](https://github.com/fire1ce/3os.org/commit/e4618557f0fe51345bf9b46951d9337aee7374bc) - @fire1ce
 - [added List listening Ports and Programs and Users](https://github.com/fire1ce/3os.org/commit/00f0d3794057e076baad9f35146954b92461aa9e) - @fire1ce
 - [updated node version](https://github.com/fire1ce/3os.org/commit/324b058ede3c5d1699369b6ccf4e43ec1d069ee6) - @fire1ce
