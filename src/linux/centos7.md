@@ -70,6 +70,55 @@ ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
 SUB    = The low-level unit activation state, values depend on unit type.
 ```
 
+## Installing Network Tools
+
+```bash
+yum install net-tools -y
+```
+
+## Disable and stop Firewall on Centos 7
+
+```bash
+Disable Firewalld
+systemctl stop firewalld
+```
+
+## Change Default Port for SSH with SElinux Enabled
+
+you will need semanage, find what package contains it:
+
+```bash
+yum whatprovides /usr/sbin/semanage
+```
+
+Usually it's _policycoreutils-python_
+
+```bash
+yum install policycoreutils-python
+```
+
+Add new allowed port for SSH for SElinux
+
+```bash
+semanage port -a -t ftp_port_t -p tcp <YOUR PORT>
+```
+
+## Disable SELinux on CentOS 7
+
+change __SELINUX=enforcing__ to __SELINUX=disabled__
+
+```bash
+sudo nano /etc/selinux/config
+```
+
+reboot.
+
+Check status
+
+```bash
+sestatus
+```
+
 ## Enabling Automatic Updates In Centos 7 & rhel 7
 
 ### Install yum-cron
@@ -123,6 +172,17 @@ For example:
 
 ```bash
 systemctl enable yum-cron.service
+```
+
+## Fix Locals Error In Bash
+
+Error :"bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory"
+
+add these lines to _/etc/environment_ (create it, if it doesn't exist):
+
+```bash
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
 ```
 
 <!-- Donation Button -->
