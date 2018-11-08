@@ -269,7 +269,7 @@ docker run \
 --name=unifi-controller \
 --net=host \
 -h unifi \
---volume=/volume1/docker/unifi:/var/lib/unifi \
+-v /volume1/docker/unifi:/var/lib/unifi \
 -p 8080:8080/tcp \
 -p 8081:8081/tcp \
 -p 8443:8443/tcp \
@@ -290,7 +290,7 @@ docker run \
 --restart always \
 --name=unms-controller \
 -h unms \
---volume=/volume1/docker/unms:/config \
+-v /volume1/docker/unms:/config \
 -p 9080:80 \
 -p 9443:443 \
 -p 2055:2055/udp \
