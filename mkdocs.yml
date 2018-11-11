@@ -12,6 +12,7 @@ nav:
       - General: 'linux/general/general.md'
       - Files: 'linux/general/files.md'
       - Memory & Swap: 'linux/general/memorySwap.md'
+      - Linux LVM Partitions: 'linux/lvm.md'
       - Guides:
             - Resize Root PartitionWithout Reboot: 'linux/linuxGuides/ResizeRootPartitionWithoutReboot.md'
             - Installing Oh My zsh: 'linux/linuxGuides/zshOnSteroids.md'
@@ -35,6 +36,7 @@ nav:
       - raspberry Pi Magic Mirror: 'raspberryPi/MagicMirror.md'
   - Development:
       - Python: 'development/python.md'
+      - MongoDB: 'development/mongodb.md'
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'
