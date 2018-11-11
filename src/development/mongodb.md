@@ -120,6 +120,7 @@ OUTPUT SHOULD BE 1
 ```
 
 ssh to any SECONDARY
+
 ```bash
 > use myDB
 > db.auth("databaseUsernameHere", "databasePasswordHere")
