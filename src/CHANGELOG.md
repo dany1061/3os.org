@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.4.1 (11/11/2018)
+- [added exception](https://github.com/fire1ce/3os.org/commit/e4bc039e751011eb26d929fe8d98346593a45949) - @fire1ce
+- [new section mongoDB](https://github.com/fire1ce/3os.org/commit/63ea12d9f84015fb5862a8b6e7bd6e29bf489e50) - @fire1ce
+- [new mongo db section](https://github.com/fire1ce/3os.org/commit/3e29d390d2cf5b827954453271373d6c01a775f8) - @fire1ce
+- [new mongoDB section](https://github.com/fire1ce/3os.org/commit/77f991a2e61b54bea55a4ea49acf2411904d9fbf) - @fire1ce
+- [added exeptions](https://github.com/fire1ce/3os.org/commit/0113fc92b5d632a7eb0f31649c705f2a48f40ac3) - @fire1ce
+- [new linux section](https://github.com/fire1ce/3os.org/commit/1f25b13f0a7c848e00f2a2cd7519cc8e8d47c980) - @fire1ce
+- [updated requirements](https://github.com/fire1ce/3os.org/commit/73ea2eb70941bd08d4ce421836c75da8cac37101) - @fire1ce
+- [ CHANGELOG.md update to v0.4.1](https://github.com/fire1ce/3os.org/commit/3a98b0ca7636e0b6698928cfac6e85d32ff3d062) - @fire1ce
+
+---
+
 ## v0.4.0 (08/11/2018)
 - [beautify commands for docker](https://github.com/fire1ce/3os.org/commit/2c70ba66b53ed7b52564b1af02677b4cbecfa602) - @fire1ce
 - [added centos guide to Installing VM Tools on Linux VM](https://github.com/fire1ce/3os.org/commit/d8e42c6d88f76db89d054c0fa0bcbdfdbc24a8cc) - @fire1ce
