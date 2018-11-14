@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.2 (14/11/2018)
+- [added exceptions](https://github.com/fire1ce/3os.org/commit/eb69e10a2488b30e9cbaf2424a4dc99aa01886fd) - @fire1ce
+- [added ubuntu section to linux](https://github.com/fire1ce/3os.org/commit/3e77a5d5264007c9ea7944587a37ae47e26eefc5) - @fire1ce
+- [added and rearranged topics](https://github.com/fire1ce/3os.org/commit/dc9c12252fef4cbf56f70fcd17b25745e080231e) - @fire1ce
+- [update MongoDB replica setup](https://github.com/fire1ce/3os.org/commit/eafad4933d2ddb89b9b341d60307d2c3d3dc8aa8) - @(-_-)
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/4644a287e7b531a01d322ecee1568e2786e7c2d7) - @Stas Kosatuhin
+- [ CHANGELOG.md update to v0.4.2](https://github.com/fire1ce/3os.org/commit/ef61d0ef0d45314d8bd983df271f45dce8074d59) - @fire1ce
+
+---
+
 ## v0.4.1 (11/11/2018)
 - [added exception](https://github.com/fire1ce/3os.org/commit/e4bc039e751011eb26d929fe8d98346593a45949) - @fire1ce
 - [new section mongoDB](https://github.com/fire1ce/3os.org/commit/63ea12d9f84015fb5862a8b6e7bd6e29bf489e50) - @fire1ce
