@@ -1,4 +1,5 @@
 # Welcome to 3os
+<img src="assets/images/logo/banner.jpg" align="center">
 
 ## 3os Project is an Open Source Project
 
