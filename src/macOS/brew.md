@@ -22,11 +22,10 @@ This script will perform the following:
 - Updates macOS AppStore Apps
 - Cleanups all unused packages
 
-Installation: Run at Terminal
+Installation or Update: Run at Terminal
 
 ```bash
-curl -fsSL https://git.io/fxlRD -o brewup
-mv brewup /usr/local/bin/
+curl -fsSL https://git.io/fxlRD -o /usr/local/bin/brewup
 chmod +x /usr/local/bin/brewup
 ```
 
