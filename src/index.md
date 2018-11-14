@@ -21,6 +21,14 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "14/11/18 __Version 1.0.0 Release__"
+
+    * Our team is proud to announce our version __1.0.0__ for 3os.org!!!
+    * This site has been in works for a while and now it’s time for its first 'stable' version.
+    * We make structure changes from time to time to suite the content in better way, so don’t be alarmed.
+    * We will continue to update and add more content as the time goes on.
+    * __Have a great day!__
+
 !!! info "05/11/18 New Content Added"
 
     * New [guide](/windows/windowsGuides/#send_emails_from_the_windows_task_scheduler "send emails from the windows task scheduler) how to send mails from Windows Task Scheduler
@@ -40,13 +48,6 @@ _All the information provided by this website can be obtained via the internet. 
     * Main page content remake
     * Beta test section inside [Template](markdownCheatSheet/template.md "Markdown Template") for our team to test new features
 
-!!! info "21/10/18 New Windows Guides and How-To"
-    New section added to Windows - Windows Guides and How-To  
-    Includes 2 new guides:
-
-    * Auto Login Without Password at Boot
-    * Add Program to Startup - Windows 7, 8, 10 & Servers
-    * Reboot or Shutdown Windows From Command Line (CMD)
 
 !!! warning ""
     Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")
