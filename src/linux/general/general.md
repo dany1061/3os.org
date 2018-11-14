@@ -3,7 +3,7 @@ description: Linux General how to, guides, examples, and simple usage
 
 # Linux General Topics
 
-## Redirect Output to a File and Stdout
+## Redirect Output to a File and Stdout With _tee_
 
 The command you want is named `tee`:
 
