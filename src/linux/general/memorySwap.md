@@ -1,7 +1,7 @@
 title: Linux Memory & Swap
 description: Linux Memory & Swap how to, guides, examples, and simple usage
 
-# Linux Memory & Swap
+# Linux Memory & Swap Related Topics
 
 ## Who uses RAM
 
@@ -25,13 +25,13 @@ vm.overcommit_memory = 0
 vm.overcommit_ratio = 80
 ```
 
-## Who is using SWAP
+## Who Is Using Swap Memory
 
 ```bash
 grep VmSwap /proc/*/status 2>/dev/null | sort -nk2 | tail -n5
 ```
 
-## Clear cache and swap
+## Clear Cache and Swap
 
 ```bash
 echo 3 > /proc/sys/vm/drop_caches && swapoff -a && swapon -a

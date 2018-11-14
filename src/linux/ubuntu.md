@@ -1,20 +1,12 @@
-title: Linux - Apache
-description: Linux - Apache how to, guides, examples, and simple usage
+title: Linux - Centos 7 Related Topics
+description: Linux - Centos 7 how to, guides, examples, and simple usage
 
-# Apache
+# Ubuntu Related Topics
 
-## Apache Memory Usage
-
-```bash
-ps -ylC httpd | awk '{x += $8;y += 1} END {print "Apache Memory Usage (MB): "x/1024; print "Average Process Size (MB): "x/((y-1)*1024)}'
-```
-
-## Find Root of a Site and CD to it
-
-Replace domain.com with desired domain
+## Clear BOOT Partition on Ubuntu when 100%
 
 ```bash
-cd `grep "domain.com" /etc/apache2/conf/httpd.conf -A7|grep Root|head -1|awk '{print $2}'`
+dpkg --purge `dpkg --list|grep "linux-"|grep -v \`uname -r|sed 's/-generic//g'\`|cut -d" " -f3|grep "[0-9]-"|paste -sd " " -`
 ```
 
 <!-- Donation Button -->

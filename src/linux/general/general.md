@@ -1,7 +1,35 @@
-title: Linux General
+title: Linux General Topics
 description: Linux General how to, guides, examples, and simple usage
 
-# Linux General
+# Linux General Topics
+
+## Redirect Output to a File and Stdout
+
+The command you want is named `tee`:
+
+```bash
+foo | tee output.file
+```
+
+For example, if you only care about stdout:
+
+```bash
+ls -a | tee output.file
+```
+
+If you want to include stderr, do:
+
+```bash
+program [arguments...] 2>&1 | tee outfile
+```
+
+2>&1 redirects channel 2 (stderr/standard error) into channel 1 (stdout/standard output), such that both is written as stdout. It is also directed to the given output file as of the tee command.
+
+Furthermore, if you want to append to the log file, use tee -a as:
+
+```bash
+program [arguments...] 2>&1 | tee -a outfile
+```
 
 ## Add Permanent Path to Application
 
@@ -34,6 +62,16 @@ Run this command for "Bash":
 ```bash
 echo 'export PATH="'$(pwd)':$PATH"' >> ~/.bashrc && source ~/.bashrc
 ```
+
+## Create Symbolic Links
+
+To create a symbolic link in Unix/Linux, at the terminal prompt, enter:
+
+```bash
+ln -s source_file target_file
+```
+
+to remove symbolic link use the `rm` command on the link
 
 ## Update Time Zone
 
@@ -71,14 +109,14 @@ net.core.somaxconn = 1024
 net.core.netdev_max_backlog = 2000
 ```
 
-## Rescan drives
+## Rescan Drives for the OS
 
 ```bash
 echo "- - -" > /sys/class/scsi_host/host0/scan
 echo 1 > /sys/class/scsi_device/2\:0\:0\:0/device/rescan
 ```
 
-## Find PTR owner - reversal
+## Find PTR Owner - Reversal Look Up
 
 ```bash
 dig 0.168.192.in-addr.arpa. NS
@@ -98,13 +136,13 @@ For zsh shell run:
 echo "export LC_ALL=C" >> ~/.zshrc && source ~/.zshrc
 ```
 
-## Open last edited file
+## Open Last Edited File
 
 ```bash
 less `ls -dx1tr /usr/local/cpanel/logs/cpbackup/*|tail -1`
 ```
 
-## Kill process that runs more than X time
+## Kill Process That Runs More Than X Time
 
 Kill cgi after 30 secs:
 
@@ -112,67 +150,13 @@ Kill cgi after 30 secs:
 for i in `ps -eo pid,etime,cmd|grep cgi|awk '$2 > "00:30" {print $1}'`; do kill $i; done
 ```
 
-## Fix NFS mount on boot - Centos 7
-
-Append text to the end of /usr/lib/systemd/system/nfs-idmap.service
-
-```bash
-[Install]
-WantedBy=multi-user.target
-```
-
-Append text to the end of /usr/lib/systemd/system/nfs-lock.service
-
-```bash
-[Install]
-WantedBy=nfs.target
-```
-
-Enable related services
-
-```bash
-systemctl enable nfs-idmapd.service
-systemctl enable rpc-statd.service
-systemctl enable rpcbind.socket
-```
-
-Reboot the server
-
 ## Update Date and Time on Linux Server
 
 ```bash
 sudo ntpd -qg; sudo hwclock -w
 ```
 
-## Clone Linux User
-
-```bash
-#!/bin/bash
-SRC=$1
-DEST=$2
-
-SRC_GROUPS=$(id -Gn ${SRC} | sed "s/${SRC} //g" | sed "s/ ${SRC}//g" | sed "s/ /,/g")
-SRC_SHELL=$(awk -F : -v name=${SRC} '(name == $1) { print $7 }' /etc/passwd)
-
-useradd --groups ${SRC_GROUPS} --shell ${SRC_SHELL} --create-home ${DEST}
-passwd ${DEST}
-```
-
-## Clear BOOT on Ubuntu when 100%
-
-```bash
-dpkg --purge `dpkg --list|grep "linux-"|grep -v \`uname -r|sed 's/-generic//g'\`|cut -d" " -f3|grep "[0-9]-"|paste -sd " " -`
-```
-
-## Find root of a site and CD to it
-
-Replace domain.com with desired domain
-
-```bash
-cd `grep "domain.com" /etc/apache2/conf/httpd.conf -A7|grep Root|head -1|awk '{print $2}'`
-```
-
-## Generate CSR with OPENSSL
+## Generate CSR with OpenSSL
 
 Generate key:
 

@@ -185,6 +185,32 @@ LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 ```
 
+## Fix NFS mount on Boot - Centos 7
+
+Append text to the end of /usr/lib/systemd/system/nfs-idmap.service
+
+```bash
+[Install]
+WantedBy=multi-user.target
+```
+
+Append text to the end of /usr/lib/systemd/system/nfs-lock.service
+
+```bash
+[Install]
+WantedBy=nfs.target
+```
+
+Enable related services
+
+```bash
+systemctl enable nfs-idmapd.service
+systemctl enable rpc-statd.service
+systemctl enable rpcbind.socket
+```
+
+Reboot the server
+
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
 <!-- Donation Button -->
