@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.0 (14/11/2018)
+- [added banner umage](https://github.com/fire1ce/3os.org/commit/5ba0ebbebbb69b33f3d10909d6f080b087fb30fd) - @fire1ce
+- [added banner image](https://github.com/fire1ce/3os.org/commit/a4526dffafae3db2e844ffffc2dea2b9d1edec45) - @fire1ce
+- [new nmpa section](https://github.com/fire1ce/3os.org/commit/bcf647cb80483a5d388e1f1766f12168ba9b5d5d) - @fire1ce
+- [updated headers](https://github.com/fire1ce/3os.org/commit/0de8f62b2c3753f94bd93cf94432e06c1f041d1f) - @fire1ce
+- [added nmap section to Pentesting](https://github.com/fire1ce/3os.org/commit/29f7c7395c17de7b6967f7f0827bb467aae4b128) - @fire1ce
+- [ CHANGELOG.md update to v0.4.3](https://github.com/fire1ce/3os.org/commit/c1349e01ae1f81d1609f638335e80b0958a02749) - @fire1ce
+
+---
+
 ## v0.4.2 (14/11/2018)
 - [added exceptions](https://github.com/fire1ce/3os.org/commit/eb69e10a2488b30e9cbaf2424a4dc99aa01886fd) - @fire1ce
 - [added ubuntu section to linux](https://github.com/fire1ce/3os.org/commit/3e77a5d5264007c9ea7944587a37ae47e26eefc5) - @fire1ce
