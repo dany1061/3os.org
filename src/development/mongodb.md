@@ -24,6 +24,7 @@ scp keyfile user@server3:~/
 sudo chown mongodb:mongodb keyfile
 sudo mv keyfile /var/lib/mongodb/
 ```
+
 edit `/etc/mongod.conf`
 
 Replace _#security_ with:
@@ -98,12 +99,14 @@ mongo
 ```
 
 ssh to SECONDARY
+
 ```bash
 mongo
 > rs.slaveOk()
 ```
 
 ssh to other SECONDARY
+
 ```bash
 mongo
 > rs.slaveOk()
