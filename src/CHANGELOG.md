@@ -1,5 +1,19 @@
 # Changelog
 
+## v1.0.2 (17/11/2018)
+- [added npm to development](https://github.com/fire1ce/3os.org/commit/cad96dabb3c6ece674010c510bb8d8ed3249c907) - @fire1ce
+- [removed donate tab](https://github.com/fire1ce/3os.org/commit/53a3918200c73fc1608af7adb311a2bbe6f4d82b) - @fire1ce
+- [updated url](https://github.com/fire1ce/3os.org/commit/7622c9ff8fb20bc770c2d878602ff922784000cc) - @fire1ce
+- [android section moved](https://github.com/fire1ce/3os.org/commit/2a40ae9f0f8cf9bef97ded451728bc06836f6324) - @fire1ce
+- [updated brewpage](https://github.com/fire1ce/3os.org/commit/ad359534054743d1315437750407a951b049ecb8) - @fire1ce
+- [removed](https://github.com/fire1ce/3os.org/commit/94e33e08995a568cb51f66db6cff0a51da4ea51c) - @fire1ce
+- [fix markdown syntax](https://github.com/fire1ce/3os.org/commit/06da26f77dfb930a7a7ca09484968a756aa381fe) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/eb99d80dc66b3cb2739c9dcb4b78eecff221be89) - @fire1ce
+- [updated installation](https://github.com/fire1ce/3os.org/commit/e8834f67a5d16db0a51b1affffd033e2cf828839) - @fire1ce
+- [ CHANGELOG.md update to v1.0.2](https://github.com/fire1ce/3os.org/commit/b4aff929ae1ed7918b06c78048968b2d4c0dfd81) - @fire1ce
+
+---
+
 ## v1.0.1 (17/11/2018)
 - [path fix](https://github.com/fire1ce/3os.org/commit/fb70e33861a1d4c0d892ba06ef040d28f8a83e5f) - @fire1ce
 - [renamed synologygeneral to synology](https://github.com/fire1ce/3os.org/commit/a59d7f00b7ca8ab781401f31141f2a3586111a4c) - @fire1ce
