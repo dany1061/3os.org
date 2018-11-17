@@ -42,8 +42,6 @@ nav:
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'
-  - Android:
-      - Useful Apps for Android: 'android/androidApps.md'
   - Penetration-Testing:
       - General: 'penTesting/penTestingGeneral.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
@@ -56,12 +54,12 @@ nav:
       - Browsers Extensions:
              - Chrome: 'moreCategories/browsers/chromeExtensions.md'
              - Firefox: 'moreCategories/browsers/firefoxExtentions.md'
-      - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
       - Synology DSM : 'moreCategories/synology.md'
       - Ubiquiti Networking: 'moreCategories/ubiquiti.md'
+      - Android: 'moreCategories/android.md'
       - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
-      - vscode: 'moreCategories/vscode.md'
       - Home Assistent: 'moreCategories/homeAssistent.md'
+      - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
   - Markdown CheatSheet:
       - Welcome: 'markdownCheatSheet/welcome.md'
       - Headings: 'markdownCheatSheet/headings.md'
