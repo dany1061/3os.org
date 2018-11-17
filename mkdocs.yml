@@ -37,6 +37,7 @@ nav:
       - raspberry Pi Magic Mirror: 'raspberryPi/MagicMirror.md'
   - Development:
       - Git: development/git.md
+      - Docker: 'moreCategories/docker.md'
       - Python: 'development/python.md'
       - MongoDB: 'development/mongodb.md'
   - Windows:
@@ -53,7 +54,6 @@ nav:
       - Installing Bettercap 1.6.2: 'penTesting/bettercao1.6.2.md'
   - More Categories:
       - General: 'moreCategories/generalLinks.md'
-      - Docker: 'moreCategories/docker.md'
       - Browsers Extensions:
              - Chrome: 'moreCategories/browsers/chromeExtensions.md'
              - Firefox: 'moreCategories/browsers/firefoxExtentions.md'
