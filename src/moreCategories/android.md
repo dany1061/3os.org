@@ -4,7 +4,7 @@ description: Useful Android apps im using on my android phone
 # Nexus-Tools
 
 Bash script for quickly installing ADB and Fastboot on macOS and Linux.
-[Nexus-Tools GitHub Repository and full documentation](https://github.com/corbindavenport/ "Nexus-Tools")
+[Nexus-Tools GitHub Repository and full documentation](https://github.com/corbindavenport/nexus-tools "Nexus-Tools")
 
 # Android Useful Apps
 
