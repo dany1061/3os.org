@@ -79,8 +79,7 @@ nav:
       - Simple Template: 'markdownCheatSheet/template.md'
       - Extra:
             - Metadata Per Page: 'markdownCheatSheet/metaData.md'
-  - Donate: 
-      - Donttion: 'donation.md'
+
 
 # Site information
 site_name: '3os.org'
