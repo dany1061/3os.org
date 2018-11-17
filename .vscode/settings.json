@@ -261,6 +261,7 @@
     "rpmbuild",
     "rpms",
     "rsync",
+    "rubocop",
     "sbin",
     "searchtype",
     "semanage",
