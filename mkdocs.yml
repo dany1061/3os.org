@@ -38,6 +38,7 @@ nav:
       - Git: development/git.md
       - Docker: 'development/docker.md'
       - Python: 'development/python.md'
+      - npm: 'development/npm.md'
       - MongoDB: 'development/mongodb.md'
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
