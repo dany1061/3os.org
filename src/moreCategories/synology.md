@@ -89,22 +89,22 @@ This Will Generate, Sing and install the Certificate
 
 ### Automate The Certificate Renewal
 
-- Login to DSM
-- Go to Control Panel - Task Scheduler
-- Create - Scheduled Task - User-defined script
-- Name it something like that: `Lets-Encrypt Auto Renew`
-- Run it under user root
-- At Schedule define it to run dayily at night (so you won't have expierd certificate)
-- at Task setting at this to the `user defined script` window:
+* Login to DSM
+* Go to Control Panel - Task Scheduler
+* Create - Scheduled Task - User-defined script
+* Name it something like that: `Lets-Encrypt Auto Renew`
+* Run it under user root
+* At Schedule define it to run dayily at night (so you won't have expierd certificate)
+* at Task setting at this to the `user defined script` window:
 
 ```bash
  /usr/local/share/acme.sh/acme.sh --cron --home /usr/local/share/acme.sh/
 ```
 
-- You can check if the script runs ok by ticking the `Send run details by mail` and provide your mail
-- Close the window
-- Select you newly created Task and Run it.
-- Check you email, you should get massage like that:
+* You can check if the script runs ok by ticking the `Send run details by mail` and provide your mail
+* Close the window
+* Select you newly created Task and Run it.
+* Check you email, you should get massage like that:
 
 ```qoute
 Dear user,
