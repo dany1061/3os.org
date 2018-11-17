@@ -58,7 +58,7 @@ nav:
              - Chrome: 'moreCategories/browsers/chromeExtensions.md'
              - Firefox: 'moreCategories/browsers/firefoxExtentions.md'
       - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
-      - Synology DSM : 'moreCategories/synologyGeneral.md'
+      - Synology DSM : 'moreCategories/synology.md'
       - Ubiquiti Networking: 'moreCategories/ubiquiti.md'
       - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
       - vscode: 'moreCategories/vscode.md'
