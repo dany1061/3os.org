@@ -1,5 +1,23 @@
 # Changelog
 
+## v1.0.1 (17/11/2018)
+- [path fix](https://github.com/fire1ce/3os.org/commit/fb70e33861a1d4c0d892ba06ef040d28f8a83e5f) - @fire1ce
+- [renamed synologygeneral to synology](https://github.com/fire1ce/3os.org/commit/a59d7f00b7ca8ab781401f31141f2a3586111a4c) - @fire1ce
+- [added Allow SSH With RSA KEY](https://github.com/fire1ce/3os.org/commit/f27b9fb0aa14311a581b021edaa5120f514f4313) - @fire1ce
+- [moved](https://github.com/fire1ce/3os.org/commit/76423bac5a2af7a04d8a2ee8b39b97a1eeb49768) - @fire1ce
+- [moved docker category to Development](https://github.com/fire1ce/3os.org/commit/77fe2bfcf8a5562bda14128800221a9001dac85d) - @fire1ce
+- [moved](https://github.com/fire1ce/3os.org/commit/b754bbf95e2b7142c91b28aead3515d530ff451f) - @fire1ce
+- [fixed markdown syntax](https://github.com/fire1ce/3os.org/commit/ca6ba46b721e38c205e9d3850bdf5e6dd5000382) - @fire1ce
+- [exceptions](https://github.com/fire1ce/3os.org/commit/d7fdebbf0ec648792eb53687954a03b731f00504) - @fire1ce
+- [fix metad arta](https://github.com/fire1ce/3os.org/commit/0decab14a9d9e74a3f1f1b730e0e01d030df4d4c) - @fire1ce
+- [added git section](https://github.com/fire1ce/3os.org/commit/80ff24e5d94287ac4f94fd2e002a424e93d41a12) - @fire1ce
+- [Update bettercao1.6.2.md](https://github.com/fire1ce/3os.org/commit/76fb44bf6ab24296b640d3326d03929020af02c5) - @Stas Kosatuhin
+- [optimezed BREWUP script](https://github.com/fire1ce/3os.org/commit/a9d5d2bbc6192aa503250065bbb3a1dcbf7ec079) - @fire1ce
+- [ CHANGELOG.md update to v1.0.1](https://github.com/fire1ce/3os.org/commit/796c8216be9e891949f998812410d78c873d78a3) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/d882c2ac73d33a09709964f9a89a4a8b5d5a3a1a) - @fire1ce
+
+---
+
 ## v1.0.0 (14/11/2018)
 - [added banner umage](https://github.com/fire1ce/3os.org/commit/5ba0ebbebbb69b33f3d10909d6f080b087fb30fd) - @fire1ce
 - [added banner image](https://github.com/fire1ce/3os.org/commit/a4526dffafae3db2e844ffffc2dea2b9d1edec45) - @fire1ce
