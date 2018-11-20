@@ -17,6 +17,14 @@ Run this command at terminal at the root of the project:
 pip freeze > requirements.txt
 ```
 
+## MacOS Error Fix: _Curl is configured to use SSL, but we have not been able to determine which SSL backend it is using. Please see PycURL documentation for how to specify the SSL backend manually._
+
+This command will install pycurl on macOS system. This should fix the SSL Error
+
+```bash
+PYCURL_SSL_LIBRARY=openssl LDFLAGS="-L/usr/local/opt/openssl/lib" CPPFLAGS="-I/usr/local/opt/openssl/include" pip install --no-cache-dir pycurl
+```
+
 ## Simple HTTP Python Web Server
 
 create bash script with any name:
