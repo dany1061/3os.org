@@ -6,6 +6,15 @@ description: Useful Android apps im using on my android phone
 Bash script for quickly installing ADB and Fastboot on macOS and Linux.
 [Nexus-Tools GitHub Repository and full documentation](https://github.com/corbindavenport/nexus-tools "Nexus-Tools")
 
+Examples:
+
+```bash
+fastboot flash bootloader bootloader-angler-angler-3.51.img
+fastboot reboot-bootloader
+fastboot flash radio radio-angler-angler-3.61.img
+fastboot reboot-bootloader
+```
+
 # Android Useful Apps
 
 | Application                                                                                     | Description                                 |
