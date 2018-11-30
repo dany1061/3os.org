@@ -10,12 +10,6 @@ description: Docker useful commands tips
 docker images |grep -v REPOSITORY|awk '{print $1}'|xargs -L1 docker pull
 ```
 
-## List all Images
-
-```bash
-docker images -a
-```
-
 ## Docker Images
 
 ### List All Images
