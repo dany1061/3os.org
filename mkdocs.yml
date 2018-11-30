@@ -46,6 +46,7 @@ nav:
   - Penetration-Testing:
       - General: 'penTesting/penTestingGeneral.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
+      - Cross Orign Test: 'penTesting/cors.md'
       - Nmap: 'penTesting/nmap.md'
       - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
