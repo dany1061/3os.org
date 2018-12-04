@@ -3,6 +3,62 @@ description: Linux - Files Handling how to, guides, examples, and simple usage
 
 # Linux Files Handling
 
+## SMB Mount With autofs
+
+```bash
+yum install autofs samba-client samba-common
+touch /etc/auto.cifs
+```
+
+Add this to the file: ("meida" - is any name for your mount)
+
+```bash
+media    -fstype=cifs,rw,noperm,vers=1.0,credentials=/etc/.credentials.txt    ://oscar.3os.re/ActiveShare/Media
+```
+
+Exit and save:
+
+```bash
+touch /etc/.credentials.txt
+nano /etc/.credentials.txt
+```
+
+Add you credentials for the smb mount:
+
+```bash
+username=YourUser
+password=YourPassword
+```
+
+Exit and save:
+
+```bash
+nano /etc/auto.master
+```
+
+At the end of the file add: ("/mnt" - mount location, /etc/auto.cifs your config for mounting the SMB Share)
+
+```bash
+/mnt    /etc/auto.cifs
+```
+
+Save end exit.
+Test the mounting.
+
+```bash
+systemctl start autofs
+cd to the /mnt/media/
+ls
+```
+
+You should see the mount over there.
+Enable autofs on boot:
+
+```bash
+systemctl enable autofs
+```
+
+
 ## SMB Mount on Linux With Credentials
 
 ```bash
