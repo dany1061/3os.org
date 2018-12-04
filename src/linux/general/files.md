@@ -39,7 +39,7 @@ nano /etc/auto.master
 At the end of the file add: ("/mnt" - mount location, /etc/auto.cifs your config for mounting the SMB Share)
 
 ```bash
-/mnt    /etc/auto.cifs
+/mnt    /etc/auto.cifs --timeout=600 --ghost
 ```
 
 Save end exit.
@@ -57,7 +57,6 @@ Enable autofs on boot:
 ```bash
 systemctl enable autofs
 ```
-
 
 ## SMB Mount on Linux With Credentials
 
