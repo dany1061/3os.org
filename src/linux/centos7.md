@@ -76,11 +76,11 @@ SUB    = The low-level unit activation state, values depend on unit type.
 yum install net-tools -y
 ```
 
-## Disable and stop Firewall on Centos 7
+## Stop and Disable Firewall on Centos 7
 
 ```bash
-Disable Firewalld
 systemctl stop firewalld
+systemctl disable firewalld
 ```
 
 ## Change Default Port for SSH with SElinux Enabled
