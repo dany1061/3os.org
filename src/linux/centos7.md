@@ -185,6 +185,13 @@ LANG=en_US.UTF-8
 LC_ALL=en_US.UTF-8
 ```
 
+## Disable IPv6
+
+```bash
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
+sysctl -w net.ipv6.conf.default.disable_ipv6=1
+```
+
 ## Fix NFS mount on Boot - Centos 7
 
 Append text to the end of /usr/lib/systemd/system/nfs-idmap.service
