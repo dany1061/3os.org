@@ -180,6 +180,54 @@ csrutil enable
 
 Press Enter and restart your Mac.
 
+## Syntax highlighting in nano on Mac OS X
+
+Install Nano from homebrew
+Create _nanorc_ file with the syntax below
+
+```bash
+brew install nano
+nano ~/.nanorc
+```
+
+nanorc:
+
+```bash
+include /usr/local/share/nano/asm.nanorc
+include /usr/local/share/nano/awk.nanorc
+include /usr/local/share/nano/c.nanorc
+include /usr/local/share/nano/cmake.nanorc
+include /usr/local/share/nano/css.nanorc
+include /usr/local/share/nano/debian.nanorc
+include /usr/local/share/nano/fortran.nanorc
+include /usr/local/share/nano/gentoo.nanorc
+include /usr/local/share/nano/groff.nanorc
+include /usr/local/share/nano/html.nanorc
+include /usr/local/share/nano/java.nanorc
+include /usr/local/share/nano/makefile.nanorc
+include /usr/local/share/nano/man.nanorc
+include /usr/local/share/nano/mgp.nanorc
+include /usr/local/share/nano/mutt.nanorc
+include /usr/local/share/nano/nanorc.nanorc
+include /usr/local/share/nano/objc.nanorc
+include /usr/local/share/nano/ocaml.nanorc
+include /usr/local/share/nano/patch.nanorc
+include /usr/local/share/nano/perl.nanorc
+include /usr/local/share/nano/php.nanorc
+include /usr/local/share/nano/pov.nanorc
+include /usr/local/share/nano/python.nanorc
+include /usr/local/share/nano/ruby.nanorc
+include /usr/local/share/nano/sh.nanorc
+include /usr/local/share/nano/tcl.nanorc
+include /usr/local/share/nano/tex.nanorc
+```
+
+Save & Exit
+
+```bash
+source ~/.zshrc
+```
+
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
 <!-- Donation Button -->
