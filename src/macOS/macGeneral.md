@@ -180,7 +180,7 @@ csrutil enable
 
 Press Enter and restart your Mac.
 
-## Syntax highlighting in nano on Mac OS X
+## Syntax Highlighting In Nano on Mac OS X
 
 Install Nano from homebrew
 Create _nanorc_ file with the syntax below
