@@ -1,5 +1,28 @@
 # Changelog
 
+## v1.0.3 (13/12/2018)
+- [updates](https://github.com/fire1ce/3os.org/commit/54b204cf484a1cdc5c937669732866e22e650ef8) - @fire1ce
+- [added Syntax Highlighting In Nano on Mac OS X](https://github.com/fire1ce/3os.org/commit/bd11ad9659d0493998c9db3cb2224d25d37539d9) - @fire1ce
+- [added timeout](https://github.com/fire1ce/3os.org/commit/646effdb8c2c55eb186e19b8ae3c8e1bc8105353) - @fire1ce
+- [added  SMB Mount With autofs](https://github.com/fire1ce/3os.org/commit/6d5c9ca04e94978725f976ac8a12f98ec3478f3e) - @fire1ce
+- [added Disable IPv6](https://github.com/fire1ce/3os.org/commit/a4e665d855821bb215c697aa92f0939ee838e78f) - @fire1ce
+- [removed "cors" link](https://github.com/fire1ce/3os.org/commit/800cd43d04b9e6068f8914b51cdbe73c52b4535f) - @fire1ce
+- [Update centos7.md](https://github.com/fire1ce/3os.org/commit/8f90d357e0ca568816a9c13538683359044782cb) - @Stas Kosatuhin
+- [update idna-2.8](https://github.com/fire1ce/3os.org/commit/1a6dafbfdc62186d0713f27f6d6cd190a6ad3acf) - @fire1ce
+- [removed duplicated list images](https://github.com/fire1ce/3os.org/commit/3ebfea7a649f86e0f3437bcb2e99a953342c1a08) - @fire1ce
+- [added image remove](https://github.com/fire1ce/3os.org/commit/54603d8d3e8240beb540de96be5ca21888c53e4f) - @fire1ce
+- [removed](https://github.com/fire1ce/3os.org/commit/ca6fbf570823d4ff7a09e8bb5f581c3a53142263) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/1af880916d8d7fd66285dc5671188634a9d2c87f) - @fire1ce
+- [updated](https://github.com/fire1ce/3os.org/commit/c736ebed1b0227b0f09874b2a48ca8f48d333463) - @fire1ce
+- [added iperf3 contaner](https://github.com/fire1ce/3os.org/commit/8b2d1690d0009c0662496698083c4bf317fc2869) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/ce3786f9fcd25f3f37934fbfc981cf1f6cf7fe42) - @fire1ce
+- [addedCurl is configured to use SSL](https://github.com/fire1ce/3os.org/commit/225ca86fc1f67c64b0b897d7772da5b6f1b3d446) - @fire1ce
+- [added examples for flashing bootloeader and radio](https://github.com/fire1ce/3os.org/commit/6bb63ce12da88bb13aaa4191d1159eb9924c9fd3) - @fire1ce
+- [updated to mkdocs-material	 3.1.0](https://github.com/fire1ce/3os.org/commit/2c426797b0714b68d1f8f234ad6380b3ee9f2d4d) - @fire1ce
+- [ CHANGELOG.md update to v1.0.3](https://github.com/fire1ce/3os.org/commit/0e91a4bc3f823be4084d8a39ecd4eb4c366cdc75) - @fire1ce
+
+---
+
 ## v1.0.2 (17/11/2018)
 - [added npm to development](https://github.com/fire1ce/3os.org/commit/cad96dabb3c6ece674010c510bb8d8ed3249c907) - @fire1ce
 - [removed donate tab](https://github.com/fire1ce/3os.org/commit/53a3918200c73fc1608af7adb311a2bbe6f4d82b) - @fire1ce
