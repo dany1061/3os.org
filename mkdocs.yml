@@ -28,6 +28,7 @@ nav:
             - Plesk: 'linux/services/plesk.md'
   - macOS:
       - General: 'macOS/macGeneral.md'
+      - BetterTerminal Fule Gide: 'macOS/BetterTerminal'
       - Brew: 'macOS/brew.md'
       - Alftred Workflows: 'macOS/alfredWorkFlows.md'
   - Raspberry Pi:
@@ -38,6 +39,7 @@ nav:
       - Git: development/git.md
       - Docker: 'development/docker.md'
       - Python: 'development/python.md'
+      - Ruby: 'development/ruby'
       - npm: 'development/npm.md'
       - MongoDB: 'development/mongodb.md'
   - Windows:
