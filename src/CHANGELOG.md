@@ -1,6 +1,15 @@
 # Changelog
 
+## v1.0.4 (20/12/2018)
+- [initial](https://github.com/fire1ce/3os.org/commit/834f72b69e7815e2a40cbb2f8bbf9ad79cbfd0a0) - @fire1ce
+- [added BetterTerminal guide, ruby](https://github.com/fire1ce/3os.org/commit/e6b7ac3193900dadbfae2a80f717acbdafa00bd3) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/90fc4c9f6b7b8f642d478760fb753bf0874e7651) - @fire1ce
+- [ CHANGELOG.md update to  v1.0.4](https://github.com/fire1ce/3os.org/commit/4fd136599c1b9149fd620f18a081502c509aa9d6) - @fire1ce
+
+---
+
 ## v1.0.3 (13/12/2018)
+- [added ssh, OpenVM toolsm](https://github.com/fire1ce/3os.org/commit/6f0201f2b86f0acd42ececdf278684f993696832) - @fire1ce
 - [updates](https://github.com/fire1ce/3os.org/commit/54b204cf484a1cdc5c937669732866e22e650ef8) - @fire1ce
 - [added Syntax Highlighting In Nano on Mac OS X](https://github.com/fire1ce/3os.org/commit/bd11ad9659d0493998c9db3cb2224d25d37539d9) - @fire1ce
 - [added timeout](https://github.com/fire1ce/3os.org/commit/646effdb8c2c55eb186e19b8ae3c8e1bc8105353) - @fire1ce
