@@ -3,6 +3,12 @@ description: Development - Python how to, guides, examples, and simple usage
 
 # Ruby
 
+## Get Gem & Ruby Environment Information
+
+```bash
+gem environment
+```
+
 ## Update All the Gems
 
 Install rubygems-update
