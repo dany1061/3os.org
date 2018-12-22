@@ -93,6 +93,13 @@ Email Address: `support@ubnt.com`
 Copy the newly created certificate + key to the /config/auth directory.
 
 ```bash
+cp demoCA/cacert.pem /config/auth
+cp demoCA/private/cakey.pem /config/auth
+```
+
+Generate the server certificate.
+
+```bash
 ./CA.sh -newreq
 ```
 
