@@ -212,7 +212,7 @@ Add a firewall rule for the OpenVPN traffic to the local firewall policy.
 ```bash
 set firewall name WAN_LOCAL rule 30 action accept
 set firewall name WAN_LOCAL rule 30 description OpenVPN
-set firewall name WAN_LOCAL rule 30 destination port 433
+set firewall name WAN_LOCAL rule 30 destination port 443
 set firewall name WAN_LOCAL rule 30 protocol tcp
 ```
 
@@ -224,9 +224,11 @@ set interfaces openvpn vtun0 server subnet 172.16.1.0/24
 set interfaces openvpn vtun0 server push-route 192.168.1.0/24
 set interfaces openvpn vtun0 server name-server 192.168.1.1
 set interfaces openvpn vtun0 openvpn-option --duplicate-cn
-set openvpn vtun0 local-port 443
+set interfaces openvpn vtun0 local-port 443
+edit interfaces openvpn vtun0
 set openvpn-option "--push redirect-gateway"
 set protocol tcp-passive
+commit ; save
 ```
 
 Link the server certificate/keys and DH key to the virtual tunnel interface.
