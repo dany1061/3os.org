@@ -23,3 +23,9 @@ Then run:
 update_rubygems
 gem update --system
 ```
+
+## List All Installed Gems
+
+```bash
+ruby -S gem list --local
+```
