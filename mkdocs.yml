@@ -48,8 +48,8 @@ nav:
   - Penetration-Testing:
       - General: 'penTesting/penTestingGeneral.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
-      - Nmap: 'penTesting/nmap.md'
       - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
+      - Android Penetration Testing: 'penTesting/androidPT.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
       - Installing Bettercap 1.6.2: 'penTesting/bettercao1.6.2.md'
   - More Categories:
