@@ -58,7 +58,7 @@ nav:
              - Chrome: 'moreCategories/browsers/chromeExtensions.md'
              - Firefox: 'moreCategories/browsers/firefoxExtentions.md'
       - Synology DSM : 'moreCategories/synology.md'
-      - Ubiquiti Networking: 'moreCategories/ubiquiti.md'
+      - Ubiquiti Networks EdgeRouter & Unifi: 'moreCategories/ubiquiti.md'
       - Android: 'moreCategories/android.md'
       - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
       - Home Assistent: 'moreCategories/homeAssistent.md'
