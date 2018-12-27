@@ -266,15 +266,15 @@ ls -l /config/auth
 
 You should have those files:
 
-- cacert.pem
-- cakey.pem
-- client1.key
-- client1.pem
-- client2.key
-- client2.pem
-- dh.pem
-- server.key
-- server.pem
+* cacert.pem
+* cakey.pem
+* client1.key
+* client1.pem
+* client2.key
+* client2.pem
+* dh.pem
+* server.key
+* server.pem
 
 Remove the password from the client + server keys. This allows the clients to connect using only the provided certificate.
 
