@@ -1,5 +1,31 @@
 # Changelog
 
+## v1.0.5 (27/12/2018)
+- [cleanups](https://github.com/fire1ce/3os.org/commit/7893b5ecd70595a5ca93904ee0206cead1fc8c41) - @Stas Kosatuhin
+- [new guides](https://github.com/fire1ce/3os.org/commit/1c2f46cc9316207e12bd02fd6962e5f9c58366f7) - @Stas Kosatuhin
+- [syntax fix](https://github.com/fire1ce/3os.org/commit/362073e9d3aba2541b4f84ab16c2fbe353252ab5) - @Stas Kosatuhin
+- [header fix](https://github.com/fire1ce/3os.org/commit/87a77572ae97727994e16f4e6f5d7e352c952d5b) - @Stas Kosatuhin
+- [fix for list of files](https://github.com/fire1ce/3os.org/commit/a201a18e6d82c039f785c9a8aef8801e74652f77) - @Stas Kosatuhin
+- [added EdgeRouter - Custom Dynamic DNS with CloudFlare](https://github.com/fire1ce/3os.org/commit/7f4f4cf518df1ba2ee56ef32386983034c4ff2ee) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/04bac5eae33ff75838bbd2e2f9d525c1463ff66f) - @Stas Kosatuhin
+- [added Hardware Offloading](https://github.com/fire1ce/3os.org/commit/2f64e542fcddbfa7f4e328939937f24e1bafe949) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/04b25e5bb1695ea82927d1ac58c57ed3f1740e9b) - @Stas Kosatuhin
+- [remanme for  Ubiquiti Networks EdgeRouter & Unifi](https://github.com/fire1ce/3os.org/commit/1fb1e4247dea2d45186a2d85da56e29ffc72184d) - @Stas Kosatuhin
+- [added Enable Password Authentication if needed.](https://github.com/fire1ce/3os.org/commit/56a5f9abecbd154073c2223d9e1a0fd78d283370) - @fire1ce
+- [added terminal to app list](https://github.com/fire1ce/3os.org/commit/0daffb01788eba0d99532ef64c2d30fef3af9328) - @fire1ce
+- [added new section for android pt tools and apps](https://github.com/fire1ce/3os.org/commit/809d2656057f04ae7e16b4e1f6223fc5c96ace6f) - @fire1ce
+- [removed nmap](https://github.com/fire1ce/3os.org/commit/b59e43ab790910f470ca3622251fb0e0ca269f85) - @fire1ce
+- [added List All Installed Gems](https://github.com/fire1ce/3os.org/commit/6c85a0c45c6b535db4968b4ebb95d13fd16aef08) - @fire1ce
+- [port fix](https://github.com/fire1ce/3os.org/commit/e8600a014d4eda26664c6a0cdcafcde81ad11eb1) - @fire1ce
+- [updated guide for VPN](https://github.com/fire1ce/3os.org/commit/b19dcbc601a181226406da0486ce961144d395ec) - @fire1ce
+- [width of igrame changed to 80%](https://github.com/fire1ce/3os.org/commit/7330126467a3a2daa80f764edda7808eaea71355) - @fire1ce
+- [remed google analitics](https://github.com/fire1ce/3os.org/commit/d8c2f3e48b88a03d19d20f080ce6a44accb57ca3) - @fire1ce
+- [path fix](https://github.com/fire1ce/3os.org/commit/a00ec97bbe8ecd05092fb1b20bb6362ba2b73a4f) - @fire1ce
+- [added Ruby Environment](https://github.com/fire1ce/3os.org/commit/90cefc182a494645ab6aaf43765590bf19babb69) - @fire1ce
+- [ CHANGELOG.md update to  v1.0.5](https://github.com/fire1ce/3os.org/commit/9597ef3e5ef6d5310ef13285cf8e803f33e8704a) - @fire1ce
+
+---
+
 ## v1.0.4 (20/12/2018)
 - [initial](https://github.com/fire1ce/3os.org/commit/834f72b69e7815e2a40cbb2f8bbf9ad79cbfd0a0) - @fire1ce
 - [added BetterTerminal guide, ruby](https://github.com/fire1ce/3os.org/commit/e6b7ac3193900dadbfae2a80f717acbdafa00bd3) - @fire1ce
