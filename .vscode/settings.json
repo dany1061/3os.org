@@ -286,6 +286,7 @@
     "sshd",
     "sslprotocol",
     "statd",
+    "subdomain",
     "subdomains",
     "subnet",
     "swapoff",
