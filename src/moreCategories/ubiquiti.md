@@ -17,9 +17,19 @@ loadkey [your user] /tmp/id_rsa.pub
 
 Check that the keys are working by opening new session
 
+Disable Password Authentication
+
 ```bash
 set service ssh disable-password-authentication
 commit ; save
+```
+
+Done.
+
+Enable Password Authentication if needed.
+
+```bash
+delete service ssh disable-password-authentication
 ```
 
 ## Hardening EdgeRouter
