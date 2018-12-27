@@ -142,7 +142,7 @@ Output should be:
 > last update  : Thu Mar 30 13:29:42 2018
 > update-status: good
 
-## Guest Wifi with Ubiquiti EdgeRouter and Unifi Access Points
+## Guest Wifi With Ubiquiti EdgeRouter and Unifi Access Points
 
 ### EdgeRouter Configuration
 
@@ -150,7 +150,7 @@ From the Dashboard, click Add Interface and select VLAN.
 
 ![Interface](/assets/images/ubiquiti/guestWifi/01.Interface.png)
 
-Set up the VLAN as 1003 and attach it to the physical interface of your LAN. Give it an IP address in the range of a private IP block, but make sure you end it in a /24 to specify the proper subnet (I originally did /32 as I though it was supposed to be the exact IP address).
+Set up the VLAN ID as You like for this example will use id __1003__ and attach it to the physical interface of your LAN. Give it an IP address in the range of a private IP block, but make sure you end it in a /24 to specify the proper subnet (I originally did /32 as I though it was supposed to be the exact IP address).
 
 ![vlan](/assets/images/ubiquiti/guestWifi/02.vlan.png)
 
@@ -192,8 +192,7 @@ Add a new rule. Set it to Accept on UDP port 53.
 ![firewall rules](/assets/images/ubiquiti/guestWifi/11.firewall07.png)
 
 Save.
-
-Now you can test this by connecting to the guest network and accessing the Internet. Then try connecting to a device on your LAN or connecting to the EdgeRouter Lite. Both actions should fail.
+Let's continue to set up the Uifi AP
 
 ### Unifi Configuration
 
@@ -204,7 +203,7 @@ Enter bandwidth limits that are appropriate for your Internet Speed. I used 6000
 
 Now go to the Wireless Networks section and create a new network called “Guest” or whatever you want to call it.
 
-Make sure it is enabled, give it WiFi security key, check the “Guest Policy” option, enter the VLAN Id you sued previously(2001 in my case) and choose the Guest User Group. Save!
+Make sure it is enabled, give it WiFi security key, check the “Guest Policy” option, enter the VLAN __Id you used previously__ and choose the Guest User Group. Save!
 
 ![Unifi_SSDID](/assets/images/ubiquiti/guestWifi/13.Unifi_SSDID.png)
 
