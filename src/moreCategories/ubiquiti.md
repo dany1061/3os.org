@@ -1,7 +1,7 @@
 title: Ubiquiti Networks
 description: Ubiquiti UNMS, UNIFI,Networks how to, guides, examples, and simple usage
 
-# Ubiquiti Networks
+# Ubiquiti Networks EdgeRouter & Unifi
 
 ## EdgeRouter - SSH via RSA keys
 
@@ -45,6 +45,70 @@ set service gui listen-address 192.168.1.1
 set service gui https-port 8443
 set service gui older-ciphers disable
 set service ssh protocol-version v2
+commit ; save
+```
+
+## Hardware Offloading
+
+For __Devices: ER-X / ER-X-SFP / EP-R6__
+Enable _hwnat_ and _ipsec_ offloading.
+
+```bash
+configure
+
+set system offload hwnat enable
+set system offload ipsec enable
+
+commit ; save
+```
+
+Disable _hwnat_ and _ipsec_ offloading.
+
+```bash
+configure
+
+set system offload hwnat disable
+set system offload ipsec disable
+
+commit ; save
+```
+
+For __Devices: ER-4 / ER-6P / ERLite-3 / ERPoE-5 / ER-8 / ERPro-8 / EP-R8 / ER-8-XG__
+Enable IPv4/IPv6 and ipsec offloading.
+
+```bash
+configure
+
+set system offload ipv4 forwarding enable
+set system offload ipv4 gre enable
+set system offload ipv4 pppoe enable
+set system offload ipv4 vlan enable
+
+set system offload ipv6 forwarding enable
+set system offload ipv6 pppoe enable
+set system offload ipv6 vlan enable
+
+set system offload ipsec enable
+
+commit ; save
+```
+
+Disable IPv4/IPv6 and ipsec offloading.
+
+```bash
+configure
+
+set system offload ipv4 forwarding disable
+set system offload ipv4 gre disable
+set system offload ipv4 pppoe disable
+set system offload ipv4 vlan disable
+
+set system offload ipv6 forwarding disable
+set system offload ipv6 pppoe disable
+set system offload ipv6 vlan disable
+
+set system offload ipsec disable
+
 commit ; save
 ```
 
