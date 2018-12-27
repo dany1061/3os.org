@@ -1,7 +1,7 @@
 title: Ubiquiti Networks
 description: Ubiquiti UNMS, UNIFI,Networks how to, guides, examples, and simple usage
 
-# Ubiquiti Networks EdgeRouter & Unifi
+# Ubiquiti Networks - EdgeRouter, Unifi, UNMS
 
 ## EdgeRouter - SSH via RSA keys
 
@@ -112,7 +112,7 @@ set system offload ipsec disable
 commit ; save
 ```
 
-## update
+## EdgeRouter - Custom Dynamic DNS (DDNS) with CloudFlare
 
 * __subdomain.domain.com__: Dedicated subdomain for the DDNS
 * __zone=domain.com__: Main Domain
