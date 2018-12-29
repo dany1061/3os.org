@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.6 (27/12/2018)
+- [ CHANGELOG.md update to  v1.0.6](https://github.com/fire1ce/3os.org/commit/ab184f735a3ecad156298784bbd498d870e1e31b) - @Stas Kosatuhin
+
+---
+
 ## v1.0.5 (27/12/2018)
 - [cleanups](https://github.com/fire1ce/3os.org/commit/7893b5ecd70595a5ca93904ee0206cead1fc8c41) - @Stas Kosatuhin
 - [new guides](https://github.com/fire1ce/3os.org/commit/1c2f46cc9316207e12bd02fd6962e5f9c58366f7) - @Stas Kosatuhin
