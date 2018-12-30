@@ -6,7 +6,7 @@ description: Linux - Files Handling how to, guides, examples, and simple usage
 ## SMB Mount With autofs
 
 ```bash
-yum install autofs samba-client samba-common
+yum install autofs samba-client samba-common cifs-utils
 touch /etc/auto.cifs
 nano /etc/auto.cifs
 ```
