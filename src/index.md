@@ -21,6 +21,12 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "30/12/18 __Version 1.0.7 Release__"
+
+    * [MagicMirror With Pictures](/raspberryPi/MagicMirror)
+    * A lot of new guides at [Ubiquiti Networks](/moreCategories/ubiquiti)
+    * New Guides in other sections. You can follow the full change log to see all the new information
+
 !!! info "14/11/18 __Version 1.0.0 Release__"
 
     * Our team is proud to announce our version __1.0.0__ for 3os.org!!!
@@ -40,13 +46,7 @@ _All the information provided by this website can be obtained via the internet. 
     * "Browsers" moved to "More Categories"
     * more Typos and headers fixes and refinements
 
-!!! info "24/10/18 Donation Button"
 
-    * We have added a donation button based on Paypal  
-     If you think our work owned as a beer we would be glad to have have :beer:
-    * Added [Template](markdownCheatSheet/template.md "Markdown Template") page to [Markdown CheatSheet](/markdownCheatSheet/welcome "Markdown CheatSheet")
-    * Main page content remake
-    * Beta test section inside [Template](markdownCheatSheet/template.md "Markdown Template") for our team to test new features
 
 
 !!! warning ""
