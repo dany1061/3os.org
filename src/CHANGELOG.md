@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.0.7 (30/12/2018)
+- [updated MagicMirror Project](https://github.com/fire1ce/3os.org/commit/724784f77c011276bba30ef407bf4e9662e00d59) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/e60734e3c3df1c49c8f9231933469608439151f8) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/0b3bbcbdd3c36e078d1e6838c6b971c81d97095f) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/5454878783d35b81d085dbfaeb7a4c6a54e1f792) - @Stas Kosatuhin
+- [ CHANGELOG.md update to  v1.0.7](https://github.com/fire1ce/3os.org/commit/a40fbf27eda7364a038d157ccf523bf9107873af) - @Stas Kosatuhin
+
+---
+
 ## v1.0.6 (27/12/2018)
 - [ CHANGELOG.md update to  v1.0.6](https://github.com/fire1ce/3os.org/commit/ab184f735a3ecad156298784bbd498d870e1e31b) - @Stas Kosatuhin
 
