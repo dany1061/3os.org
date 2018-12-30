@@ -8,6 +8,7 @@ description: Linux - Files Handling how to, guides, examples, and simple usage
 ```bash
 yum install autofs samba-client samba-common
 touch /etc/auto.cifs
+nano /etc/auto.cifs
 ```
 
 Add this to the file: ("meida" - is any name for your mount)
