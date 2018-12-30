@@ -3,57 +3,57 @@ description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples,
 
 # Magic Mirror
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_2134.jpg" width=1000>
+<img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" width=1000>
 
 ## Magic Mirror Build Pictures
 
 23" Samsung screen power resoldering:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1719.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1719.jpg" width=800>
 
 Wooden frame initial fitting test on a glass with duel mirror film applied:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1717.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1717.jpg" width=800>
 
 Testing the screen installation (frame removed) with power cords:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1722.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1722.jpg" width=800>
 
 Testing black&white picture from a laptop after frame assembly:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1732.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1732.jpg" width=800>
 
 Power, Lan, Usb external ports cutouts:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1766.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1766.jpg" width=800>
 
 Fitted extended ports with wood filler:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1767.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1767.jpg" width=800>
 
 Extended ports:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1768.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1768.jpg" width=800>
 
 Assembly With screen, Raspberry Pi, cable routing, black material which do not pass light where there is no screen:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1771.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1771.jpg" width=800>
 
 Adding some color for the frame:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1978.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1978.jpg" width=800>
 
 Testing everything is working as it should be:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1984.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1984.jpg" width=800>
 
 Full assembly behind the mirror:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_1985.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_1985.jpg" width=800>
 
 Final Product:
 
-<img src="https:w.3os.org/3os/magicMirror/IMG_2134.jpg" width=800>
+<img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" width=800>
 
 ## Configuration Setup
 
