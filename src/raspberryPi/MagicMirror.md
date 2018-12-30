@@ -3,7 +3,61 @@ description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples,
 
 # Magic Mirror
 
-## Change Display Rotation
+<img src="https:w.3os.org/3os/magicMirror/IMG_2134.jpg" width=1000>
+
+## Magic Mirror Build Pictures
+
+23" Samsung screen power resoldering:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1719.jpg" width=800>
+
+Wooden frame initial fitting test on a glass with duel mirror film applied:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1717.jpg" width=800>
+
+Testing the screen installation (frame removed) with power cords:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1722.jpg" width=800>
+
+Testing black&white picture from a laptop after frame assembly:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1732.jpg" width=800>
+
+Power, Lan, Usb external ports cutouts:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1766.jpg" width=800>
+
+Fitted extended ports with wood filler:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1767.jpg" width=800>
+
+Extended ports:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1768.jpg" width=800>
+
+Assembly With screen, Raspberry Pi, cable routing, black material which do not pass light where there is no screen:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1771.jpg" width=800>
+
+Adding some color for the frame:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1978.jpg" width=800>
+
+Testing everything is working as it should be:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1984.jpg" width=800>
+
+Full assembly behind the mirror:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_1985.jpg" width=800>
+
+Final Product:
+
+<img src="https:w.3os.org/3os/magicMirror/IMG_2134.jpg" width=800>
+
+## Configuration Setup
+
+### Change Display Rotation
 
 ```bash
 sudo nano /boot/config.txt
@@ -22,7 +76,7 @@ Add one of those according to your setup to the config file:
 
 `NOTE: You can rotate both the image and touch interface 180º by entering lcd_rotate=2 instead`
 
-## Disabling the Screensaver
+### Disabling the Screensaver
 
 Change to OPEN GL Driver
 
@@ -65,7 +119,7 @@ Add the following line below [SeatDefaults]
 xserver-command=X -s 0 -dpms
 ```
 
-## OS UI Finishes
+### OS UI Finishes
 
 Make the Background Black:
 
@@ -79,7 +133,7 @@ Hit ok.
 
 Select `Solid Color (With Opacity)` make sure `Opacity at 0`
 
-## Disable WiFi Power Save
+### Disable WiFi Power Save
 
 Edit /etc/modprobe.d/8192cu.conf
 
@@ -113,14 +167,14 @@ Reboot your PI
 sudo reboot
 ```
 
-## Disable Cursor on Startup
+### Disable Cursor on Startup
 
 ```bash
 sudo apt-get install unclutter
 
 ```
 
-## Installation
+### Installation
 
 first install node.js and npm
 
@@ -155,7 +209,7 @@ To Start from SSH:
 cd ~/MagicMirror && DISPLAY=:0 npm start
 ```
 
-## pm2 auto start installation
+### pm2 auto start installation
 
 ```bash
 sudo npm install -g pm2
