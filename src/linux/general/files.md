@@ -48,7 +48,7 @@ Test the mounting.
 
 ```bash
 systemctl start autofs
-cd to the /mnt/media/
+cd /mnt/media/
 ls
 ```
 
