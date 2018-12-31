@@ -28,6 +28,54 @@ Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
+### ~/.zshrc Config Modifications for MacOS
+
+Set theme and fonts:
+
+```bash
+POWERLEVEL9K_MODE='awesome-fontconfig'
+ZSH_THEME="powerlevel9k/powerlevel9k"
+```
+
+Add this to the the end of ~/.zshrc
+
+```bash
+### Theme and Plugins
+## POWERLEVEL9K Config
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
+  # time
+  custom_hostname
+  custom_username
+  dir
+  vcs
+  newline
+)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
+  status
+  # root_indicator
+  # background_jobs
+  # history
+  time
+)
+
+# Custom Hostname & Username prompt segment
+POWERLEVEL9K_CUSTOM_HOSTNAME="echo -n $(hostname) | sed 's/\..*$//' "
+POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
+POWERLEVEL9K_CUSTOM_HOSTNAME_BACKGROUND="white"
+POWERLEVEL9K_CUSTOM_USERNAME="echo -n ${USER}"
+POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
+POWERLEVEL9K_CUSTOM_USERNAME_BACKGROUND="grey"
+
+## Shell Integration and plugins
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+## Fix for Slow zsh-autosuggestions copy&paste
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+```
+
 ## Linux Installation
 
 Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
@@ -60,7 +108,7 @@ cd ~/.fonts
 fc-cache -fv ~/.fonts
 ```
 
-## ~/.zshrc Modifications for MacOS & Linux
+### ~/.zshrc Config Modifications for Linux
 
 Set theme and fonts:
 
@@ -109,9 +157,6 @@ POWERLEVEL9K_CUSTOM_USERNAME="echo -n ${USER}"
 POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
 POWERLEVEL9K_CUSTOM_USERNAME_BACKGROUND="grey"
 
-## Shell Integration and plugins
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ## Fix for Slow zsh-autosuggestions copy&paste
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
