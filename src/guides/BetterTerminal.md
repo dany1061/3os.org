@@ -110,7 +110,6 @@ POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
 POWERLEVEL9K_CUSTOM_USERNAME_BACKGROUND="grey"
 
 ## Shell Integration and plugins
-source "${HOME}/.iterm2_shell_integration.zsh"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ## Fix for Slow zsh-autosuggestions copy&paste
