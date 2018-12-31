@@ -1,5 +1,22 @@
 # Changelog
 
+## v1.0.8 (31/12/2018)
+- [added screenshot](https://github.com/fire1ce/3os.org/commit/3624e6570e430f6129c7b45d55d8cc17ba3162aa) - @Stas Kosatuhin
+- [menus rearange](https://github.com/fire1ce/3os.org/commit/2f35538a4e05e786868c0bf5ab90969ebffb5a82) - @Stas Kosatuhin
+- [updated Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/0990fb6ddccd2276ca03adc98b9ebbd7347a1969) - @Stas Kosatuhin
+- [Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/16db1d5ea057bd5883133999df153f153bface90) - @Stas Kosatuhin
+- [name chnage to "Better Terminal Guide"](https://github.com/fire1ce/3os.org/commit/6d9604a5228ba7e6509f5605006e8105e2ec9a13) - @Stas Kosatuhin
+- [update](https://github.com/fire1ce/3os.org/commit/2992831a7780a655031d78c07d064a52c44a73be) - @Stas Kosatuhin
+- [typo fix](https://github.com/fire1ce/3os.org/commit/c51be55d729743129f8be44a3c53407d72233179) - @Stas Kosatuhin
+- [cleanup SMB Mount With autofs guide](https://github.com/fire1ce/3os.org/commit/9365ef5e523692e64c64d7e7e6d7f714fb27808a) - @Stas Kosatuhin
+- [Update files.md](https://github.com/fire1ce/3os.org/commit/dbbd67ad47afeb83b2de7049adab0a7d1b6e276a) - @Stas Kosatuhin
+- [Update files.md](https://github.com/fire1ce/3os.org/commit/c903ce7018fe55d7ae3c89ce429e26dd2e15c147) - @Stas Kosatuhin
+- [pictures links fix](https://github.com/fire1ce/3os.org/commit/fc0ffa72fb76fd2a323fd03fe24f090c09ce8f63) - @Stas Kosatuhin
+- [updated "update section"](https://github.com/fire1ce/3os.org/commit/a9affb15a56a787dbc27b074cfdb4a9ebfb754e1) - @Stas Kosatuhin
+- [ CHANGELOG.md update to  v1.0.8](https://github.com/fire1ce/3os.org/commit/eec059daaeb5421657474e8266fe189cb05a2f98) - @Stas Kosatuhin
+
+---
+
 ## v1.0.7 (30/12/2018)
 - [updated MagicMirror Project](https://github.com/fire1ce/3os.org/commit/724784f77c011276bba30ef407bf4e9662e00d59) - @Stas Kosatuhin
 - [update](https://github.com/fire1ce/3os.org/commit/e60734e3c3df1c49c8f9231933469608439151f8) - @Stas Kosatuhin
