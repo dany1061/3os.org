@@ -28,7 +28,7 @@ nav:
             - Plesk: 'linux/services/plesk.md'
   - macOS:
       - General: 'macOS/macGeneral.md'
-      - BetterTerminal Fule Gide: 'macOS/BetterTerminal.md'
+      - Better Terminal Guide: 'macOS/BetterTerminal.md'
       - Brew: 'macOS/brew.md'
       - Alftred Workflows: 'macOS/alfredWorkFlows.md'
   - Raspberry Pi:
