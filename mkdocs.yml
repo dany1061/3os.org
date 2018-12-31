@@ -6,6 +6,8 @@ nav:
   - Contributions Wall: 'contributions.md'
   - Changelog: 'CHANGELOG.md'
   - Donate: 'donation.md'
+  - Guides: 
+      - Better Terminal Experience: 'guides/BetterTerminal.md'
   - Linux:
       - General: 'linux/general/general.md'
       - SSH Service Security: 'linux/SSH_Service_Security.md'
@@ -28,7 +30,6 @@ nav:
             - Plesk: 'linux/services/plesk.md'
   - macOS:
       - General: 'macOS/macGeneral.md'
-      - Better Terminal Guide: 'macOS/BetterTerminal.md'
       - Brew: 'macOS/brew.md'
       - Alftred Workflows: 'macOS/alfredWorkFlows.md'
   - Raspberry Pi:
