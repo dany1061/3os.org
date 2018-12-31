@@ -46,6 +46,7 @@
     "Paypal",
     "Pingback",
     "Plesk",
+    "Powerlevel",
     "Powerpack",
     "Pubkey",
     "Pushbullet",
@@ -84,6 +85,7 @@
     "allowfullscreen",
     "apxs",
     "autofs",
+    "autoload",
     "autostart",
     "backuped",
     "badmap",
@@ -149,8 +151,10 @@
     "fdisk",
     "filesize",
     "filesystems",
+    "firacode",
     "firewalld",
     "fkms",
+    "fontconfig",
     "frameborder",
     "fstab",
     "fstype",
@@ -346,7 +350,8 @@
     "xserver",
     "xset",
     "youruser",
-    "zcvf"
+    "zcvf",
+    "zstyle"
   ],
   "cSpell.language": "en,en-GB,en-US"
 }

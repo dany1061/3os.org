@@ -1,8 +1,8 @@
-# macOS Better Terminal - iTerm2, Oh-My-Zsh, Theme & Fonts Guide
+# Better Terminal - Oh-My-Zsh + Powerlevel9k Theme + Font-Awesome-Terminal
 
-## WORK IN PROGRESS!!!
+## WORK IN PROGRESS
 
-## Installation
+## MacOS Installation with iTerm2 and Homebrew
 
 First of all we need to install [__Homebrew__](https://brew.sh/)
 
@@ -22,70 +22,62 @@ Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
 
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
 ```
 
-## ~/.zshrc Config Highlights
+## Linux Installation
+
+Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
+
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+```
+
+Install Powerlevel9k Theme for Oh-My-Zsh
+
+```bash
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+
+Install Autosuggestions, Syntax-Highlighting Plugins
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+Install Awesome-Terminal-Fonts
+
+```bash
+git clone https://github.com/gabrielelana/awesome-terminal-fonts.git
+cp -r awesome-terminal-fonts/build ~/.fonts
+rm -rf awesome-terminal-fonts
+cd ~/.fonts
+fc-cache -fv ~/.fonts
+```
+
+## ~/.zshrc Modifications for MacOS & Linux
+
+Set theme and fonts:
 
 ```bash
 POWERLEVEL9K_MODE='awesome-fontconfig'
 ZSH_THEME="powerlevel9k/powerlevel9k"
+```
 
+Activate the plugins
+
+```bash
 plugins=(
   git
-  colored-man-pages
-  docker
-  iterm2
-  nmap
-  node
-  npm
-  
+  zsh-autosuggestions
+  zsh-syntax-highlighting
 )
+```
 
-# Locale
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
+Add this to the the end of ~/.zshrc
 
-# Ruby Configuration for Brew
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
-
-# POWERLEVEL9K Config
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_MODE='nerdfont-complete'
-
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-  # time
-  custom_hostname
-  custom_username
-  dir
-  vcs
-  newline
-)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-  status
-  # root_indicator
-  # background_jobs
-  # history
-  time
-)
-
-# Custom Hostname & Username prompt segment
-POWERLEVEL9K_CUSTOM_HOSTNAME="echo -n $(hostname) | sed 's/\..*$//' "
-POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
-POWERLEVEL9K_CUSTOM_HOSTNAME_BACKGROUND="white"
-POWERLEVEL9K_CUSTOM_USERNAME="echo -n ${USER}"
-POWERLEVEL9K_CUSTOM_HOSTNAME_FOREGROUND="black"
-POWERLEVEL9K_CUSTOM_USERNAME_BACKGROUND="grey"
-
-
-
-# Shell Integration and plugins
-source "${HOME}/.iterm2_shell_integration.zsh"
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```bash
 ## Fix for Slow zsh-autosuggestions copy&paste
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
