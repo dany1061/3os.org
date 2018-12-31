@@ -1,4 +1,4 @@
-# Better Terminal - Oh-My-Zsh + Powerlevel9k Theme + Font-Awesome-Terminal
+# Better Terminal Experience - Oh-My-Zsh + Powerlevel9k Theme + Font-Awesome-Terminal
 
 ## WORK IN PROGRESS
 
