@@ -2,6 +2,10 @@
 
 ## WORK IN PROGRESS
 
+Linux Terminal:
+
+![Linux Terminal](../assets/images/guides/betterTerminal/linuxTerminal.png)
+
 ## MacOS Installation with iTerm2 and Homebrew
 
 First of all we need to install [__Homebrew__](https://brew.sh/)
