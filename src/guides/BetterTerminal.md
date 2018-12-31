@@ -78,6 +78,8 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 ## Linux Installation
 
+Requirements: git, zsh
+
 Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
 
 ```bash
