@@ -20,8 +20,8 @@ gem install rubygems-update
 Then run:
 
 ```bash
-update_rubygems
 gem update --system
+update_rubygems
 ```
 
 ## List All Installed Gems
