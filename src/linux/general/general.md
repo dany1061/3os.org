@@ -3,6 +3,20 @@ description: Linux General how to, guides, examples, and simple usage
 
 # Linux General Topics
 
+## Run Script On Boot - Crontab
+
+Only add sudo if your script needs superuser privileges. Then add this to your crontab:
+
+```bash
+(sudo) crontab -e
+```
+
+Add to the end of the Cront tab:
+
+```bash
+@reboot /path/to/script.sh
+```
+
 ## Redirect Output to a File and Stdout With _tee_
 
 The command you want is named `tee`:
