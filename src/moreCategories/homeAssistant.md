@@ -1,4 +1,23 @@
-# [Home-Assistant.io](https://www.home-assistant.io/) Installation on Ubuntu 18.04
+# Home-Assistant
+
+## Docker Installation
+
+Download The laters container: _homeassistant/home-assistant_
+
+Change the volume for you approprite directory
+
+```bash
+docker run \
+-d \
+--name=homeassistant \
+--restart always \
+-v /volume1/docker/homeassistant:/config \
+-p 8123:8123 \
+-e TZ=Asia/Jerusalem \
+homeassistant/home-assistant:latest
+```
+
+## [Home-Assistant.io](https://www.home-assistant.io/) Installation on Ubuntu 18.04
 
 ```bash
 sudo apt-get update
