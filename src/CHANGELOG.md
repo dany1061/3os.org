@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0 (15/01/2019)
+- [ CHANGELOG.md update to  v1.1.0](https://github.com/fire1ce/3os.org/commit/fbe239b542baf72620c5a8ddd661060b22e1285f) - @fire1ce
+
+---
+
 ## v1.0.9 (14/01/2019)
 - [updated Home-Assistant](https://github.com/fire1ce/3os.org/commit/94f3e6c80df8d444a40f00d130d2e364c5d6a8a2) - @fire1ce
 - [update to much more simple theme](https://github.com/fire1ce/3os.org/commit/e14cfa7291b8c7bc6d190710ded8909e8e649d78) - @fire1ce
