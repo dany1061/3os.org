@@ -1,4 +1,4 @@
-# Better Terminal Experience - Oh-My-Zsh + Bira Theme + Font-Awesome-Terminal
+# Better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions
 
 ## WORK IN PROGRESS (Outdated pics)
 
@@ -8,7 +8,7 @@ Linux Terminal:
 
 ## MacOS Installation with iTerm2 and Homebrew
 
-First of all we need to install [__Homebrew__](https://brew.sh/)
+First of all we need to install [**Homebrew**](https://brew.sh/)
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -19,10 +19,10 @@ This will install all the necessary requirements:
 ```bash
 brew tap homebrew/cask-fonts
 brew install zsh-autosuggestions zsh-syntax-highlighting git wget zsh
-brew cask install iterm2 font-awesome-terminal-fonts font-firacode-nerd-font
+brew cask install iterm2 font-firacode-nerd-font
 ```
 
-Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
+Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -50,9 +50,9 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 ## Linux Installation
 
-Requirements: git, zsh
+Requirements: git, zsh, wget
 
-Install [__Oh-My-Zsh__](https://github.com/robbyrussell/oh-my-zsh)
+Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -64,16 +64,6 @@ Install Autosuggestions, Syntax-Highlighting Plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-Install Awesome-Terminal-Fonts
-
-```bash
-git clone https://github.com/gabrielelana/awesome-terminal-fonts.git
-cp -r awesome-terminal-fonts/build ~/.fonts
-rm -rf awesome-terminal-fonts
-cd ~/.fonts
-fc-cache -fv ~/.fonts
 ```
 
 ### ~/.zshrc Config Modifications for Linux
