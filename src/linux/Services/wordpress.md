@@ -62,6 +62,3 @@ Run from the WordPress installed location:
 useradmin=`wp user list --role=administrator --format=csv --allow-root | cut -d',' -f2 | head -2 | tail -1` &&  wp plugin install one-time-login --activate --allow-root && wp user one-time-login $useradmin --allow-root && user=$(stat -c "%U" `pwd`) && chown $user.$user wp-content/ -R
 ```
 
-<!-- Donation Button -->
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="https://raw.githubusercontent.com/fire1ce/3os.org/gh-pages/assets/images/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
-<!-- Donation Button -->

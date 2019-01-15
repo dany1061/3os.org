@@ -47,9 +47,8 @@ nav:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'
   - Penetration-Testing:
-      - General: 'penTesting/penTestingGeneral.md'
+      - Tools: 'penTesting/tools.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
-      - Israel ID Generator & Validator: 'penTesting/IDD_Generator.md'
       - Android Penetration Testing: 'penTesting/androidPT.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
       - Installing Bettercap 1.6.2: 'penTesting/bettercap1.6.2.md'
@@ -62,7 +61,7 @@ nav:
       - Ubiquiti Networks EdgeRouter & Unifi: 'moreCategories/ubiquiti.md'
       - Android: 'moreCategories/android.md'
       - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
-      - Home-Assistant: 'moreCategories/homeAssistent.md'
+      - Home-Assistant: 'moreCategories/homeAssistant.md'
       - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
   - Markdown CheatSheet:
       - Welcome: 'markdownCheatSheet/welcome.md'
