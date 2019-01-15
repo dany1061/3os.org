@@ -1,5 +1,6 @@
 title: Docker useful commands tips
 description: Docker useful commands tips
+
 <!-- Meta Data for search engines - NOT Visible -->
 
 # Docker
@@ -10,18 +11,19 @@ description: Docker useful commands tips
 docker images |grep -v REPOSITORY|awk '{print $1}'|xargs -L1 docker pull
 ```
 
-## Docker Images
+## Purging All Unused or Dangling Images
 
-### List All Images
+Purging All Unused or Dangling Images, Containers, Volumes, and Networks
+Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):
 
 ```bash
-docker images -a
+docker system prune
 ```
 
-### Remove All Unused Images
+To additionally remove any stopped containers and all unused images (not just dangling images), add the -a flag to the command:
 
 ```bash
-docker images purge
+docker system prune -a
 ```
 
 ## Portainer.io Docker UI management
@@ -46,7 +48,3 @@ docker run \
 -e TZ=Asia/Jerusalem \
 networkstatic/iperf3:latest -s
 ```
-
-
-
-
