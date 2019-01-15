@@ -1,47 +1,67 @@
 # Changelog
 
+## v1.0.9 (14/01/2019)
+- [updated Home-Assistant](https://github.com/fire1ce/3os.org/commit/94f3e6c80df8d444a40f00d130d2e364c5d6a8a2) - @fire1ce
+- [update to much more simple theme](https://github.com/fire1ce/3os.org/commit/e14cfa7291b8c7bc6d190710ded8909e8e649d78) - @fire1ce
+- [added Run Script On Boot - Crontab](https://github.com/fire1ce/3os.org/commit/5ec6039db10672135569d1889c5dc959b9adea78) - @fire1ce
+- [delete requirements.txt](https://github.com/fire1ce/3os.org/commit/36207ac652cd86506a6b9adb49d872f19b59ebd6) - @fire1ce
+- [removed requirements.txt](https://github.com/fire1ce/3os.org/commit/146ead0a46c21e1df2732ddddefe10ed270d39bb) - @fire1ce
+- [updatest and fixes](https://github.com/fire1ce/3os.org/commit/a8c768e8288f88b11c591d3adb93741b3f275a04) - @fire1ce
+- [.](https://github.com/fire1ce/3os.org/commit/632b1d2aade93dc706e5c28523fa91e1a7eb9962) - undefined
+- [removed requerments](https://github.com/fire1ce/3os.org/commit/87ee2600e86a7503a6666a004c00262fe602a41e) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/1bc369ded728e18c8462eaef39103d994eafaaf0) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/389f0371be6b8f7788ae04f8b5ae8d425a4e6047) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/7ca341c4a1b37c2710036658412823f206a90423) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/a24102c28057e1345baef99025625718dd75ab8b) - @fire1ce
+- [typo fix](https://github.com/fire1ce/3os.org/commit/ea1836c9a18aff672304fe40168853690ff1c6b4) - @fire1ce
+- [updated bettercap installation](https://github.com/fire1ce/3os.org/commit/a4bb8e3f342bf76a0a9b7ee6d09e5a369b1a47d2) - @fire1ce
+- [added linux Requirements for intallation](https://github.com/fire1ce/3os.org/commit/98e818151bbf4c41e5017532252a94487e62700e) - @fire1ce
+- [seperated zsh config for mac and linux](https://github.com/fire1ce/3os.org/commit/93117f48b5c09a1a2303da9e46df3f1f0daa665e) - @fire1ce
+- [config fix](https://github.com/fire1ce/3os.org/commit/b6b5f24fb45b5eeff4c2a53f605c210d3c9a6654) - @fire1ce
+- [added theme config](https://github.com/fire1ce/3os.org/commit/f769a690923927ac0372554b11fb47289d734ea4) - @fire1ce
+
+---
+
 ## v1.0.8 (31/12/2018)
-- [added screenshot](https://github.com/fire1ce/3os.org/commit/3624e6570e430f6129c7b45d55d8cc17ba3162aa) - @Stas Kosatuhin
-- [menus rearange](https://github.com/fire1ce/3os.org/commit/2f35538a4e05e786868c0bf5ab90969ebffb5a82) - @Stas Kosatuhin
-- [updated Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/0990fb6ddccd2276ca03adc98b9ebbd7347a1969) - @Stas Kosatuhin
-- [Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/16db1d5ea057bd5883133999df153f153bface90) - @Stas Kosatuhin
-- [name chnage to "Better Terminal Guide"](https://github.com/fire1ce/3os.org/commit/6d9604a5228ba7e6509f5605006e8105e2ec9a13) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/2992831a7780a655031d78c07d064a52c44a73be) - @Stas Kosatuhin
-- [typo fix](https://github.com/fire1ce/3os.org/commit/c51be55d729743129f8be44a3c53407d72233179) - @Stas Kosatuhin
-- [cleanup SMB Mount With autofs guide](https://github.com/fire1ce/3os.org/commit/9365ef5e523692e64c64d7e7e6d7f714fb27808a) - @Stas Kosatuhin
-- [Update files.md](https://github.com/fire1ce/3os.org/commit/dbbd67ad47afeb83b2de7049adab0a7d1b6e276a) - @Stas Kosatuhin
-- [Update files.md](https://github.com/fire1ce/3os.org/commit/c903ce7018fe55d7ae3c89ce429e26dd2e15c147) - @Stas Kosatuhin
-- [pictures links fix](https://github.com/fire1ce/3os.org/commit/fc0ffa72fb76fd2a323fd03fe24f090c09ce8f63) - @Stas Kosatuhin
-- [updated "update section"](https://github.com/fire1ce/3os.org/commit/a9affb15a56a787dbc27b074cfdb4a9ebfb754e1) - @Stas Kosatuhin
-- [ CHANGELOG.md update to  v1.0.8](https://github.com/fire1ce/3os.org/commit/eec059daaeb5421657474e8266fe189cb05a2f98) - @Stas Kosatuhin
+- [added screenshot](https://github.com/fire1ce/3os.org/commit/3624e6570e430f6129c7b45d55d8cc17ba3162aa) - @fire1ce
+- [menus rearange](https://github.com/fire1ce/3os.org/commit/2f35538a4e05e786868c0bf5ab90969ebffb5a82) - @fire1ce
+- [updated Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/0990fb6ddccd2276ca03adc98b9ebbd7347a1969) - @fire1ce
+- [Better Terminal Experience](https://github.com/fire1ce/3os.org/commit/16db1d5ea057bd5883133999df153f153bface90) - @fire1ce
+- [name chnage to "Better Terminal Guide"](https://github.com/fire1ce/3os.org/commit/6d9604a5228ba7e6509f5605006e8105e2ec9a13) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/2992831a7780a655031d78c07d064a52c44a73be) - @fire1ce
+- [typo fix](https://github.com/fire1ce/3os.org/commit/c51be55d729743129f8be44a3c53407d72233179) - @fire1ce
+- [cleanup SMB Mount With autofs guide](https://github.com/fire1ce/3os.org/commit/9365ef5e523692e64c64d7e7e6d7f714fb27808a) - @fire1ce
+- [Update files.md](https://github.com/fire1ce/3os.org/commit/dbbd67ad47afeb83b2de7049adab0a7d1b6e276a) - @fire1ce
+- [Update files.md](https://github.com/fire1ce/3os.org/commit/c903ce7018fe55d7ae3c89ce429e26dd2e15c147) - @fire1ce
+- [pictures links fix](https://github.com/fire1ce/3os.org/commit/fc0ffa72fb76fd2a323fd03fe24f090c09ce8f63) - @fire1ce
+- [updated "update section"](https://github.com/fire1ce/3os.org/commit/a9affb15a56a787dbc27b074cfdb4a9ebfb754e1) - @fire1ce
 
 ---
 
 ## v1.0.7 (30/12/2018)
-- [updated MagicMirror Project](https://github.com/fire1ce/3os.org/commit/724784f77c011276bba30ef407bf4e9662e00d59) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/e60734e3c3df1c49c8f9231933469608439151f8) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/0b3bbcbdd3c36e078d1e6838c6b971c81d97095f) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/5454878783d35b81d085dbfaeb7a4c6a54e1f792) - @Stas Kosatuhin
-- [ CHANGELOG.md update to  v1.0.7](https://github.com/fire1ce/3os.org/commit/a40fbf27eda7364a038d157ccf523bf9107873af) - @Stas Kosatuhin
+- [updated MagicMirror Project](https://github.com/fire1ce/3os.org/commit/724784f77c011276bba30ef407bf4e9662e00d59) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/e60734e3c3df1c49c8f9231933469608439151f8) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/0b3bbcbdd3c36e078d1e6838c6b971c81d97095f) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/5454878783d35b81d085dbfaeb7a4c6a54e1f792) - @fire1ce
 
 ---
 
 ## v1.0.6 (27/12/2018)
-- [ CHANGELOG.md update to  v1.0.6](https://github.com/fire1ce/3os.org/commit/ab184f735a3ecad156298784bbd498d870e1e31b) - @Stas Kosatuhin
+- [ CHANGELOG.md update to  v1.0.6](https://github.com/fire1ce/3os.org/commit/ab184f735a3ecad156298784bbd498d870e1e31b) - @fire1ce
 
 ---
 
 ## v1.0.5 (27/12/2018)
-- [cleanups](https://github.com/fire1ce/3os.org/commit/7893b5ecd70595a5ca93904ee0206cead1fc8c41) - @Stas Kosatuhin
-- [new guides](https://github.com/fire1ce/3os.org/commit/1c2f46cc9316207e12bd02fd6962e5f9c58366f7) - @Stas Kosatuhin
-- [syntax fix](https://github.com/fire1ce/3os.org/commit/362073e9d3aba2541b4f84ab16c2fbe353252ab5) - @Stas Kosatuhin
-- [header fix](https://github.com/fire1ce/3os.org/commit/87a77572ae97727994e16f4e6f5d7e352c952d5b) - @Stas Kosatuhin
-- [fix for list of files](https://github.com/fire1ce/3os.org/commit/a201a18e6d82c039f785c9a8aef8801e74652f77) - @Stas Kosatuhin
-- [added EdgeRouter - Custom Dynamic DNS with CloudFlare](https://github.com/fire1ce/3os.org/commit/7f4f4cf518df1ba2ee56ef32386983034c4ff2ee) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/04bac5eae33ff75838bbd2e2f9d525c1463ff66f) - @Stas Kosatuhin
-- [added Hardware Offloading](https://github.com/fire1ce/3os.org/commit/2f64e542fcddbfa7f4e328939937f24e1bafe949) - @Stas Kosatuhin
-- [update](https://github.com/fire1ce/3os.org/commit/04b25e5bb1695ea82927d1ac58c57ed3f1740e9b) - @Stas Kosatuhin
-- [remanme for  Ubiquiti Networks EdgeRouter & Unifi](https://github.com/fire1ce/3os.org/commit/1fb1e4247dea2d45186a2d85da56e29ffc72184d) - @Stas Kosatuhin
+- [cleanups](https://github.com/fire1ce/3os.org/commit/7893b5ecd70595a5ca93904ee0206cead1fc8c41) - @fire1ce
+- [new guides](https://github.com/fire1ce/3os.org/commit/1c2f46cc9316207e12bd02fd6962e5f9c58366f7) - @fire1ce
+- [syntax fix](https://github.com/fire1ce/3os.org/commit/362073e9d3aba2541b4f84ab16c2fbe353252ab5) - @fire1ce
+- [header fix](https://github.com/fire1ce/3os.org/commit/87a77572ae97727994e16f4e6f5d7e352c952d5b) - @fire1ce
+- [fix for list of files](https://github.com/fire1ce/3os.org/commit/a201a18e6d82c039f785c9a8aef8801e74652f77) - @fire1ce
+- [added EdgeRouter - Custom Dynamic DNS with CloudFlare](https://github.com/fire1ce/3os.org/commit/7f4f4cf518df1ba2ee56ef32386983034c4ff2ee) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/04bac5eae33ff75838bbd2e2f9d525c1463ff66f) - @fire1ce
+- [added Hardware Offloading](https://github.com/fire1ce/3os.org/commit/2f64e542fcddbfa7f4e328939937f24e1bafe949) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/04b25e5bb1695ea82927d1ac58c57ed3f1740e9b) - @fire1ce
+- [remanme for  Ubiquiti Networks EdgeRouter & Unifi](https://github.com/fire1ce/3os.org/commit/1fb1e4247dea2d45186a2d85da56e29ffc72184d) - @fire1ce
 - [added Enable Password Authentication if needed.](https://github.com/fire1ce/3os.org/commit/56a5f9abecbd154073c2223d9e1a0fd78d283370) - @fire1ce
 - [added terminal to app list](https://github.com/fire1ce/3os.org/commit/0daffb01788eba0d99532ef64c2d30fef3af9328) - @fire1ce
 - [added new section for android pt tools and apps](https://github.com/fire1ce/3os.org/commit/809d2656057f04ae7e16b4e1f6223fc5c96ace6f) - @fire1ce
@@ -53,7 +73,6 @@
 - [remed google analitics](https://github.com/fire1ce/3os.org/commit/d8c2f3e48b88a03d19d20f080ce6a44accb57ca3) - @fire1ce
 - [path fix](https://github.com/fire1ce/3os.org/commit/a00ec97bbe8ecd05092fb1b20bb6362ba2b73a4f) - @fire1ce
 - [added Ruby Environment](https://github.com/fire1ce/3os.org/commit/90cefc182a494645ab6aaf43765590bf19babb69) - @fire1ce
-- [ CHANGELOG.md update to  v1.0.5](https://github.com/fire1ce/3os.org/commit/9597ef3e5ef6d5310ef13285cf8e803f33e8704a) - @fire1ce
 
 ---
 
@@ -61,7 +80,6 @@
 - [initial](https://github.com/fire1ce/3os.org/commit/834f72b69e7815e2a40cbb2f8bbf9ad79cbfd0a0) - @fire1ce
 - [added BetterTerminal guide, ruby](https://github.com/fire1ce/3os.org/commit/e6b7ac3193900dadbfae2a80f717acbdafa00bd3) - @fire1ce
 - [update](https://github.com/fire1ce/3os.org/commit/90fc4c9f6b7b8f642d478760fb753bf0874e7651) - @fire1ce
-- [ CHANGELOG.md update to  v1.0.4](https://github.com/fire1ce/3os.org/commit/4fd136599c1b9149fd620f18a081502c509aa9d6) - @fire1ce
 
 ---
 
@@ -73,7 +91,7 @@
 - [added  SMB Mount With autofs](https://github.com/fire1ce/3os.org/commit/6d5c9ca04e94978725f976ac8a12f98ec3478f3e) - @fire1ce
 - [added Disable IPv6](https://github.com/fire1ce/3os.org/commit/a4e665d855821bb215c697aa92f0939ee838e78f) - @fire1ce
 - [removed "cors" link](https://github.com/fire1ce/3os.org/commit/800cd43d04b9e6068f8914b51cdbe73c52b4535f) - @fire1ce
-- [Update centos7.md](https://github.com/fire1ce/3os.org/commit/8f90d357e0ca568816a9c13538683359044782cb) - @Stas Kosatuhin
+- [Update centos7.md](https://github.com/fire1ce/3os.org/commit/8f90d357e0ca568816a9c13538683359044782cb) - @fire1ce
 - [update idna-2.8](https://github.com/fire1ce/3os.org/commit/1a6dafbfdc62186d0713f27f6d6cd190a6ad3acf) - @fire1ce
 - [removed duplicated list images](https://github.com/fire1ce/3os.org/commit/3ebfea7a649f86e0f3437bcb2e99a953342c1a08) - @fire1ce
 - [added image remove](https://github.com/fire1ce/3os.org/commit/54603d8d3e8240beb540de96be5ca21888c53e4f) - @fire1ce
@@ -85,7 +103,6 @@
 - [addedCurl is configured to use SSL](https://github.com/fire1ce/3os.org/commit/225ca86fc1f67c64b0b897d7772da5b6f1b3d446) - @fire1ce
 - [added examples for flashing bootloeader and radio](https://github.com/fire1ce/3os.org/commit/6bb63ce12da88bb13aaa4191d1159eb9924c9fd3) - @fire1ce
 - [updated to mkdocs-material	 3.1.0](https://github.com/fire1ce/3os.org/commit/2c426797b0714b68d1f8f234ad6380b3ee9f2d4d) - @fire1ce
-- [ CHANGELOG.md update to v1.0.3](https://github.com/fire1ce/3os.org/commit/0e91a4bc3f823be4084d8a39ecd4eb4c366cdc75) - @fire1ce
 
 ---
 
@@ -99,7 +116,6 @@
 - [fix markdown syntax](https://github.com/fire1ce/3os.org/commit/06da26f77dfb930a7a7ca09484968a756aa381fe) - @fire1ce
 - [.](https://github.com/fire1ce/3os.org/commit/eb99d80dc66b3cb2739c9dcb4b78eecff221be89) - @fire1ce
 - [updated installation](https://github.com/fire1ce/3os.org/commit/e8834f67a5d16db0a51b1affffd033e2cf828839) - @fire1ce
-- [ CHANGELOG.md update to v1.0.2](https://github.com/fire1ce/3os.org/commit/b4aff929ae1ed7918b06c78048968b2d4c0dfd81) - @fire1ce
 
 ---
 
@@ -114,10 +130,9 @@
 - [exceptions](https://github.com/fire1ce/3os.org/commit/d7fdebbf0ec648792eb53687954a03b731f00504) - @fire1ce
 - [fix metad arta](https://github.com/fire1ce/3os.org/commit/0decab14a9d9e74a3f1f1b730e0e01d030df4d4c) - @fire1ce
 - [added git section](https://github.com/fire1ce/3os.org/commit/80ff24e5d94287ac4f94fd2e002a424e93d41a12) - @fire1ce
-- [Update bettercao1.6.2.md](https://github.com/fire1ce/3os.org/commit/76fb44bf6ab24296b640d3326d03929020af02c5) - @Stas Kosatuhin
+- [Update bettercao1.6.2.md](https://github.com/fire1ce/3os.org/commit/76fb44bf6ab24296b640d3326d03929020af02c5) - @fire1ce
 - [optimezed BREWUP script](https://github.com/fire1ce/3os.org/commit/a9d5d2bbc6192aa503250065bbb3a1dcbf7ec079) - @fire1ce
 - [ CHANGELOG.md update to v1.0.1](https://github.com/fire1ce/3os.org/commit/796c8216be9e891949f998812410d78c873d78a3) - @fire1ce
-- [updates](https://github.com/fire1ce/3os.org/commit/d882c2ac73d33a09709964f9a89a4a8b5d5a3a1a) - @fire1ce
 
 ---
 
@@ -127,7 +142,6 @@
 - [new nmpa section](https://github.com/fire1ce/3os.org/commit/bcf647cb80483a5d388e1f1766f12168ba9b5d5d) - @fire1ce
 - [updated headers](https://github.com/fire1ce/3os.org/commit/0de8f62b2c3753f94bd93cf94432e06c1f041d1f) - @fire1ce
 - [added nmap section to Pentesting](https://github.com/fire1ce/3os.org/commit/29f7c7395c17de7b6967f7f0827bb467aae4b128) - @fire1ce
-- [ CHANGELOG.md update to v0.4.3](https://github.com/fire1ce/3os.org/commit/c1349e01ae1f81d1609f638335e80b0958a02749) - @fire1ce
 
 ---
 
@@ -135,9 +149,8 @@
 - [added exceptions](https://github.com/fire1ce/3os.org/commit/eb69e10a2488b30e9cbaf2424a4dc99aa01886fd) - @fire1ce
 - [added ubuntu section to linux](https://github.com/fire1ce/3os.org/commit/3e77a5d5264007c9ea7944587a37ae47e26eefc5) - @fire1ce
 - [added and rearranged topics](https://github.com/fire1ce/3os.org/commit/dc9c12252fef4cbf56f70fcd17b25745e080231e) - @fire1ce
-- [update MongoDB replica setup](https://github.com/fire1ce/3os.org/commit/eafad4933d2ddb89b9b341d60307d2c3d3dc8aa8) - @(-_-)
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/4644a287e7b531a01d322ecee1568e2786e7c2d7) - @Stas Kosatuhin
-- [ CHANGELOG.md update to v0.4.2](https://github.com/fire1ce/3os.org/commit/ef61d0ef0d45314d8bd983df271f45dce8074d59) - @fire1ce
+- [update MongoDB replica setup](https://github.com/fire1ce/3os.org/commit/eafad4933d2ddb89b9b341d60307d2c3d3dc8aa8) - @bergerg
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/4644a287e7b531a01d322ecee1568e2786e7c2d7) - @fire1ce
 
 ---
 
@@ -149,7 +162,6 @@
 - [added exeptions](https://github.com/fire1ce/3os.org/commit/0113fc92b5d632a7eb0f31649c705f2a48f40ac3) - @fire1ce
 - [new linux section](https://github.com/fire1ce/3os.org/commit/1f25b13f0a7c848e00f2a2cd7519cc8e8d47c980) - @fire1ce
 - [updated requirements](https://github.com/fire1ce/3os.org/commit/73ea2eb70941bd08d4ce421836c75da8cac37101) - @fire1ce
-- [ CHANGELOG.md update to v0.4.1](https://github.com/fire1ce/3os.org/commit/3a98b0ca7636e0b6698928cfac6e85d32ff3d062) - @fire1ce
 
 ---
 
@@ -163,7 +175,6 @@
 - [removed empty line](https://github.com/fire1ce/3os.org/commit/4e340aa408fcbf588ff807e3f17d499bfd568a19) - @fire1ce
 - [added SpeedTest Cli on Edge Router](https://github.com/fire1ce/3os.org/commit/c1e8c17ad6a106d832f1be65b2df53f2ce4124f2) - @fire1ce
 - [updated MarkupSafe-1.1.0](https://github.com/fire1ce/3os.org/commit/1c864545304b5260a4c359b8951a029225f16350) - @fire1ce
-- [ CHANGELOG.md update to v0.4.0](https://github.com/fire1ce/3os.org/commit/76ffe80a10768619c9a3b5765dc34210cb414497) - @fire1ce
 
 ---
 
@@ -174,7 +185,6 @@
 - [updated node version](https://github.com/fire1ce/3os.org/commit/324b058ede3c5d1699369b6ccf4e43ec1d069ee6) - @fire1ce
 - [updated](https://github.com/fire1ce/3os.org/commit/5398ed0e5404d880cd39590de21b7c3073f2d25a) - @fire1ce
 - [added astatus to SIP section](https://github.com/fire1ce/3os.org/commit/ea6ef7b991fad2ee8d112e1719bbc4c0213c9f87) - @fire1ce
-- [ CHANGELOG.md update to v0.3.9](https://github.com/fire1ce/3os.org/commit/e5fd68dc4531ac8af44e357c3cbe2fb4937ec578) - @fire1ce
 
 ---
 
@@ -189,7 +199,6 @@
 - [path fixed](https://github.com/fire1ce/3os.org/commit/c388ad9e620a4f5ac1d9412ef94b1d3e1cd6b4b9) - @fire1ce
 - [updated mkdocs-material==3.0.6](https://github.com/fire1ce/3os.org/commit/59ae51acf74c82fc3db63b4e4d1d9dfac8ddb098) - @fire1ce
 - [added docker category](https://github.com/fire1ce/3os.org/commit/412fbed2f1ed61a08884680c49dbca731a5d62c6) - @fire1ce
-- [ CHANGELOG.md update to v0.3.8](https://github.com/fire1ce/3os.org/commit/4ff6aee9624eaf91d2bc08883434a005c2c85281) - @fire1ce
 
 ---
 
@@ -207,7 +216,6 @@
 - [replaced](https://github.com/fire1ce/3os.org/commit/f8c06c628874ca4c47d0d01aef1b6c36629b7dd9) - @fire1ce
 - [.](https://github.com/fire1ce/3os.org/commit/9649eca900a4336af2be0d181696089b66a46acc) - @fire1ce
 - [fix for upercase title](https://github.com/fire1ce/3os.org/commit/d1cbb7077cfb1a4dbfe14b7ae0d2080e4b98f9ba) - @fire1ce
-- [ CHANGELOG.md update to v0.3.7](https://github.com/fire1ce/3os.org/commit/4dffb118f95dfd9fc5a9da0a1b7772988ad18d70) - @fire1ce
 
 ---
 
@@ -220,7 +228,6 @@
 - [new donation page](https://github.com/fire1ce/3os.org/commit/2697c39447269fa182a48def5a45ac1111ca50de) - @fire1ce
 - [added meta data](https://github.com/fire1ce/3os.org/commit/a52ab3889b1a1688b6730ce303a408ffda4a63e0) - @fire1ce
 - [updated to mkdocs-material 3.0.5](https://github.com/fire1ce/3os.org/commit/87f7836cdbaa03e8bdb24a2df008d887c35b214d) - @fire1ce
-- [ CHANGELOG.md update to v0.3.6](https://github.com/fire1ce/3os.org/commit/85af03b5aad61688d40f77147c28e6d762126dd4) - @fire1ce
 
 ---
 
@@ -233,7 +240,6 @@
 - [added Temaplate to CheatSheet section](https://github.com/fire1ce/3os.org/commit/31ded18ddb9af64d242fc0b6b22671015f21dc10) - @fire1ce
 - [typo fix](https://github.com/fire1ce/3os.org/commit/db8464099dba84ca0c54113140123a90cc2459d1) - @fire1ce
 - [content cleanup](https://github.com/fire1ce/3os.org/commit/0ea13981badda48607aa5a313457abf3a8572f05) - @fire1ce
-- [ CHANGELOG.md update to v0.3.5](https://github.com/fire1ce/3os.org/commit/3d217f87500046a6bafa22175ed04e8e61254c85) - @fire1ce
 
 ---
 
@@ -244,7 +250,6 @@
 - [content cleanup](https://github.com/fire1ce/3os.org/commit/be46b4e602a79dbefc9c6064ab55b9575c579895) - @fire1ce
 - [Menu order swap of Contributions Wall and Changelog](https://github.com/fire1ce/3os.org/commit/63e699fb5670607b04f22aa6f984f81751e92a2d) - @fire1ce
 - [content cleanup](https://github.com/fire1ce/3os.org/commit/a8dffdc4fe8361a2975f391a01af5cf9d1610018) - @fire1ce
-- [ CHANGELOG.md update to v0.3.4](https://github.com/fire1ce/3os.org/commit/f3a86e58c2840c475b9c3a4d9008a6e05eebc819) - @fire1ce
 
 ---
 
@@ -253,7 +258,6 @@
 - [new index structure and content](https://github.com/fire1ce/3os.org/commit/91e15fed6987ff5b7786d41142a7b7f407859d97) - @fire1ce
 - [removed about tab](https://github.com/fire1ce/3os.org/commit/fce9c2d388b8434636d62c7c8c4f257ae4a7fbd2) - @fire1ce
 - [removed](https://github.com/fire1ce/3os.org/commit/27456d68e8e8ce1ddca6d66856e675eb2f61262c) - @fire1ce
-- [ CHANGELOG.md update to v0.3.3](https://github.com/fire1ce/3os.org/commit/115a8adb1c10ec7507b9da5d7f9449c1d02aa612) - @fire1ce
 
 ---
 
@@ -268,19 +272,16 @@
 - [added new guides Add Program to Startup - Any Windows, Auto Login Without Password at Boot](https://github.com/fire1ce/3os.org/commit/17ff6dd14e09fc0a1681f1d2627870bfbaeb18a3) - @fire1ce
 - [added new section - windwos guides and how to](https://github.com/fire1ce/3os.org/commit/6b4d64f93062549aacc55af8682bd6896d9f2b74) - @fire1ce
 - [.](https://github.com/fire1ce/3os.org/commit/6d83e116deef7f6967eb6f813304ce9c922c493a) - @fire1ce
-- [ CHANGELOG.md update to v0.3.1](https://github.com/fire1ce/3os.org/commit/cde6da2e8f7c48aefb02a94f40c7daa5c4b9fd42) - @fire1ce
 
 ---
 
 ## v0.3 (19/10/2018)
 - [updated to](https://github.com/fire1ce/3os.org/commit/386a17d5fc690ebea64d784ab1284f42381ea959) - @fire1ce
-- [ CHANGELOG.md update to v0.3.0](https://github.com/fire1ce/3os.org/commit/9ec40825e8b0a310d9f29e29b2194e7d2a29f002) - @fire1ce
 
 ---
 
 ## v0.2.9 (19/10/2018)
 - [add disqus comments](https://github.com/fire1ce/3os.org/commit/21ca1923e2c9efdbb1d74cf47ca718b80f587aa4) - @fire1ce
-- [ CHANGELOG.md update to v0.2.9](https://github.com/fire1ce/3os.org/commit/9b83b22f37637ebd733747b8ad42bb794b152689) - @fire1ce
 
 ---
 
@@ -289,7 +290,6 @@
 - [Add @jfmengels as a contributor](https://github.com/fire1ce/3os.org/commit/6f0ac85f2ac8b241164d013de019094e7bbbf82f) - @fire1ce
 - [Update @jfmengels as a contributor](https://github.com/fire1ce/3os.org/commit/a0e371bd763b19f2553af4c2aab7baf7262c963d) - @fire1ce
 - [added title atribute to iframe tags](https://github.com/fire1ce/3os.org/commit/11da41071d1f8e6d4e3043fb4feeb0b49803dd78) - @fire1ce
-- [ CHANGELOG.md update to v0.2.8](https://github.com/fire1ce/3os.org/commit/82ad5c3b85cf15cb0238030f39e031b926cc1d5c) - @fire1ce
 
 ---
 
@@ -299,7 +299,6 @@
 - [removed costume theme fonts](https://github.com/fire1ce/3os.org/commit/d71178e54f60c801ee1a6d5173376a2ab144f444) - @fire1ce
 - [fonts chnages](https://github.com/fire1ce/3os.org/commit/4afec06da7a4de414b057a7274d1f0fad6a68308) - @fire1ce
 - [testing local fonts](https://github.com/fire1ce/3os.org/commit/e48f3edbf1996cd43fba52a9bdc235efc9c813e0) - @fire1ce
-- [ CHANGELOG.md update to v0.2.7](https://github.com/fire1ce/3os.org/commit/208ff380dd6a8af78e25e01479a94429e5d9bd14) - @fire1ce
 
 ---
 
@@ -307,13 +306,11 @@
 - [ CHANGELOG.md update to v0.2.6](https://github.com/fire1ce/3os.org/commit/1eadb37cf6e85e5d6e4f4aa2ad01d1fc14bb03fa) - @fire1ce
 - [New sections at centos 7 - Service Control, Enabling Automatic Updates In Centos 7 & rhel 7¶](https://github.com/fire1ce/3os.org/commit/11e6bd2452e71be53539fab2a7712ee6d7255c0b) - @fire1ce
 - [New section uner linux - centos 7](https://github.com/fire1ce/3os.org/commit/ace716da11444f93c8f2b945edcce8a157985187) - @fire1ce
-- [.](https://github.com/fire1ce/3os.org/commit/6f1edd83e468aa79bcf85c2e57fb6df4788e3aeb) - @fire1ce
 
 ---
 
 ## push (17/10/2018)
 - [more optimized  favicon](https://github.com/fire1ce/3os.org/commit/9ad1df226b831c403a752016e6c82f6ca0445a62) - @fire1ce
-- [updated to urllib3==1.24](https://github.com/fire1ce/3os.org/commit/c2071d137032321299d5f3dd41d5184c885429bd) - @fire1ce
 
 ---
 
@@ -321,7 +318,6 @@
 - [fix edit_uri: 'edit/master/src/'](https://github.com/fire1ce/3os.org/commit/da51c601b1088b120a482d7390e72155dce8ac21) - @fire1ce
 - [fix for edit_uri: 'edit/master/scr/' with scr directory](https://github.com/fire1ce/3os.org/commit/e3c4bca941df607599c24a87ffda96a5280703ae) - @fire1ce
 - [fix typos](https://github.com/fire1ce/3os.org/commit/0e20f2106c7efd7e13a71f50f795c7ac75f2d1d8) - @fire1ce
-- [ CHANGELOG.md update to v0.2.6](https://github.com/fire1ce/3os.org/commit/def810ddd5b9b6f84d793f2909c8ae9bcde46923) - @fire1ce
 
 ---
 
@@ -338,17 +334,15 @@
 - [Update piGeneral.md](https://github.com/fire1ce/3os.org/commit/944bccce492bb68f71f4ab8560081d438ad14a86) - @dany1061
 - [Update index.md](https://github.com/fire1ce/3os.org/commit/9d5b59ecff4131b1d274471483587a6fc152657a) - @dany1061
 - [changed favicon from png to svg](https://github.com/fire1ce/3os.org/commit/71ec2d6179519c427382fb2c592e1d82bbd005f3) - @fire1ce
-- [ CHANGELOG.md update to v0.2.4](https://github.com/fire1ce/3os.org/commit/dde0f6f31e39a26a4071dfc42bae4e3f29ed5576) - @fire1ce
 
 ---
 
 ## v0.2.3 (16/10/2018)
 - [New Logo, Based on Icons - Material Design - "donut_small"](https://github.com/fire1ce/3os.org/commit/1ee8b8a3e08efb6c00eb443fa30974981ad0b868) - @fire1ce
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/e2c45df9492556b1faa56e030895b20b33fc30c9) - @Stas Kosatuhin
-- [Update LICENSE](https://github.com/fire1ce/3os.org/commit/7f88580bd89e5dc18c1cb17a922145a1c4bafbd1) - @Stas Kosatuhin
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/e2c45df9492556b1faa56e030895b20b33fc30c9) - @fire1ce
+- [Update LICENSE](https://github.com/fire1ce/3os.org/commit/7f88580bd89e5dc18c1cb17a922145a1c4bafbd1) - @fire1ce
 - [cname fix](https://github.com/fire1ce/3os.org/commit/74fc3e81596a0816ec97c70810fd8972ffdddb3e) - @fire1ce
 - [update about Markdown CheatSheet Initial Release 16/10/18](https://github.com/fire1ce/3os.org/commit/57f0cb2a4e8763eefb6f0bad517caa8582dedffb) - @fire1ce
-- [ CHANGELOG.md update to v0.2.3](https://github.com/fire1ce/3os.org/commit/f3d11291d390e02b7ac51b2dc96a969845729521) - @fire1ce
 
 ---
 
@@ -360,8 +354,8 @@
 - [updated](https://github.com/fire1ce/3os.org/commit/b7fe6575bb4ea6594e6d63c71ddc5f8b9e834ce2) - @fire1ce
 - [cleanup & rearranged](https://github.com/fire1ce/3os.org/commit/807a620dc80cb5a0899e1bace784fe7fde5c8910) - @fire1ce
 - [updated with new plugins](https://github.com/fire1ce/3os.org/commit/6823c99ab7e6b426636413e7f8afe7bbc33baffc) - @fire1ce
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/772bfd0d6a6a7a0c5515b255ca920952d6a2915b) - @Stas Kosatuhin
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/ba6795ec2a4735b9beebf14cd54bd262083dd01e) - @Stas Kosatuhin
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/772bfd0d6a6a7a0c5515b255ca920952d6a2915b) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/ba6795ec2a4735b9beebf14cd54bd262083dd01e) - @fire1ce
 - [removed "vscode"](https://github.com/fire1ce/3os.org/commit/243ee649a751a671c86897886a6c75c92cff636d) - @fire1ce
 - [Structure Cleanup](https://github.com/fire1ce/3os.org/commit/efb73eb2d7518f207e687374cd7bba94d55f6911) - @fire1ce
 - [writing basic Markdown Cheatsheet](https://github.com/fire1ce/3os.org/commit/dd21fec86786461f0c315c6cafdce7a5895de993) - @fire1ce
@@ -373,7 +367,6 @@
 - [Magic-Mirror Guide - Misspell Fixes](https://github.com/fire1ce/3os.org/commit/15c4b7a81dbe6ae64cb7ba4077b08d7d84379696) - @fire1ce
 - [misspell fixes](https://github.com/fire1ce/3os.org/commit/b957652a9e5a204c6152f088a892948ef5277ed7) - @fire1ce
 - [removeed gulpfile.js](https://github.com/fire1ce/3os.org/commit/bb322db6bcf8c5604302e3a5f1cc0a2966ef792d) - @fire1ce
-- [ CHANGELOG.md update to v0.2.2](https://github.com/fire1ce/3os.org/commit/811743dbe90e3e955e41649c0556e12e7a6904b4) - @fire1ce
 
 ---
 
@@ -391,7 +384,6 @@
 - [chaned CNAME to include "https://"](https://github.com/fire1ce/3os.org/commit/5d18d0b5b621e37503a75c07ece49cf1b1a34b8d) - @fire1ce
 - [changed ** to ### at README.md](https://github.com/fire1ce/3os.org/commit/613531f336cda958e62ae96f4e66ff929d8894ef) - @fire1ce
 - [fix typo at site_description](https://github.com/fire1ce/3os.org/commit/e6f6a3fd950627d0aa7e58ab4c7686f33a58a242) - @fire1ce
-- [ CHANGELOG.md update to v0.2.1](https://github.com/fire1ce/3os.org/commit/466676506dca4497e9f61fc54d008d3e6dc89653) - @fire1ce
 
 ---
 
@@ -400,7 +392,6 @@
 - [fix for upercase of "Packages"](https://github.com/fire1ce/3os.org/commit/721cbfe64f06fa318f28b2c7001d5990230539d3) - @fire1ce
 - [added Repo Name at mkdocs.yml](https://github.com/fire1ce/3os.org/commit/97bb36e1da838e9721ed9f8c62d9ab9a5f2d0676) - @fire1ce
 - [revert back "site name"](https://github.com/fire1ce/3os.org/commit/01945c611f7f698d8bd5f007041cd5bc40d17795) - @fire1ce
-- [ CHANGELOG.md update to v0.1.9](https://github.com/fire1ce/3os.org/commit/bf72de4e8290b0f62b715ff59a0ddea498023675) - @fire1ce
 
 ---
 
@@ -408,7 +399,6 @@
 - [updated "ite name"and description at mkdocs.yml](https://github.com/fire1ce/3os.org/commit/1f7cb3047993dd64c2b075ec86b0528b3aba3c17) - @fire1ce
 - [added "Update All the pip packages" to development>pyhon](https://github.com/fire1ce/3os.org/commit/b2c6e57db0dac694d186469525b2588dbb9bf7fa) - @fire1ce
 - [pymdown-extensions update 5.0 > 6.0](https://github.com/fire1ce/3os.org/commit/d097b2528e63c9aed231933ccb963f326680f98f) - @fire1ce
-- [ CHANGELOG.md update to v0.1.8](https://github.com/fire1ce/3os.org/commit/607c725d7ea4c0043ad4218a83cf3a9fc7f26e92) - @fire1ce
 
 ---
 
@@ -419,8 +409,8 @@
 - [added new modduels to brew packages](https://github.com/fire1ce/3os.org/commit/057853eb9b417aed3dbe8c822b748b19be8359cc) - @fire1ce
 - [index summary misspel fix](https://github.com/fire1ce/3os.org/commit/abc9668b2c67f3254a5708cd555cb8a1bb3d0ca3) - @fire1ce
 - [testing gists embeddings](https://github.com/fire1ce/3os.org/commit/3ce281edf72aad2ae1c042f000fcdf55ffd78c36) - @fire1ce
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/e52d18741cfcd0a249c6b6c11ef33b0122d9cbc5) - @Stas Kosatuhin
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/1e23b79aa5fd9b2ec2cfa76117cceffd96106690) - @Stas Kosatuhin
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/e52d18741cfcd0a249c6b6c11ef33b0122d9cbc5) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/1e23b79aa5fd9b2ec2cfa76117cceffd96106690) - @fire1ce
 - [Summary missped fix](https://github.com/fire1ce/3os.org/commit/380f0d5fe039816645d1f1ef5d58c2ccc5ffd66d) - @fire1ce
 - [changed input of IDD to max-width: 300px to fit mobile phones](https://github.com/fire1ce/3os.org/commit/254860a3c0c150b72f66ab339585b9723792c5aa) - @fire1ce
 - [README misspell fix](https://github.com/fire1ce/3os.org/commit/c533e65dd8bcf91229a48f2003fed63b6106f022) - @fire1ce
@@ -430,7 +420,6 @@
 - [cleanup clickjack index.html](https://github.com/fire1ce/3os.org/commit/d369ad012bd14e510cd95c6b64d2eb2d1e969af9) - @fire1ce
 - [Credit & Sources update](https://github.com/fire1ce/3os.org/commit/2331def66d21e907cdf972264c6ce4e16d608d46) - @fire1ce
 - [Updated Credits & Sources](https://github.com/fire1ce/3os.org/commit/bc056f1f7cdbfb2ca95f0dde82b1f64e350f4b6e) - @fire1ce
-- [ CHANGELOG.md update to v0.1.7](https://github.com/fire1ce/3os.org/commit/054ee8f5a48cd3023147171bd55b2a2085752ee0) - @fire1ce
 
 ---
 
@@ -441,7 +430,6 @@
 - [added new Click Jacking at Pen-testing Section](https://github.com/fire1ce/3os.org/commit/2a364d6b95e49d2ed35a044c254b34333320d53a) - @fire1ce
 - [changed "Source" to "Credit & Source"](https://github.com/fire1ce/3os.org/commit/5b03e967140d559292e6ee6ae855e5ad4b1123a2) - @fire1ce
 - [Cleanup](https://github.com/fire1ce/3os.org/commit/885708bc333502b75fa45d902fc76ea61d29e8a2) - @fire1ce
-- [added new Israel ID Generator & Validator and Click-Jacking at pen test](https://github.com/fire1ce/3os.org/commit/e6f9a29ee42e5577c9fcb9966f4a464fd5e930da) - @fire1ce
 
 ---
 
@@ -451,114 +439,109 @@
 ---
 
 ## v0.1.6 (06/10/2018)
-- [updated headers at index.md](https://github.com/fire1ce/3os.org/commit/988dce0c4fe56aa06d23f74674c0484102928220) - @fire1ce
-- [updated copy rights](https://github.com/fire1ce/3os.org/commit/fd0027f46e1fb0ce2b3145d0b66536f384f30d12) - @fire1ce
-- [Updated README file with MIT Licence](https://github.com/fire1ce/3os.org/commit/48973bde0d73d6399f77809503b77cf371ee3a7e) - @fire1ce
-- [Added MIT LICENSE to the project](https://github.com/fire1ce/3os.org/commit/fc75ab6d1d6f1c507b445e93d66e17cdddb37a23) - @fire1ce
-- [v0.1.5](https://github.com/fire1ce/3os.org/commit/fe8c3b6ca5f085126d686a8797b450dde22b0277) - @fire1ce
+- [updated headers at index.md](https://github.com/fire1ce/3os.org/commit/988dce0c4fe56aa06d23f74674c0484102928220) - undefined
+- [updated copy rights](https://github.com/fire1ce/3os.org/commit/fd0027f46e1fb0ce2b3145d0b66536f384f30d12) - undefined
+- [Updated README file with MIT Licence](https://github.com/fire1ce/3os.org/commit/48973bde0d73d6399f77809503b77cf371ee3a7e) - undefined
+- [Added MIT LICENSE to the project](https://github.com/fire1ce/3os.org/commit/fc75ab6d1d6f1c507b445e93d66e17cdddb37a23) - undefined
 
 ---
 
 ## v0.1.5 (06/10/2018)
-- [Update post about the progress of the site at index.md](https://github.com/fire1ce/3os.org/commit/cae9c366f7b4a2dcd5e44e1729cc11af51802829) - @fire1ce
-- [removed iframe for wifiqr link](https://github.com/fire1ce/3os.org/commit/729b1891e4dd7a4d0157260065fb70a7d0258bbd) - @fire1ce
-- [Updated information for WiFi QR Generator in other section](https://github.com/fire1ce/3os.org/commit/27e5fa94a983759e178f86ae41be1821568af8fd) - @fire1ce
-- [v0.1.4](https://github.com/fire1ce/3os.org/commit/9e5b2ebee528605a2c688aef9b23a8834e6da0db) - @fire1ce
+- [Update post about the progress of the site at index.md](https://github.com/fire1ce/3os.org/commit/cae9c366f7b4a2dcd5e44e1729cc11af51802829) - undefined
+- [removed iframe for wifiqr link](https://github.com/fire1ce/3os.org/commit/729b1891e4dd7a4d0157260065fb70a7d0258bbd) - undefined
+- [Updated information for WiFi QR Generator in other section](https://github.com/fire1ce/3os.org/commit/27e5fa94a983759e178f86ae41be1821568af8fd) - undefined
 
 ---
 
 ## v0.1.4 (06/10/2018)
-- [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
+
 
 ---
 
 ## 0.1.4 (06/10/2018)
-- [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - @fire1ce
-- [Removed empy line in README.md](https://github.com/fire1ce/3os.org/commit/445d2115c60f999abbdc098c016106b50e094282) - @fire1ce
-- [New Wifi QR Generator Link in Other Category](https://github.com/fire1ce/3os.org/commit/1e21556bd0858b423d548ddd698aa7392d2772f0) - @fire1ce
-- [removed empty line at README file](https://github.com/fire1ce/3os.org/commit/61d61dd4d535a82637134d81e8d1d32109d27282) - @fire1ce
-- [fixed broken link of changelog](https://github.com/fire1ce/3os.org/commit/2c5aec3493e5dd889f9d7796e5635aac9fa23ef1) - @fire1ce
-- [updated README with link to chnaglog](https://github.com/fire1ce/3os.org/commit/c2990e0fdf5585554b065ea7ceb8d85b89554b6e) - @fire1ce
-- [v0.1.3](https://github.com/fire1ce/3os.org/commit/b50c98fe3e836c0bf25b950847a3a0035f52e038) - @fire1ce
+- [moved Wifi QR code to assets folder](https://github.com/fire1ce/3os.org/commit/203b1c7b9ca64b578b58759bb7101c7469a74eae) - undefined
+- [Removed empy line in README.md](https://github.com/fire1ce/3os.org/commit/445d2115c60f999abbdc098c016106b50e094282) - undefined
+- [New Wifi QR Generator Link in Other Category](https://github.com/fire1ce/3os.org/commit/1e21556bd0858b423d548ddd698aa7392d2772f0) - undefined
+- [removed empty line at README file](https://github.com/fire1ce/3os.org/commit/61d61dd4d535a82637134d81e8d1d32109d27282) - undefined
+- [fixed broken link of changelog](https://github.com/fire1ce/3os.org/commit/2c5aec3493e5dd889f9d7796e5635aac9fa23ef1) - undefined
+- [updated README with link to chnaglog](https://github.com/fire1ce/3os.org/commit/c2990e0fdf5585554b065ea7ceb8d85b89554b6e) - undefined
 
 ---
 
 ## v0.1.1 (06/10/2018)
-- [v0.1.3](https://github.com/fire1ce/3os.org/commit/6c90416ef6b8982d8ef58e361856cc5528249dfe) - @fire1ce
+- [v0.1.3](https://github.com/fire1ce/3os.org/commit/6c90416ef6b8982d8ef58e361856cc5528249dfe) - undefined
 
 ---
 
 ## v0.1.3 (06/10/2018)
-- [fix: changelog ifrmae wont load. changed changelog iframe src link from relative to direct](https://github.com/fire1ce/3os.org/commit/90dcd7c4c6405283061ed82928603e7cd82e9c5f) - @fire1ce
+- [fix: changelog ifrmae wont load. changed changelog iframe src link from relative to direct](https://github.com/fire1ce/3os.org/commit/90dcd7c4c6405283061ed82928603e7cd82e9c5f) - undefined
 
 ---
 
 ## v0.1.2 (06/10/2018)
-- [updated](https://github.com/fire1ce/3os.org/commit/ff7ae95ba123910c3533e3db5a06bc92ab780eed) - @fire1ce
-- [added changelog section to main page](https://github.com/fire1ce/3os.org/commit/844a2b33dedfc9d5d88567bd0bc2b72e9a30a3aa) - @fire1ce
-- [updated mkdocs.yml with new changelog section](https://github.com/fire1ce/3os.org/commit/2fee680985a29db452880231326c8a763ef0be5c) - @fire1ce
-- [Removed Changelog.md from root derectory](https://github.com/fire1ce/3os.org/commit/7e52b63eae00a8ab3605cbe5e44885486e70a5e5) - @fire1ce
+- [updated](https://github.com/fire1ce/3os.org/commit/ff7ae95ba123910c3533e3db5a06bc92ab780eed) - undefined
+- [added changelog section to main page](https://github.com/fire1ce/3os.org/commit/844a2b33dedfc9d5d88567bd0bc2b72e9a30a3aa) - undefined
+- [updated mkdocs.yml with new changelog section](https://github.com/fire1ce/3os.org/commit/2fee680985a29db452880231326c8a763ef0be5c) - undefined
 
 ---
 
 ## 0.1.1 (05/10/2018)
-- [updated mkdcos.yal confit to new logo svg path](https://github.com/fire1ce/3os.org/commit/db13e51fd597c91d8aa6e73cc7e0d4615bd39385) - @fire1ce
-- [replaced favicon based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/d0c9654c89938ce96352e31b99209de141a2e0f6) - @fire1ce
-- [removed old logo png image](https://github.com/fire1ce/3os.org/commit/8566248229da99baef51d2efd351a0df559d7aec) - @fire1ce
-- [added new logo "Black" based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/985cacedee9e4ef30671c78b7951cdf061e1b09c) - @fire1ce
-- [added new logo "white" based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/5a8525a7dbc73469742c3b5b099e3ac65c236744) - @fire1ce
-- [Changed location of robots.txt from root to "docs/" folder](https://github.com/fire1ce/3os.org/commit/1a9e8450a104989700bd189037f83c95ae2130e4) - @fire1ce
-- [optimized image sizess](https://github.com/fire1ce/3os.org/commit/eb076200e195f7603ce694d7ee995ab7a7934b4b) - @fire1ce
-- [testing gren changelog generator](https://github.com/fire1ce/3os.org/commit/7dedb0c9d8e40974cfa02060ea752aebce03d7c3) - @fire1ce
-- [Removed empty line at index.md](https://github.com/fire1ce/3os.org/commit/ba4822a868db8f862b0901b08a626f87afe41eec) - @fire1ce
-- [added gren badge to Repo README.md](https://github.com/fire1ce/3os.org/commit/9cd1e6da20f79e2521052ccbc96f479a763551c6) - @fire1ce
-- [first commit](https://github.com/fire1ce/3os.org/commit/b1bbd087edd61dd64da28524c3580f5b9fb74ec1) - @fire1ce
+- [updated mkdcos.yal confit to new logo svg path](https://github.com/fire1ce/3os.org/commit/db13e51fd597c91d8aa6e73cc7e0d4615bd39385) - undefined
+- [replaced favicon based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/d0c9654c89938ce96352e31b99209de141a2e0f6) - undefined
+- [removed old logo png image](https://github.com/fire1ce/3os.org/commit/8566248229da99baef51d2efd351a0df559d7aec) - undefined
+- [added new logo "Black" based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/985cacedee9e4ef30671c78b7951cdf061e1b09c) - undefined
+- [added new logo "white" based on material icon "scatter_plot"](https://github.com/fire1ce/3os.org/commit/5a8525a7dbc73469742c3b5b099e3ac65c236744) - undefined
+- [Changed location of robots.txt from root to "docs/" folder](https://github.com/fire1ce/3os.org/commit/1a9e8450a104989700bd189037f83c95ae2130e4) - undefined
+- [optimized image sizess](https://github.com/fire1ce/3os.org/commit/eb076200e195f7603ce694d7ee995ab7a7934b4b) - undefined
+- [testing gren changelog generator](https://github.com/fire1ce/3os.org/commit/7dedb0c9d8e40974cfa02060ea752aebce03d7c3) - undefined
+- [Removed empty line at index.md](https://github.com/fire1ce/3os.org/commit/ba4822a868db8f862b0901b08a626f87afe41eec) - undefined
+- [added gren badge to Repo README.md](https://github.com/fire1ce/3os.org/commit/9cd1e6da20f79e2521052ccbc96f479a763551c6) - undefined
 
 ---
 
 ## v0.1.0 (04/10/2018)
-- ["Download" misppel fix](https://github.com/fire1ce/3os.org/commit/38796d5ac38aa675137770e851aa82fd52278326) - @fire1ce
-- [Removed "." at headlines](https://github.com/fire1ce/3os.org/commit/1bcb39ad73785accfeeab99646126278d61da31e) - @fire1ce
-- [updated MIT Badge](https://github.com/fire1ce/3os.org/commit/871c3c76714955de48f261d14018bccc9f748c6e) - @fire1ce
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/01ff1a2be6924324d3681ff36326387b91f1a757) - @Stas Kosatuhin
-- [removed empty space](https://github.com/fire1ce/3os.org/commit/d48d00a0ce187f784255622bacdb3eba95becce0) - @fire1ce
-- [updated git README](https://github.com/fire1ce/3os.org/commit/64c1a6dd3cffa1b2292a39699a5b0215f2161650) - @fire1ce
-- [disabled disqus comments](https://github.com/fire1ce/3os.org/commit/291c66705e400a790c81f8fb14076ab03c5e8420) - @fire1ce
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/f506b80f471e77ca43800cc37fd0613d78c52445) - @Stas Kosatuhin
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/beb9207ee77612191042ade4a0a0263def6c665f) - @Stas Kosatuhin
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/1862e1b2df5e77b42efd3d4f5ed21472e3daae8b) - @Stas Kosatuhin
-- [Update README.md](https://github.com/fire1ce/3os.org/commit/275613279458c9c608256d8ee4da453ae6e8e68b) - @Stas Kosatuhin
-- [added Generate requirements.txt For a Project](https://github.com/fire1ce/3os.org/commit/a16e517bf61852a4e7250a1835c1d3c2a0926b78) - @fire1ce
-- [added project python requierments](https://github.com/fire1ce/3os.org/commit/fb951d8f1c814f81f83d7bff1dfb4e2706d15da5) - @fire1ce
-- [added development tab](https://github.com/fire1ce/3os.org/commit/2405c2943c10f7f84274e300d04c596f4e308752) - @fire1ce
-- [removed themes folder. not needed](https://github.com/fire1ce/3os.org/commit/54e8f965e579b7f87fd51d5fe14d178176b4e77b) - @fire1ce
-- [updated redame with Requirements badge](https://github.com/fire1ce/3os.org/commit/f43bbf7b88deb34ed05381b4b17971e2acd55bb1) - @fire1ce
-- [added google analitics](https://github.com/fire1ce/3os.org/commit/507ad1e52e317d815dbf80aba56a3167948c8327) - @fire1ce
-- [cleand 404 braking css](https://github.com/fire1ce/3os.org/commit/cfe7957b626c582416cb590eab4a2184b03458c4) - @fire1ce
-- [404 css fix](https://github.com/fire1ce/3os.org/commit/a5c42b9e74e284e63d5e166e6712668872517184) - @fire1ce
-- [spacing change](https://github.com/fire1ce/3os.org/commit/6f112059d11c9da953426421200d6d9c9334bff5) - @fire1ce
-- [new 404 test](https://github.com/fire1ce/3os.org/commit/0ea6e91f34e6dd3b76c5e47fac39b1f5ec2da1a3) - @fire1ce
-- [new about](https://github.com/fire1ce/3os.org/commit/06b5a4dc6b194ef8f4fe1da215c9cc998e1baf3e) - @fire1ce
-- [Update index.md](https://github.com/fire1ce/3os.org/commit/02e4d393cc0189927932e52ed5ee87cf0978a3ac) - @(-_-)
-- [changed to allow all robots](https://github.com/fire1ce/3os.org/commit/a9ade0b8e9f30626975118eb4bc0693912bd8d25) - @fire1ce
-- [Delete settings.json](https://github.com/fire1ce/3os.org/commit/938d866d97ea23d0e3221ce3bc97f25bc069a12d) - @Stas Kosatuhin
-- [added vscode project setting](https://github.com/fire1ce/3os.org/commit/d1a9eb8ebca25a0bc48e2166066569e672c4d76d) - @fire1ce
-- [changed git hub link from "blob" to direct "Edit"](https://github.com/fire1ce/3os.org/commit/6c52bba2d7c2521b73e47bd71dd453b3ae81ee8a) - @fire1ce
-- [removed](https://github.com/fire1ce/3os.org/commit/44e88f7aa068ee647548e0b83ad878023031e725) - @fire1ce
-- [Update issue templates](https://github.com/fire1ce/3os.org/commit/c4f08e81b4280e58715fc6dd2ddbf581358abf33) - @Stas Kosatuhin
-- [Update index.md](https://github.com/fire1ce/3os.org/commit/8365873431ad6dc0ff60ed3d618ed86e4a77ab0b) - @(-_-)
-- [index page update](https://github.com/fire1ce/3os.org/commit/8c891607aa73e85ba01381a7aaf79cbca4ef5d4d) - @fire1ce
-- [initial release](https://github.com/fire1ce/3os.org/commit/9b127f9494e5079458ff2f95b80975378b612f68) - @fire1ce
-- [added new markdown cheat sheet](https://github.com/fire1ce/3os.org/commit/acaea0d6c8bff64e6af8b79516433417f518a49d) - @fire1ce
-- [Remove .DS_Store from everywhere](https://github.com/fire1ce/3os.org/commit/dae468088f828aa93375b6a3b564522b8ea7c5d7) - @fire1ce
-- [added links to documentations](https://github.com/fire1ce/3os.org/commit/80e2cd25e592beae9915b8ea7b96b1e98b548b81) - @fire1ce
-- [changed the info on the main page](https://github.com/fire1ce/3os.org/commit/1b321024b656ec010e864428afd41135429d7e0b) - @fire1ce
-- [new palette: teal](https://github.com/fire1ce/3os.org/commit/0ff0ec31c17af898fff73be68c5cc64258f05dfe) - @fire1ce
-- [add robot.txt disallow all](https://github.com/fire1ce/3os.org/commit/8720623d54b3a8c563c47f8aeba4882db2b5dcc0) - @fire1ce
-- [testing 404 html](https://github.com/fire1ce/3os.org/commit/3e633a13885fe7db53ac7070552923bafa6aee1b) - @fire1ce
-- [added markdown_extensions](https://github.com/fire1ce/3os.org/commit/df9fe847266015edd6597303fea1536257e1aac2) - @fire1ce
-- [.](https://github.com/fire1ce/3os.org/commit/6ea30f9da577a3947a5d4f0703a11dea4a41ba97) - @fire1ce
-- [basic structure](https://github.com/fire1ce/3os.org/commit/87108df7dce1c80cccee4cd93aea32868f6f699d) - @fire1ce
-- [added link to mkdocs.org](https://github.com/fire1ce/3os.org/commit/85c7d63bb26976f10741ed21520c727882f5f394) - @fire1ce
-- [added git ignore](https://github.com/fire1ce/3os.org/commit/f5dada2ab44b0b3f6f76534ff9f341e76a2e9a52) - @fire1ce
-- [initial commit](https://github.com/fire1ce/3os.org/commit/d2ff7a17bca96a538aa977271e8159e1ca03f9fb) - @fire1ce
+- ["Download" misppel fix](https://github.com/fire1ce/3os.org/commit/38796d5ac38aa675137770e851aa82fd52278326) - undefined
+- [Removed "." at headlines](https://github.com/fire1ce/3os.org/commit/1bcb39ad73785accfeeab99646126278d61da31e) - undefined
+- [updated MIT Badge](https://github.com/fire1ce/3os.org/commit/871c3c76714955de48f261d14018bccc9f748c6e) - undefined
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/01ff1a2be6924324d3681ff36326387b91f1a757) - @fire1ce
+- [removed empty space](https://github.com/fire1ce/3os.org/commit/d48d00a0ce187f784255622bacdb3eba95becce0) - undefined
+- [updated git README](https://github.com/fire1ce/3os.org/commit/64c1a6dd3cffa1b2292a39699a5b0215f2161650) - undefined
+- [disabled disqus comments](https://github.com/fire1ce/3os.org/commit/291c66705e400a790c81f8fb14076ab03c5e8420) - undefined
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/f506b80f471e77ca43800cc37fd0613d78c52445) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/beb9207ee77612191042ade4a0a0263def6c665f) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/1862e1b2df5e77b42efd3d4f5ed21472e3daae8b) - @fire1ce
+- [Update README.md](https://github.com/fire1ce/3os.org/commit/275613279458c9c608256d8ee4da453ae6e8e68b) - @fire1ce
+- [added Generate requirements.txt For a Project](https://github.com/fire1ce/3os.org/commit/a16e517bf61852a4e7250a1835c1d3c2a0926b78) - undefined
+- [added project python requierments](https://github.com/fire1ce/3os.org/commit/fb951d8f1c814f81f83d7bff1dfb4e2706d15da5) - undefined
+- [added development tab](https://github.com/fire1ce/3os.org/commit/2405c2943c10f7f84274e300d04c596f4e308752) - undefined
+- [removed themes folder. not needed](https://github.com/fire1ce/3os.org/commit/54e8f965e579b7f87fd51d5fe14d178176b4e77b) - undefined
+- [updated redame with Requirements badge](https://github.com/fire1ce/3os.org/commit/f43bbf7b88deb34ed05381b4b17971e2acd55bb1) - undefined
+- [added google analitics](https://github.com/fire1ce/3os.org/commit/507ad1e52e317d815dbf80aba56a3167948c8327) - undefined
+- [cleand 404 braking css](https://github.com/fire1ce/3os.org/commit/cfe7957b626c582416cb590eab4a2184b03458c4) - undefined
+- [404 css fix](https://github.com/fire1ce/3os.org/commit/a5c42b9e74e284e63d5e166e6712668872517184) - undefined
+- [spacing change](https://github.com/fire1ce/3os.org/commit/6f112059d11c9da953426421200d6d9c9334bff5) - undefined
+- [new 404 test](https://github.com/fire1ce/3os.org/commit/0ea6e91f34e6dd3b76c5e47fac39b1f5ec2da1a3) - undefined
+- [new about](https://github.com/fire1ce/3os.org/commit/06b5a4dc6b194ef8f4fe1da215c9cc998e1baf3e) - undefined
+- [Update index.md](https://github.com/fire1ce/3os.org/commit/02e4d393cc0189927932e52ed5ee87cf0978a3ac) - @bergerg
+- [changed to allow all robots](https://github.com/fire1ce/3os.org/commit/a9ade0b8e9f30626975118eb4bc0693912bd8d25) - undefined
+- [Delete settings.json](https://github.com/fire1ce/3os.org/commit/938d866d97ea23d0e3221ce3bc97f25bc069a12d) - @fire1ce
+- [added vscode project setting](https://github.com/fire1ce/3os.org/commit/d1a9eb8ebca25a0bc48e2166066569e672c4d76d) - undefined
+- [changed git hub link from "blob" to direct "Edit"](https://github.com/fire1ce/3os.org/commit/6c52bba2d7c2521b73e47bd71dd453b3ae81ee8a) - undefined
+- [removed](https://github.com/fire1ce/3os.org/commit/44e88f7aa068ee647548e0b83ad878023031e725) - undefined
+- [Update issue templates](https://github.com/fire1ce/3os.org/commit/c4f08e81b4280e58715fc6dd2ddbf581358abf33) - @fire1ce
+- [Update index.md](https://github.com/fire1ce/3os.org/commit/8365873431ad6dc0ff60ed3d618ed86e4a77ab0b) - @bergerg
+- [index page update](https://github.com/fire1ce/3os.org/commit/8c891607aa73e85ba01381a7aaf79cbca4ef5d4d) - undefined
+- [initial release](https://github.com/fire1ce/3os.org/commit/9b127f9494e5079458ff2f95b80975378b612f68) - undefined
+- [added new markdown cheat sheet](https://github.com/fire1ce/3os.org/commit/acaea0d6c8bff64e6af8b79516433417f518a49d) - undefined
+- [Remove .DS_Store from everywhere](https://github.com/fire1ce/3os.org/commit/dae468088f828aa93375b6a3b564522b8ea7c5d7) - undefined
+- [added links to documentations](https://github.com/fire1ce/3os.org/commit/80e2cd25e592beae9915b8ea7b96b1e98b548b81) - undefined
+- [changed the info on the main page](https://github.com/fire1ce/3os.org/commit/1b321024b656ec010e864428afd41135429d7e0b) - undefined
+- [new palette: teal](https://github.com/fire1ce/3os.org/commit/0ff0ec31c17af898fff73be68c5cc64258f05dfe) - undefined
+- [add robot.txt disallow all](https://github.com/fire1ce/3os.org/commit/8720623d54b3a8c563c47f8aeba4882db2b5dcc0) - undefined
+- [testing 404 html](https://github.com/fire1ce/3os.org/commit/3e633a13885fe7db53ac7070552923bafa6aee1b) - undefined
+- [added markdown_extensions](https://github.com/fire1ce/3os.org/commit/df9fe847266015edd6597303fea1536257e1aac2) - undefined
+- [.](https://github.com/fire1ce/3os.org/commit/6ea30f9da577a3947a5d4f0703a11dea4a41ba97) - undefined
+- [basic structure](https://github.com/fire1ce/3os.org/commit/87108df7dce1c80cccee4cd93aea32868f6f699d) - undefined
+- [added link to mkdocs.org](https://github.com/fire1ce/3os.org/commit/85c7d63bb26976f10741ed21520c727882f5f394) - undefined
+- [added git ignore](https://github.com/fire1ce/3os.org/commit/f5dada2ab44b0b3f6f76534ff9f341e76a2e9a52) - undefined
+- [initial commit](https://github.com/fire1ce/3os.org/commit/d2ff7a17bca96a538aa977271e8159e1ca03f9fb) - undefined
