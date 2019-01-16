@@ -5,6 +5,14 @@ description: Linux - SSH Service Security how to, guides, examples, and simple u
 
 ## SSH Login With RSA Keys
 
+### Copy Publik Key ot The Server
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
+```
+
+__Or Do It Manualy:__
+
 ssh to the host (`do not close this connection`)
 
 ```bash
@@ -16,6 +24,8 @@ copy your public key usually located at `~/.ssh/id_rsa.pub`
 ```bash
 echo PUCLICK_Key_STRING >> ~/.ssh/authorized_keys
 ```
+
+### Configure sshd Service
 
 edit `/etc/ssh/sshd_config`
 change:
@@ -80,4 +90,3 @@ example:
 ```bash
 ssh example@192.168.1.99 -p 1337
 ```
-

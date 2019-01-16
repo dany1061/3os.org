@@ -184,3 +184,11 @@ sudo systemctl start homeassistant
 sudo systemctl status homeassistant
 ```
 
+## Hass.io installion Under Ubuntu Docker
+
+```bash
+udo apt-get update && sudo apt-get upgrade --yes
+sudo apt-get -y install apparmor-utils apt-transport-https avahi-daemon ca-certificates curl dbus jq network-manager socat software-properties-common bash openssh-server
+curl -sSL https://get.docker.com | sh
+curl -sL https://raw.githubusercontent.com/home-assistant/hassio-build/master/install/hassio_install | sudo bash -s
+```
