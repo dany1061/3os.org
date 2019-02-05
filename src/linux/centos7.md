@@ -231,3 +231,12 @@ Reboot the server
 ```bash
 timedatectl set-timezone Asia/Jerusalem
 ```
+
+## Remove Old Kernels
+
+If your /boot partition is getting filled, you may wish to automatically remove old kernels. I find the best way to do this is to install the yum utilities package and then use a command to delete all but 2 kernels (just in case there is a problem with the latest one).
+
+```bash
+sudo yum install yum-utils -y
+sudo package-cleanup --oldkernels --count=2
+```
