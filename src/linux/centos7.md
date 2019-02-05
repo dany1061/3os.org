@@ -226,4 +226,8 @@ systemctl enable rpcbind.socket
 
 Reboot the server
 
+## Set TimeZone
 
+```bash
+timedatectl set-timezone Asia/Jerusalem
+```
