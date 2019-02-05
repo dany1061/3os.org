@@ -187,9 +187,17 @@ LC_ALL=en_US.UTF-8
 
 ## Disable IPv6
 
+Append below lines in /etc/sysctl.conf:
+
 ```bash
-sysctl -w net.ipv6.conf.all.disable_ipv6=1
-sysctl -w net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.all.disable_ipv6 = 1
+net.ipv6.conf.default.disable_ipv6 = 1
+```
+
+To make the settings affective, execute :
+
+```bash
+sysctl -p
 ```
 
 ## Fix NFS mount on Boot - Centos 7
