@@ -36,6 +36,76 @@ docker system prune -a
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_name_or_id
 ```
 
+## Show all Containers
+
+```bash
+docker ps -a
+```
+
+## Create mysql Docker with Mapping to Host
+
+```bash
+docker run --name mysqldb -v /data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD="qweQWE123" -p 3306:3306 -it mysql/mysql-server:5.7
+```
+
+## SSH to a Container
+
+```bash
+docker exec -it mysqldb "bash"
+```
+
+## Exit Container Without Closing It
+
+```bash
+crtl+shift+D
+```
+
+## Container Specific Logs (to view the output of commands running in container)
+
+```bash
+docker logs mysqldb
+```
+
+## Create Volume and Map Container to it
+
+```bash
+docker volume create vol1
+docker run --name mysqldb_map -v vol1:/var/lib/mysql -e MYSQL_ROOT_PASSWORD="qweQWE123" -p 3306:3306 -it mysql/mysql-server:5.7
+```
+
+## View Details for Specific Docker
+
+```bash
+docker inspect mysqldb_map
+```
+
+## Rename a Container
+
+```bash
+docker rename CONTAINER NEW_NAME
+```
+
+## Copy Files Into Docker Container
+
+```bash
+docker cp 1.txt mycontainer:/1.txt
+```
+
+## Run Docker to Map Port 9000 to Forward 3306
+
+```bash
+docker run -d -p 3306:9000 dockercloud/mysql
+```
+
+## Allow Outbound Forwarding for the Container to the World
+
+on the host server run the following command:
+
+```bash
+sysctl net.ipv4.conf.all.forwarding=1
+iptables -P FORWARD ACCEPT
+```
+
 ## iperf3 Server Container
 
 ```bash
