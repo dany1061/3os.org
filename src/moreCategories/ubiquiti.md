@@ -35,7 +35,7 @@ delete service ssh disable-password-authentication
 ## Hardening EdgeRouter
 
 This will change the GUI to port 8443, disable old cyphers, Only will listen on internal Network.
-assuming your Edge Router IP is 192.168.1.1, if not change it accordingly.
+assuming your EdgeRouter IP is 192.168.1.1, if not change it accordingly.
 
 SSH to the Edge Router
 
@@ -44,7 +44,10 @@ configure
 set service gui listen-address 192.168.1.1
 set service gui https-port 8443
 set service gui older-ciphers disable
+set service ssh listen-address 192.168.1.1
 set service ssh protocol-version v2
+set service ubnt-discover disable
+set firewall all-ping disable
 commit ; save
 ```
 
