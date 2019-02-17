@@ -37,8 +37,10 @@ nav:
       - Raspberry Pi 3 Tor Access Point: 'raspberryPi/TOR-Pi.md'
       - Raspberry Pi Magic Mirror: 'raspberryPi/MagicMirror.md'
   - Development:
-      - Git: development/git.md
-      - Docker: 'development/docker.md'
+      - Git: 'development/git.md'
+      - Docker: 
+             - General: 'development/docker/dockerGeneral.md'
+             - Containers: 'development/docker/dockerContainers.md'
       - Python: 'development/python.md'
       - Ruby: 'development/ruby.md'
       - npm: 'development/npm.md'

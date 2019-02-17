@@ -1,9 +1,9 @@
-title: Docker useful commands tips
-description: Docker useful commands tips
+title: Docker General useful commands tips
+description: Docker General useful commands tips
 
 <!-- Meta Data for search engines - NOT Visible -->
 
-# Docker
+# Docker General
 
 ## Update All Downloaded Images
 
@@ -106,15 +106,3 @@ sysctl net.ipv4.conf.all.forwarding=1
 iptables -P FORWARD ACCEPT
 ```
 
-## iperf3 Server Container
-
-```bash
-docker run \
--d \
---restart always \
---name=iperf3-server \
--h iperf \
--p 5201:5201 \
--e TZ=Asia/Jerusalem \
-networkstatic/iperf3:latest -s
-```
