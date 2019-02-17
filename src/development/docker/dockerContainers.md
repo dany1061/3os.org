@@ -68,7 +68,7 @@ docker run \
 jacobalberty/unifi:latest
 ```
 
-## Ubiquiti Controller On Synology NAS
+## Ubiquiti UNMS Controller On Synology NAS
 
 Based on _oznu/unms:latest_ image
 
