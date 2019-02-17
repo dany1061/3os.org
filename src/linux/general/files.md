@@ -3,6 +3,14 @@ description: Linux - Files Handling how to, guides, examples, and simple usage
 
 # Linux Files Handling
 
+## NCurses Disk Usage
+
+Ncdu is a disk usage analyzer with an ncurses interface.
+
+```bash
+apt-get install ncdu
+```
+
 ## SMB Mount With autofs
 
 ```bash
@@ -122,4 +130,3 @@ find . -type f -exec chmod 644 {} +
 ```bash
 chown `stat -c %U .`.`stat -c %U .` * -R
 ```
-
