@@ -48,7 +48,7 @@ joshuaavalon/cloudflare-ddns:latest
 
 ## Ubiquiti Unifi Controller On Synology NAS
 
-based on _jacobalberty/unifi:latest_ image
+based on _jacobalberty/unifi:latest_ image for Synology NAS
 
 ```bash
 docker run \
@@ -70,7 +70,7 @@ jacobalberty/unifi:latest
 
 ## Ubiquiti UNMS Controller On Synology NAS
 
-Based on _oznu/unms:latest_ image
+Based on _oznu/unms:latest_ image for Synology NAS
 
 ```bash
 docker run \
