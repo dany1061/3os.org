@@ -45,3 +45,45 @@ docker run \
 -e TZ=Asia/Jerusalem \
 joshuaavalon/cloudflare-ddns:latest
 ```
+
+## Ubiquiti Unifi Controller On Synology NAS
+
+based on _jacobalberty/unifi:latest_ image
+
+```bash
+docker run \
+-d \
+--restart always \
+--name=unifi-controller \
+--net=host \
+-h unifi \
+-v /volume1/docker/unifi:/var/lib/unifi \
+-p 8080:8080/tcp \
+-p 8081:8081/tcp \
+-p 8443:8443/tcp \
+-p 8843:8843/tcp \
+-p 8880:8880/tcp \
+-p 3478:3478/udp \
+-e TZ=Asia/Jerusalem \
+jacobalberty/unifi:latest
+```
+
+## Ubiquiti Controller On Synology NAS
+
+Based on _oznu/unms:latest_ image
+
+```bash
+docker run \
+-d \
+--restart always \
+--name=unms-controller \
+-h unms \
+-v /volume1/docker/unms:/config \
+-p 9080:80 \
+-p 9443:443 \
+-p 2055:2055/udp \
+-e PUBLIC_HTTPS_PORT=9443 \
+-e PUBLIC_WS_PORT=9443 \
+-e TZ=Asia/Jerusalem \
+oznu/unms:latest
+```
