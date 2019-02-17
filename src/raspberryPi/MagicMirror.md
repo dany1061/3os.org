@@ -243,3 +243,13 @@ pm2 log
 pm2 show mm
 ```
 
+## Logrotate Installation
+
+This will Retain for 14 days compress the logs.
+
+```bash
+pm2 install pm2-logrotate
+pm2 set pm2-logrotate:compress true
+pm2 set pm2-logrotate:retain 14
+pm2 set pm2-logrotate:max_size 10M
+```
