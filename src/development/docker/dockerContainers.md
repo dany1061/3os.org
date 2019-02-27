@@ -1,5 +1,5 @@
-title: Docker useful Containers 
-description: Docker useful Containers 
+title: Docker useful Containers
+description: Docker useful Containers
 
 # Docker Containers
 
@@ -34,6 +34,7 @@ networkstatic/iperf3:latest -s
 ```bash
 docker run \
 -d \
+-h cloudflareddns \
 --restart always \
 --name=cloudflare-ddns \
 -e ZONE=example.com \
@@ -86,4 +87,23 @@ docker run \
 -e PUBLIC_WS_PORT=9443 \
 -e TZ=Asia/Jerusalem \
 oznu/unms:latest
+```
+
+## Zabbix Monitoring Contianer
+
+```bash
+docker run \
+-d \
+--name zabbix-appliance \
+--restart always \
+-h zabbix \
+-p 10051:10051 \
+-p 5060:80 \
+-v /volume1/docker/zabbix:/var/lib/zabbix \
+-v /volume1/docker/zabbix/mysql:/var/lib/mysql \
+-v /volume1/docker/zabbix/nginx:/etc/ssl/nginx \
+-e ZBX_SERVER_NAME=zabbix.3os.re \
+-e TZ=Asia/Jerusalem \
+-e PHP_TZ=Asia/Jerusalem \
+zabbix/zabbix-appliance:latest
 ```
