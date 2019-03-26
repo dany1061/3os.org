@@ -19,33 +19,9 @@ defaults write com.apple.finder CreateDesktop true
 killall Finder
 ```
 
-## Force RGB mode For External Screens
+## Stop iTunes from Opening Automatically
 
-Download this script from [github](https://gist.github.com/adaugherity/7435890)
-Extract the file and run it:
-
-```bash
-ruby patch-edid.rb
-```
-
-This will create new directory named: `DisplayVendorID-*` at the root directory of the script.
-
-- Power off your mac
-- Boot to into the recovery system (Cmd+R during boot).
-- Run Disk `Disk Utility`, choose the boot drive and hit `Mount`, exit `Disk Utility`
-- Click `Utilities` and then `Terminal`
-
-`Remember that every path is now prefixed by “/Volumes/Macintosh HD/”.`
-
-- Copy `DisplayVendorID-*` E.g. I had the Ruby script in a folder “EDID-Fix” on my desktop.
-
-```bash
-cp -r /Volumes/Macintosh\ HD/Users/marcus/Desktop/EDID-Fix/DisplayVendorID-* /Volumes/Macintosh\ HD/System/Library/Displays/Contents/Resources/Overrides/
-```
-
-- Reboot to your system.
-- Go to Settings - Displays - Color.
-- Choose the new color profile for your external screen.
+To stop iTunes from opening automatically when you connect your iPhone, open iTunes and then go to Preferences by using keyboard shortcut Command-comma or by going to iTunes > Preferences. Next, click the Devices tab and then check the box for Prevent iPods, iPhones, and iPads from syncing automatically.
 
 ## Set the `Same View Options` for all Finder windows
 
