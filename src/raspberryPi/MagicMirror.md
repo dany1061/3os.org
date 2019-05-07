@@ -148,7 +148,7 @@ Add the following lines
 options 8192cu rtw_power_mgnt=0 rtw_enusbss=1 rtw_ips_mode=1
 ```
 
-For Raspberry Pi 3 (Jesse and below)
+For Raspberry Pi 3
 Edit /etc/network/interfaces
 
 ```bash
@@ -158,6 +158,9 @@ sudo nano /etc/network/interfaces
 Add the following line under the wlan0 section
 
 ```bash
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 wireless-power off
 ```
 
