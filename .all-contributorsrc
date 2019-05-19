@@ -1,0 +1,14 @@
+{
+  "projectName": "3os.org",
+  "projectOwner": "fire1ce",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "src/contributions.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7
+}
