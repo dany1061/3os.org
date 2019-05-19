@@ -248,3 +248,15 @@ Change ~/.ssh/id_rsa to the actual filename of your private key. If you have oth
 The UseKeychain yes is the key part, which tells SSH to look in your OSX keychain for the key passphrase.
 
 That's it! Next time you load any ssh connection, it will try the private keys you've specified, and it will look for their passphrase in the OSX keychain. No passphrase typing required.
+
+## Change Login Screen Background
+
+Backup the priginal picture
+
+```bash
+sudo mv /Library/Desktop\ Pictures/Mojave.heic /Library/Desktop\ Pictures/Mojave.heic.bak
+```
+
+Rename new picture to __Mojave.heic__
+
+Move the new picture to _/Library/Desktop\ Pictures/_
