@@ -1,7 +1,43 @@
 # Changelog
 
+## v1.1.1 (19/05/2019)
+- [updated index, removed contribution wall](https://github.com/fire1ce/3os.org/commit/520a2d65c227dbea9b6873cfb0b8b4d545c4fac5) - @fire1ce
+- [ Add @dany1061 as a contributor](https://github.com/fire1ce/3os.org/commit/7d61c10f7ecbafb616849e4f1fa551b600f70a66) - @fire1ce
+- [ Add @bergerg as a contributor](https://github.com/fire1ce/3os.org/commit/5fa307f35ec6e4d642e544e637bda8e7d9250d49) - @fire1ce
+- [ Add @fire1ce as a contributor](https://github.com/fire1ce/3os.org/commit/ca2d0eeffee4f29ee157d9338a78e1d148472e33) - @fire1ce
+- [added all-contributors-cli](https://github.com/fire1ce/3os.org/commit/acd842f545de8c82919aea1e4847e56e86929fb6) - @fire1ce
+- [Fix SSH __Broken Pipe__ in Kali](https://github.com/fire1ce/3os.org/commit/8ab59b57b26f14e22506fc524e863fdd89fe7595) - @fire1ce
+- [removed empty spaces](https://github.com/fire1ce/3os.org/commit/8ca2b3a900ab114f37366ac33852f85e2c9501bd) - @fire1ce
+- [added Change Login Screen Background](https://github.com/fire1ce/3os.org/commit/280f811c84eb0bce85400905777616d8c28a00b8) - @fire1ce
+- [Disable WiFi Power Save update for Raspberry Pi 3](https://github.com/fire1ce/3os.org/commit/4659887153946bd28f7ef6849fe81bb0189590a0) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/31250eb288f73f64cd6b35b782367da0b50d2823) - @fire1ce
+- [added zabbix container](https://github.com/fire1ce/3os.org/commit/303fe04819e842e639fbe31f663f96a8b63218d0) - @fire1ce
+- [added descriptions](https://github.com/fire1ce/3os.org/commit/b433e0139b37b7e496c4212f0b5baadf03308cdd) - @fire1ce
+- [name fix](https://github.com/fire1ce/3os.org/commit/0a635c700bef7c7bfab502f7f0efa643d0e52984) - @fire1ce
+- [moved containers](https://github.com/fire1ce/3os.org/commit/ae61e33dd4aa33263e6e6bfcbbb7c9684f06e540) - @fire1ce
+- [docker section updates](https://github.com/fire1ce/3os.org/commit/d5d17dd127a91789e0cd69540362ae2ca00a00a4) - @fire1ce
+- [added log rotation](https://github.com/fire1ce/3os.org/commit/21d8957d358eaf4b21ee07c7be29668048d459ff) - @fire1ce
+- [added ncdu to files](https://github.com/fire1ce/3os.org/commit/58708b79cf5a185dd1d2ff986fea2b2337834f3f) - @fire1ce
+- [cleanup](https://github.com/fire1ce/3os.org/commit/68da366256123bccbd4021c8eecd11177337780c) - @fire1ce
+- [updatetd hardening](https://github.com/fire1ce/3os.org/commit/236c42e870a877e32c8ce17cdc17e99e47fa5789) - @fire1ce
+- [added commands to docker](https://github.com/fire1ce/3os.org/commit/3e77ede0daa892a7aa495543fff9623fee32ac94) - @fire1ce
+- [updayed home assistant intallation](https://github.com/fire1ce/3os.org/commit/92a1616643686dcaf05e1ab80d500b7528888d7d) - @fire1ce
+- [added Remove Old Kernels](https://github.com/fire1ce/3os.org/commit/0c6f5ed4d0e6c9b96a688e708464ad590aa9fb82) - @fire1ce
+- [added Set TimeZone](https://github.com/fire1ce/3os.org/commit/5563ad05dc9920d8708564b10321da14b9e7c205) - @fire1ce
+- [uodated Disable IPv6](https://github.com/fire1ce/3os.org/commit/a6e25a7c66684fcb465bdc01b789c2c2cb9ad949) - @fire1ce
+- [added Installing ADB and Fastboot For Android](https://github.com/fire1ce/3os.org/commit/98f59ee5695f33b1edfe2ee2d91e14eb3919f38d) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/049b8a522a38139ad3da92f5cf00720ed8535efe) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/b4c237b57db1a88d3141b284124772037d5e08b5) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/414d80dd1d3ebba8c31e465864c673b76ac7b1c4) - @fire1ce
+- [updated the guide](https://github.com/fire1ce/3os.org/commit/1a1466fb75d7d34cce8ccd1c68a9a6322ac7e8e0) - @fire1ce
+- [added Import RSA Keys](https://github.com/fire1ce/3os.org/commit/221c4125cbcf58c4a4e9892be4c9405b6e908d02) - @fire1ce
+- [removed any node packages](https://github.com/fire1ce/3os.org/commit/8e855fe1b176d8fd9819aab5c3782b93298e0043) - @fire1ce
+- [added "urging All Unused or Dangling Images"](https://github.com/fire1ce/3os.org/commit/6d427bdc92c7248e2b775089d4d048bbdbf13662) - @fire1ce
+
+---
+
 ## v1.1.0 (15/01/2019)
-- [ CHANGELOG.md update to  v1.1.0](https://github.com/fire1ce/3os.org/commit/fbe239b542baf72620c5a8ddd661060b22e1285f) - @fire1ce
+- [cleanup](https://github.com/fire1ce/3os.org/commit/cdfd162e8c9e028c8da3379b8afe40a250862308) - @fire1ce
 
 ---
 
