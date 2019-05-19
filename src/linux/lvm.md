@@ -25,4 +25,3 @@ After the merging and before mounting you should remove the partition from fasta
 nano /etc/fstab
 mount -a
 ```
-
