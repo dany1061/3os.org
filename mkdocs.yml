@@ -3,7 +3,6 @@
 # Navigation
 nav:
   - Home: 'index.md'
-  - Contributions Wall: 'contributions.md'
   - Changelog: 'CHANGELOG.md'
   - Donate: 'donation.md'
   - Guides: 

@@ -12,7 +12,7 @@ You are more than welcome and encouraged to contribute your knowledge to 3os Pro
 ### How To Contribute
 
 You can contribute by submitting pull requests for any topic by hitting the _`edit`_ :pencil2: icon on the top right corner of each page. When doing so, you will be redirected to the Github source markdown page (Github account required).
-Edit, add, or remove any content commit and explain the proposed change, and submit for review. After we approve your edit, you will be automatically added to the [Contributions Wall](contributions.md "Contributions Wall").  
+Edit, add, or remove any content commit and explain the proposed change, and submit for review. After we approve your edit, your changes be automatically added.  
 You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") for better understanding how to use _Markdown Syntax_ to edit or create new content.
 
 ### Disclaimer
