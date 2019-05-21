@@ -260,3 +260,20 @@ sudo mv /Library/Desktop\ Pictures/Mojave.heic /Library/Desktop\ Pictures/Mojave
 Rename new picture to __Mojave.heic__
 
 Move the new picture to _/Library/Desktop\ Pictures/_
+
+## Google Drive File Sync Fix
+
+quit Google Drive
+
+```bash
+cd ~/Library/Application\ Support/Google
+mv DriveFS DriveFS.old
+```
+
+relaunch Google Drive
+
+## Flush DNS
+
+```bash
+sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache
+```
