@@ -277,3 +277,7 @@ relaunch Google Drive
 ```bash
 sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache
 ```
+
+## Using Alt/Cmd + Right/Left Arrow in iTerm
+
+Go to iTerm Preferences → Profiles, select your profile, then the Keys tab. Click Load Preset... and choose Natural Text Editing.
