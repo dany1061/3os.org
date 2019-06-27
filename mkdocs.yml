@@ -62,7 +62,7 @@ nav:
       - Ubiquiti Networks EdgeRouter & Unifi: 'moreCategories/ubiquiti.md'
       - Android: 'moreCategories/android.md'
       - WiFi QR Generator: 'moreCategories/wifiQrGenerator.md'
-      - Home-Assistant: 'moreCategories/homeAssistant.md'
+      - Homebridge: 'moreCategories/homebridge.md'
       - Gmail Mark As Read Script: 'moreCategories/gmailMarkAsRead.md'
   - Markdown CheatSheet:
       - Welcome: 'markdownCheatSheet/welcome.md'
