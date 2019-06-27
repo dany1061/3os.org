@@ -55,14 +55,19 @@ yum install qemu-guest-agent -y
 
 ## Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script
 
+### Requirements
+
+Synology ssh enabled and sudo permission
+Cloudflare API key
+
 ssh to synology nas
 
 ```bash
+sudo -i
 wget https://github.com/Neilpang/acme.sh/archive/master.tar.gz
 tar xvf master.tar.gz
 cd acme.sh-master/
-./acme.sh --install --nocron --home /usr/local/share/acme.sh
-cd /usr/local/share/acme.sh
+./acme.sh --install --nocron --home /usr/local/share/acme.sh --accountemail "email@example.com"
 ```
 
 CF_Key= `your cloudflare Global API key`
@@ -71,57 +76,37 @@ CERT_DOMAIN= `your domain managed on cloudflare dns`, you can use wilde card dom
 
 ```bash
 export CF_Key="MY_SECRET_KEY_SUCH_SECRET"
-export CF_Email="<myEmail@example.com>"
-export CERT_DOMAIN="your-domain.tld"
+export CF_Email="myEmail@example.com"
+export CERT_DOMAIN="*.your-domain.tld"
 export CERT_DNS="dns_cf"
 ```
 
 This Will Generate, Sing and install the Certificate
 
+### Creating the Certificate
+
 ```bash
+cd /usr/local/share/acme.sh
 ./acme.sh --issue -d "$CERT_DOMAIN" --dns "$CERT_DNS" \
-      --cert-file /usr/syno/etc/certificate/system/default/cert.pem \
-      --key-file /usr/syno/etc/certificate/system/default/privkey.pem \
-      --fullchain-file /usr/syno/etc/certificate/system/default/fullchain.pem \
-      --reloadcmd "/usr/syno/sbin/synoservicectl --reload nginx" \
-      --dnssleep 20
+      --certpath /usr/syno/etc/certificate/system/default/cert.pem \
+      --keypath /usr/syno/etc/certificate/system/default/privkey.pem \
+      --fullchainpath /usr/syno/etc/certificate/system/default/fullchain.pem \
+      --capath /usr/syno/etc/certificate/system/default/chain.pem \
+      --reloadcmd "cp -a /usr/syno/etc/certificate/system/default/* `find /usr/syno/etc/certificate/_archive/ -maxdepth 1 -mindepth 1 -type d` && /usr/syno/sbin/synoservicectl --reload nginx" \
+      --dnssleep 20 \
+      --config-home "/volume1/activeShare/Dropbox/SettingsConfigs/SSL_Certificates"
 ```
 
-### Automate The Certificate Renewal
-
-* Login to DSM
-* Go to Control Panel - Task Scheduler
-* Create - Scheduled Task - User-defined script
-* Name it something like that: `Lets-Encrypt Auto Renew`
-* Run it under user root
-* At Schedule define it to run dayily at night (so you won't have expierd certificate)
-* at Task setting at this to the `user defined script` window:
+### Configuring Certificate Renewal by /etc/crontab
 
 ```bash
- /usr/local/share/acme.sh/acme.sh --cron --home /usr/local/share/acme.sh/
+vi /etc/crontab
 ```
 
-* You can check if the script runs ok by ticking the `Send run details by mail` and provide your mail
-* Close the window
-* Select you newly created Task and Run it.
-* Check you email, you should get massage like that:
+add this:
 
-```qoute
-Dear user,
-
-Task Scheduler has completed a scheduled task.
-
-Task: Task 8
-Start time: Tue, 04 Sep 2018 19:54:09 GMT
-Stop time: Tue, 04 Sep 2018 19:54:09 GMT
-Current status: 0 (Normal)
-Standard output/error:
-[Tue Sep 4 19:54:09 IDT 2018] ===Starting cron===
-[Tue Sep 4 19:54:09 IDT 2018] Renew: '*.your-domain.tld'
-[Tue Sep 4 19:54:09 IDT 2018] Skip, Next renewal time is: Sat Nov 3 16:34:19 UTC 2018
-[Tue Sep 4 19:54:09 IDT 2018] Add '--force' to force to renew.
-[Tue Sep 4 19:54:09 IDT 2018] Skipped *.your-domain.tld
-[Tue Sep 4 19:54:09 IDT 2018] ===End cron===
+```bash
+0   10  2   *   *   root    /usr/local/share/acme.sh/acme.sh --cron --home /volume1/activeShare/Dropbox/SettingsConfigs/SSL_Certificates
 ```
 
 ### done
