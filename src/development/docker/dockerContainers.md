@@ -3,17 +3,22 @@ description: Docker useful Containers
 
 # Docker Containers
 
-## iperf3 Server Container
+## Watchtower - automating Docker container base image updates
 
 ```bash
 docker run \
 -d \
+--name watchtower \
 --restart always \
---name=iperf3-server \
--h iperf \
--p 5201:5201 \
--e TZ=Asia/Jerusalem \
-networkstatic/iperf3:latest -s
+-h watchtower \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-e WATCHTOWER_NOTIFICATIONS=email \
+-e WATCHTOWER_NOTIFICATION_EMAIL_FROM=Watchtower@gmail.com \
+-e WATCHTOWER_NOTIFICATION_EMAIL_TO=toaddress@gmail.com \
+-e WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com \
+-e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=fromaddress@gmail.com \
+-e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=app_password \
+containrrr/watchtower:latest --cleanup --debug
 ```
 
 ## cloudflare-ddns
@@ -106,4 +111,17 @@ docker run \
 -e TZ=Asia/Jerusalem \
 -e PHP_TZ=Asia/Jerusalem \
 zabbix/zabbix-appliance:latest
+```
+
+## iperf3 Server Container
+
+```bash
+docker run \
+-d \
+--restart always \
+--name=iperf3-server \
+-h iperf \
+-p 5201:5201 \
+-e TZ=Asia/Jerusalem \
+networkstatic/iperf3:latest -s
 ```
