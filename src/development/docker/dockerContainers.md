@@ -18,7 +18,7 @@ docker run \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=fromaddress@gmail.com \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=app_password \
-containrrr/watchtower:latest --cleanup --debug
+containrrr/watchtower:latest --schedule "0 4 * * 0" --cleanup --debug
 ```
 
 ## cloudflare-ddns
