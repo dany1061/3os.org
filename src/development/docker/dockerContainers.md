@@ -5,7 +5,7 @@ description: Docker useful Containers
 
 ## Watchtower - automating Docker container base image updates
 
-```bash
+```docker
 docker run \
 -d \
 --name watchtower \
@@ -36,7 +36,7 @@ containrrr/watchtower:latest --cleanup --debug
 
 ### Running the Container
 
-```bash
+```docker
 docker run \
 -d \
 -h cloudflareddns \
@@ -56,7 +56,7 @@ joshuaavalon/cloudflare-ddns:latest
 
 based on _jacobalberty/unifi:latest_ image for Synology NAS
 
-```bash
+```docker
 docker run \
 -d \
 --restart always \
@@ -78,7 +78,7 @@ jacobalberty/unifi:latest
 
 Based on _oznu/unms:latest_ image for Synology NAS
 
-```bash
+```docker
 docker run \
 -d \
 --restart always \
@@ -96,7 +96,7 @@ oznu/unms:latest
 
 ## Zabbix Monitoring Contianer
 
-```bash
+```docker
 docker run \
 -d \
 --name zabbix-appliance \
@@ -115,7 +115,7 @@ zabbix/zabbix-appliance:latest
 
 ## iperf3 Server Container
 
-```bash
+```docker
 docker run \
 -d \
 --restart always \
@@ -124,4 +124,42 @@ docker run \
 -p 5201:5201 \
 -e TZ=Asia/Jerusalem \
 networkstatic/iperf3:latest -s
+```
+
+## Calibre-Web
+
+```docker
+docker run \
+-d \
+--restart always \
+--name=calibre-web \
+-h calibre \
+-e TZ=Asia/Jerusalem \
+-e DOCKER_MODS=linuxserver/calibre-web:calibre \
+-e PUID=0 \
+-e PGID=0 \
+-p 5052:8083 \
+-v /volume1/docker/calibre/config:/config \
+-v /volume1/activeShare/CalibreBooks:/books \
+linuxserver/calibre-web:latest
+```
+
+## pi-hole DNS Ad-Blocker
+
+```docker
+docker run \
+-d \
+--restart always \
+--name pihole \
+-h pihole \
+-p 53:53/tcp -p 53:53/udp \
+-p 5053:80 \
+-e PUID=0 \
+-e PGID=0 \
+-e TZ=Asia/Jerusalem \
+-v /volume1/docker/pihole/pihole/:/etc/pihole \
+-v /volume1/docker/pihole/dnsmasq.d:/etc/dnsmasq.d \
+-v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
+--dns=1.1.1.1 --dns=1.0.0.1 \
+pihole/pihole:latest
 ```

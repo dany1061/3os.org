@@ -5,6 +5,12 @@ description: Docker General useful commands tips
 
 # Docker General
 
+## SSH to a Container
+
+```bash
+docker exec -it mysqldb "bash"
+```
+
 ## Update All Downloaded Images
 
 ```bash
@@ -46,12 +52,6 @@ docker ps -a
 
 ```bash
 docker run --name mysqldb -v /data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD="qweQWE123" -p 3306:3306 -it mysql/mysql-server:5.7
-```
-
-## SSH to a Container
-
-```bash
-docker exec -it mysqldb "bash"
 ```
 
 ## Exit Container Without Closing It
