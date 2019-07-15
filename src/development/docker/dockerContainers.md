@@ -18,7 +18,7 @@ docker run \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=fromaddress@gmail.com \
 -e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=app_password \
-containrrr/watchtower:latest --schedule "0 4 * * 0" --cleanup --debug
+containrrr/watchtower:latest --cleanup --debug
 ```
 
 ## cloudflare-ddns
@@ -144,7 +144,7 @@ docker run \
 linuxserver/calibre-web:latest
 ```
 
-## pi-hole DNS Ad-Blocker
+## Pi-Hole DNS Ad-Blocker
 
 ```docker
 docker run \
@@ -162,4 +162,23 @@ docker run \
 -v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
 --dns=1.1.1.1 --dns=1.0.0.1 \
 pihole/pihole:latest
+```
+
+## Sonarr
+
+```docker
+docker run \
+-d \
+--restart always \
+--name sonarr \
+-h sonarr \
+-e PUID=0 \
+-e PGID=0 \
+-e TZ=Asia/Jerusalem \
+-p 5056:8990 \
+-p 5057:8989 \
+-v /volume1/docker/sonarr:/config \
+-v /volume1/activeShare/Media/TV\ Showes/:/tv \
+-v /volume1/activeShare/Downloads/:/downloads \
+linuxserver/sonarr:latest
 ```
