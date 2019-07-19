@@ -160,7 +160,7 @@ docker run \
 -v /volume1/docker/pihole/pihole/:/etc/pihole \
 -v /volume1/docker/pihole/dnsmasq.d:/etc/dnsmasq.d \
 -v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
---dns=1.1.1.1 --dns=1.0.0.1 \
+--dns=176.103.130.130 --dns=176.103.130.131 \
 pihole/pihole:latest
 ```
 
