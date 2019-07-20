@@ -164,6 +164,24 @@ docker run \
 pihole/pihole:latest
 ```
 
+Blocklists
+
+* https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+* https://mirror1.malwaredomains.com/files/justdomains
+* http://sysctl.org/cameleon/hosts
+* https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+* https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+* https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+* https://hosts-file.net/ad_servers.txt
+* https://smokingwheels.github.io/Pi-hole/allhosts
+* https://dbl.oisd.nl/
+* https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt
+* https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+* https://filters.adtidy.org/extension/chromium/filters/14.txt
+* https://filters.adtidy.org/extension/chromium/filters/10.txt
+* https://filters.adtidy.org/extension/chromium/filters/11.txt
+
+
 ## Sonarr
 
 ```docker
