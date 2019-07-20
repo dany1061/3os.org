@@ -140,7 +140,7 @@ docker run \
 -e PGID=0 \
 -p 5052:8083 \
 -v /volume1/docker/calibre/config:/config \
--v /volume1/activeShare/CalibreBooks:/books \
+-v /volume1/docker/calibre/books:/books \
 linuxserver/calibre-web:latest
 ```
 
