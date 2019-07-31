@@ -3,7 +3,7 @@ description: Docker useful Containers
 
 # Docker Containers
 
-## Watchtower - automating Docker container base image updates
+## Watchtower - Automating Docker Updates Container
 
 ```docker
 docker run \
@@ -12,12 +12,7 @@ docker run \
 --restart always \
 -h watchtower \
 -v /var/run/docker.sock:/var/run/docker.sock \
--e WATCHTOWER_NOTIFICATIONS=email \
--e WATCHTOWER_NOTIFICATION_EMAIL_FROM=Watchtower@gmail.com \
--e WATCHTOWER_NOTIFICATION_EMAIL_TO=toaddress@gmail.com \
--e WATCHTOWER_NOTIFICATION_EMAIL_SERVER=smtp.gmail.com \
--e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_USER=fromaddress@gmail.com \
--e WATCHTOWER_NOTIFICATION_EMAIL_SERVER_PASSWORD=app_password \
+-e TZ=Asia/Jerusalem \
 containrrr/watchtower:latest --cleanup --debug
 ```
 
@@ -136,9 +131,7 @@ docker run \
 -h calibre \
 -e TZ=Asia/Jerusalem \
 -e DOCKER_MODS=linuxserver/calibre-web:calibre \
--e PUID=0 \
--e PGID=0 \
--p 5052:8083 \
+-p 5071:8083 \
 -v /volume1/docker/calibre/config:/config \
 -v /volume1/docker/calibre/books:/books \
 linuxserver/calibre-web:latest
@@ -154,13 +147,11 @@ docker run \
 -h pihole \
 -p 53:53/tcp -p 53:53/udp \
 -p 5053:80 \
--e PUID=0 \
--e PGID=0 \
 -e TZ=Asia/Jerusalem \
 -v /volume1/docker/pihole/pihole/:/etc/pihole \
 -v /volume1/docker/pihole/dnsmasq.d:/etc/dnsmasq.d \
 -v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
---dns=176.103.130.130 --dns=176.103.130.131 \
+--dns=1.1.1.1 --dns=1.0.0.1 \
 pihole/pihole:latest
 ```
 
@@ -181,8 +172,7 @@ Blocklists
 * https://filters.adtidy.org/extension/chromium/filters/10.txt
 * https://filters.adtidy.org/extension/chromium/filters/11.txt
 
-
-## Sonarr
+## Sonarr - Contair to Audo Download TV Shows
 
 ```docker
 docker run \
@@ -190,13 +180,104 @@ docker run \
 --restart always \
 --name sonarr \
 -h sonarr \
--e PUID=0 \
--e PGID=0 \
 -e TZ=Asia/Jerusalem \
--p 5056:8990 \
--p 5057:8989 \
+-p 5056:8989 \
 -v /volume1/docker/sonarr:/config \
 -v /volume1/activeShare/Media/TV\ Showes/:/tv \
--v /volume1/activeShare/Downloads/:/downloads \
+-v /volume1/activeShare/autoDownloads/:/downloads \
 linuxserver/sonarr:latest
+```
+
+## Radarr - Contair to Audo Movies
+
+```docker
+docker run \
+-d \
+--restart always \
+--name=radarr \
+-h radarr \
+-e TZ=Asia/Jerusalem \
+-p 5057:7878 \
+-v /volume1/docker/radarr:/config \
+-v /volume1/activeShare/Media/Movies:/movies \
+-v /volume1/activeShare/autoDownloads:/downloads \
+linuxserver/radarr:latest
+```
+
+## Jackett - Contair for Indexers for Radarr & Sonarr
+
+```docker
+docker run \
+-d \
+-h jackett \
+--restart always \
+--name=jackett \
+-e TZ=Asia/Jerusalem \
+-p 5058:9117 \
+-v /volume1/docker/jackett:/config \
+-v /volume1/activeShare/autoDownloads:/downloads \
+linuxserver/jackett:latest
+```
+
+### Import Jackett Indexer In Sonarr
+
+Add Custom Tornzab with API Path of:
+
+```bash
+/torznab/all/api
+```
+
+### Import Jackett Indexer In Radarr
+
+Add Custom Tornzab with URL of:
+
+```bash
+<ADDRESS>:<PORT>/torznab/all/
+```
+
+## Bazarr - Contair for Subtitles Auto Download
+
+```docker
+docker run \
+-d \
+--restart always \
+--name=bazarr \
+-h bazarr \
+-e TZ=Asia/Jerusalem \
+-p 5070:6767 \
+-v /volume1/docker/bazarr:/config \
+-v /volume1/activeShare/Media/Movies:/movies \
+-v /volume1/activeShare/Media/TV\ Showes/:/tv \
+linuxserver/bazarr:latest
+```
+
+## Ombi - Contair for Requesting Movies & TV Shows Integrated with Sonarr & Radarr
+
+```docker
+docker run \
+-d \
+-h ombi \
+--restart always \
+--name=ombi \
+-e TZ=Asia/Jerusalem \
+-p 5059:3579 \
+-v /volume1/docker/ombi:/config \
+ linuxserver/ombi:latest
+```
+
+## HomeBrige - Contair for Apple HomeKit Integration
+
+```docker
+docker run \
+-d \
+--net=host \
+--restart always \
+--name=homebridge \
+-e TZ=Asia/Jerusalem \
+-e HOMEBRIDGE_INSECURE=1 \
+-e HOMEBRIDGE_DEBUG=1 \
+-v /volume1/docker/homebridge:/homebridge \
+-e HOMEBRIDGE_CONFIG_UI=1 \
+-e HOMEBRIDGE_CONFIG_UI_PORT=5061 \
+oznu/homebridge:latest
 ```
