@@ -1,9 +1,5 @@
 # Better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions
 
-## WORK IN PROGRESS (Outdated pics)
-
-Linux Terminal:
-
 ![Linux Terminal](../assets/images/guides/betterTerminal/linuxTerminal.png)
 
 ## MacOS Installation with iTerm2 and Homebrew
@@ -50,7 +46,11 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 ## Linux Installation
 
-Requirements: git, zsh, wget
+Requirements:
+
+```bash
+git zsh wget
+```
 
 Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 

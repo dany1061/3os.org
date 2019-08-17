@@ -16,4 +16,4 @@ description: Windows Tips & Guides, examples and simple usage
 | [7-Zip](https://www.7-zip.org/download.html)                                   | Archive Manager              |
 | [VLC](https://www.videolan.org/vlc/index.html)                                 | Video Player                 |
 | [DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/releases) | Disable Windows 10 Tracking  |
-
+| [Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html) | Symlinks Fow WIndwos  |
