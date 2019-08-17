@@ -281,3 +281,8 @@ sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheuti
 ## Using Alt/Cmd + Right/Left Arrow in iTerm
 
 Go to iTerm Preferences → Profiles, select your profile, then the Keys tab. Click Load Preset... and choose Natural Text Editing.
+
+## Term2: how to remove the right arrow before the cursor line
+
+you can turn it off by going in to Preferences > Profiles > (your profile) > Terminal, scroll down to "Shell Integration", and turn off "Show mark indicators".
+
