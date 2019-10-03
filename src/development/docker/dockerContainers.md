@@ -184,7 +184,7 @@ docker run \
 -p 5056:8989 \
 -v /volume1/docker/sonarr:/config \
 -v /volume1/activeShare/Media/TV\ Showes/:/tv \
--v /volume1/activeShare/autoDownloads/:/downloads \
+-v /volume1/activeShare/Downloads/:/downloads \
 linuxserver/sonarr:latest
 ```
 
@@ -200,7 +200,7 @@ docker run \
 -p 5057:7878 \
 -v /volume1/docker/radarr:/config \
 -v /volume1/activeShare/Media/Movies:/movies \
--v /volume1/activeShare/autoDownloads:/downloads \
+-v /volume1/activeShare/Downloads:/downloads \
 linuxserver/radarr:latest
 ```
 
@@ -215,7 +215,7 @@ docker run \
 -e TZ=Asia/Jerusalem \
 -p 5058:9117 \
 -v /volume1/docker/jackett:/config \
--v /volume1/activeShare/autoDownloads:/downloads \
+-v /volume1/activeShare/Downloads:/downloads \
 linuxserver/jackett:latest
 ```
 
@@ -265,7 +265,7 @@ docker run \
  linuxserver/ombi:latest
 ```
 
-## HomeBrige - Contair for Apple HomeKit Integration
+## HomeBridge - Contair for Apple HomeKit Integration
 
 ```docker
 docker run \
