@@ -89,7 +89,7 @@ docker run \
 oznu/unms:latest
 ```
 
-## Zabbix Monitoring Contianer
+## Zabbix Monitoring Container
 
 ```docker
 docker run \
@@ -172,7 +172,7 @@ Blocklists
 * https://filters.adtidy.org/extension/chromium/filters/10.txt
 * https://filters.adtidy.org/extension/chromium/filters/11.txt
 
-## Sonarr - Contair to Audo Download TV Shows
+## Sonarr - Container to Auto Download TV Shows
 
 ```docker
 docker run \
@@ -188,7 +188,7 @@ docker run \
 linuxserver/sonarr:latest
 ```
 
-## Radarr - Contair to Audo Movies
+## Radarr - Container to Auto Download Movies
 
 ```docker
 docker run \
@@ -204,7 +204,7 @@ docker run \
 linuxserver/radarr:latest
 ```
 
-## Jackett - Contair for Indexers for Radarr & Sonarr
+## Jackett - Container for Indexers for Radarr & Sonarr
 
 ```docker
 docker run \
@@ -235,7 +235,7 @@ Add Custom Tornzab with URL of:
 <ADDRESS>:<PORT>/torznab/all/
 ```
 
-## Bazarr - Contair for Subtitles Auto Download
+## Bazarr - Container for Subtitles Auto Download
 
 ```docker
 docker run \
@@ -251,7 +251,7 @@ docker run \
 linuxserver/bazarr:latest
 ```
 
-## Ombi - Contair for Requesting Movies & TV Shows Integrated with Sonarr & Radarr
+## Ombi - Container for Requesting Movies & TV Shows Integrated with Sonarr & Radarr
 
 ```docker
 docker run \
@@ -265,7 +265,7 @@ docker run \
  linuxserver/ombi:latest
 ```
 
-## HomeBridge - Contair for Apple HomeKit Integration
+## HomeBridge - Container for Apple HomeKit Integration
 
 ```docker
 docker run \
