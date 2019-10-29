@@ -104,11 +104,18 @@ echo 1 > /proc/sys/net/ipv6/conf/eth0/disable_ipv6
 
 Permanent:
 
+edit /etc/sysctl.conf and add to the end of the config
+
 ```bash
-vi /etc/sysctl.conf
 net.ipv6.conf.all.disable_ipv6 = 1
+```
+
+Save. Then run:
+
+```bash
 sudo sysctl -p /etc/sysctl.conf
 ```
+
 
 ## Max connections on Linux
 
