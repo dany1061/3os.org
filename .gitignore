@@ -1,6 +1,6 @@
 # Site generated files
 site/
-requirements.txt
+venv/
 
 # OS generated files
 .DS_Store
@@ -12,6 +12,8 @@ requirements.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+Pipfile
+Pipfile.lock
 
 # Configs and Modules
 # .vscode
