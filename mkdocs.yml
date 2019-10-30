@@ -52,7 +52,6 @@ nav:
       - Click-Jacking Test: 'penTesting/clickJacking.md'
       - Android Penetration Testing: 'penTesting/androidPT.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
-      - Bettercap 1.6.2: 'penTesting/bettercap1.6.2.md'
   - More Categories:
       - General: 'moreCategories/generalLinks.md'
       - Browsers Extensions:
