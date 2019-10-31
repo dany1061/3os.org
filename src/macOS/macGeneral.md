@@ -290,3 +290,9 @@ Go to iTerm Preferences → Profiles, select your profile, then the Keys tab. Cl
 ## Term2: how to remove the right arrow before the cursor line
 
 you can turn it off by going in to Preferences > Profiles > (your profile) > Terminal, scroll down to "Shell Integration", and turn off "Show mark indicators".
+
+## External MacOS Wireless USB Adapter Support
+
+Based on [chris1111/Wireless-USB-Adapter at github](https://github.com/chris1111/Wireless-USB-Adapter)
+
+[Installation Downloads](https://github.com/chris1111/Wireless-USB-Adapter/releases)
