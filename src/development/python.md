@@ -3,7 +3,44 @@ description: Development - Python how to, guides, examples, and simple usage
 
 # Python
 
-## Update All the pip Packages
+## Python Virtual
+
+Make sure you’ve got Python & pip¶
+
+```bash
+python --version
+pip --version
+```
+
+Installing Pipenv¶ & Virtualenv
+
+```bash
+pip install --user pipenv
+pip install virtualenv
+```
+
+Create Virtualenv for Your Project
+
+```bash
+cd project_folder
+virtualenv venv
+```
+
+Activeate Virtualenv at Project's Folder
+
+```bash
+pipenv shell
+```
+
+## Pip Update
+
+### Update Pip Itself
+
+```bash
+pip install --upgrade pip
+```
+
+### Update All Packages Installed With Pip
 
 ```bash
 pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
@@ -52,4 +89,3 @@ run the file:
 ```bash
 ./simpleHTTPServer.sh
 ```
-
