@@ -3,7 +3,7 @@ description: Development - Python how to, guides, examples, and simple usage
 
 # Git
 
-## Untrack files already added to git repository based on .gitignore
+## Untack files already added to git repository based on .gitignore
 
 Commit all your changes. Before proceeding, make sure all your changes are committed, including your .gitignore file.
 Remove everything from the repository. To clear your repo, use:
@@ -48,5 +48,3 @@ git push -u origin master
 ```
 
 Strictly speaking, the `git fetch origin` and `-u` argument to `git push origin master` are optional, but they will helpfully associate the upstream branch `master` in `origin` with your local branch `master`.
-
-

@@ -42,4 +42,3 @@ look for the `ZSH_THEME=""` it should look like this:
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="fishy"
 ```
-

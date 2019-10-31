@@ -5,13 +5,13 @@ description: Linux - SSH Service Security how to, guides, examples, and simple u
 
 ## SSH Login With RSA Keys
 
-### Copy Publik Key ot The Server
+### Copy Public Key to The Server
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 ```
 
-__Or Do It Manualy:__
+__Or Do It Manually :__
 
 ssh to the host (`do not close this connection`)
 

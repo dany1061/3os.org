@@ -19,9 +19,14 @@ defaults write com.apple.finder CreateDesktop true
 killall Finder
 ```
 
-## Stop iTunes from Opening Automatically
+## Disable StrictHostKeyChecking in SSH
 
-To stop iTunes from opening automatically when you connect your iPhone, open iTunes and then go to Preferences by using keyboard shortcut Command-comma or by going to iTunes > Preferences. Next, click the Devices tab and then check the box for Prevent iPods, iPhones, and iPads from syncing automatically.
+To disable strict host checking on OS X for the current user,
+create or edit ~/.ssh/ssh_config and add the following lines:
+
+```bash
+   StrictHostKeyChecking no
+```
 
 ## Set the `Same View Options` for all Finder windows
 
@@ -285,4 +290,3 @@ Go to iTerm Preferences → Profiles, select your profile, then the Keys tab. Cl
 ## Term2: how to remove the right arrow before the cursor line
 
 you can turn it off by going in to Preferences > Profiles > (your profile) > Terminal, scroll down to "Shell Integration", and turn off "Show mark indicators".
-

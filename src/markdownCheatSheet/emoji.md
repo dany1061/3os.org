@@ -307,4 +307,3 @@ description: Markdown cheatSheet for MkDocs. Emojis List examples and simple usa
 | :black_circle:                    | `:black_circle:`                    | :white_circle:                | `:white_circle:`                | :red_circle:                | `:red_circle:`                |
 | :small_red_triangle_down:         | `:small_red_triangle_down:`         | :large_blue_diamond:          | `:large_blue_diamond:`          | :large_orange_diamond:      | `:large_orange_diamond:`      |
 | :small_blue_diamond:              | `:small_blue_diamond:`              |                               |                                 |                             |                               |
-

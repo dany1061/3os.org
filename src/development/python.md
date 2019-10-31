@@ -26,7 +26,7 @@ cd project_folder
 virtualenv venv
 ```
 
-Activeate Virtualenv at Project's Folder
+Activate Virtualenv at Project's Folder
 
 ```bash
 pipenv shell

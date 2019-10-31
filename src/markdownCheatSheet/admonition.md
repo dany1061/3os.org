@@ -92,7 +92,7 @@ __Result:__
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-    ```mysql
+```mysql
     SELECT
       Employees.EmployeeID,
       Employees.Name,
@@ -297,4 +297,3 @@ qualifiers, is `note`.
 !!! quote
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus
-

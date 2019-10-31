@@ -1,5 +1,5 @@
 title: Alfred Workflows
-description: Useful Alfred Workflows im using on every day bases
+description: Useful Alfred Workflows I'm using on every day bases
 
 # Alfred Workflows
 
@@ -10,4 +10,3 @@ description: Useful Alfred Workflows im using on every day bases
 | [kill](https://github.com/SamVerschueren/alfred-fkill)               | Kills a Process              |
 | [VMWare Control](http://www.packal.org/workflow/vmware-control)      | VMware vm control            |
 | [Google Apps](https://github.com/PierBover/AlfredWorkflowGoogleApps) | Opens google apps in browser |
-

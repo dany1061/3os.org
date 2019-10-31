@@ -48,9 +48,9 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 Requirements:
 
-```bash
-git zsh wget
-```
+* git
+* zsh
+* wget
 
 Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 

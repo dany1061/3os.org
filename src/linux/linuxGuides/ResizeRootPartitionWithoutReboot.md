@@ -22,4 +22,3 @@ Make sure everything is OK:
 ```bash
 df -h
 ```
-

@@ -8,4 +8,3 @@ description: Linux - Centos 7 how to, guides, examples, and simple usage
 ```bash
 dpkg --purge `dpkg --list|grep "linux-"|grep -v \`uname -r|sed 's/-generic//g'\`|cut -d" " -f3|grep "[0-9]-"|paste -sd " " -`
 ```
-

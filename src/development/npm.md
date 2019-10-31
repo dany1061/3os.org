@@ -1,7 +1,7 @@
 title: Development - npm
 description: Development - npm how to, guides, examples, and simple usage
 
-# npm
+# NPM
 
 ## Updating Local Project Packages
 
