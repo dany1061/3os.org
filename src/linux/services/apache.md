@@ -16,4 +16,3 @@ Replace domain.com with desired domain
 ```bash
 cd `grep "domain.com" /etc/apache2/conf/httpd.conf -A7|grep Root|head -1|awk '{print $2}'`
 ```
-

@@ -11,4 +11,3 @@ To fix edit the /etx/sysctl.conf file and add:
 ```bash
 net.ipv4.ip_nonlocal_bind = 1
 ```
-

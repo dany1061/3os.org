@@ -9,4 +9,3 @@ description: Linux - ESXi how to, guides, examples, and simple usage
 vim-cmd vmsvc/getallvms
 vim-cmd vmsvc/reload $vmID
 ```
-

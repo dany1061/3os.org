@@ -61,4 +61,3 @@ Run from the WordPress installed location:
 ```bash
 useradmin=`wp user list --role=administrator --format=csv --allow-root | cut -d',' -f2 | head -2 | tail -1` &&  wp plugin install one-time-login --activate --allow-root && wp user one-time-login $useradmin --allow-root && user=$(stat -c "%U" `pwd`) && chown $user.$user wp-content/ -R
 ```
-

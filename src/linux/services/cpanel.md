@@ -197,4 +197,3 @@ done | sed -e 's/\/usr\/local\/apache\/domlogs\///g' | sort -nrk 3 | column -t
 SCRIPT
 chmod 700 /root/sitesLoad.sh && /root/sitesLoad.sh
 ```
-

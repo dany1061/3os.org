@@ -66,4 +66,3 @@ sed -i 's/sanity(/ConfigServer::Sanity::sanity(/g' /usr/local/csf/bin/csfui.pl
 # connection tracking
 PACKET_FILTER = "0"
 ```
-

@@ -238,5 +238,14 @@ If your /boot partition is getting filled, you may wish to automatically remove 
 
 ```bash
 sudo yum install yum-utils -y
-sudo package-cleanup --oldkernels --count=2
+sudo package-cleanup --oldkernels --count=1
+```
+
+### Configure yum to auto-remove old kernels
+
+Edit /etc/yum.conf
+Set the limit to desired value
+
+```bash
+installonly_limit=1
 ```

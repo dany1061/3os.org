@@ -29,5 +29,3 @@ Type ‘webadmin'
 Type ‘allowed_networks@'
 =['REF_NetworkAny']
 ```
-
-

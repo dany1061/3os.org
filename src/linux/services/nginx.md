@@ -14,4 +14,3 @@ grep -e "^\s*server_name" /etc/nginx/conf.d/*|sed -e 's/[\t ]*server_name//g;'|s
 ```bash
 ip=`hostname -i` && for domain in `httpd -S |  grep www. | awk -F 'www.' '{print $2}'`;do printf "if ( \$host ~ \"%s\") {set \$PROXY_DOMAIN_OR_IP \"$ip\";}\n" $domain ;done >> /etc/nginx/custom_rules && service nginx reload
 ```
-
