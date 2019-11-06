@@ -19,4 +19,3 @@ Just scan the QR Code and you are connected.
 This code was taken from this site [https://qifi.org/](https://qifi.org/).
 It was fully reviewed for any malicious code or functionality without any results.
 You can review the code at my official git repository [here](https://github.com/fire1ce/3os.org/tree/master/docs/assets/qrwifi)
-

@@ -189,4 +189,3 @@ You shoud see somthing like that at the console:
 cloudflaredns.sh (7): Updating with 185.185.185.185...
 cloudflaredns.sh (7): Status: good
 ```
-

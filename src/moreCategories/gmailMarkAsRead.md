@@ -29,4 +29,3 @@ Save the script again and exit. Don't worry, it will keep running.
 And you're done. It will continue to run every minute until you stop it. How awesome is that?
 
 Update: Some people are reporting an error which says "This operation can only be applied to at most 100 threads. (line 3, file "Code")". To fix this, you have to manually do a search for "is:unread" and mark all of them as read before running the script, so that it starts with a clean slate. The script can only process 100 threads per run, so if you give it more than 100 on the first run, that'll obviously bust it.
-

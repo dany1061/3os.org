@@ -61,7 +61,7 @@ sudo cp -r ~/.homebridge/persist /root/homebridge
 
 ```
 
-Enable Serice at boot, start it, see the status of the homebridge service:
+Enable Service at boot, start it, see the status of the homebridge service:
 
 ```bash
 systemctl daemon-reload

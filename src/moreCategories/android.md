@@ -27,4 +27,3 @@ fastboot reboot-bootloader
 | [Pushbullet](https://play.google.com/store/apps/details?id=com.pushbullet.android)              | Send Links From Phone To Desktop            |
 | [Root Explorer](https://play.google.com/store/apps/details?id=com.speedsoftware.rootexplorer)   | File Manager for Root Users (Root Required) |
 | [SwiftKey Keyboard](https://play.google.com/store/apps/details?id=com.touchtype.swiftkey)       | My Favorite Keyboard for Android            |
-

@@ -7,6 +7,7 @@ nav:
   - Donate: 'donation.md'
   - Guides: 
       - Better Terminal Experience: 'guides/BetterTerminal.md'
+      - Raspberry Pi 3 Tor Access Point: 'raspberryPi/TOR-Pi.md'
   - Linux:
       - General: 'linux/general/general.md'
       - SSH Service Security: 'linux/SSH_Service_Security.md'
@@ -52,7 +53,7 @@ nav:
       - Click-Jacking Test: 'penTesting/clickJacking.md'
       - Android Penetration Testing: 'penTesting/androidPT.md'
       - Kali linux Modifications: 'penTesting/kaliLinux.md'
-  - More Categories:
+  - More...:
       - General: 'moreCategories/generalLinks.md'
       - Browsers Extensions:
              - Chrome: 'moreCategories/browsers/chromeExtensions.md'
