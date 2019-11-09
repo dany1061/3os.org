@@ -1,7 +1,7 @@
 title: Raspberry Pi - Tor-Pi Installation Guide
 description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Point Guide
 
-# Raspberry Pi 3 Tor Access Point <small>Tor-Pi</small>
+# Raspberry Pi 3 Tor Access Point <small>TorPi</small> (09/11/19 UPDATE)
 
 ## Network Flow
 
@@ -36,20 +36,25 @@ cd RPI-Wireless-Hotspot
 sudo ./install
 ```
 
-"Y" to agree to terms
-"Y" to use preconfigured DNS
-"Y" to use Unblock-Us DNS servers
-"N" for WiFi defaults
-Type in a new WiFi password (it will be checked)
-Type in a new SSID
-Type in your desired WiFi channel (1, 6, 11)
-Type "N" when asked - "Are you using a rtl871x chipset?"
-Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)
+* "Y" to agree to terms
+* "Y" to use preconfigured DNS
+* "Y" to use Unblock-Us DNS servers
+* "N" for WiFi defaults
+* Type in a new WiFi password (it will be checked)
+* Type in a new SSID
+* Type in your desired WiFi channel (1, 6, 11)
+* Type "N" when asked - "Are you using a rtl871x chipset?"
+* Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)
+
+if you get "Failed to start hostapd.service: Unit hostapd.service is masked." error when installing the script, execute this:
 
 ```bash
-sudo reboot
-sudo apt-get update && sudo apt-get upgrade
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
 ```
+
+reboot before testing thw wifi
 
 ## Testing Wifi Hotspot
 
@@ -69,9 +74,9 @@ Log notice file /var/log/tor/notices.log
 VirtualAddrNetwork 10.192.0.0/10
 AutomapHostsSuffixes .onion,.exit
 AutomapHostsOnResolve 1
-TransPort 9040
+TransPort 192.168.42.1:9040
 TransListenAddress 192.168.42.1
-DNSPort 53
+DNSPort 192.168.42.1:53
 DNSListenAddress 192.168.42.1
 ```
 
@@ -143,7 +148,17 @@ check process gdm with pidfile /var/run/tor/tor.pid
 Reload and add Monit to startup:
 
 ```bash
-sudo monit reload
-sudo update-rc.d monit enable
+systemctl restart monit
+systemctl enable monit
 ```
 
+## Bonus
+
+Chnage Exit Ip every 10 sec
+add this to the end of /etc/tor/torrc
+
+```bash
+CircuitBuildTimeout 10
+LearnCircuitBuildTimeout 0
+MaxCircuitDirtiness 10
+```
