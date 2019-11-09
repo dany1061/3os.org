@@ -9,7 +9,7 @@ description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Poin
 
 ## Preparation
 
-- Download Rasbian Strech Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
+- Download Raspbian Buster Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
 - Burn Image to SD-Card.
 - Boot Raspberry Pi 3.
 
