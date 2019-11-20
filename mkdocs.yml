@@ -29,9 +29,10 @@ nav:
             - Esxi: 'linux/services/esxi.md'
             - Plesk: 'linux/services/plesk.md'
   - macOS:
-      - General: 'macOS/macGeneral.md'
-      - Brew: 'macOS/brew.md'
-      - Alftred Workflows: 'macOS/alfredWorkFlows.md'
+      - General: 'macOS/general.md'
+      - UI Tweaks: 'macOS/ui.md'
+      - System Tweaks: 'macOS/system.md'
+      - Applications Tweaks: 'macOS/applications.md'
   - Raspberry Pi:
       - General: 'raspberryPi/piGeneral.md'
       - Raspberry Pi 3 Tor Access Point: 'raspberryPi/TOR-Pi.md'
@@ -44,7 +45,6 @@ nav:
       - Python: 'development/python.md'
       - Ruby: 'development/ruby.md'
       - npm: 'development/npm.md'
-      - MongoDB: 'development/mongodb.md'
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'

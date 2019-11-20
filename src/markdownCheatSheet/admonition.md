@@ -37,7 +37,7 @@ __Result:__
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-### Removing the title
+### Removing The Title
 
 ``` markdown
 !!! note ""
@@ -92,7 +92,7 @@ __Result:__
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-```mysql
+    ```mysql
     SELECT
       Employees.EmployeeID,
       Employees.Name,
