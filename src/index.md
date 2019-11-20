@@ -21,6 +21,14 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "20/11/19 __Version 1.2.0 Release__"
+
+    * Too many changes to count. Short summery:
+    * Updated out-of-date guides
+    * macOS section restructure & new guides
+    * Penetration Testing section restructure & new guides
+    * Full changelog link is at the button on this page
+
 !!! info "30/12/18 __Version 1.0.7 Release__"
 
     * [MagicMirror With Pictures](/raspberryPi/MagicMirror)
@@ -40,15 +48,5 @@ _All the information provided by this website can be obtained via the internet. 
     * New [guide](/windows/windowsGuides/#send_emails_from_the_windows_task_scheduler "send emails from the windows task scheduler) how to send mails from Windows Task Scheduler
     * New commands to run docker [UNIFI](moreCategories/ubiquiti/#installing_docker_container_unifi_controller_on_synology_nas) and [UNMS](moreCategories/ubiquiti/#installing_docker_container_unms_controller_on_synology_nas) controllers on Synology NAS (guide for full use and how to update will be added soon).
 
-!!! info "25/10/18 Refinements"
-
-    * "Other" Section renamed to "More Categories"
-    * "Browsers" moved to "More Categories"
-    * more Typos and headers fixes and refinements
-
-
-
-
 !!! warning ""
     Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")
-
