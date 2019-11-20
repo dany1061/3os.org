@@ -1,5 +1,53 @@
 # Changelog
 
+## v1.2 (20/11/2019)
+- [macOS restructure](https://github.com/fire1ce/3os.org/commit/14c5e8cde7a26887e93e18beda59e4b1476cfb26) - @fire1ce
+- [added Launchpad Grid Layout](https://github.com/fire1ce/3os.org/commit/d720b654d72259b8cff937fea309f2609d5eaf34) - @fire1ce
+- [updated Usefully Tools for Pentesters](https://github.com/fire1ce/3os.org/commit/374aef73871c6bb04f293c51e6041866477ae860) - @fire1ce
+- [new Eicar Files](https://github.com/fire1ce/3os.org/commit/703e5175c22302d528723f514709ca845a317a2d) - @fire1ce
+- [mobileViewAAjust](https://github.com/fire1ce/3os.org/commit/762bcb6ae68f861132379077e62def0daae453a7) - @fire1ce
+- [width fix](https://github.com/fire1ce/3os.org/commit/84f8b89980d9438b71b27a66f379536f208c90a1) - @fire1ce
+- [restracture & fixes](https://github.com/fire1ce/3os.org/commit/8475ea36c2c195d8a471a905a27a0ae122c188e9) - @fire1ce
+- [Raspberry Pi 3 Tor Access Point Update](https://github.com/fire1ce/3os.org/commit/4047c5f901699ef12504d97e53fd692a077c9266) - @fire1ce
+- [updated the guide](https://github.com/fire1ce/3os.org/commit/e5ce0fe84a5cde8d425519be3f772ff6e06b7804) - @fire1ce
+- [more fixes and added data](https://github.com/fire1ce/3os.org/commit/e68c2f5667d1e04f36774903a500f54c86d18ac4) - @fire1ce
+- [updated paramas](https://github.com/fire1ce/3os.org/commit/fbd46e752a4196019bfadc66bd1c43abb994ab0b) - @fire1ce
+- [fixes](https://github.com/fire1ce/3os.org/commit/c5a0d5ed503c880d1de9cb381cf71c6f01b38fbf) - @fire1ce
+- [External MacOS Wireless USB Adapter Support](https://github.com/fire1ce/3os.org/commit/3d4c954bde675454f7dc41c1eca516976461d6b1) - @fire1ce
+- [fixes](https://github.com/fire1ce/3os.org/commit/dad121b22290fb16a1be6203055d22d114071d15) - @fire1ce
+- [add Virtualenv](https://github.com/fire1ce/3os.org/commit/6159f216436c9c8f6d7ea1f82bd32f2000017428) - @fire1ce
+- [added MobSF docker](https://github.com/fire1ce/3os.org/commit/80f70d8bec478fde80893aae27df40f298775099) - @fire1ce
+- [updatetd kali linux tools](https://github.com/fire1ce/3os.org/commit/87aa503c7c581932d91960e084612dc976fc023b) - @fire1ce
+- [.gitignore fix](https://github.com/fire1ce/3os.org/commit/b8c019f2a4926dab7b508593230e71bbd45d41d4) - @fire1ce
+- [.gitignore fix](https://github.com/fire1ce/3os.org/commit/9e3d96cb639a6e6558f472802c2476e96c5ff5f1) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/bbea4b896c77ac2b7e7f888ea00df516d5d06add) - @fire1ce
+- [damn](https://github.com/fire1ce/3os.org/commit/d50f80fbfe88a1341a9cd9305cd42a2ff3587aa8) - @fire1ce
+- [Update kaliLinux.md](https://github.com/fire1ce/3os.org/commit/6cd0490dc2ed48b9d178f4eab064cdf39ec5b291) - @fire1ce
+- [updated smb vers=3.0](https://github.com/fire1ce/3os.org/commit/a307dc561b0b9e2c21dc295373b7aaf18c7df3dd) - @fire1ce
+- [misspell correction](https://github.com/fire1ce/3os.org/commit/d33b2c3bf3e08011a21352cbfbd61d4778edef60) - @fire1ce
+- [misspell correction](https://github.com/fire1ce/3os.org/commit/acea28fa2f97e00c954fc4ca037888bef75e341e) - @fire1ce
+- [new pathes](https://github.com/fire1ce/3os.org/commit/1f9f7b5b6f171dbbadc735ee9ad494dc9d3ae867) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/b1abea94464a235ad81c106477059c0a46f00772) - @fire1ce
+- [Finall Guide](https://github.com/fire1ce/3os.org/commit/1c2990ce7447faa2562b53a1dc3b86e580dc8f01) - @fire1ce
+- [added more docker conatainers](https://github.com/fire1ce/3os.org/commit/17e69254a15efbcedc44563c9acf364b99d360c9) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/f2fca710e0e2fa71d9667329445399d30714cad4) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/330e7a46d93e92c83bb7083993881243f7906a66) - @fire1ce
+- [updated](https://github.com/fire1ce/3os.org/commit/d0b3f5188f7657f2400fae7e10c0eadf3d746673) - @fire1ce
+- [updated to AdGaurd dns](https://github.com/fire1ce/3os.org/commit/535d3ed60d39ed66bdfe778d5e37b9eb6c3dfb01) - @fire1ce
+- [fix](https://github.com/fire1ce/3os.org/commit/34a12660cc368d35779d6b03c610c70d10156636) - @fire1ce
+- [added nstalling Docker in Kali Linux](https://github.com/fire1ce/3os.org/commit/246d36b32a736de31b6c57402f67c00100a4d028) - @fire1ce
+- [added --schedule at wattower to run ones a week](https://github.com/fire1ce/3os.org/commit/f38415c09371864f6333c0dd3452fd2e490ba45d) - @fire1ce
+- [added pihole](https://github.com/fire1ce/3os.org/commit/57e4076a8c843be76ff49b44598956d86116e451) - @fire1ce
+- [added Watchtower](https://github.com/fire1ce/3os.org/commit/13b3b745a2a270ae1bb78c79de99c82a884a2f5e) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/1df3f6b1b0754594a9b6bd0c31c7dcd8640d05e2) - @fire1ce
+- [update Automated SSL Using Let's Encrypt](https://github.com/fire1ce/3os.org/commit/6170176f952b2027be82dc9a553a154504f144d1) - @fire1ce
+- [Untrack files already added](https://github.com/fire1ce/3os.org/commit/c12a6f36c164a73082fc0f1440098955967d7696) - @fire1ce
+- [added Using Alt/Cmd + Right/Left Arrow in iTerm](https://github.com/fire1ce/3os.org/commit/95f756120751961d82c65d6cea3bd8a8fa02d370) - @fire1ce
+- [added Google Drive File Sync Fix, Flush DNS](https://github.com/fire1ce/3os.org/commit/ebf57e7a18abf6dc7b13592148f0b3df9bc2b1a8) - @fire1ce
+- [updated bettercap sections](https://github.com/fire1ce/3os.org/commit/241a27aee754dbd775046771a25fd9113c281ac3) - @fire1ce
+
+---
+
 ## v1.1.1 (19/05/2019)
 - [updated index, removed contribution wall](https://github.com/fire1ce/3os.org/commit/520a2d65c227dbea9b6873cfb0b8b4d545c4fac5) - @fire1ce
 - [ Add @dany1061 as a contributor](https://github.com/fire1ce/3os.org/commit/7d61c10f7ecbafb616849e4f1fa551b600f70a66) - @fire1ce
