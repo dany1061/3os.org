@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 title: macOS Tweaks and Guides for Better Experience, Productivity and Workflow
 description: macOS UI tweaks, system tweaks, guides and tips for better experience, productivity and workflow and more
 

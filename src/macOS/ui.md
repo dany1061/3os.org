@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 title: macOS UI Tweaks
 description: macOS macOS UI tweaks and tips, for better experience, productivity and workflow
 
@@ -21,7 +23,7 @@ killall Finder
 
 ## Change the Launchpad Grid Layout
 
-<div style="width:80%; margin:0 auto">
+<div style="width:90%; margin:0 auto">
     <img src="/assets/images/macOS/launchpad.jpg" alt="launchpad Grid 9x7">
 </div>
 

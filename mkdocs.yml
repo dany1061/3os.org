@@ -104,7 +104,7 @@ theme:
   language: en
   logo:
     icon: 'donut_small'
-  favicon: 'assets/images/favicon.ico'
+  favicon: '/assets/images/favicon.ico'
   palette:
     primary: 'blue grey'
     accent: 'blue'
@@ -124,6 +124,8 @@ extra:
       link: 'https://github.com/fire1ce'
     - type: 'linkedin'
       link: 'https://linkedin.com/in/stas-kosatuhin'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/3os.org'
 
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'

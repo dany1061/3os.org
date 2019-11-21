@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 title: Raspberry Pi - Magic Mirror Installation Guide
 description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples, and simple usage
 

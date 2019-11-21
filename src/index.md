@@ -1,5 +1,13 @@
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
+title: 3os.org
+description: knowledge base on various topics such as IT, Security, Penetration Testing, useful guides, links and tools for the vast system admins, technology enthusiasts and practically anyone who is looking for the some technical information and more.
+
 # Welcome to 3os
-<img src="assets/images/logo/banner.jpg" align="center">
+
+<div style="width:100%; margin:0 auto;">
+   <img src="/assets/images/mainbanner.jpg" alt="main banner" >
+</div>
 
 ## 3os Project is an Open Source Project
 

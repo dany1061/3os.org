@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 title: Donation section for 3os Project
 description: Donate to 3os project with paypal
 <!-- Meta Data for search engines - NOT Visible -->
