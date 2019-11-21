@@ -3,9 +3,15 @@ description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Poin
 
 # Raspberry Pi 3 Tor Access Point <small>TorPi</small> (09/11/19 UPDATE)
 
+<div style="width:80%; margin:0 auto">
+   <img src="/assets/images/RaspberryPi/torpi.jpg" alt="TorPi">
+</div>
+
 ## Network Flow
 
-![Tor-Pi Network Flow](../assets/images/RasperryPi/raspberryPi3TorAccessPoint.png "Tor-Pi Network Flow")
+<div style="width:80%; margin:0 auto">
+   <img src="/assets/images/RaspberryPi/raspberryPi3TorAccessPoint.png" alt="Tor-Pi Network Flow">
+</div>
 
 ## Preparation
 

@@ -21,6 +21,10 @@ killall Finder
 
 ## Change the Launchpad Grid Layout
 
+<div style="width:80%; margin:0 auto">
+    <img src="/assets/images/macOS/launchpad.jpg" alt="launchpad Grid 9x7">
+</div>
+
 Change the _springboard-columns_ and _springboard-rows_ values according to your preference
 
 ```bash
@@ -29,6 +33,10 @@ write com.apple.dock springboard-rows -int 7
 write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
 ```
+
+
+Result:
+src/assets/images/macOS/launchpad.jpg
 
 ## Reset Launchpad Icons Sort
 

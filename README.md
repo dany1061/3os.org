@@ -1,8 +1,9 @@
 # [3os.org](https://3os.org/)
 
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github-tools.github.io/github-release-notes/)
+[![Requirements Status](https://requires.io/github/fire1ce/3os.org/requirements.svg?branch=gh-pages)](https://requires.io/github/fire1ce/3os.org/requirements/?branch=gh-pages)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://3os.org/markdownCheatSheet/welcome/)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/fire1ce/3os.org/tree/master/src)
+[![Automated Release Notes by gren](https://img.shields.io/badge/%F0%9F%A4%96-release%20notes-00B2EE.svg)](https://github.com/fire1ce/3os.org/releases)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org/)
 
 - The 3os.org is made and built with [MkDocs](https://www.mkdocs.org/)
@@ -16,7 +17,7 @@
 
 ### MIT License
 
-Copyright (c) Stas Kosatuhin @2018
+Copyright© 3os.org @2018
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to

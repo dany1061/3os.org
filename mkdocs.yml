@@ -53,7 +53,7 @@ nav:
       - IDD Generator & Validator: 'penTesting/iddGenerator.md'
       - Click-Jacking Test: 'penTesting/clickJacking.md'
       - Android Penetration Testing: 'penTesting/androidPT.md'
-      - Kali linux Modifications: 'penTesting/kaliLinux.md'
+      - Kali Linux Modifications: 'penTesting/kaliLinux.md'
   - More...:
       - General: 'moreCategories/generalLinks.md'
       - Browsers Extensions:
@@ -106,13 +106,13 @@ theme:
     icon: 'donut_small'
   favicon: 'assets/images/favicon.ico'
   palette:
-    primary: 'teal'
-    accent: 'teal'
+    primary: 'blue grey'
+    accent: 'blue'
   feature:
     tabs: 'true'
   font:
-    text: 'Ubuntu'
-    code: 'Ubuntu Mono'
+    text: 'Roboto '
+    code: 'Roboto Mono'
 
 # Social Links and Comments
 extra:
@@ -170,4 +170,4 @@ google_analytics:
   - 'auto'
 
 # Copyright
-copyright: 'Copyright &copy; Stas Kosatuhin @2018'
+copyright: 'Copyright &copy; 3os.org @2018'

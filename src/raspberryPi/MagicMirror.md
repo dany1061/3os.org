@@ -3,57 +3,83 @@ description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples,
 
 # Magic Mirror
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" width=1000>
+<div style="width:80%; margin:0 auto">
+    <img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" alt="MagicMirror">
+</div>
 
 ## Magic Mirror Build Pictures
 
 23" Samsung screen power resoldering:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1719.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1719.jpg" alt="MagicMirror">
+</div>
 
 Wooden frame initial fitting test on a glass with duel mirror film applied:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1717.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1717.jpg" alt="MagicMirror">
+</div>
 
 Testing the screen installation (frame removed) with power cords:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1722.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1722.jpg" alt="MagicMirror">
+</div>
 
 Testing black&white picture from a laptop after frame assembly:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1732.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1732.jpg" alt="MagicMirror">
+</div>
 
 Power, Lan, Usb external ports cutouts:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1766.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1766.jpg" alt="MagicMirror">
+</div>
 
 Fitted extended ports with wood filler:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1767.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1767.jpg" alt="MagicMirror">
+</div>
 
 Extended ports:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1768.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1768.jpg" alt="MagicMirror">
+</div>
 
 Assembly With screen, Raspberry Pi, cable routing, black material which do not pass light where there is no screen:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1771.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1771.jpg" alt="MagicMirror">
+</div>
 
 Adding some color for the frame:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1978.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1778.jpg" alt="MagicMirror">
+</div>
 
 Testing everything is working as it should be:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1984.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1784.jpg" alt="MagicMirror">
+</div>
 
 Full assembly behind the mirror:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_1985.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1785.jpg" alt="MagicMirror">
+</div>
 
 Final Product:
 
-<img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" width=800>
+<div style="width:80%; margin:0 auto">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_2134.jpg" alt="MagicMirror">
+</div>
 
 ## Configuration Setup
 
@@ -71,7 +97,7 @@ Add one of those according to your setup to the config file:
 | display_rotate=1       | 90 degrees      |
 | display_rotate=2       | 180 degrees     |
 | display_rotate=3       | 270 degrees     |
-| display_rotate=0x10000 | horizontal flip |
+| display_rotate=0x8000 | horizontal flip |
 | display_rotate=0x20000 | vertical flip   |
 
 `NOTE: You can rotate both the image and touch interface 180º by entering lcd_rotate=2 instead`

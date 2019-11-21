@@ -364,5 +364,9 @@
     "zcvf",
     "zstyle"
   ],
-  "cSpell.language": "en,en-GB,en-US"
+  "cSpell.language": "en,en-GB,en-US",
+  "cSpell.ignoreWords": [
+    "macos",
+    "wall"
+  ]
 }
