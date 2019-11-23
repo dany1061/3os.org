@@ -1,6 +1,8 @@
 title: Raspberry Pi - Tor-Pi Installation Guide
 description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Point Guide
 
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 # Raspberry Pi 3 Tor Access Point <small>TorPi</small> (09/11/19 UPDATE)
 
 <div style="width:80%; margin:0 auto">

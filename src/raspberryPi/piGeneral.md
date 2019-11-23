@@ -1,6 +1,8 @@
 title: Linux - Raspberry Pi Tips & Tricks
 description: Raspberry Pi Tips & Tricks how to, guides, examples, and simple usage
 
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 # Raspberry Pi Tips & Tricks
 
 ## Default User and Password After Installation
@@ -10,26 +12,16 @@ User: pi
 Password: raspberry
 ```
 
-## Basic Raspbian Configuration
+## Basic  Configuration
 
 ```bash
 sudo raspi-config
 ```
 
-## Update Raspbian OS
+## Update OS
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
-```
-
-## Install Fish Shell on Raspbian
-
-```bash
-sudo apt-get install software-properties-common
-sudo apt-add-repository ppa:fish-shell/release-2
-sudo apt-get update
-sudo apt-get install fish
-sudo usermod -s /usr/bin/fish pi
 ```
 
 ## Install Oh-My-Zsh on Raspbian
