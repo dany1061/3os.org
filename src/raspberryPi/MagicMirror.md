@@ -62,19 +62,19 @@ Assembly With screen, Raspberry Pi, cable routing, black material which do not p
 Adding some color for the frame:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1778.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1978.jpg" alt="MagicMirror">
 </div>
 
 Testing everything is working as it should be:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1784.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1984.jpg" alt="MagicMirror">
 </div>
 
 Full assembly behind the mirror:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1785.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1985.jpg" alt="MagicMirror">
 </div>
 
 Final Product:
