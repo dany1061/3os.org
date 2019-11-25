@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
-
 title: Raspberry Pi - Magic Mirror Installation Guide
 description: LRaspberry Pi - Magic Mirror Installation how to, guides, examples, and simple usage
+
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
 
 # Magic Mirror
 
@@ -62,19 +62,19 @@ Assembly With screen, Raspberry Pi, cable routing, black material which do not p
 Adding some color for the frame:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1778.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1978.jpg" alt="MagicMirror">
 </div>
 
 Testing everything is working as it should be:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1784.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1984.jpg" alt="MagicMirror">
 </div>
 
 Full assembly behind the mirror:
 
 <div style="width:80%; margin:0 auto">
-   <img src="https://w.3os.org/3os/magicMirror/IMG_1785.jpg" alt="MagicMirror">
+   <img src="https://w.3os.org/3os/magicMirror/IMG_1985.jpg" alt="MagicMirror">
 </div>
 
 Final Product:
@@ -94,12 +94,12 @@ sudo nano /boot/config.txt
 Add one of those according to your setup to the config file:
 
 | Code                   | Description     |
-| ---------------------- | --------------- |
+|------------------------|-----------------|
 | display_rotate=0       | Normal          |
 | display_rotate=1       | 90 degrees      |
 | display_rotate=2       | 180 degrees     |
 | display_rotate=3       | 270 degrees     |
-| display_rotate=0x8000 | horizontal flip |
+| display_rotate=0x8000  | horizontal flip |
 | display_rotate=0x20000 | vertical flip   |
 
 `NOTE: You can rotate both the image and touch interface 180º by entering lcd_rotate=2 instead`

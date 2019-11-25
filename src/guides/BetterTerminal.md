@@ -1,8 +1,15 @@
+title: better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions
+description: better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions For macOS and Linux.
+
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 # Better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions
 
-![Linux Terminal](../assets/images/guides/betterTerminal/linuxTerminal.png)
-
 ## MacOS Installation with iTerm2 and Homebrew
+
+<div style="width:80%; margin:0 auto">
+   <img src="/assets/images/guides/betterTerminal/linuxTerminal.png" alt="terminal screenshot">
+</div>
 
 First of all we need to install [**Homebrew**](https://brew.sh/)
 
