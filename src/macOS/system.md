@@ -1,6 +1,8 @@
 title: macOS System Tweaks
 description: macOS System tweaks and tips for better experience, productivity and workflow and more
 
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
 # macOS System Tweaks and Guides for Better Experience, Productivity and Workflow
 
 ## Import RSA Keys to macOS Keychain
@@ -98,6 +100,19 @@ Save & Exit
 ```bash
 source ~/.zshrc
 ```
+
+## Force Language Change on focus iTerm to ABC
+
+* Install __KeyBoard Maestro__
+* Create a group in __Groups__ section. I named my __Personal__
+* Now create a macro with the name __Set iTerm Application Language.__
+* Add another trigger -> __This application__ -> Select __iTerm__ -> Select __Active__ -> Repeating every __1 seconds__.
+* Add __New Action__ -> Select __Set KeyBoard Layout__ -> Select the keyboard layout (i.e., language preference).
+
+<div style="width:100%; margin:0 auto">
+   <img src="/assets/images/macOS/itermToUS.jpg" alt="mac image">
+</div>
+
 
 ## Disable/Enable SIP (System Integrity Protection)
 
