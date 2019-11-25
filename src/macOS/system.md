@@ -142,7 +142,7 @@ File > Export
 
 Use the following settings:
 
-* Save As: __Your New Application Name__
+* Export As: __Your New Application Name__
 * Where: __Applications__
 * File Format: __Application__
 
