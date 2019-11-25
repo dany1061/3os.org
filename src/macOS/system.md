@@ -101,7 +101,7 @@ Save & Exit
 source ~/.zshrc
 ```
 
-## Force Language Change on focus iTerm to ABC
+## Force Language Change on iTerm Focus to English
 
 * Install __KeyBoard Maestro__
 * Create a group in __Groups__ section. I named my __Personal__
