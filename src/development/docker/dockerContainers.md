@@ -49,6 +49,7 @@ joshuaavalon/cloudflare-ddns:latest
 
 ## Ubiquiti Unifi Controller On Synology NAS
 
+```bash
 docker run \
 -d \
 --restart always \
@@ -68,6 +69,7 @@ docker run \
 -p 6789:6789 \
 -e TZ=Asia/Jerusalem \
 linuxserver/unifi-controller:latest
+```
 
 ## Ubiquiti UNMS Controller On Synology NAS
 
