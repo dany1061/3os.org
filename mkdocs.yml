@@ -45,7 +45,7 @@ nav:
              - Containers: 'development/docker/dockerContainers.md'
       - Python: 'development/python.md'
       - Ruby: 'development/ruby.md'
-      - npm: 'development/npm.md'
+      - npm & node: 'development/npm.md'
   - Windows:
       - Windows General: 'windows/windowsGeneral.md'
       - Windows Guides and How-To: 'windows/windowsGuides.md'

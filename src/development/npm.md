@@ -1,7 +1,25 @@
-title: Development - npm
-description: Development - npm how to, guides, examples, and simple usage
+title: Development - npm & node
+description: Development - npm & node how to, guides, examples, and simple usage
 
 # NPM
+
+## Updating Node & npm to Latest Stable
+
+npm:
+
+```bash
+npm install -g npm
+```
+
+node:
+
+```bash
+npm cache clean -f
+npm install -g n
+n stable
+
+```
+
 
 ## Updating Local Project Packages
 
