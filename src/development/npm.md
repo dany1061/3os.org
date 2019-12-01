@@ -3,7 +3,7 @@ description: Development - npm & node how to, guides, examples, and simple usage
 
 # NPM
 
-## Updating Node & npm to Latest Stable
+## Updating Node & npm to Latest Stable Version
 
 npm:
 
