@@ -49,25 +49,25 @@ joshuaavalon/cloudflare-ddns:latest
 
 ## Ubiquiti Unifi Controller On Synology NAS
 
-based on _jacobalberty/unifi:latest_ image for Synology NAS
-
-```docker
 docker run \
 -d \
 --restart always \
+-e PUID=1000 \
+-e PGID=1000 \
 --name=unifi-controller \
---net=host \
 -h unifi \
--v /volume1/docker/unifi:/var/lib/unifi \
+-e MEM_LIMIT=1024M  \
+-v /volume1/docker/unifi:/config \
 -p 8080:8080/tcp \
 -p 8081:8081/tcp \
 -p 8443:8443/tcp \
 -p 8843:8843/tcp \
 -p 8880:8880/tcp \
 -p 3478:3478/udp \
+-p 10001:10001/udp \
+-p 6789:6789 \
 -e TZ=Asia/Jerusalem \
-jacobalberty/unifi:latest
-```
+linuxserver/unifi-controller:latest
 
 ## Ubiquiti UNMS Controller On Synology NAS
 
