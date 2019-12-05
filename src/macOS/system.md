@@ -53,6 +53,12 @@ create or edit ~/.ssh/ssh_config and add the following lines:
    StrictHostKeyChecking no
 ```
 
+## Set macOS Hostname via CLI
+
+```bash
+sudo scutil --set HostName <NewHostNameHere>
+```
+
 ## Syntax Highlighting In Nano on Mac OS X
 
 Install Nano from homebrew
