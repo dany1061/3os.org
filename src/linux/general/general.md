@@ -3,6 +3,15 @@ description: Linux General how to, guides, examples, and simple usage
 
 # Linux General Topics
 
+## Service Status/Start/Stop/Enabling On Boot
+
+```bash
+systemctl status httpd
+systemctl start httpd
+systemctl stop httpd
+systemctl enable httpd
+```
+
 ## Run Script On Boot - Crontab
 
 Only add sudo if your script needs superuser privileges. Then add this to your crontab:
@@ -115,7 +124,6 @@ Save. Then run:
 ```bash
 sudo sysctl -p /etc/sysctl.conf
 ```
-
 
 ## Max connections on Linux
 
