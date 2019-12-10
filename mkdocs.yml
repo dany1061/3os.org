@@ -12,6 +12,7 @@ nav:
       - General: 'linux/general/general.md'
       - SSH Service Security: 'linux/SSH_Service_Security.md'
       - Centos 7: 'linux/centos7.md'
+      - Centos 8: 'linux/centos8.md'
       - Ubuntu: 'linux/ubuntu.md'
       - Files: 'linux/general/files.md'
       - Memory & Swap: 'linux/general/memorySwap.md'

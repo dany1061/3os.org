@@ -1,7 +1,7 @@
-title: Linux - Centos 7
-description: Linux - Centos 7 how to, guides, examples, and simple usage
+title: Linux - CentOS 7 Guides, Examples and Usage
+description: CentOS 7 Guides, Examples and Usage
 
-# Centos 7
+# CentOS 7
 
 ## Service Control
 
