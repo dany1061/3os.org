@@ -2,73 +2,7 @@ title: Linux - CentOS 7 Guides, Examples and Usage
 description: CentOS 7 Guides, Examples and Usage
 
 # CentOS 7
-
-## Service Control
-
-In the following examples we will use ^^httpd^^ as a service
-
-### Check Service Status
-
-```bash
-systemctl status httpd
-```
-
-### Start Service
-
-```bash
-systemctl start httpd
-```
-
-### Stop Service
-
-```Bash
-systemctl stop httpd
-```
-
-### Enabling A Service On Boot
-
-```bash
- systemctl enable httpd
-```
-
-### Check If The Service Starts On Boot
-
-```Bash
-systemctl status httpd
-```
-
-for ^^enabled^^ service should be printed:
-
-```bash
-httpd.service - The Apache HTTP Server
-   Loaded: loaded (/usr/lib/systemd/system/httpd.service; enabled)
-```
-
-for ^^disabled^^ service should be printed:
-
-```bash
-httpd.service - The Apache HTTP Server
-   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled)
-```
-
-### Check Which Services Failed To Start On Boot
-
-```bash
-systemctl --failed
-```
-
-exmaple:
-
-```bash
-$ systemctl --failed
-UNIT            LOAD   ACTIVE SUB    DESCRIPTION
-kdump.service   loaded failed failed Crash recovery kernel arming
-php-fpm.service loaded failed failed The PHP FastCGI Process Manager
-
-LOAD   = Reflects whether the unit definition was properly loaded.
-ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
-SUB    = The low-level unit activation state, values depend on unit type.
-```
+`
 
 ## Installing Network Tools
 

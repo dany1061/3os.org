@@ -47,10 +47,16 @@ sudo add-apt-repository universe
 sudo apt-get install qemu-guest-agent
 ```
 
-On Centos:
+On CentOS 7:
 
 ```bash
-yum install qemu-guest-agent -y
+yum install -y qemu-guest-agent
+```
+
+On CentOS 8:
+
+```bash
+dnf install -y qemu-guest-agent
 ```
 
 ## Automated SSL Using Let's Encrypt, CloudFlare API, acme.sh Script
