@@ -75,3 +75,11 @@ dnf install -y docker-ce --nobest
 systemctl start docker
 systemctl enable docker
 ```
+
+## Htop Installation CentOS 8
+
+```bash
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+dnf update
+dnf install htop
+```
