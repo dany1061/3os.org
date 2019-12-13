@@ -83,3 +83,26 @@ dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarc
 dnf update
 dnf install -y htop
 ```
+
+## Numbers of Kernels to Keep
+
+__Mininum is 2__
+
+```bash
+dnf install -y dnf-utils
+```
+
+### Configure yum to auto-remove old kernels
+
+Edit /etc/yum.conf
+Set the limit to desired value
+
+```bash
+installonly_limit=2
+```
+
+## Remove virbr0 and lxcbr0 Interfaces
+
+```bash
+chkconfig libvirtd off
+```
