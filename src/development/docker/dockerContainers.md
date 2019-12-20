@@ -20,14 +20,14 @@ containrrr/watchtower:latest --cleanup --debug
 
 ### Parameters
 
-* ZONE: Domain, e.g. example.com.
-* HOST: DNS record to be updated, e.g. example.com, subdomain.example.com.
-* EMAIL: Cloudflare Email.
-* API: Cloudflare API key.
-* TTL: (OPTIONAL) Time to live for DNS record. Value of 1 is 'automatic'. Min value:120; Max value:2147483647. Default: 1
-* PROXY: (OPTIONAL) Whether the record is receiving the performance and security benefits of Cloudflare. true to enable; false to disable. Default: true
-* FORCE_CREATE: (OPTIONAL) When set, a record will be created if one does not exist already.
-* RUNONCE: (OPTIONAL) When set, only a single update is attempted, and the script exists without setting up a cron process.
+-   ZONE: Domain, e.g. example.com.
+-   HOST: DNS record to be updated, e.g. example.com, subdomain.example.com.
+-   EMAIL: Cloudflare Email.
+-   API: Cloudflare API key.
+-   TTL: (OPTIONAL) Time to live for DNS record. Value of 1 is 'automatic'. Min value:120; Max value:2147483647. Default: 1
+-   PROXY: (OPTIONAL) Whether the record is receiving the performance and security benefits of Cloudflare. true to enable; false to disable. Default: true
+-   FORCE_CREATE: (OPTIONAL) When set, a record will be created if one does not exist already.
+-   RUNONCE: (OPTIONAL) When set, only a single update is attempted, and the script exists without setting up a cron process.
 
 ### Running the Container
 
@@ -159,20 +159,20 @@ pihole/pihole:latest
 
 Blocklists
 
-* https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-* https://mirror1.malwaredomains.com/files/justdomains
-* http://sysctl.org/cameleon/hosts
-* https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
-* https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
-* https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-* https://hosts-file.net/ad_servers.txt
-* https://smokingwheels.github.io/Pi-hole/allhosts
-* https://dbl.oisd.nl/
-* https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt
-* https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
-* https://filters.adtidy.org/extension/chromium/filters/14.txt
-* https://filters.adtidy.org/extension/chromium/filters/10.txt
-* https://filters.adtidy.org/extension/chromium/filters/11.txt
+-   https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+-   https://mirror1.malwaredomains.com/files/justdomains
+-   http://sysctl.org/cameleon/hosts
+-   https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
+-   https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
+-   https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
+-   https://hosts-file.net/ad_servers.txt
+-   https://smokingwheels.github.io/Pi-hole/allhosts
+-   https://dbl.oisd.nl/
+-   https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt
+-   https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
+-   https://filters.adtidy.org/extension/chromium/filters/14.txt
+-   https://filters.adtidy.org/extension/chromium/filters/10.txt
+-   https://filters.adtidy.org/extension/chromium/filters/11.txt
 
 ## Sonarr - Container to Auto Download TV Shows
 

@@ -2,6 +2,7 @@ title: Linux - CentOS 7 Guides, Examples and Usage
 description: CentOS 7 Guides, Examples and Usage
 
 # CentOS 7
+
 `
 
 ## Installing Network Tools
@@ -39,7 +40,7 @@ semanage port -a -t ftp_port_t -p tcp <YOUR PORT>
 
 ## Disable SELinux on CentOS 7
 
-change __SELINUX=enforcing__ to __SELINUX=disabled__
+change **SELINUX=enforcing** to **SELINUX=disabled**
 
 ```bash
 sudo nano /etc/selinux/config

@@ -5,11 +5,11 @@ description: Synology how to, guides, examples, and simple usage
 
 ## Allow SSH With RSA KEY
 
-* Log into Synology web UI as an administrator user
-* Enable “User Home”
-* Control Panel / User / Advanced, scroll down to “User Home”
-* Check “Enable user home service”, select an appropriate Location (i.e. volume1)
-* Click “Apply”
+-   Log into Synology web UI as an administrator user
+-   Enable “User Home”
+-   Control Panel / User / Advanced, scroll down to “User Home”
+-   Check “Enable user home service”, select an appropriate Location (i.e. volume1)
+-   Click “Apply”
 
 SSH into Synology as `Admin User`
 
@@ -26,11 +26,11 @@ Configure the Synology’s SSH service to allow login by key
 sudo vi /etc/ssh/sshd_config
 ```
 
-* Uncomment line that says: #PubkeyAuthentication yes
-* Uncomment the line that says: #AuthorizedKeyFiles .ssh/authorized_keys
-* Add a line: PasswordAuthentication no
-* Make sure that line is uncommented that says: ChallengeResponseAuthentication no
-* Save the file and exit the editor
+-   Uncomment line that says: #PubkeyAuthentication yes
+-   Uncomment the line that says: #AuthorizedKeyFiles .ssh/authorized_keys
+-   Add a line: PasswordAuthentication no
+-   Make sure that line is uncommented that says: ChallengeResponseAuthentication no
+-   Save the file and exit the editor
 
 ```bash
 sudo synoservicectl --restart sshd

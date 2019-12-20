@@ -198,4 +198,3 @@ Generate CSR:
 ```bash
 openssl req -new -sha256 -key private.key -out mycsr.csr
 ```
-
