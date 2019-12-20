@@ -38,7 +38,7 @@ systemctl disable firewalld
 
 ## Disable SELinux on CentOS 7
 
-change __SELINUX=enforcing__ to __SELINUX=disabled__
+change **SELINUX=enforcing** to **SELINUX=disabled**
 
 ```bash
 sudo nano /etc/selinux/config
@@ -67,6 +67,40 @@ To make the settings affective, execute :
 sysctl -p
 ```
 
+## Python 2/3 Installation on CentOS 8
+
+Python 2
+
+```bash
+dnf install python2
+```
+
+Python 3
+
+```bash
+dnf install python3
+```
+
+Set Default Python Version
+
+Python 2
+
+```bash
+alternatives --set python /usr/bin/python2
+```
+
+Python 3
+
+```bash
+alternatives --set python /usr/bin/python3
+```
+
+Remove the unversioned python
+
+```bash
+alternatives --auto python
+```
+
 ## Docker CE Installation on CentOS 8
 
 ```bash
@@ -74,6 +108,15 @@ dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce
 dnf install -y docker-ce --nobest
 systemctl start docker
 systemctl enable docker
+```
+
+## NodeJS and NPM Stable Installation
+
+```bash
+dnf install -y nodejs
+npm install -g n
+n stable
+node -v
 ```
 
 ## Htop Installation CentOS 8
@@ -86,7 +129,7 @@ dnf install -y htop
 
 ## Numbers of Kernels to Keep
 
-__Mininum is 2__
+**Mininum is 2**
 
 ```bash
 dnf install -y dnf-utils
