@@ -53,7 +53,7 @@ commit ; save
 
 ## Hardware Offloading
 
-For __Devices: ER-X / ER-X-SFP / EP-R6__
+For **Devices: ER-X / ER-X-SFP / EP-R6**
 Enable _hwnat_ and _ipsec_ offloading.
 
 ```bash
@@ -76,7 +76,7 @@ set system offload ipsec disable
 commit ; save
 ```
 
-For __Devices: ER-4 / ER-6P / ERLite-3 / ERPoE-5 / ER-8 / ERPro-8 / EP-R8 / ER-8-XG__
+For **Devices: ER-4 / ER-6P / ERLite-3 / ERPoE-5 / ER-8 / ERPro-8 / EP-R8 / ER-8-XG**
 Enable IPv4/IPv6 and ipsec offloading.
 
 ```bash
@@ -145,7 +145,7 @@ From the Dashboard, click Add Interface and select VLAN.
 
 ![Interface](/assets/images/ubiquiti/guestWifi/01.Interface.png)
 
-Set up the VLAN ID as You like for this example will use id __1003__ and attach it to the physical interface of your LAN. Give it an IP address in the range of a private IP block, but make sure you end it in a /24 to specify the proper subnet (I originally did /32 as I though it was supposed to be the exact IP address).
+Set up the VLAN ID as You like for this example will use id **1003** and attach it to the physical interface of your LAN. Give it an IP address in the range of a private IP block, but make sure you end it in a /24 to specify the proper subnet (I originally did /32 as I though it was supposed to be the exact IP address).
 
 ![vlan](/assets/images/ubiquiti/guestWifi/02.vlan.png)
 
@@ -198,7 +198,7 @@ Enter bandwidth limits that are appropriate for your Internet Speed. I used 6000
 
 Now go to the Wireless Networks section and create a new network called “Guest” or whatever you want to call it.
 
-Make sure it is enabled, give it WiFi security key, check the “Guest Policy” option, enter the VLAN __Id you used previously__ and choose the Guest User Group. Save!
+Make sure it is enabled, give it WiFi security key, check the “Guest Policy” option, enter the VLAN **Id you used previously** and choose the Guest User Group. Save!
 
 ![Unifi_SSDID](/assets/images/ubiquiti/guestWifi/13.Unifi_SSDID.png)
 
@@ -228,7 +228,7 @@ sudo su
 Generate a Diffie-Hellman (DH) key file and place it in the /config/auth directory. This Will take some time...
 
 ```bash
-openssl dhparam -out /config/auth/dh.pem -2 2048
+openssl dhparam -out /config/auth/dh.pem -2 4096
 ```
 
 Change the current directory.
@@ -240,7 +240,7 @@ cd /usr/lib/ssl/misc
 Generate a root certificate (replace <secret> with your desired passphrase).
 
 ```bash
-./CA.sh -newca
+./CA.pl -newca
 ```
 
 exmaple:
@@ -266,7 +266,7 @@ cp demoCA/private/cakey.pem /config/auth
 Generate the server certificate.
 
 ```bash
-./CA.sh -newreq
+./CA.pl -newreq
 ```
 
 exmaple:
@@ -281,8 +281,10 @@ Email Address: `support@ubnt.com`
 
 Sign the server certificate.
 
+if you want to change the certificate expiration day use: export **default_days="3650"** with the value of days you desire
+
 ```bash
-./CA.sh -sign
+./CA.pl -sign
 ```
 
 Move and rename the server certificate + key to the /config/auth directory.
@@ -295,13 +297,13 @@ mv newkey.pem /config/auth/server.key
 Generate, sign and move the client1 certificates.
 
 ```bash
-./CA.sh -newreq
+./CA.pl -newreq
 ```
 
 Common Name: client1
 
 ```bash
-./CA.sh -sign
+./CA.pl -sign
 mv newcert.pem /config/auth/client1.pem
 mv newkey.pem /config/auth/client1.key
 ```
@@ -309,13 +311,13 @@ mv newkey.pem /config/auth/client1.key
 (Optional) Repeat the process for client2.
 
 ```bash
-./CA.sh -newreq
+./CA.pl -newreq
 ```
 
 Common Name: client2
 
 ```bash
-./CA.sh -sign
+./CA.pl -sign
 mv newcert.pem /config/auth/client2.pem
 mv newkey.pem /config/auth/client2.key
 ```
@@ -328,15 +330,15 @@ ls -l /config/auth
 
 You should have those files:
 
-* cacert.pem
-* cakey.pem
-* client1.key
-* client1.pem
-* client2.key
-* client2.pem
-* dh.pem
-* server.key
-* server.pem
+-   cacert.pem
+-   cakey.pem
+-   client1.key
+-   client1.pem
+-   client2.key
+-   client2.pem
+-   dh.pem
+-   server.key
+-   server.pem
 
 Remove the password from the client + server keys. This allows the clients to connect using only the provided certificate.
 
@@ -453,7 +455,7 @@ run from the same directory:
 ./speedtest-cli --no-pre-allocate
 ```
 
-based on [https://github.com/sivel/speedtest-cli](https://github.com/sivel/speedtest-cli "speedtest-cli")
+based on [https://github.com/sivel/speedtest-cli](https://github.com/sivel/speedtest-cli 'speedtest-cli')
 
 ## Enable NetFlow on EdgeRouter to UNMS
 
