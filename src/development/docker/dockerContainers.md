@@ -18,33 +18,35 @@ containrrr/watchtower:latest --cleanup --debug
 
 ## cloudflare-ddns
 
-### Parameters
-
--   ZONE: Domain, e.g. example.com.
--   HOST: DNS record to be updated, e.g. example.com, subdomain.example.com.
--   EMAIL: Cloudflare Email.
--   API: Cloudflare API key.
--   TTL: (OPTIONAL) Time to live for DNS record. Value of 1 is 'automatic'. Min value:120; Max value:2147483647. Default: 1
--   PROXY: (OPTIONAL) Whether the record is receiving the performance and security benefits of Cloudflare. true to enable; false to disable. Default: true
--   FORCE_CREATE: (OPTIONAL) When set, a record will be created if one does not exist already.
--   RUNONCE: (OPTIONAL) When set, only a single update is attempted, and the script exists without setting up a cron process.
-
-### Running the Container
-
 ```docker
 docker run \
 -d \
--h cloudflareddns \
+-h cloudflare-ddns \
 --restart always \
 --name=cloudflare-ddns \
--e ZONE=example.com \
--e HOST=example.com \
--e EMAIL=example@example.com \
--e API=1111111111111111 \
--e TTL=1 \
--e PROXY=true \
+-v /volume1/docker/cloudflare-ddns/config.yaml:/app/config.yaml \
 -e TZ=Asia/Jerusalem \
-joshuaavalon/cloudflare-ddns:latest
+-e PUID=1000 \
+-e PGID=1000 \
+joshava/cloudflare-ddns:latest
+```
+
+## cloudflared-dns-proxy
+
+```bash
+docker run \
+--name=cloudflare-dns-proxy \
+-h cloudflare-dns-proxy \
+-d \
+--restart always \
+-p 11054:54/tcp \
+-p 11054:54/udp \
+-e DNS1=1.1.1.1 \
+-e DNS2=8.8.8.8 \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+visibilityspots/cloudflared:latest
 ```
 
 ## Ubiquiti Unifi Controller On Synology NAS
@@ -130,12 +132,14 @@ docker run \
 -d \
 --restart always \
 --name=calibre-web \
--h calibre \
--e TZ=Asia/Jerusalem \
--e DOCKER_MODS=linuxserver/calibre-web:calibre \
--p 5071:8083 \
+-h calibre-web \
+-p 11501:8083 \
 -v /volume1/docker/calibre/config:/config \
 -v /volume1/docker/calibre/books:/books \
+-e DOCKER_MODS=linuxserver/calibre-web:calibre \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/calibre-web:latest
 ```
 
@@ -145,14 +149,17 @@ linuxserver/calibre-web:latest
 docker run \
 -d \
 --restart always \
---name pihole \
--h pihole \
--p 53:53/tcp -p 53:53/udp \
--p 5053:80 \
--e TZ=Asia/Jerusalem \
+--name pi-hole \
+-h pi-hole \
+-p 53:53/tcp \
+-p 53:53/udp \
+-p 11500:80 \
 -v /volume1/docker/pihole/pihole/:/etc/pihole \
 -v /volume1/docker/pihole/dnsmasq.d:/etc/dnsmasq.d \
 -v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 --dns=127.0.0.1 --dns=1.1.1.1 \
 pihole/pihole:latest
 ```

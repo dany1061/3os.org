@@ -115,26 +115,35 @@ set system offload ipsec disable
 commit ; save
 ```
 
-## Disable/Update /etc/hosts file on EdgeRouter
+## Disable, Update /etc/hosts file on EdgeRouter
 
-Disable:
+Disable Auto DHCP hots:
 
 ```bash
 configure
-set service dns forwarding options no-hosts
-commit
-save
+set service dhcp-server hostfile-update disablecommit
+commit ; save
 ```
 
-Update:
+Update the Host File Manually:
 
 ```bash
-set service dhcp-server hostfile-update disable
-commit
-set service dhcp-server hostfile-update enable
-commit
+configure
+set system static-host-mapping host-name mydomain.com inet 192.168.1.10
+commit ; save
+```
+
+Show DNS Forwarding 
+
+```bash
+configure
+show service dns forwarding
+```
+
+Show Hosts Config
+
+```bash
 cat /etc/hosts
-save
 ```
 
 ## Guest Wifi With Ubiquiti EdgeRouter and Unifi Access Points
