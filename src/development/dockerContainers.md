@@ -8,8 +8,8 @@ description: Docker useful Containers
 ```docker
 docker run \
 -d \
---name watchtower \
 --restart always \
+--name watchtower \
 -h watchtower \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -e TZ=Asia/Jerusalem \
@@ -21,9 +21,9 @@ containrrr/watchtower:latest --cleanup --debug
 ```docker
 docker run \
 -d \
--h cloudflare-ddns \
 --restart always \
 --name=cloudflare-ddns \
+-h cloudflare-ddns \
 -v /volume1/docker/cloudflare-ddns/config.yaml:/app/config.yaml \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
@@ -31,85 +31,41 @@ docker run \
 joshava/cloudflare-ddns:latest
 ```
 
-## cloudflared-dns-proxy
+config.yaml example:
 
-```bash
-docker run \
---name=cloudflare-dns-proxy \
--h cloudflare-dns-proxy \
--d \
---restart always \
--p 11054:54/tcp \
--p 11054:54/udp \
--e DNS1=1.1.1.1 \
--e DNS2=8.8.8.8 \
--e TZ=Asia/Jerusalem \
--e PUID=1000 \
--e PGID=1000 \
-visibilityspots/cloudflared:latest
+```config
+auth:
+  scopedToken: E8AAPoDE_Ukt7soafzZ4JcizLoUQ8YtAhXR3xE3
+domains:
+  - name: sub.example.com
+    type: A
+    proxied: false
+    create: false
+    zoneId: 88d455fbf3685db55fbe6855fb13de44fb3a8
 ```
 
 ## Ubiquiti Unifi Controller On Synology NAS
 
-```bash
+```docker
 docker run \
 -d \
 --restart always \
--e PUID=1000 \
--e PGID=1000 \
 --name=unifi-controller \
--h unifi \
+-h unifi-controller \
 -e MEM_LIMIT=1024M  \
 -v /volume1/docker/unifi:/config \
 -p 8080:8080/tcp \
 -p 8081:8081/tcp \
--p 8443:8443/tcp \
+-p 11503:8443/tcp \
 -p 8843:8843/tcp \
 -p 8880:8880/tcp \
 -p 3478:3478/udp \
 -p 10001:10001/udp \
 -p 6789:6789 \
 -e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/unifi-controller:latest
-```
-
-## Ubiquiti UNMS Controller On Synology NAS
-
-Based on _oznu/unms:latest_ image for Synology NAS
-
-```docker
-docker run \
--d \
---restart always \
---name=unms-controller \
--h unms \
--v /volume1/docker/unms:/config \
--p 9080:80 \
--p 9443:443 \
--p 2055:2055/udp \
--e PUBLIC_HTTPS_PORT=9443 \
--e PUBLIC_WS_PORT=9443 \
--e TZ=Asia/Jerusalem \
-oznu/unms:latest
-```
-
-## Zabbix Monitoring Container
-
-```docker
-docker run \
--d \
---name zabbix-appliance \
---restart always \
--h zabbix \
--p 10051:10051 \
--p 5060:80 \
--v /volume1/docker/zabbix:/var/lib/zabbix \
--v /volume1/docker/zabbix/mysql:/var/lib/mysql \
--v /volume1/docker/zabbix/nginx:/etc/ssl/nginx \
--e ZBX_SERVER_NAME=zabbix.3os.re \
--e TZ=Asia/Jerusalem \
--e PHP_TZ=Asia/Jerusalem \
-zabbix/zabbix-appliance:latest
 ```
 
 ## iperf3 Server Container
@@ -119,9 +75,11 @@ docker run \
 -d \
 --restart always \
 --name=iperf3-server \
--h iperf \
+-h iperf3-server \
 -p 5201:5201 \
 -e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 networkstatic/iperf3:latest -s
 ```
 
@@ -133,7 +91,6 @@ docker run \
 --restart always \
 --name=calibre-web \
 -h calibre-web \
--p 11501:8083 \
 -v /volume1/docker/calibre/config:/config \
 -v /volume1/docker/calibre/books:/books \
 -e DOCKER_MODS=linuxserver/calibre-web:calibre \
@@ -190,10 +147,13 @@ docker run \
 --name sonarr \
 -h sonarr \
 -e TZ=Asia/Jerusalem \
--p 5056:8989 \
+-p 11504:8989 \
 -v /volume1/docker/sonarr:/config \
 -v /volume1/activeShare/Media/TV\ Showes/:/tv \
 -v /volume1/activeShare/Downloads/:/downloads \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/sonarr:latest
 ```
 
@@ -205,11 +165,13 @@ docker run \
 --restart always \
 --name=radarr \
 -h radarr \
--e TZ=Asia/Jerusalem \
--p 5057:7878 \
+-p 11505:7878 \
 -v /volume1/docker/radarr:/config \
 -v /volume1/activeShare/Media/Movies:/movies \
 -v /volume1/activeShare/Downloads:/downloads \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/radarr:latest
 ```
 
@@ -218,17 +180,19 @@ linuxserver/radarr:latest
 ```docker
 docker run \
 -d \
--h jackett \
 --restart always \
 --name=jackett \
--e TZ=Asia/Jerusalem \
--p 5058:9117 \
+-h jackett \
+-p 11501:9117 \
 -v /volume1/docker/jackett:/config \
 -v /volume1/activeShare/Downloads:/downloads \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/jackett:latest
 ```
 
-### Import Jackett Indexer In Sonarr
+Import Jackett Indexer In Sonarr
 
 Add Custom Tornzab with API Path of:
 
@@ -236,7 +200,7 @@ Add Custom Tornzab with API Path of:
 /torznab/all/api
 ```
 
-### Import Jackett Indexer In Radarr
+Import Jackett Indexer In Radarr
 
 Add Custom Tornzab with URL of:
 
@@ -252,11 +216,12 @@ docker run \
 --restart always \
 --name=bazarr \
 -h bazarr \
--e TZ=Asia/Jerusalem \
--p 5070:6767 \
 -v /volume1/docker/bazarr:/config \
 -v /volume1/activeShare/Media/Movies:/movies \
 -v /volume1/activeShare/Media/TV\ Showes/:/tv \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
 linuxserver/bazarr:latest
 ```
 
@@ -268,43 +233,52 @@ docker run \
 -h ombi \
 --restart always \
 --name=ombi \
--e TZ=Asia/Jerusalem \
--p 5059:3579 \
 -v /volume1/docker/ombi:/config \
- linuxserver/ombi:latest
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+linuxserver/ombi:latest
 ```
 
 ## Joal - Torrent Fake Seedings
 
+```docker
 docker run \
 -d \
 --name joal \
 --restart always \
 -h joal \
--e TZ=Asia/Jerusalem \
 -e _JAVA_OPTIONS='-Djava.net.preferIPv6Addresses=true' \
 -v /volume1/docker/joal:/joal/torrents/ \
---name="joal" s8n02/joal \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+--name="joal" s8n02/joal:latest \
 --joal-conf="/joal" \
 --spring.main.web-environment=true \
 --server.port="9000" \
 --joal.ui.path.prefix="joal" \
 --joal.ui.secret-token="joal123"
+```
 
-
-## HomeBridge - Container for Apple HomeKit Integration
+## Zabbix Monitoring Container
 
 ```docker
 docker run \
 -d \
---net=host \
+--name zabbix-appliance \
 --restart always \
---name=homebridge \
+-h zabbix \
+-p 10051:10051 \
+-p 5060:80 \
+-v /volume1/docker/zabbix:/var/lib/zabbix \
+-v /volume1/docker/zabbix/mysql:/var/lib/mysql \
+-v /volume1/docker/zabbix/nginx:/etc/ssl/nginx \
+-e ZBX_SERVER_NAME=zabbix.3os.re \
 -e TZ=Asia/Jerusalem \
--e HOMEBRIDGE_INSECURE=1 \
--e HOMEBRIDGE_DEBUG=1 \
--v /volume1/docker/homebridge:/homebridge \
--e HOMEBRIDGE_CONFIG_UI=1 \
--e HOMEBRIDGE_CONFIG_UI_PORT=5061 \
-oznu/homebridge:latest
+-e PHP_TZ=Asia/Jerusalem \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+zabbix/zabbix-appliance:latest
 ```
