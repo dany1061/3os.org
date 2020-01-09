@@ -274,6 +274,24 @@ docker run \
  linuxserver/ombi:latest
 ```
 
+## Joal - Torrent Fake Seedings
+
+docker run \
+-d \
+--name joal \
+--restart always \
+-h joal \
+-e TZ=Asia/Jerusalem \
+-e _JAVA_OPTIONS='-Djava.net.preferIPv6Addresses=true' \
+-v /volume1/docker/joal:/joal/torrents/ \
+--name="joal" s8n02/joal \
+--joal-conf="/joal" \
+--spring.main.web-environment=true \
+--server.port="9000" \
+--joal.ui.path.prefix="joal" \
+--joal.ui.secret-token="joal123"
+
+
 ## HomeBridge - Container for Apple HomeKit Integration
 
 ```docker
