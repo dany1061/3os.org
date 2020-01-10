@@ -1,7 +1,13 @@
-title: Linux - Centos 7 Related Topics
-description: Linux - Centos 7 how to, guides, examples, and simple usage
+title: Linux - ubuntu Linux Guides, Examples and Usage
+description: ubuntu Linux - Guides, Examples and Usage
 
 # Ubuntu Related Topics
+
+## Disable Firewall
+
+```bash
+ufw disable
+```
 
 ## Clear BOOT Partition on Ubuntu when 100%
 

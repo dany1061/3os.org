@@ -106,20 +106,24 @@ linuxserver/calibre-web:latest
 docker run \
 -d \
 --restart always \
---name pi-hole \
--h pi-hole \
+--name pihole \
+-h pihole \
 -p 53:53/tcp \
 -p 53:53/udp \
--p 11500:80 \
--v /volume1/docker/pihole/pihole/:/etc/pihole \
--v /volume1/docker/pihole/dnsmasq.d:/etc/dnsmasq.d \
--v /volume1/docker/pihole/lighttpd:/etc/lighttpd \
+-p 67:67/udp \
+-p 80:80/tcp \
+-p 443:443/tcp \
+-v /root/pihole/pihole/:/etc/pihole \
+-v /root/pihole/dnsmasq.d:/etc/dnsmasq.d \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
---dns=127.0.0.1 --dns=1.1.1.1 \
+--dns=127.0.0.1 \
+--dns=1.1.1.1 \
 pihole/pihole:latest
 ```
+
+
 
 Blocklists
 
@@ -269,7 +273,7 @@ docker run \
 --name zabbix-appliance \
 --restart always \
 -h zabbix \
--p 10051:10051 \
+-p 11506:10051 \
 -p 5060:80 \
 -v /volume1/docker/zabbix:/var/lib/zabbix \
 -v /volume1/docker/zabbix/mysql:/var/lib/mysql \

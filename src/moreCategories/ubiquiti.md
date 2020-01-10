@@ -47,7 +47,6 @@ set service gui older-ciphers disable
 set service ssh listen-address 192.168.1.1
 set service ssh protocol-version v2
 set service ubnt-discover disable
-set firewall all-ping disable
 commit ; save
 ```
 
