@@ -273,8 +273,8 @@ docker run \
 --name zabbix-appliance \
 --restart always \
 -h zabbix \
--p 11506:10051 \
--p 5060:80 \
+-p 10051:10051 \
+-p 11502:80 \
 -v /volume1/docker/zabbix:/var/lib/zabbix \
 -v /volume1/docker/zabbix/mysql:/var/lib/mysql \
 -v /volume1/docker/zabbix/nginx:/etc/ssl/nginx \
