@@ -287,3 +287,19 @@ docker run \
 -e PGID=1000 \
 zabbix/zabbix-appliance:latest
 ```
+
+## Traefik - Revers proxy with Let's Encrypt and Cloudflare DNS Challenge
+
+docker run \
+-d \
+--restart always \
+--name=traefik \
+-h traefik \
+-v /volume1/docker/traefik.3os.re:/etc/traefik/ \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-p 80:80 \
+-p 443:443 \
+-e TZ=Asia/Jerusalem \
+-e CLOUDFLARE_EMAIL=cloudflare@email.org \
+-e CLOUDFLARE_API_KEY=de1782bd0e8d05245f6648d03e1e6e17c \
+traefik:latest
