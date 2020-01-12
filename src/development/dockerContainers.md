@@ -253,7 +253,8 @@ docker run \
 --restart always \
 -h joal \
 -e _JAVA_OPTIONS='-Djava.net.preferIPv6Addresses=true' \
--v /volume1/docker/joal:/joal/torrents/ \
+-v /volume1/docker/joal/torrents:/joal/torrents/ \
+-v /volume1/docker/joal/config.json:/joal/config.json \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
@@ -262,7 +263,7 @@ docker run \
 --spring.main.web-environment=true \
 --server.port="9000" \
 --joal.ui.path.prefix="joal" \
---joal.ui.secret-token="joal123"
+--joal.ui.secret-token="joal"
 ```
 
 ## Zabbix Monitoring Container
