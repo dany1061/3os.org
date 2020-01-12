@@ -23,13 +23,27 @@ Create Virtualenv for Your Project
 
 ```bash
 cd project_folder
-virtualenv venv
+virtualenv 
 ```
+
+Delete Virtualenv for Your Project
+
+```bash
+cd project_folder
+rm -rf venv
+```
+
 
 Activate Virtualenv at Project's Folder
 
 ```bash
 pipenv shell
+```
+
+Installing Requirements
+
+```python
+pip install -r requirements.txt
 ```
 
 ## Pip Update
