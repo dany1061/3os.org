@@ -154,7 +154,7 @@ docker run \
 -p 11504:8989 \
 -v /volume1/docker/sonarr:/config \
 -v /volume1/activeShare/Media/TV\ Showes/:/tv \
--v /volume1/activeShare/Downloads/:/downloads \
+-v /volume1/activeShare/DownloadStation/:/downloads \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
@@ -172,7 +172,7 @@ docker run \
 -p 11505:7878 \
 -v /volume1/docker/radarr:/config \
 -v /volume1/activeShare/Media/Movies:/movies \
--v /volume1/activeShare/Downloads:/downloads \
+-v /volume1/activeShare/DownloadStation:/downloads \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
@@ -189,7 +189,7 @@ docker run \
 -h jackett \
 -p 11501:9117 \
 -v /volume1/docker/jackett:/config \
--v /volume1/activeShare/Downloads:/downloads \
+-v /volume1/activeShare/DownloadStation:/downloads \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
