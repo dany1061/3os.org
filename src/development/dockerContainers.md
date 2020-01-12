@@ -247,17 +247,16 @@ linuxserver/ombi:latest
 ```docker
 docker run \
 -d \
---name joal \
+--name="joal" \
 --restart always \
 -h joal \
--e _JAVA_OPTIONS='-Djava.net.preferIPv6Addresses=true' \
--v /volume1/docker/joal/torrents:/joal/torrents/ \
--v /volume1/docker/joal/config.json:/joal/config.json \
+-p 11506:9000 \
+-v /volume1/docker/joal:/data \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
 -e PGID=1000 \
---name="joal" s8n02/joal:latest \
---joal-conf="/joal" \
+anthonyraymond/joal:latest \
+--joal-conf="/data" \
 --spring.main.web-environment=true \
 --server.port="9000" \
 --joal.ui.path.prefix="joal" \
