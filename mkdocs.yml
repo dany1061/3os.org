@@ -7,6 +7,7 @@ nav:
   - Donate: "donation.md"
   - Guides:
       - Better Terminal Experience: "guides/BetterTerminal.md"
+      - Pi-hole With DNS Over HTTPS: "guides/pihole_dns.md"
       - Raspberry Pi 3 Tor Access Point: "raspberryPi/TOR-Pi.md"
   - Linux:
       - General: "linux/general/general.md"
