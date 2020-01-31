@@ -113,4 +113,3 @@ Blocklists:
 - https://zeustracker.abuse.ch/blocklist.php?download=domainblocklist
 - https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt
 - https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt
-
