@@ -5,10 +5,15 @@ nav:
   - Home: "index.md"
   - Changelog: "CHANGELOG.md"
   - Donate: "donation.md"
-  - Guides:
+  - Guides & Tools:
       - Better Terminal Experience: "guides/BetterTerminal.md"
-      - Pi-hole With DNS Over HTTPS: "guides/pihole_dns.md"
+      - Pi-Hole With DNS Over HTTPS: "guides/pihole_dns.md"
+      - Synology DSM: "guides/synology.md"
+      - Wifi QR Image Generator: "guides/wifiQrGenerator.md"
+      - Ubiquiti EdgeRouter & Unifi: "guides/ubiquiti.md"
+      - Gmail Markas Read: "guides/gmailMarkAsRead.md"
       - Raspberry Pi 3 Tor Access Point: "raspberryPi/TOR-Pi.md"
+      - Useful Links & Tools: "guides/usefulLinks_Tools.md"
   - Linux:
       - General: "linux/general/general.md"
       - SSH Service Security: "linux/SSH_Service_Security.md"
@@ -56,17 +61,6 @@ nav:
       - Click-Jacking Test: "penTesting/clickJacking.md"
       - Android Penetration Testing: "penTesting/androidPT.md"
       - Kali Linux Modifications: "penTesting/kaliLinux.md"
-  - More...:
-      - General: "moreCategories/generalLinks.md"
-      - Browsers Extensions:
-          - Chrome: "moreCategories/browsers/chromeExtensions.md"
-          - Firefox: "moreCategories/browsers/firefoxExtentions.md"
-      - Synology DSM: "moreCategories/synology.md"
-      - Ubiquiti Networks EdgeRouter & Unifi: "moreCategories/ubiquiti.md"
-      - Android: "moreCategories/android.md"
-      - WiFi QR Generator: "moreCategories/wifiQrGenerator.md"
-      - Homebridge: "moreCategories/homebridge.md"
-      - Gmail Mark As Read Script: "moreCategories/gmailMarkAsRead.md"
   - Markdown CheatSheet:
       - Welcome: "markdownCheatSheet/welcome.md"
       - Headings: "markdownCheatSheet/headings.md"

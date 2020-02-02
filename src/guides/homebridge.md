@@ -1,4 +1,9 @@
-# Homebridge
+title: Homebridge
+description: Homebridge
+
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
+# Homebridge (work in progress)
 
 ## Symlink for config file
 

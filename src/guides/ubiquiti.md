@@ -1,7 +1,15 @@
-title: Ubiquiti Networks
-description: Ubiquiti UNMS, UNIFI,Networks how to, guides, examples, and simple usage
+title: Ubiquiti EdgeRouter, Unifi, UNMS Guides, Tips & Tricks
+description: Ubiquiti EdgeRouter, Unifi, UNMS Guides, Tips & Tricks
+
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
 
 # Ubiquiti Networks - EdgeRouter, Unifi, UNMS
+
+## EdgeRouter - Clear DNS Forwarding Cache via SSH Call
+
+```bash
+ssh user@192.168.1.1 'sudo /opt/vyatta/bin/sudo-users/vyatta-op-dns-forwarding.pl --clear-cache'
+```
 
 ## EdgeRouter - SSH via RSA keys
 
@@ -338,15 +346,15 @@ ls -l /config/auth
 
 You should have those files:
 
--   cacert.pem
--   cakey.pem
--   client1.key
--   client1.pem
--   client2.key
--   client2.pem
--   dh.pem
--   server.key
--   server.pem
+* cacert.pem
+* cakey.pem
+* client1.key
+* client1.pem
+* client2.key
+* client2.pem
+* dh.pem
+* server.key
+* server.pem
 
 Remove the password from the client + server keys. This allows the clients to connect using only the provided certificate.
 

@@ -1,7 +1,9 @@
-title: WiFi QR Generator
+title: Wifi QR Generator
 description: Simple QR Code Generator for your wifi network. Scan & Connect
 
-# WiFi QR Generator
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
+# Wifi QR Image Generator
 
 ## Description
 
