@@ -1,5 +1,62 @@
 # Changelog
 
+## v1.3 (02/02/2020)
+- [Version 1.3.0 Release](https://github.com/fire1ce/3os.org/commit/fdb2b87d1d8a425a3cf503859047fb597f4e2541) - @fire1ce
+- ["more" moved to "guides & tools"](https://github.com/fire1ce/3os.org/commit/432d0f885bf1cfd040c5d185078b2009357e95fd) - @fire1ce
+- [added Disable IPv6](https://github.com/fire1ce/3os.org/commit/58a5608cb5a7dc4f0be9ea0207cf12e5a5aaf987) - @fire1ce
+- [Packages Update](https://github.com/fire1ce/3os.org/commit/5a1a8ee62c4dcee83098b345a5587b7696ab9b81) - @fire1ce
+- [dependencies  update](https://github.com/fire1ce/3os.org/commit/a8e2a2719bc5cfe5d977c3dfaee6d10a2efb25ed) - @fire1ce
+- [dependencies  update](https://github.com/fire1ce/3os.org/commit/09c6dd94b000de52244ca341c9ceb89e3bd27766) - @fire1ce
+- [list cleanup](https://github.com/fire1ce/3os.org/commit/e2b875003539cff9be56a8f53b9f1e4882f94680) - @fire1ce
+- [added pi-hole](https://github.com/fire1ce/3os.org/commit/842acf199ed1ff7bdfa82bb99188bd6c27b1074d) - @fire1ce
+- [Update centos8.md](https://github.com/fire1ce/3os.org/commit/88a16db4da8a84b598dbcd1a7d67946403682022) - @fire1ce
+- [Joal update](https://github.com/fire1ce/3os.org/commit/11d9144aae992db5cd0640d705ff49dc6329b46b) - @fire1ce
+- [markdown fixes](https://github.com/fire1ce/3os.org/commit/b3a681949153eda0a0a54024b2eefcc65400491f) - @fire1ce
+- [added Traefik docker](https://github.com/fire1ce/3os.org/commit/7548caa99bb57d967dad92932703f4f95a409b76) - @fire1ce
+- [path updates](https://github.com/fire1ce/3os.org/commit/1cb1b74406e3648bc0ea94346b6c297f1525b1b6) - @fire1ce
+- [added Installing Requirements](https://github.com/fire1ce/3os.org/commit/d8446d25509e228dbb67c30c4de3cb1feabb8bac) - @fire1ce
+- [added prisistent path to Joal contairner](https://github.com/fire1ce/3os.org/commit/74e134b5eea554018d13af60b60174bbcfd8d76a) - @fire1ce
+- [added Windwos apps](https://github.com/fire1ce/3os.org/commit/e297f9a5fb399a231a0a263d9db3f6942b80aed8) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/519895aeae6815092c11dd7be9f1dbfb887c70c0) - @fire1ce
+- [docker updates](https://github.com/fire1ce/3os.org/commit/6672ce9a0a30341b50ec6de1c9f01219b2e85438) - @fire1ce
+- [dev](https://github.com/fire1ce/3os.org/commit/80c8a30627eaebdb65c98ec0bb74b285ccff9d3e) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/3db2ee7bea969e0a335e6708d15cc740edb77ab9) - @fire1ce
+- [dsm updates](https://github.com/fire1ce/3os.org/commit/07617d9c646e0c07c6b9a8cf2d7575deae8b2d23) - @fire1ce
+- [open vpn update](https://github.com/fire1ce/3os.org/commit/a2f6568dbe70ff479d9a9f4a577a477355911104) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/f856e914ba862f4eae4a3d7d7300c989ff0c3092) - @fire1ce
+- [updates](https://github.com/fire1ce/3os.org/commit/efd2aca7fa212ff8a7fb6840fae2b7511a4c1aab) - @fire1ce
+- [centos 8 updates](https://github.com/fire1ce/3os.org/commit/bda2df5bda57348d453e39c8faa41cfe5dcb02e0) - @fire1ce
+- [-y flag](https://github.com/fire1ce/3os.org/commit/f54633338d5670f765551930c06f5ef2a518db3a) - @fire1ce
+- [added htop installation](https://github.com/fire1ce/3os.org/commit/863b960a49989021411058136762cbbeefab5719) - @fire1ce
+- [Disable/Update /etc/hosts file on EdgeRouter](https://github.com/fire1ce/3os.org/commit/d7b4a7ec18367ae1e243aa5f75c0734ae20eda44) - @fire1ce
+- [centOS 8 updates](https://github.com/fire1ce/3os.org/commit/95bcb0253801648593fb6292b5b0289a7598ff42) - @fire1ce
+- [centos 8 changes](https://github.com/fire1ce/3os.org/commit/ca5313de499a83c5c356e404642463f2c975f279) - @fire1ce
+- [Frida Server for SSL Pinning Bypass](https://github.com/fire1ce/3os.org/commit/66f91e154f2f5062e4ffb00318c627c5dfcfc149) - @fire1ce
+- [added ADB Over Network/Wifi](https://github.com/fire1ce/3os.org/commit/ebf0c3b42b9d5b86f07f43ec37bc53edca1be9bd) - @fire1ce
+- [new links](https://github.com/fire1ce/3os.org/commit/a2b224ab87eba6361f886ae9eb08b8ea4121e6b2) - @fire1ce
+- [update](https://github.com/fire1ce/3os.org/commit/c3a36c0ddd166b47f0be89c250062fd197dfebdc) - @fire1ce
+- [updated unifi docker](https://github.com/fire1ce/3os.org/commit/b742098e3a81160a7b1960e3df8fd8c6fd00c5a3) - @fire1ce
+- [fix](https://github.com/fire1ce/3os.org/commit/4d41d4ec2c1d5afe004ec77bcc95194a6c864d41) - @fire1ce
+- [added Updating Node & npm to Latest Stable Version](https://github.com/fire1ce/3os.org/commit/b7346f4bfc8b5dc521e86f80496b42b91b3d42f2) - @fire1ce
+- [added Updating Node & npm](https://github.com/fire1ce/3os.org/commit/9dcaaa148635e26eed3024135d2aac859e45069e) - @fire1ce
+- [fixed image](https://github.com/fire1ce/3os.org/commit/f2ef5b0d135510e8acd5a45344aa29797d56290c) - @fire1ce
+- [added brewup](https://github.com/fire1ce/3os.org/commit/ee8e447fe8bfc57275fdc51a50d4a10b7893293e) - @fire1ce
+- [Force Language Change on iTerm Focus to English](https://github.com/fire1ce/3os.org/commit/32d650b35bbfcfbd5faa490d1ae44bc25f4d1f54) - @fire1ce
+- [added Force Language Change on iTerm Focus to English](https://github.com/fire1ce/3os.org/commit/11e1991dc6be0e2dd549009e6be31bf3ff0f2f3e) - @fire1ce
+- [new](https://github.com/fire1ce/3os.org/commit/1814c1dc9fafb8b8a91187db625dcf58ccaf17c6) - @fire1ce
+- [added black border](https://github.com/fire1ce/3os.org/commit/19d54c0fac30f5499dba353736471296f2384eb0) - @fire1ce
+- [better exmaple](https://github.com/fire1ce/3os.org/commit/72c9ddfbec350e730bab83ac7e0b67107453f208) - @fire1ce
+- [Running Multi Instances of an Application - fix](https://github.com/fire1ce/3os.org/commit/16e079c5f6d0c6a87bbe7a44f1800baafad46410) - @fire1ce
+- [bug fixes](https://github.com/fire1ce/3os.org/commit/46b25324c96c38b045d10737b907ac21cabc5f21) - @fire1ce
+- [fixed broken links](https://github.com/fire1ce/3os.org/commit/e2b4d376f5644a38d3e0e659f98b5e31972eeb16) - @fire1ce
+- [cleanups](https://github.com/fire1ce/3os.org/commit/2977eaaa5fdb589244029e310dbc33c63f9fe4ef) - @fire1ce
+- [visual changes to the site](https://github.com/fire1ce/3os.org/commit/15e1ca0eb0b67566491d54953d50784bc71952ed) - @fire1ce
+- [.gitignore fix](https://github.com/fire1ce/3os.org/commit/90bba52f29edb3866da9ba053ed6deddcb4f8f79) - @fire1ce
+- [updates to webui, added images and more](https://github.com/fire1ce/3os.org/commit/deb7eab756c46d0d2b291f40b302d120820cf14e) - @fire1ce
+- [updated the "Updates" section](https://github.com/fire1ce/3os.org/commit/65ceafc662ea6e08f0dace001bcb31243e62b15f) - @fire1ce
+
+---
+
 ## v1.2 (20/11/2019)
 - [macOS restructure](https://github.com/fire1ce/3os.org/commit/14c5e8cde7a26887e93e18beda59e4b1476cfb26) - @fire1ce
 - [added Launchpad Grid Layout](https://github.com/fire1ce/3os.org/commit/d720b654d72259b8cff937fea309f2609d5eaf34) - @fire1ce
