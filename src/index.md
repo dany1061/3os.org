@@ -29,6 +29,13 @@ _All the information provided by this website can be obtained via the internet. 
 
 ## Updates
 
+!!! info "02/02/20 __Version 1.3.0 Release__"
+
+    * Removed "More" Category
+    * Information from "More" Category moved to Guides & Tools
+    * Started working on new guides - now marked as "work in progress" - will be updated after all bugs are cleaned
+
+
 !!! info "20/11/19 __Version 1.2.0 Release__"
 
     * Too many changes to count. Short summery:
