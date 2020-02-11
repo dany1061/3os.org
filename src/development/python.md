@@ -3,6 +3,42 @@ description: Development - Python how to, guides, examples, and simple usage
 
 # Python
 
+## Python on MacOS the Right Way
+
+```bash
+brew install pyenv
+```
+
+List available Python Version
+
+```bash
+pyenv install --list
+```
+
+Install Requeued Python Version
+
+```bash
+pyenv install 3.8.1
+```
+Set it as global
+
+```bash
+pyenv global 3.8.1
+```
+
+In order for it to work correctly, we need to add the following to our configuration file (.zshrc for me, possibly .bash_profile for you):
+
+```bash
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
+
+Restart your shell and test:
+
+```bash
+python -V
+pip -V
+```
+
 ## Python Virtual
 
 Make sure you’ve got Python & pip¶

@@ -25,7 +25,7 @@ You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Mark
 
 ### Disclaimer
 
-_All the information provided by this website can be obtained via the internet.  We don't claim ownership of the information presented to you._
+_All the information provided by this website can be obtained via the internet. We don't claim ownership of the information presented to you._
 
 ## Updates
 
