@@ -22,4 +22,3 @@ Debug
 ```bash
 pihole -d
 ```
-
