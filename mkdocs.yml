@@ -23,9 +23,6 @@ nav:
       - Files: "linux/general/files.md"
       - Memory & Swap: "linux/general/memorySwap.md"
       - Linux LVM Partitions: "linux/lvm.md"
-      - Guides:
-          - Resize Root PartitionWithout Reboot: "linux/linuxGuides/ResizeRootPartitionWithoutReboot.md"
-          - Installing Oh My zsh: "linux/linuxGuides/zshOnSteroids.md"
       - Linux Services:
           - cPanel & WHM: "linux/services/cpanel.md"
           - CSF Firewall: "linux/services/csf.md"

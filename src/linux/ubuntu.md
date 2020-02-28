@@ -9,29 +9,31 @@ description: ubuntu Linux - Guides, Examples and Usage
 ufw disable
 ```
 
-## Disable IPv6
+## Disable IPv6 Persistent
 
-add to the end of /etc/sysctl.conf
+Disable IPv6 using GRUB
+Perform the following steps with root privileges to disable IPv6 in Ubuntu 18.04/16.04 Permanently using grub method.
 
-```bash
-net.ipv6.conf.all.disable_ipv6 = 1
-net.ipv6.conf.default.disable_ipv6 = 1
-net.ipv6.conf.lo.disable_ipv6 = 1
-```
-
-Run:
+Edit:
 
 ```bash
-sudo sysctl -p
+/etc/default/grub
 ```
 
-Reboot. To test run
+Modify _GRUB_CMDLINE_LINUX_ and _GRUB_CMDLINE_LINUX_DEFAULT_ to append ipv6.disable=1:
 
 ```bash
-cat /proc/sys/net/ipv6/conf/all/disable_ipv6
+GRUB_CMDLINE_LINUX="ipv6.disable=1"
+GRUB_CMDLINE_LINUX_DEFAULT="ipv6.disable=1"
 ```
 
-If it reports ‘1′ means you have disabled IPV6.
+Update the grub configuration:
+
+```bash
+update-grub
+```
+
+Reboot the server
 
 ## Clear BOOT Partition on Ubuntu when 100%
 

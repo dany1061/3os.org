@@ -96,10 +96,20 @@ ln -s source_file target_file
 
 to remove symbolic link use the `rm` command on the link
 
-## Update Time Zone
+## Set the Timezone
 
 ```bash
 sudo dpkg-reconfigure tzdata
+```
+
+**or**
+
+Set the timezone
+
+To set the timezone of your system clock do the following:
+
+```bash
+cp /usr/share/zoneinfo/Israel /etc/localtime
 ```
 
 ## Disable IPv6
