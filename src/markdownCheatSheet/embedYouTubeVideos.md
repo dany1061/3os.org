@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Embedding YouTube Videos
-description: Markdown cheatSheet for MkDocs. Embedding YouTube Videos examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Embedding YouTube Videos
+description: Markdown Cheat Sheet for MkDocs. Embedding YouTube Videos examples and simple usage
 
 # Embedding YouTube Videos
 

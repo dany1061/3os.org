@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Line Breaks
-description: Markdown cheatSheet for MkDocs. Line Breaks examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Line Breaks
+description: Markdown Cheat Sheet for MkDocs. Line Breaks examples and simple usage
 
 # Line Breaks
 

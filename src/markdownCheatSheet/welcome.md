@@ -1,7 +1,7 @@
-title: Markdown CheatSheet For MkDocs
-description: Markdown cheatSheet for MkDocs. examples and simple usage
+title: Markdown Cheat Sheet For MkDocs
+description: Markdown Cheat Sheet for MkDocs. examples and simple usage
 
-# Welcome To Markdown CheatSheet <small>For MkDocs</small>
+# Welcome To Markdown Cheat Sheet <small>For MkDocs</small>
 
 ## What's Markdown
 

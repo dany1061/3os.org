@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Block Quotes
-description: Markdown cheatSheet for MkDocs. Block Quotes examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Block Quotes
+description: Markdown Cheat Sheet for MkDocs. Block Quotes examples and simple usage
 
 # Block Quotes
 

@@ -1,5 +1,5 @@
-title: Meta Data
-description: Editing Meta Data for each page for MkDocs.
+title: Markdown Cheat Sheet For MkDocs - Meta Data
+description: Markdown Cheat Sheet for MkDocs. Meta Data examples and simple usage
 
 # Metadata
 

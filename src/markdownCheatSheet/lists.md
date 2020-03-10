@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Lists
-description: Markdown cheatSheet for MkDocs. Lists examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Lists
+description: Markdown Cheat Sheet for MkDocs. Lists examples and simple usage
 
 # Lists
 

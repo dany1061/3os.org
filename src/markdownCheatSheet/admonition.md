@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Admonition
-description: Markdown cheatSheet for MkDocs. Admonition examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Admonition
+description: Markdown Cheat Sheet for MkDocs. Admonition examples and simple usage
 
 # Admonition
 

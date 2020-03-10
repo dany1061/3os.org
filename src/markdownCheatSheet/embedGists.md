@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Gists Embedding
-description: Markdown cheatSheet for MkDocs. Gists Embedding examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Gists Embedding
+description: Markdown Cheat Sheet for MkDocs. Gists Embedding examples and simple usage
 
 # Gists Embedding
 

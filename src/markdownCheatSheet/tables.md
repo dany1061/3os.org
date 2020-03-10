@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Tables
-description: Markdown cheatSheet for MkDocs. Tables examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Tables
+description: Markdown Cheat Sheet for MkDocs. Tables examples and simple usage
 
 # Tables
 

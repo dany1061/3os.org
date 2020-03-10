@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Images
-description: Markdown cheatSheet for MkDocs. Images examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Images
+description: Markdown Cheat Sheet for MkDocs. Images examples and simple usage
 
 # Images
 

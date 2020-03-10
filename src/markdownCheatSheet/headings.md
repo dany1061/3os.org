@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Headings
-description: Markdown cheatSheet for MkDocs. Headings examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Headings
+description: Markdown Cheat Sheet for MkDocs. Headings examples and simple usage
 
 # Headings
 

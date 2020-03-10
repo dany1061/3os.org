@@ -1,5 +1,5 @@
-title: Markdown CheatSheet For MkDocs - Emphasis
-description: Markdown cheatSheet for MkDocs. Emphasis examples and simple usage
+title: Markdown Cheat Sheet For MkDocs - Emphasis
+description: Markdown Cheat Sheet for MkDocs. Emphasis examples and simple usage
 
 # Emphasis
 
