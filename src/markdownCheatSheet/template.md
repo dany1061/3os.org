@@ -1,5 +1,6 @@
-title: Markdown CheatSheet For MkDocs - Basic Page Template
-description: This is a basic template for how to use Markdown page
+title: Markdown Cheat Sheet For MkDocs - Basic Page Template
+description: Markdown Cheat Sheet for MkDocs. Tables template and simple usage
+
 <!-- Meta Data for search engines - NOT Visible -->
 
 # Simple MarkDown Template
@@ -9,7 +10,7 @@ This is a simple template for a basic structure for markdowns.
 ## How To Use
 
 You can git the _`edit`_ :pencil2: at the top of the page and copy all the content of this page.  
-Follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") to add content.
+Follow the [Markdown Cheat Sheet Guide](/markdownCheat Sheet/welcome "Markdown Cheat Sheet Guide") to add content.
 
 ## We Will Use This Page For Beta Testing
 
