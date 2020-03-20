@@ -3,7 +3,7 @@ description: Docker useful Containers
 
 # Docker Containers
 
-## Watchtower - Automating Docker Updates Container
+## Watchtower - Automating Docker Updates Container (With Slack Notifications)
 
 ```docker
 docker run \
@@ -12,8 +12,13 @@ docker run \
 --name watchtower \
 -h watchtower \
 -v /var/run/docker.sock:/var/run/docker.sock \
+-e WATCHTOWER_NOTIFICATIONS=slack \
+-e WATCHTOWER_NOTIFICATION_SLACK_HOOK_URL="https://hooks.slack.com/services/YOURLINK" \
+-e WATCHTOWER_NOTIFICATION_SLACK_IDENTIFIER=watchtower-oscar \
+-e WATCHTOWER_NOTIFICATION_SLACK_CHANNEL=#notifications \
+-e WATCHTOWER_NOTIFICATION_SLACK_ICON_EMOJI=:wrench: \
 -e TZ=Asia/Jerusalem \
-containrrr/watchtower:latest --cleanup --debug
+containrrr/watchtower:latest --schedule '0 0 4 * * *' --cleanup
 ```
 
 ## cloudflare-ddns
@@ -279,4 +284,55 @@ docker run \
 -e CLOUDFLARE_EMAIL=cloudflare@email.org \
 -e CLOUDFLARE_API_KEY=de1782bd0e8d05245f6648d03e1e6e17c \
 traefik:latest
+```
+
+## Jellyfin
+
+```docker
+docker run \
+-d \
+--restart always \
+--net=host \
+--name=jellyfin \
+-e PUID=1000 \
+-e PGID=1000 \
+-v /root/jellyfin/config:/config \
+-v /root/jellyfin/cache:/cache \
+-v /mnt/media:/media \
+ jellyfin/jellyfin
+```
+
+## MagicMirror (Server)
+
+```docker
+docker run \
+-d \
+--restart always \
+--name magic_mirror \
+-h magic_mirror \
+-p 11508:8080 \
+-v /volume1/docker/magic_mirror/config:/opt/magic_mirror/config \
+-v /volume1/docker/magic_mirror/modules:/opt/magic_mirror/modules \
+-v /volume1/docker/magic_mirror/css:/opt/magic_mirror/css \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+bastilimbach/docker-magicmirror
+```
+
+## Slack Synology Notifications Docker
+
+```docker
+docker run \
+-d \
+-p 11509:8080 \
+--restart always \
+--name synology-notifications \
+-h synology-notifications \
+-e API_KEY='hpwQuP3HHmdT9rsj3nvwgUK6xr7n7vPm' \
+-e SLACK_WEBHOOK='https://hooks.slack.com/services/URL' \
+-e TZ=Asia/Jerusalem \
+-e PUID=1000 \
+-e PGID=1000 \
+ryancurrah/synology-notifications:latest
 ```
