@@ -11,7 +11,8 @@ description: Brewup script is a Bash script that uses [Homebrew - The Missing Pa
 
 ## Download and Installation
 
-__To download and  BrewUp follow this link: [BrewUp Download and Installation Guide](https://github.com/fire1ce/BrewUp)__
+__To download and  BrewUp follow this link:__  
+[BrewUp Download and Installation Guide](https://github.com/fire1ce/BrewUp)
 
 ## Description
 
