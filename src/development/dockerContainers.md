@@ -1,5 +1,5 @@
-title: Docker useful Containers
-description: Docker useful Containers
+title: Useful Docker Containers for personal home use
+description: Useful Docker Containers for personal home use
 
 # Docker Containers
 
@@ -228,12 +228,12 @@ linuxserver/ombi:latest
 ## Joal - Torrent Fake Seedings
 
 ```docker
-docker run \
+ run \
 -d \
 --name="joal" \
 --restart always \
 -h joal \
--p 11506:9000 \
+-p 11506:11506 \
 -v /volume1/docker/joal:/data \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
@@ -241,7 +241,7 @@ docker run \
 anthonyraymond/joal:latest \
 --joal-conf="/data" \
 --spring.main.web-environment=true \
---server.port="9000" \
+--server.port="11506" \
 --joal.ui.path.prefix="joal" \
 --joal.ui.secret-token="joal"
 ```

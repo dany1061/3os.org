@@ -103,8 +103,8 @@ theme:
   feature:
     tabs: "true"
   font:
-    text: "Roboto "
-    code: "Roboto Mono"
+    text: "Ubuntu"
+    code: "Ubuntu Mono"
 
 # Social Links and Comments
 extra:
