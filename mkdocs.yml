@@ -158,6 +158,12 @@ markdown_extensions:
 
   # list of extensions https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
 
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
 # Google Analytics
 google_analytics:
   - "UA-122318911-1"
