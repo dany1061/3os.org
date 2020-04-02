@@ -78,16 +78,3 @@ sudo find / -name .DS_Store -delete; killall Finder
 ```
 
 `Note: In the future, whenever you switch views, it will automatically save in the new .DS_Store file. This will override the default settings.`
-
-## Change Login Screen Background (outdated)
-
-Backup the original picture
-
-```bash
-sudo mv /Library/Desktop\ Pictures/Mojave.heic /Library/Desktop\ Pictures/Mojave.heic.bak
-```
-
-Rename new picture to __Mojave.heic__
-
-Move the new picture to _/Library/Desktop\ Pictures/_
-

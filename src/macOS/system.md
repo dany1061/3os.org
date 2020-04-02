@@ -107,18 +107,6 @@ Save & Exit
 source ~/.zshrc
 ```
 
-## Force Language Change on iTerm Focus to English
-
-* Install __KeyBoard Maestro__
-* Create a group in __Groups__ section. I named my __Personal__
-* Now create a macro with the name __Set iTerm Application Language.__
-* Add another trigger -> __This application__ -> Select __iTerm__ -> Select __Active__ -> Repeating every __1 seconds__.
-* Add __New Action__ -> Select __Set KeyBoard Layout__ -> Select the keyboard layout (i.e., language preference).
-
-<div style="width:100%; margin:0 auto">
-   <img src="/assets/images/macOS/itermToUS.jpg" alt="mac image">
-</div>
-
 ## Disable/Enable SIP (System Integrity Protection)
 
 Reboot your Mac into Recovery Mode by restarting your computer and holding down **Command+R** until the Apple logo appears on your screen.  
