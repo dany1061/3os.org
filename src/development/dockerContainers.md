@@ -98,6 +98,7 @@ docker run \
 -h calibre-web \
 -v /volume1/docker/calibre/config:/config \
 -v /volume1/docker/calibre/books:/books \
+-p 11510:8083 \
 -e DOCKER_MODS=linuxserver/calibre-web:calibre \
 -e TZ=Asia/Jerusalem \
 -e PUID=1000 \
@@ -251,12 +252,13 @@ anthonyraymond/joal:latest \
 ```docker
 docker run \
 -d \
---name zabbix-appliance \
+--name zabbix \
 --restart always \
 -h zabbix \
 -p 10051:10051 \
 -p 11502:80 \
--v /volume1/docker/zabbix:/var/lib/zabbix \
+-v /volume1/docker/zabbix/zabbix:/var/lib/zabbix \
+-v /volume1/docker/zabbix/alertscripts:/usr/lib/zabbix/alertscripts \
 -v /volume1/docker/zabbix/mysql:/var/lib/mysql \
 -v /volume1/docker/zabbix/nginx:/etc/ssl/nginx \
 -e ZBX_SERVER_NAME=zabbix.3os.re \
