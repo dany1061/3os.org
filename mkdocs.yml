@@ -32,6 +32,7 @@ nav:
           - Wordpress: "linux/services/wordpress.md"
           - Esxi: "linux/services/esxi.md"
           - Plesk: "linux/services/plesk.md"
+          - Postfix: "linux/services/postfix.md"
   - macOS:
       - General: "macOS/general.md"
       - UI Tweaks: "macOS/ui.md"
