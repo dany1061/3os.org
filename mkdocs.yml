@@ -97,14 +97,15 @@ docs_dir: src
 theme:
   name: "material"
   language: en
-  logo:
-    icon: "donut_small"
-  favicon: "/assets/images/favicon.ico"
+  icon:
+    logo: material/donut_small
+  favicon: /assets/images/favicon.ico
   palette:
     primary: "blue grey"
     accent: "blue"
-  feature:
-    tabs: "true"
+  features:
+    - tabs
+    - instant
   font:
     text: "Ubuntu"
     code: "Ubuntu Mono"
@@ -112,15 +113,13 @@ theme:
 # Social Links and Comments
 extra:
   disqus: "3os"
-  search:
-    tokenizer: '[\s\-\.]+'
   social:
-    - type: "github"
-      link: "https://github.com/fire1ce"
-    - type: "linkedin"
-      link: "https://linkedin.com/in/stas-kosatuhin"
-    - type: "facebook"
-      link: "https://www.facebook.com/3os.org"
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/fire1ce
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/stas-yakobov
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/3os.org
 
 extra_javascript:
   - "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"
@@ -163,7 +162,10 @@ markdown_extensions:
 
 # Plugins
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
   - git-revision-date-localized
   - minify:
       minify_html: true
