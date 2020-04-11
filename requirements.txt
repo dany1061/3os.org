@@ -4,8 +4,8 @@ certifi==2020.4.5.1
 chardet==3.0.4
 click==7.1.1
 future==0.18.2
-gitdb==4.0.2
-GitPython==3.1.0
+gitdb==4.0.4
+GitPython==3.1.1
 htmlmin==0.1.12
 idna==2.9
 Jinja2==2.11.1
@@ -28,7 +28,7 @@ pytz==2019.3
 PyYAML==5.3.1
 requests==2.23.0
 six==1.14.0
-smmap==3.0.1
+smmap==3.0.2
 soupsieve==2.0
 tornado==6.0.4
 urllib3==1.25.8
