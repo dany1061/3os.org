@@ -59,9 +59,12 @@ Requirements:
 * zsh
 * wget
 
-Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
+The example below uses __apt__ package manager (if need change to your package manger)
+
+Now lets install the Requirements and [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
 ```bash
+apt install -y git zsh wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
@@ -74,8 +77,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 
 ### ~/.zshrc Config Modifications for Linux
-
-Set theme and fonts:
 
 ```bash
 ZSH_THEME="bira"
@@ -94,7 +95,6 @@ plugins=(
 Add this to the the end of ~/.zshrc
 
 ```bash
-
 ## Fix for Slow zsh-autosuggestions copy&paste
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
