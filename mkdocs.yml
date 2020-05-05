@@ -57,10 +57,10 @@ nav:
       - Windows Guides and How-To: "windows/windowsGuides.md"
   - Penetration-Testing:
       - General: "penTesting/general.md"
+      - Kali Linux: "penTesting/kaliLinux.md"
       - IDD Generator & Validator: "penTesting/iddGenerator.md"
       - Click-Jacking Test: "penTesting/clickJacking.md"
       - Android Penetration Testing: "penTesting/androidPT.md"
-      - Kali Linux Modifications: "penTesting/kaliLinux.md"
   - Markdown CheatSheet:
       - Welcome: "markdownCheatSheet/welcome.md"
       - Headings: "markdownCheatSheet/headings.md"
