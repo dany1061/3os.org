@@ -21,11 +21,13 @@ description: Markdown Cheat Sheet for MkDocs. examples and simple usage
     * Nested
 * Using [emojis](emoji.md "emoji list") :bulb: :mega: :camera: :thumbsup: :warning: :x: :bug:
 * We can create [Block Quotes](blockQuotes.md "Block Quotes"):
+
 > Markdown is a lightweight markup language with plain text formatting syntax
 >> We can create Block Quotes that are nested  
 >> ==Highlight== or ~~strike through~~ and more... using [emphasis](emphasis.md "emphasis")
+
 * Adding [images](images.md "images") <img src="https://octodex.github.com/images/minion.png" width=100>
-* Embedding [YouTube videos](embedYouTubeVideos.md "embedding YouTube"), [Gists](embedGists.md "embedding Gists"), [Lucid Charts](embedLucidChart.md "embedding LucidChart")
+* Embedding [YouTube Videos, Gists, Lucid Charts](embedExternalSources.md)
 * Creating [Tables](tables.md "tables") :point_down:
 
 | __Description__     | __Syntax__                                                           |
@@ -37,4 +39,3 @@ description: Markdown Cheat Sheet for MkDocs. examples and simple usage
 ---
 
 !!! tip "Help by contributing by submitting your changes and opinions to any topic"
-

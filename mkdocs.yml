@@ -72,13 +72,8 @@ nav:
       - Admonition: "markdownCheatSheet/admonition.md"
       - Block Quotes: "markdownCheatSheet/blockQuotes.md"
       - Emojis List: "markdownCheatSheet/emoji.md"
-      - Embed External Sources:
-          - Gists: "markdownCheatSheet/embedGists.md"
-          - YouTube Videos: "markdownCheatSheet/embedYouTubeVideos.md"
-          - Lucid Chart: "markdownCheatSheet/embedLucidChart.md"
-      - Simple Template: "markdownCheatSheet/template.md"
-      - Extra:
-          - Metadata Per Page: "markdownCheatSheet/metaData.md"
+      - Embed External Sources: "markdownCheatSheet/embedExternalSources.md"
+      - Metadata Per Page: "markdownCheatSheet/metaData.md"
 
 # Site information
 site_name: "3os.org"
