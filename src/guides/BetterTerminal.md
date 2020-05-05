@@ -31,7 +31,7 @@ Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-### ~/.zshrc Config Modifications for MacOS
+__~/.zshrc Config Modifications for MacOS__
 
 Set theme and fonts:
 
@@ -59,7 +59,7 @@ Requirements:
 * zsh
 * wget
 
-The example below uses __apt__ package manager (if need change to your package manger)
+The example below uses __apt__ package manager (change to your package manager accordingly)
 
 Now lets install the Requirements and [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
@@ -76,7 +76,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-### ~/.zshrc Config Modifications for Linux
+__~/.zshrc Config Modifications for Linux__
 
 ```bash
 ZSH_THEME="bira"
