@@ -130,3 +130,10 @@ find . -type f -exec chmod 644 {} +
 ```bash
 chown `stat -c %U .`.`stat -c %U .` * -R
 ```
+
+## Change permissions and groupe with UID 1000
+
+```bash
+chgrp 1000 -R  FOLDER
+chown 1000 -R FOLDER
+```
