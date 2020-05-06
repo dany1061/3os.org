@@ -338,3 +338,19 @@ docker run \
 -e PGID=1000 \
 ryancurrah/synology-notifications:latest
 ```
+
+## OwnCloud
+
+```docker
+docker run \
+-d \
+--restart always \
+--name=owncloud \
+-h owncloud \
+-v /root/docker/ownCloud/apps:/var/www/html/apps \
+-v /root/docker/ownCloud/config:/var/www/html/config \
+-v /root/docker/ownCloud/data:/var/www/html/data \
+-e PUID=1000 \
+-e PGID=1000 \
+owncloud:latest
+```
