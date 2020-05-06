@@ -17,13 +17,13 @@ This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"
 
 You are more than welcome and encouraged to contribute your knowledge to 3os Project, to add new materials, and to improve any guide or information provided here for our raising community.
 
-### How To Contribute
+__How To Contribute__
 
 You can contribute by submitting pull requests for any topic by hitting the _`edit`_ :pencil2: icon on the top right corner of each page. When doing so, you will be redirected to the Github source markdown page (Github account required).
 Edit, add, or remove any content commit and explain the proposed change, and submit for review. After we approve your edit, your changes be automatically added.  
 You Can follow the [Markdown CheatSheet Guide](/markdownCheatSheet/welcome "Markdown CheatSheet Guide") for better understanding how to use _Markdown Syntax_ to edit or create new content.
 
-### Disclaimer
+__Disclaimer__
 
 _All the information provided by this website can be obtained via the internet. We don't claim ownership of the information presented to you._
 
@@ -34,7 +34,6 @@ _All the information provided by this website can be obtained via the internet. 
     * Removed "More" Category
     * Information from "More" Category moved to Guides & Tools
     * Started working on new guides - now marked as "work in progress" - will be updated after all bugs are cleaned
-
 
 !!! info "20/11/19 __Version 1.2.0 Release__"
 
