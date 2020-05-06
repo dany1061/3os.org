@@ -102,7 +102,7 @@ to remove symbolic link use the `rm` command on the link
 sudo dpkg-reconfigure tzdata
 ```
 
-**or**
+__or__
 
 Set the timezone
 
