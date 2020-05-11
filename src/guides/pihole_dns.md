@@ -120,7 +120,7 @@ Advanced DNS settings
 We use two blocklists that update daily they don't break any normal functionality and doing a good job for blocking ads
 
 * https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt
-* https://github.com/kboghdady/youTube_ads_4_pi-hole/blob/master/youtubelist.txt
+* https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/blockList.png" alt="nadvSettings">
