@@ -10,7 +10,7 @@ description: Markdown Cheat Sheet for MkDocs. examples and simple usage
 
 :blue_book: This Page is fully written with __Markdown Language__ and converted to ^^HTML^^
 
-## What can we do with Markdown
+## What Can We Do With Markdown?
 
 :boom: __^^Well, a lot!^^__ :boom:
 

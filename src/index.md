@@ -17,7 +17,7 @@ This website is based on [MkDocs](https://www.mkdocs.org/ "MkDocs Official Site"
 
 You are more than welcome and encouraged to contribute your knowledge to 3os Project, to add new materials, and to improve any guide or information provided here for our raising community.
 
-__How To Contribute__
+## How To Contribute
 
 You can contribute by submitting pull requests for any topic by hitting the _`edit`_ :pencil2: icon on the top right corner of each page. When doing so, you will be redirected to the Github source markdown page (Github account required).
 Edit, add, or remove any content commit and explain the proposed change, and submit for review. After we approve your edit, your changes be automatically added.  

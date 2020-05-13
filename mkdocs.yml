@@ -130,27 +130,28 @@ markdown_extensions:
   - markdown.extensions.codehilite:
       guess_lang: false
   - markdown.extensions.toc:
+      toc_depth: "2"
       permalink: True
       separator: "_"
-  - pymdownx.extra
   - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.mark
-  - pymdownx.keys
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tilde
-  - pyembed.markdown
-  - pymdownx.betterem:
-      smart_enable: all
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
 
   # list of extensions https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
 
