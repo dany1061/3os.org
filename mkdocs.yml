@@ -59,6 +59,7 @@ nav:
       - Kali Linux: "penTesting/kaliLinux.md"
       - IDD Generator & Validator: "penTesting/iddGenerator.md"
       - Click-Jacking Test: "penTesting/clickJacking.md"
+      - htpasswd Generator: "penTesting/htpasswd_Generator.md"
       - Android Penetration Testing: "penTesting/androidPT.md"
   - Markdown CheatSheet:
       - Welcome: "markdownCheatSheet/welcome.md"
