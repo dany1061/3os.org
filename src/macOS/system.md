@@ -44,6 +44,30 @@ The UseKeychain yes is the key part, which tells SSH to look in your OSX keychai
 
 That's it! Next time you load any ssh connection, it will try the private keys you've specified, and it will look for their passphrase in the OSX keychain. No passphrase typing required.
 
+## Shell Safe rm
+
+Source [shell-safe-rm github](https://github.com/kaelzhang/shell-safe-rm/blob/master/README.md)
+
+A much safer replacement of bash `rm` with _ALMOST FULL_ features of the origin `rm` command.
+
+Initially developed on Mac OS X, then tested on Linux.
+
+Using `safe-rm`, the files or directories you choose to remove will move to `$HOME/.Trash` instead of simply deleting them. You could put them back whenever you want manually.
+
+If a file or directory with the same name already exists in the Trash, the name of newly-deleted items will be ended with the current date and time.
+
+Install with npm:
+
+```bash
+npm i -g safe-rm
+```
+
+Add Alias to your _zshrc_ config
+
+```bash
+alias rm='safe-rm'
+```
+
 ## Disable StrictHostKeyChecking in SSH
 
 To disable strict host checking on OS X for the current user,
