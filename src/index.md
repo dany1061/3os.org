@@ -27,40 +27,4 @@ __Disclaimer__
 
 _All the information provided by this website can be obtained via the internet. We don't claim ownership of the information presented to you._
 
-## Updates
 
-!!! info "02/02/20 __Version 1.3.0 Release__"
-
-    * Removed "More" Category
-    * Information from "More" Category moved to Guides & Tools
-    * Started working on new guides - now marked as "work in progress" - will be updated after all bugs are cleaned
-
-!!! info "20/11/19 __Version 1.2.0 Release__"
-
-    * Too many changes to count. Short summery:
-    * Updated out-of-date guides
-    * macOS section restructure & new guides
-    * Penetration Testing section restructure & new guides
-    * Full changelog link is at the button on this page
-
-!!! info "30/12/18 __Version 1.0.7 Release__"
-
-    * [MagicMirror With Pictures](/raspberryPi/MagicMirror)
-    * A lot of new guides at [Ubiquiti Networks](/moreCategories/ubiquiti)
-    * New Guides in other sections. You can follow the full change log to see all the new information
-
-!!! info "14/11/18 __Version 1.0.0 Release__"
-
-    * Our team is proud to announce our version __1.0.0__ for 3os.org!!!
-    * This site has been in works for a while and now it’s time for its first 'stable' version.
-    * We make structure changes from time to time to suite the content in better way, so don’t be alarmed.
-    * We will continue to update and add more content as the time goes on.
-    * __Have a great day!__
-
-!!! info "05/11/18 New Content Added"
-
-    * New [guide](/windows/windowsGuides/#send_emails_from_the_windows_task_scheduler "send emails from the windows task scheduler) how to send mails from Windows Task Scheduler
-    * New commands to run docker [UNIFI](moreCategories/ubiquiti/#installing_docker_container_unifi_controller_on_synology_nas) and [UNMS](moreCategories/ubiquiti/#installing_docker_container_unms_controller_on_synology_nas) controllers on Synology NAS (guide for full use and how to update will be added soon).
-
-!!! warning ""
-    Full Changelog & Commits to the _3os Project_ can be found [here](CHANGELOG.md "Full CHANGELOG")

@@ -3,7 +3,6 @@
 # Navigation
 nav:
   - Home: "index.md"
-  - Changelog: "CHANGELOG.md"
   - Donate: "donation.md"
   - Guides & Tools:
       - Better Terminal Experience: "guides/BetterTerminal.md"
