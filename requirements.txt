@@ -15,7 +15,7 @@ livereload==2.6.1
 lunr==0.5.8
 Markdown==3.2.2
 MarkupSafe==1.1.1
-mkdocs==1.1.1
+mkdocs==1.1.2
 mkdocs-git-revision-date-localized-plugin==0.5.2
 mkdocs-material==5.1.6
 mkdocs-material-extensions==1.0
@@ -28,7 +28,7 @@ Pygments==2.6.1
 pymdown-extensions==7.1
 pytz==2020.1
 PyYAML==5.3.1
-regex==2020.5.13
+regex==2020.5.14
 requests==2.23.0
 six==1.14.0
 smmap==3.0.4

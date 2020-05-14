@@ -23,7 +23,14 @@ Thanks to __chris1111__ for his git repository with supported software that's al
 
 ## Disable FortiClinet Auto Start-up
 
-Edit those files and change RunAtLoad to __false__ it should look like this
+Edit those files:
+
+```bash
+/Library/LaunchAgents/com.fortinet.forticlient.credential_store.plist
+/Library/LaunchAgents/com.fortinet.forticlient.fct_launcher.plist
+```
+
+Change RunAtLoad to __false__ it should look like this
 
 ```bash
         <key>RunAtLoad</key>
