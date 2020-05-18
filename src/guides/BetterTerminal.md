@@ -31,7 +31,7 @@ Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
-__~/.zshrc Config Modifications for MacOS__
+**~/.zshrc Config Modifications for MacOS**
 
 Set theme and fonts:
 
@@ -55,46 +55,45 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 Requirements:
 
-* git
-* zsh
-* wget
+-   git
+-   zsh
+-   wget
 
-The example below uses __apt__ package manager (change to your package manager accordingly)
+The example below uses **apt** package manager (change to your package manager accordingly)
 
-Now lets install the Requirements and [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
+Install the Requirements
 
 ```bash
 apt install -y git zsh wget
+```
+
+Install [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+```bash
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
 
 Install Autosuggestions, Syntax-Highlighting Plugins
 
 ```bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 ```
 
-__~/.zshrc Config Modifications for Linux__
+**~/.zshrc Config Modifications for Linux**
 
 ```bash
 ZSH_THEME="bira"
 ```
 
-Activate the plugins
-
-```bash
-plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-```
-
 Add this to the the end of ~/.zshrc
 
 ```bash
+## Shell Integration and plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ## Fix for Slow zsh-autosuggestions copy&paste
 autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
