@@ -18,7 +18,7 @@ nav:
       - SSH Service Security: linux/SSH_Service_Security.md
       - Centos 7: linux/centos7.md
       - Centos 8: linux/centos8.md
-      - Ubuntu: linux/ubuntu.md
+      - Ubuntu & Debian: linux/ubuntu.md
       - Files: linux/general/files.md
       - Memory & Swap: linux/general/memorySwap.md
       - Linux LVM Partitions: linux/lvm.md
