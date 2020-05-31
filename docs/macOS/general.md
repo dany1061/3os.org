@@ -2,8 +2,6 @@
 description: macOS UI tweaks, system tweaks, guides and tips for better experience, productivity and workflow and more
 ---
 
-<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
-
 # macOS Tweaks and Guides for Better Experience, Productivity and Workflow
 
 This section is intended to provide usefully tweaks and guides for better experience with **macOS** for everyday use.
