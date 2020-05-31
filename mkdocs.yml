@@ -81,8 +81,8 @@ site_name: 3os
 site_url: https://3os.org/
 site_author: Stas Yakobov
 site_description: >-
-  Collocation of guide, documentation of technical knowledge, examples and
-  tips, at any operating system.
+  Collocation of technical documentation, guides, knowledge, examples and
+  tips...
 
 # Repository
 repo_name: fire1ce/3os.org
