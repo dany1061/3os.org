@@ -8,7 +8,7 @@ description: macOS UI tweaks, system tweaks, guides and tips for better experien
 
 This section is intended to provide usefully tweaks and guides for better experience with **macOS** for everyday use.
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/macOS/macosWall.jpg" alt="mac image">
 </div>
 

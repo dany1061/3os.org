@@ -6,7 +6,7 @@ description: Pi-hole, DNS ads, tracking blocking on Ubuntu with DNS over HTTP, l
 
 You can read about Pi-hole at their [Official Website](https://pi-hole.net/ "pi-hole.net")
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/webgui.png" alt="webgui">
 </div>
 
@@ -17,7 +17,7 @@ We configured our router as a DNS server for all the DHCP clients. This way all 
 At the router we configured the primary and the secondary DNS as our pi-hole servers.
 
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/diagram.png" alt="network flow">
 </div>
 
@@ -106,13 +106,13 @@ google.com.             191     IN      A       172.217.22.14
 
 Finally, configure Pi-hole to use the local cloudflared service as the upstream DNS server by specifying 127.0.0.1#5053 as the Custom DNS (IPv4):
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/dnsSettings.png" alt="dnsSettings">
 </div>
 
 Advanced DNS settings
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/advSettings.png" alt="nadvSettings">
 </div>
 
@@ -121,7 +121,7 @@ We use two blocklists that update daily they don't break any normal functionalit
 * https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt
 * https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/blockList.png" alt="nadvSettings">
 </div>
 

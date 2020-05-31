@@ -7,7 +7,7 @@ description: better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestio
 
 ## MacOS Installation with iTerm2 and Homebrew
 
-<div style="width:100%; margin:0 auto">
+<div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/betterTerminal/linuxTerminal.png" alt="terminal screenshot">
 </div>
 
