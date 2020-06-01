@@ -1,4 +1,4 @@
 ---
 template: home.html
-title: Home
+title: 3os.org
 ---
