@@ -68,14 +68,15 @@
 
     <!-- Theme-related stylesheets -->
     {% block styles %}
-      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.css' | url }}" />
+      <link rel="preconnect" href="{{ 'assets/stylesheets/main.css' | url }}" crossorigin>
+      <link rel="preload" as="style" href="{{ 'assets/stylesheets/main.css' | url }}" crossorigin/>
+      <link rel="stylesheet" href="{{ 'assets/stylesheets/main.css' | url }}" crossorigin/>
 
       <!-- Extra color palette -->
       {% if palette.scheme or palette.primary or palette.accent %}
-        <link
-          rel="stylesheet"
-          href="{{ 'assets/stylesheets/palette.css' | url }}"
-        />
+        <link rel="preconnect" href="{{ 'assets/stylesheets/palette.css' | url }}" crossorigin>
+        <link rel="preload" as="style" href="{{ 'assets/stylesheets/palette.css' | url }}" crossorigin/>
+        <link rel="stylesheet" href="{{ 'assets/stylesheets/palette.css' | url }}" crossorigin/>
       {% endif %}
 
       <!-- Theme-color meta tag for Android -->
@@ -96,13 +97,22 @@
 
       <!-- Load fonts from Google -->
       {% if font != false %}
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+       <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+        <link
+        rel="preload" as="style"
+        href="https://fonts.googleapis.com/css?family={{
+          font.text | replace(' ', '+') + ':300,400,400i,700%7C' +
+          font.code | replace(' ', '+')
+        }}&display=fallback"
+        crossorigin
+      />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family={{
             font.text | replace(' ', '+') + ':300,400,400i,700%7C' +
             font.code | replace(' ', '+')
           }}&display=fallback"
+          crossorigin
         />
         <style>
           body, input {
