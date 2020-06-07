@@ -14,8 +14,9 @@ apt-get install ncdu
 
 ## SMB Mount With autofs
 
+install autofs cifs-utils
+
 ```bash
-yum install autofs samba-client samba-common cifs-utils
 touch /etc/auto.cifs
 nano /etc/auto.cifs
 ```
