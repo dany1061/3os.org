@@ -4,12 +4,13 @@ nav:
   - Guides & Tools:
       - Better Terminal Experience: guides/BetterTerminal.md
       - Pi-Hole With DNS Over HTTPS: guides/pihole_dns.md
-      - Synology DSM: guides/synology.md
       - Wifi QR Image Generator: guides/wifiQrGenerator.md
-      - Ubiquiti EdgeRouter & Unifi: guides/ubiquiti.md
       - Gmail Markas Read: guides/gmailMarkAsRead.md
       - Raspberry Pi 3 Tor Access Point: raspberryPi/TOR-Pi.md
       - Useful Links & Tools: guides/usefulLinks_Tools.md
+      - Synology DSM: guides/synology.md
+      - Ubiquiti EdgeRouter & Unifi: guides/ubiquiti.md
+      - Proxmox Virtualization: guides/proxmox.md
   - Linux:
       - General: linux/general/general.md
       - SSH Service Security: linux/SSH_Service_Security.md
