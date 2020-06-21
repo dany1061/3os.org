@@ -136,18 +136,6 @@ Save. Then run:
 sudo sysctl -p /etc/sysctl.conf
 ```
 
-## Max connections on Linux
-
-Add to /etc/sysctl.conf:
-
-```bash
-fs.file-max = 70000
-net.ipv4.tcp_tw_recycle=0
-net.ipv4.tcp_fin_timeout = 10
-net.ipv4.ip_local_port_range = 15000 61000
-net.core.somaxconn = 1024
-net.core.netdev_max_backlog = 2000
-```
 
 ## Rescan Drives for the OS
 
@@ -162,18 +150,18 @@ echo 1 > /sys/class/scsi_device/2\:0\:0\:0/device/rescan
 dig 0.168.192.in-addr.arpa. NS
 ```
 
-## Fix Locales
+## Fix Locales (Fix Bash Local Error)
 
-For bash shell run:
+Generate en_US.UTF-8 locale
 
 ```bash
-echo "export LC_ALL=C" >> ~/.profile && source ~/.profile
+locale-gen "en_US.UTF-8"
 ```
 
-For zsh shell run:
+Set the Locale, Find the en_US.UTF-8 in the list and select it, at the following screen select it.
 
 ```bash
-echo "export LC_ALL=C" >> ~/.zshrc && source ~/.zshrc
+dpkg-reconfigure locales
 ```
 
 ## Open Last Edited File
