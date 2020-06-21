@@ -4,6 +4,53 @@ description: Linux General how to, guides, examples, and simple usage
 
 # Linux General Topics
 
+## Fix Locales (Fix Bash Local Error)
+
+Generate en_US.UTF-8 locale
+
+```bash
+locale-gen "en_US.UTF-8"
+```
+
+Set the Locale, Find the en_US.UTF-8 in the list and select it, at the following screen select it.
+
+```bash
+dpkg-reconfigure locales
+```
+
+## Set System Time With Time Zone (timedatectl ntp)
+
+Find your time zone with __timedatectl list-timezones__ use __grep__ for easier results:
+
+```bash
+timedatectl list-timezones | grep "Toronto"
+```
+
+The output should look like this:
+
+```bash
+America/Toronto
+```
+
+Now set the Time Zone and active it.
+
+```bash
+timedatectl set-timezone America/Toronto
+timedatectl set-ntp true
+```
+
+Now test timedatectl status
+
+```bash
+timedatectl status
+```
+
+Check your system time
+
+```bash
+date
+```
+
 ## Service Status/Start/Stop/Enabling On Boot
 
 ```bash
@@ -97,22 +144,6 @@ ln -s source_file target_file
 
 to remove symbolic link use the `rm` command on the link
 
-## Set the Timezone
-
-```bash
-sudo dpkg-reconfigure tzdata
-```
-
-__or__
-
-Set the timezone
-
-To set the timezone of your system clock do the following:
-
-```bash
-cp /usr/share/zoneinfo/Israel /etc/localtime
-```
-
 ## Disable IPv6
 
 For current session:
@@ -136,32 +167,10 @@ Save. Then run:
 sudo sysctl -p /etc/sysctl.conf
 ```
 
-
-## Rescan Drives for the OS
-
-```bash
-echo "- - -" > /sys/class/scsi_host/host0/scan
-echo 1 > /sys/class/scsi_device/2\:0\:0\:0/device/rescan
-```
-
 ## Find PTR Owner - Reversal Look Up
 
 ```bash
 dig 0.168.192.in-addr.arpa. NS
-```
-
-## Fix Locales (Fix Bash Local Error)
-
-Generate en_US.UTF-8 locale
-
-```bash
-locale-gen "en_US.UTF-8"
-```
-
-Set the Locale, Find the en_US.UTF-8 in the list and select it, at the following screen select it.
-
-```bash
-dpkg-reconfigure locales
 ```
 
 ## Open Last Edited File
@@ -178,22 +187,3 @@ Kill cgi after 30 secs:
 for i in `ps -eo pid,etime,cmd|grep cgi|awk '$2 > "00:30" {print $1}'`; do kill $i; done
 ```
 
-## Update Date and Time on Linux Server
-
-```bash
-sudo ntpd -qg; sudo hwclock -w
-```
-
-## Generate CSR with OpenSSL
-
-Generate key:
-
-```bash
-openssl genrsa -out private.key 2048
-```
-
-Generate CSR:
-
-```bash
-openssl req -new -sha256 -key private.key -out mycsr.csr
-```
