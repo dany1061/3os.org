@@ -186,4 +186,3 @@ Kill cgi after 30 secs:
 ```bash
 for i in `ps -eo pid,etime,cmd|grep cgi|awk '$2 > "00:30" {print $1}'`; do kill $i; done
 ```
-
