@@ -48,10 +48,10 @@ SSH to the Edge Router
 
 ```bash
 configure
-set service gui listen-address 192.168.1.1
+set service gui listen-address 192.168.100.1
 set service gui https-port 8443
 set service gui older-ciphers disable
-set service ssh listen-address 192.168.1.1
+set service ssh listen-address 192.168.100.1
 set service ssh protocol-version v2
 set service ubnt-discover disable
 commit ; save
@@ -400,12 +400,14 @@ set firewall name WAN_LOCAL rule 30 protocol tcp
 ```
 
 Configure the OpenVPN virtual tunnel interface.
+push-route - the router for vpn connection
+name-server - default gateway of the route above
 
 ```bash
 set interfaces openvpn vtun0 mode server
 set interfaces openvpn vtun0 server subnet 172.16.1.0/24
-set interfaces openvpn vtun0 server push-route 192.168.1.0/24
-set interfaces openvpn vtun0 server name-server 192.168.1.1
+set interfaces openvpn vtun0 server push-route 192.168.100.0/24
+set interfaces openvpn vtun0 server name-server 192.168.100.1
 set interfaces openvpn vtun0 openvpn-option --duplicate-cn
 set interfaces openvpn vtun0 local-port 443
 edit interfaces openvpn vtun0
