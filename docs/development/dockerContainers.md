@@ -22,7 +22,13 @@ docker run \
 containrrr/watchtower:latest --schedule '0 0 4 * * *' --cleanup
 ```
 
-## cloudflare-ddns
+### Run WatchTower Ounces
+
+```bash
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once
+```
+
+## Cloudflare-DDNS
 
 ```docker
 docker run \

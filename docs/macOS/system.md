@@ -239,6 +239,13 @@ Verify that the right gem folder is being used with `gem env home`(should report
 sudo lsof -i -P | grep -i "listen"
 ```
 
+## Disable "last login" at Terminal
+
+```bash
+cd ~/
+touch .hushlogin
+```
+
 ## Flush DNS
 
 ```bash
