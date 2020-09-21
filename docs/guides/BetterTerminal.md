@@ -1,7 +1,6 @@
 ---
-description: better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions For macOS and Linux.
+description: better Terminal Experience - Oh-My-Zsh, Autosuggestions, highlighting For macOS and Linux.
 ---
-
 
 # Better Terminal Experience - Oh-My-Zsh + Bira Theme + Autosuggestions
 

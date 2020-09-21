@@ -1,5 +1,5 @@
 ---
-description: Docker General useful commands tips
+description: Docker General useful commands tips, SSH to a Docker Container, Update All Downloaded Docker Container Images, Purging All Unused or Dangling Docker Container Images, Create mysql Docker with Mapping to Host
 ---
 
 # Docker General
@@ -104,4 +104,3 @@ on the host server run the following command:
 sysctl net.ipv4.conf.all.forwarding=1
 iptables -P FORWARD ACCEPT
 ```
-

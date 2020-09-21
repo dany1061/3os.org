@@ -4,7 +4,7 @@ description: Pi-hole, DNS ads, tracking blocking on Ubuntu with DNS over HTTP, l
 
 # Pi-hole as DNS Server with DNS over HTTPS (DOH) Based on Ubuntu/Debian Server
 
-You can read about Pi-hole at their [Official Website](https://pi-hole.net/ "pi-hole.net")
+You can read about Pi-hole at their [Official Website](https://pi-hole.net/ 'pi-hole.net')
 
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/webgui.png" alt="webgui">
@@ -16,17 +16,16 @@ We configured our router as a DNS server for all the DHCP clients. This way all 
 
 At the router we configured the primary and the secondary DNS as our pi-hole servers.
 
-
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/diagram.png" alt="network flow">
 </div>
 
-* __Virtual servers based on Ubuntu Server Release.__
-* __All the installation was under Root User__
+-   **Virtual servers based on Ubuntu Server Release.**
+-   **All the installation was under Root User**
 
 ## Installing Pi-hole
 
-Just follow the official [One-Step Automated Install](https://github.com/pi-hole/pi-hole/#one-step-automated-install "pi-hole One-Step Automated Install")
+Just follow the official [One-Step Automated Install](https://github.com/pi-hole/pi-hole/#one-step-automated-install 'pi-hole One-Step Automated Install')
 
 We used the "Method 1: Clone our repository and run"
 
@@ -118,8 +117,8 @@ Advanced DNS settings
 
 We use two blocklists that update daily they don't break any normal functionality and doing a good job for blocking ads
 
-* https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt
-* https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
+-   https://raw.githubusercontent.com/ookangzheng/dbl-oisd-nl/master/dbl.txt
+-   https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/master/black.list
 
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/guides/pihole/blockList.png" alt="nadvSettings">
@@ -151,10 +150,10 @@ Append this to the end of the file
 
 This will run all the following
 
-* autoupdate __updates and cleanup the system at 2:00__
-* pihole -up __updates all pihole components at 2:15__
-* pihole -g __updates the blocklists at 2:30__
-* shutdown -r now __reboot the server 2:45__
+-   autoupdate **updates and cleanup the system at 2:00**
+-   pihole -up **updates all pihole components at 2:15**
+-   pihole -g **updates the blocklists at 2:30**
+-   shutdown -r now **reboot the server 2:45**
 
 On the second pihole server we use this cron:
 

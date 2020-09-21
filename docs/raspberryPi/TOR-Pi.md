@@ -1,5 +1,5 @@
 ---
-description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Point Guide
+description: Raspberry Pi - Tor-Pi how to make Raspberry Pi as Wifi Tor Access Point Guide
 ---
 
 <link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
@@ -18,9 +18,9 @@ description: Raspberry Pi - Tor-Pi how to make Raspberry Pi Tor Wifi Access Poin
 
 ## Preparation
 
-- Download Raspbian Buster Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
-- Burn Image to SD-Card.
-- Boot Raspberry Pi 3.
+-   Download Raspbian Buster Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
+-   Burn Image to SD-Card.
+-   Boot Raspberry Pi 3.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git
@@ -45,15 +45,15 @@ cd RPI-Wireless-Hotspot
 sudo ./install
 ```
 
-* "Y" to agree to terms
-* "Y" to use preconfigured DNS
-* "Y" to use Unblock-Us DNS servers
-* "N" for WiFi defaults
-* Type in a new WiFi password (it will be checked)
-* Type in a new SSID
-* Type in your desired WiFi channel (1, 6, 11)
-* Type "N" when asked - "Are you using a rtl871x chipset?"
-* Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)
+-   "Y" to agree to terms
+-   "Y" to use preconfigured DNS
+-   "Y" to use Unblock-Us DNS servers
+-   "N" for WiFi defaults
+-   Type in a new WiFi password (it will be checked)
+-   Type in a new SSID
+-   Type in your desired WiFi channel (1, 6, 11)
+-   Type "N" when asked - "Are you using a rtl871x chipset?"
+-   Type "N" for chromecast support (unless you plan to use a chromecast w/RasTor)
 
 if you get "Failed to start hostapd.service: Unit hostapd.service is masked." error when installing the script, execute this:
 

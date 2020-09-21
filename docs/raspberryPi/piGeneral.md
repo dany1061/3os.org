@@ -1,5 +1,5 @@
 ---
-description: Raspberry Pi Tips & Tricks how to, guides, examples, and simple usage
+description: Raspberry Pi Tips & Tricks how to, guides, examples, and simple usage, Raspberry Pi, Default User and Password, Install Oh-My-Zsh on Raspbian
 ---
 
 <link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
@@ -13,7 +13,7 @@ User: pi
 Password: raspberry
 ```
 
-## Basic  Configuration
+## Basic Configuration
 
 ```bash
 sudo raspi-config
@@ -160,4 +160,3 @@ You can also install special drivers so your Windows can read `ext` filesystems 
 ---
 
 **Since the image will be of the same size as your SD card, you may want to compress it. This can be achieved simply by using your favorite compression tool, such as gzip, 7zip, WinZip, WinRar ...**
-
