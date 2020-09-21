@@ -2,8 +2,6 @@
 description: macOS macOS UI tweaks and tips, for better experience, productivity and workflow
 ---
 
-<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
-
 # macOS UI Tweaks
 
 ## Hide All The Icons On Your Desktop
@@ -36,7 +34,6 @@ write com.apple.dock springboard-rows -int 7
 write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
 ```
-
 
 Result:
 src/assets/images/macOS/launchpad.jpg
