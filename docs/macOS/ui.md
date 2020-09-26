@@ -29,14 +29,11 @@ killall Finder
 Change the _springboard-columns_ and _springboard-rows_ values according to your preference
 
 ```bash
-write com.apple.dock springboard-columns -int 9
-write com.apple.dock springboard-rows -int 7
-write com.apple.dock ResetLaunchPad -bool TRUE
+defaults write com.apple.dock springboard-columns -int 9
+defaults write com.apple.dock springboard-rows -int 7
+defaults write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
 ```
-
-Result:
-src/assets/images/macOS/launchpad.jpg
 
 ## Reset Launchpad Icons Sort
 

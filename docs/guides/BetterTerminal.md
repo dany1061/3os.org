@@ -21,7 +21,7 @@ This will install all the necessary requirements:
 ```bash
 brew tap homebrew/cask-fonts
 brew install zsh-autosuggestions zsh-syntax-highlighting git wget zsh
-brew cask install iterm2 font-firacode-nerd-font
+brew cask install iterm2 font-fira-code-nerd-font
 ```
 
 Install [**Oh-My-Zsh**](https://github.com/robbyrussell/oh-my-zsh)
