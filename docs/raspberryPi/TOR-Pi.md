@@ -84,7 +84,7 @@ Let's run system updates and cleanup
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-**Optional**: Use simple: [Update Script](https://3os.org/linux/ubuntu/#auto_upgrade_and_cleanup_script 'update script){target=\_blank}
+**Optional**: Use simple: [Update Script](https://3os.org/linux/ubuntu/#debianubunturaspberrypios-_update_script 'update script){target=\_blank}
 
 **Optional**: [SSH Hardening with RSA Keys](https://3os.org/linux/SSH_Service_Security/#ssh_service_security 'SSH Hardening with RSA Keys'){target=\_blank}
 
