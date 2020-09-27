@@ -108,17 +108,6 @@ For example:
 systemctl enable yum-cron.service
 ```
 
-## Fix Locals Error In Bash
-
-Error :"bash: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory"
-
-add these lines to _/etc/environment_ (create it, if it doesn't exist):
-
-```bash
-LANG=en_US.UTF-8
-LC_ALL=en_US.UTF-8
-```
-
 ## Disable IPv6
 
 Append below lines in /etc/sysctl.conf:
