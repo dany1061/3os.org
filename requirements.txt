@@ -28,7 +28,7 @@ Pygments==2.7.1
 pymdown-extensions==8.0
 pytz==2020.1
 PyYAML==5.3.1
-regex==2020.7.14
+regex==2020.9.27
 requests==2.24.0
 six==1.15.0
 smmap==3.0.4

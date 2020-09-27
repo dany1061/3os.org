@@ -1,18 +1,22 @@
 ---
-description: Linux - SSH Service Security how to, guides, examples, and simple usage
+description: Linux - SSH Hardening with RSA Keys
 ---
 
-# SSH Service Security
+# SSH Hardening with RSA Keys
 
-## SSH Login With RSA Keys
+## Generating a new SSH key
 
-### Copy Public Key to The Server
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+## Automatic Copy RSA Key to The Server
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@host
 ```
 
-__Or Do It Manually :__
+## Manually Copy RSA Key to The Server
 
 ssh to the host (`do not close this connection`)
 
@@ -26,7 +30,7 @@ copy your public key usually located at `~/.ssh/id_rsa.pub`
 echo PUCLICK_Key_STRING >> ~/.ssh/authorized_keys
 ```
 
-### Configure sshd Service
+### SSH Hardening - Disable Password Login
 
 edit `/etc/ssh/sshd_config`
 change:
@@ -49,7 +53,10 @@ restart ssh service:
 sudo systemctl restart ssh
 ```
 
-`Open New SSH Season and Test RSA Login`
+<!-- prettier-ignore-start -->
+!!! danger
+    Open new SSH season and test login with RSA Keys before __closing__ the existing connection
+<!-- prettier-ignore-end -->
 
 ---
 
@@ -78,16 +85,4 @@ copy the id_rsa key to ~/.ssh folder
 cd ~/.ssh
 sudo ssh-agent bash
 ssh-add id_rsa
-```
-
-### Open New SSH Season and Test RSA Login
-
-```bash
-ssh root@HOSTNAME.local -p <port>
-```
-
-example:
-
-```bash
-ssh example@192.168.1.99 -p 1337
 ```

@@ -2,61 +2,25 @@
 description: Raspberry Pi - Tor-Pi how to make Raspberry Pi as Wifi Tor Access Point Guide
 ---
 
-# TorPi - Raspberry Pi Tor Access Point
+<link rel="stylesheet" href="/assets/CSS/roundedCorners.css">
+
+# Raspberry Pi 3 Tor Access Point <small>TorPi</small> (09/11/19 UPDATE)
+
+<div style="width:80%; margin:0 auto">
+   <img src="/assets/images/RaspberryPi/torpi.jpg" alt="TorPi">
+</div>
 
 ## Network Flow
 
-<div style="margin:0 auto">
-   <img src="/assets/images/RaspberryPi/torPi/networkDiagram.png" alt="Tor-Pi Network Flow">
-</div>
-
-## Installing Raspberry Pi OS Minimal Headless
-
-Download **Raspberry Pi OS Minimal** image from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspberry-pi-os/ 'Raspberry Pi OS Download')
-It's a headless os - **Without GUI**
-
 <div style="width:80%; margin:0 auto">
-   <img src="/assets/images/RaspberryPi/torPi/rasberryPiOsMinimal.png" alt="TorPi">
+   <img src="/assets/images/RaspberryPi/raspberryPi3TorAccessPoint.png" alt="Tor-Pi Network Flow">
 </div>
 
-Burn **Raspberry Pi OS Minimal** image to SD-Card that will be used in this project for TorPi
-Since we don't won't to use external screen or keyboard, we need to allow an SSH access to the Raspberry Pi OS on the first boot.
+## Preparation
 
-After we created our bootable SD card we need to mount it and add a file called **“ssh”** inside a boot partition.
-This will enable and start ssh daemon on pi at boot.
-
-<div style="width:40%; margin:0 auto">
-   <img src="/assets/images/RaspberryPi/torPi/ssh_file.png" alt="TorPi">
-</div>
-
-To continue the setup we will need a Ethernet Cable with DHCP and Internet Connection.
-Insert the SD card and the Ethernet cable and boot your pi by connecting power.
-At this point the pi should boot the new OS from the SD card and get a DHCP address.
-Find the new address your pi just got from your dhcp server. You can do it inside your router's ui or use nmap tp find it on the network. If you can't find the new address you can allows connect it to external screen and keyboard - use default credentials to login and 'ip addr' command
-
-SSH to the Raspberry Pi
-Default credentials:
-
--   User: **pi**
--   Password: **raspberry**
-
-```bash
-ssh pi@192.168.1.111
-```
-
-Change the default password for the Pi user
-
-```bash
-passwd
-```
-
-Optional: [SSH Hardening with RSA Keys](https://3os.org/linux/SSH_Service_Security/#ssh_service_security 'SSH Hardening with RSA Keys')
-
-Let's run system updates
-
-sudo apt update && sudo apt full-upgrade -y
-
----
+-   Download Raspbian Buster Lite from: [raspberrypi.org](https://www.raspberrypi.org/downloads/raspbian/)
+-   Burn Image to SD-Card.
+-   Boot Raspberry Pi 3.
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git
