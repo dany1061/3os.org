@@ -258,6 +258,7 @@ sudo netstat -plnt
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/RaspberryPi/torPi/netstat_tor.png" alt="netstat tor">
 </div>
+
 <!-- prettier-ignore-start -->
 !!! bug
       There is a bug that Tor Service won't load at boot because of all the interfaces changes.  
@@ -306,43 +307,75 @@ Its time to firewall the traffic to specific port
 -   Route all DNS traffic from wlan1 to internal port 53
 -   Route all other wlan1 tcp traffic via tor proxy on port 9040
 
-Flash all iptables rules:
-
-```bash
-sudo iptables -F && sudo iptables -t nat -F
-```
-
-Route Rules
 
 <!-- prettier-ignore-start -->
-!!! Example "Route Rules for One Wireless Interface with Hotspot on wlan0"
+!!! bug
+      There is a bug that Raspap overwrites iptables tules at boot.  
+      The solution is to install make a bash script with iptables rules  
+      to Run on startup with delay of 30 seconds.
+<!-- prettier-ignore-end -->
+
+lets create the script **iptablesOnBoot.sh**
+
+```bash
+sudo nano /iptablesOnBoot.sh
+```
+
+Copy One of the following config files:
+
+<!-- prettier-ignore-start -->
+!!! Example "Config for One Wireless Interface with Hotspot on wlan0"
 <!-- prettier-ignore-end -->
 
 ```bash
+#!/bin/bash
+
+sudo iptables -F && sudo iptables -t nat -F
 sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 22
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 80
 sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 53
 sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 9040
+sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 ```
 
 <!-- prettier-ignore-start -->
-!!! Example "Route Rules for Two Wireless Interface with Hotspot on wlan1"
+!!! Example "Config for Two Wireless Interface with Hotspot on wlan1"
 <!-- prettier-ignore-end -->
 
 ```bash
+#!/bin/bash
+
+sudo iptables -F && sudo iptables -t nat -F
 sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 22
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 80
 sudo iptables -t nat -A PREROUTING -i wlan1 -p udp --dport 53 -j REDIRECT --to-ports 53
 sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp --syn -j REDIRECT --to-ports 9040
-```
-
-Save and apply iptables rules
-
-```bash
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 ```
 
+Make the script executable
+
+```bash
+sudo chmod +x /iptablesOnBoot.sh
+```
+
+Now lets add it to Crontab to execute after login
+```bash
+sudo crontab -e
+```
+
+Add to the end of crontav file
+```bash
+@reboot sleep 20 && /iptablesOnBoot.sh
+```
+
 ## Testing
+
+<!-- prettier-ignore-start -->
+!!! warning
+      Be Patient!!!  
+      Start up after reboot may take up to 3 minutes for everything to work as it should
+<!-- prettier-ignore-end -->
 
 Well Thats about it, you should be able to connect the the Hotspot and gain tor network.  
 You can test that you are on the Tor network at [https://check.torproject.org/](https://check.torproject.org/){target=\_blank}
