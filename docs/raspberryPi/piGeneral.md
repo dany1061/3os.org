@@ -25,47 +25,38 @@ sudo raspi-config
 sudo apt-get update && sudo apt-get upgrade -y
 ```
 
-## Install Oh-My-Zsh on Raspbian
+## Disable IPv6 on Raspberry Pi Os
+
+Edit “/etc/sysctl.conf”:
 
 ```bash
-sudo apt-get install -y zsh && sudo apt-get install -y git
-sudo wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh && chsh -s `which zsh`
-sudo usermod -s /usr/bin/zsh pi
+sudo nano /etc/sysctl.conf
 ```
 
-Optional:
-Setting fishy skin:
+Add this to the end:
+
+```config
+net.ipv6.conf.all.disable_ipv6=1
+net.ipv6.conf.default.disable_ipv6=1
+net.ipv6.conf.lo.disable_ipv6=1
+net.ipv6.conf.eth0.disable_ipv6 = 1
+```
+
+Save and close the file.
+Edit “/etc/rc.local”:
 
 ```bash
-sudo sed -i 's/robbyrussell/fishy/g' ~/.zshrc
+sudo nano /etc/rc.local
 ```
 
-Its preferred to reboot after installation:
+Add this to the end (but before “exit 0”):
 
 ```bash
-sudo reboot
+service procps reload
 ```
 
-## Fixing Locale failed for ZSH
-
-This warning pops up in terminal:
-
-```bash
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-    LANGUAGE = (unset),
-    LC_ALL = (unset),
-    LC_CTYPE = "UTF-8",
-    LANG = "en_IL"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_IL").
-```
-
-run this:
-
-```bash
-echo "export LC_ALL=C" >> ~/.zshrc && source ~/.zshrc
-```
+Save and close the file.
+Reboot
 
 ## Show Raspberry Temperature
 
@@ -112,51 +103,3 @@ Start samba Server
 ```bash
 sudo /usr/sbin/service smbd start
 ```
-
-## Clone Raspberry Pi SD Card
-
-### Linux
-
-On Linux, you can use the standard dd tool:
-
-```bash
-dd if=/dev/sdx of=/path/to/image bs=1M
-```
-
-### Mac
-
-On Mac, you can also use the standard dd tool with a slightly different syntax:
-
-```bash
-dd if=/dev/rdiskx of=/path/to/image.img bs=1m
-```
-
-Where `/dev/rdiskx` is your SD card.
-
-(using rdisk is preferable as its the raw device - quicker)
-
-To find out which disk your device is type `diskutil list` at a command prompt - also, you may need to be root; to do this type `sudo -s` and enter your password when prompted.
-
-### Windows
-
-#### Option 1
-
-On Windows, you can use the reverse process that you used when flashing the SD card.
-
-You can use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/), which is the preferred tool for flashing a SD card of the Foundation. Just enter the filename (the location and name of the backup image file to be saved), select the device (the SD card) and press read:
-
-![89CMl.png](https://i.stack.imgur.com/89CMl.png)
-
-Of course, you can also use [RawWrite](http://www.chrysocome.net/rawwrite), [dd for Windows](http://www.chrysocome.net/dd) or similar tools, the process is quite similar.
-
-#### Option 2
-
-If you don't want to back up your entire system, but only specific files, I suggest you connect to your Raspberry Pi via SFTP and copy the files to your local computer (You can use the [WinScp](http://winscp.net/eng/index.php) client). If you have SSH enabled, SFTP usually requires no special configuration on the Raspberry Pi side.
-
-Another option is to [copy the files to a remote system using rsync](https://raspberrypi.stackexchange.com/questions/5427/can-a-raspberry-pi-be-used-to-create-a-backup-of-itself/).
-
-You can also install special drivers so your Windows can read `ext` filesystems (and will thus be able to read the whole SD card), such as [ext2fsd](http://www.ext2fsd.com/) but it is probably not worth the effort.
-
----
-
-**Since the image will be of the same size as your SD card, you may want to compress it. This can be achieved simply by using your favorite compression tool, such as gzip, 7zip, WinZip, WinRar ...**
