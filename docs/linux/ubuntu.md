@@ -10,22 +10,28 @@ description: Ubuntu & Debian Linux - Guides, Examples and Usage
 ufw disable
 ```
 
-## Auto Upgrade and Cleanup Script
+## Debian/Ubuntu/RaspberryPiOS- Update Script
 
-Source [Github](https://github.com/fire1ce/debianAutoUpdate)
+Is a simple bash script to run full full-upgrade update and cleanup
+Basicity it will run those commands with pretty colors =)
 
-Installation
+-   sudo apt update
+-   sudo apt full-upgrade
+-   sudo apt autoclean
+-   sudo apt autoremove
+
+## Installation
 
 ```bash
-wget https://raw.githubusercontent.com/fire1ce/debianAutoUpdate/master/debianAutoUpdate.sh
-chmod +x debianAutoUpdate.sh
-mv debianAutoUpdate.sh /usr/bin/autoupdate
+wget https://raw.githubusercontent.com/fire1ce/debianUpdate/master/debianUpdate.sh
+sudo chmod +x debianUpdate.sh
+sudo mv debianUpdate.sh /usr/bin/update
 ```
 
-run
+## Run
 
 ```bash
-autoupdate
+update
 ```
 
 ### Install as Schedule at Crontab
@@ -122,7 +128,6 @@ Enable Unattended Upgrades on Boot
 ```bash
 systemctl enable unattended-upgrade
 ```
-
 
 ## Clear BOOT Partition on Ubuntu when 100%
 
