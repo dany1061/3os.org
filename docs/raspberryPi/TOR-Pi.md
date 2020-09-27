@@ -21,7 +21,7 @@ description: Raspberry Pi - Raspberry Pi Tor Access Point Guide, Tor proxy, Rasp
 **Hardware Support List:**
 
 | **Raspberry Model** | **Cable to WiFi**   | **Cable/WiFi to WiFi** |
-| ------------------- | ------------------- | ---------------------- |
+|---------------------|---------------------|------------------------|
 | Raspberry 1         | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
 | Raspberry 2         | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
 | Raspberry 3         | ---                 | 1 WiFi USB Adapters    |
@@ -133,7 +133,7 @@ curl -sL https://install.raspap.com | bash
 ```
 
 | **Question**                                                 | **Answer** |
-| ------------------------------------------------------------ | ---------- |
+|--------------------------------------------------------------|------------|
 | lighttpd root: /var/www/html?                                | Y          |
 | Complete installation with these values?                     | Y          |
 | Enable HttpOnly for session cookies (Recommended)?           | Y          |
@@ -258,6 +258,45 @@ sudo netstat -plnt
 <div style="width:80%; margin:0 auto">
    <img src="/assets/images/RaspberryPi/torPi/netstat_tor.png" alt="netstat tor">
 </div>
+<!-- prettier-ignore-start -->
+!!! bug
+      There is a bug that Tor Service won't load at boot because of all the interfaces changes.  
+      The solution is to install **Monit**. Monit Will load the tor Tor Service as soon as it can.  
+      It will also reload it if it will crash
+<!-- prettier-ignore-end -->
+
+Install Monit
+
+```bash
+sudo apt install monit
+```
+
+Edit Monit Config
+
+```bash
+sudo nano /etc/monit/monitrc
+```
+
+Add those lines to the end of the config:
+
+```bash
+check process gdm with pidfile /var/run/tor/tor.pid
+   start program = "/etc/init.d/tor start"
+   stop program = "/etc/init.d/tor stop"
+```
+
+Reload and add Monit to startup:
+
+```bash
+sudo systemctl restart monit
+sudo systemctl enable monit
+```
+
+<!-- prettier-ignore-start -->
+!!! warning
+      Be Patient!!!  
+      With my Pi2 full startup may take up to 3 minutes
+<!-- prettier-ignore-end -->
 
 ## Configure iptables firewall rules
 
