@@ -39,7 +39,7 @@ nav:
       - Python macOS The Right Way: macOS/pythonTheRightWay.md
   - Raspberry Pi:
       - General: raspberryPi/piGeneral.md
-      - Raspberry Pi 3 Tor Access Point: raspberryPi/TOR-Pi.md
+      - TorPi - Raspberry Pi Tor AP: raspberryPi/TOR-Pi.md
       - Raspberry Pi Magic Mirror: raspberryPi/MagicMirror.md
   - Development:
       - Git: development/git.md
