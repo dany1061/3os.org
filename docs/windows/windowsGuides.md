@@ -4,20 +4,6 @@ description: Windows Guides and How-To, examples and simple usage
 
 # Windows Guides and How-To
 
-## Auto Login Without Password at Boot
-
-Hit WIN+R or from start menu search `run` and press enter.  
-At run dialog enter `netplwiz`:
-
-![run dialog](../assets/images/windows/2018-10-21_09-24-24_runNetplwiz.png "run dialog")
-
-* In the User Accounts dialog box, click the account you want to automatically log on to.If it is available, clear the Users Must Enter A User Name And Password To Use This Computer check box.
-* Click OK.
-* In the Automatically Log On dialog box, enter the user’s password twice and click OK.
-
-![usersAccounts](../assets/images/windows/2018-10-21_09-23-36_usersAccounts.png "usersAccounts")
-
-The next time you restart the computer, it will automatically log on with the local user account you selected. Configuring automatic logon stores the user’s password in the registry unencrypted, where someone might be able to retrieve it.
 
 ## Add Program to Startup - Windows 7,8,10 & Servers
 
