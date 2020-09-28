@@ -175,7 +175,7 @@ Login to the Web-Ui: [http://10.3.141.1/](http://10.3.141.1/){target=\_blank}.
       The only think you should to in the interface is to change the SSD, PSK
 <!-- prettier-ignore-end -->
 
-<div style="width:80%; margin:0 auto">
+<div style="margin:0 auto">
    <img src="/assets/images/RaspberryPi/torPi/wlan0_hotspot.png" alt="wlan0 hotspot">
 </div>
 
@@ -215,7 +215,7 @@ sudo rm -rf /etc/tor/torrc
 Create new torrc and edit it
 
 ```bash
-/etc/tor/torrc
+sudo nano /etc/tor/torrc
 ```
 
 Add the lines below to torrc
@@ -255,7 +255,7 @@ make sure the tor service started currently as in screen bellow:
 sudo netstat -plnt
 ```
 
-<div style="width:80%; margin:0 auto">
+<div style="margin:0 auto">
    <img src="/assets/images/RaspberryPi/torPi/netstat_tor.png" alt="netstat tor">
 </div>
 
@@ -335,6 +335,8 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 22
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 80
 sudo iptables -t nat -A PREROUTING -i wlan0 -p udp --dport 53 -j REDIRECT --to-ports 53
 sudo iptables -t nat -A PREROUTING -i wlan0 -p tcp --syn -j REDIRECT --to-ports 9040
+sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+sudo iptables -t nat -A POSTROUTING -s 192.168.50.0/24 ! -d 192.168.50.0/24 -j MASQUERADE
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 ```
 
@@ -350,6 +352,8 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-ports 22
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 80
 sudo iptables -t nat -A PREROUTING -i wlan1 -p udp --dport 53 -j REDIRECT --to-ports 53
 sudo iptables -t nat -A PREROUTING -i wlan1 -p tcp --syn -j REDIRECT --to-ports 9040
+sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+sudo iptables -t nat -A POSTROUTING -s 192.168.50.0/24 ! -d 192.168.50.0/24 -j MASQUERADE
 sudo sh -c "iptables-save > /etc/iptables.ipv4.nat"
 ```
 
@@ -368,6 +372,15 @@ Add to the end of crontav file
 ```bash
 @reboot sleep 20 && /iptablesOnBoot.sh
 ```
+
+After reboot iptables rules should be like this
+
+```bash
+sudo iptables -t nat -L
+```
+<div style="margin:0 auto">
+   <img src="/assets/images/RaspberryPi/torPi/iptables.png" alt="iptables">
+</div>
 
 ## Testing
 
