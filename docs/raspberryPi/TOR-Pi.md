@@ -84,15 +84,15 @@ Let's run system updates and cleanup
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-**Optional**: Use simple: [Update Script](https://3os.org/linux/ubuntu/#debianubunturaspberrypios-_update_script 'update script){target=\_blank}
+_Optional_: Use simple: [Update Script](https://3os.org/linux/ubuntu/#debianubunturaspberrypios-_update_script 'update script){target=\_blank}
 
-**Optional**: [SSH Hardening with RSA Keys](https://3os.org/linux/SSH_Service_Security/#ssh_service_security 'SSH Hardening with RSA Keys'){target=\_blank}
+_Optional_: [SSH Hardening with RSA Keys](https://3os.org/linux/SSH_Service_Security/#ssh_service_security 'SSH Hardening with RSA Keys'){target=\_blank}
 
-**Optional**: [Fix bash local error](https://3os.org/linux/general/general/#fix_locales_fix_bash_local_error 'Fix bash local error'){target=\_blank}
+_Optional_: [Fix bash local error](https://3os.org/linux/general/general/#fix_locales_fix_bash_local_error 'Fix bash local error'){target=\_blank}
 
-**Optional**: [Set System Time With NTP](https://3os.org/linux/general/general/#set_system_time_with_time_zone_timedatectl_ntp 'Set System Time With NTP'){target=\_blank}
+_Optional_: [Set System Time With NTP](https://3os.org/linux/general/general/#set_system_time_with_time_zone_timedatectl_ntp 'Set System Time With NTP'){target=\_blank}
 
-**Optional** [Install Oh My Zsh](https://3os.org/guides/BetterTerminal/#linux_installation 'Install Oh My Zsh'){target=\_blank}
+_Optional_ [Install Oh My Zsh](https://3os.org/guides/BetterTerminal/#linux_installation 'Install Oh My Zsh'){target=\_blank}
 
 Follow this to [Disable IPv6 on Raspberry Pi Os](https://3os.org/raspberryPi/piGeneral/#disable_ipv6_on_raspberry_pi_os 'Disable IPv6 on Raspberry Pi Os'){target=\_blank}
 
