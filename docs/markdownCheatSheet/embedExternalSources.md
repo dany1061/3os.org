@@ -1,5 +1,5 @@
 ---
-description: Markdown Cheat Sheet For MkDocs - How to Embed Gists, YouTube Videos, Lucid Charts
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs. - How to Embed Gists, YouTube Videos, Lucid Charts
 ---
 
 # Embedding External Sources

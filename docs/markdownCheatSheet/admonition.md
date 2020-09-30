@@ -1,5 +1,5 @@
 ---
-description: Markdown Cheat Sheet for MkDocs. Admonition examples and simple usage
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs. and Material Theme for MkDocs. Admonition examples and simple usage
 ---
 
 # Admonition

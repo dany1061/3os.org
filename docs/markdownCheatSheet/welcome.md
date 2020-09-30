@@ -1,5 +1,5 @@
 ---
-description: Markdown Cheat Sheet for MkDocs. examples and simple usage
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs.. examples and simple usage
 ---
 
 # Welcome To Markdown Cheat Sheet <small>For MkDocs</small>
