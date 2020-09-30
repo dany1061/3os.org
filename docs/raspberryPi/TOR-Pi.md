@@ -310,7 +310,7 @@ Its time to firewall the traffic to specific port
 
 <!-- prettier-ignore-start -->
 !!! bug
-      There is a bug that Raspap overwrites iptables tules at boot.  
+      There is a bug that Raspap overwrites iptables rules at boot.  
       The solution is to install make a bash script with iptables rules  
       to Run on startup with delay of 30 seconds.
 <!-- prettier-ignore-end -->
@@ -393,7 +393,7 @@ sudo iptables -t nat -L
 Well Thats about it, you should be able to connect the the Hotspot and gain tor network.  
 You can test that you are on the Tor network at [https://check.torproject.org/](https://check.torproject.org/){target=\_blank}
 
-### Buy As a Beer
+### Buy Us a Beer
 
 <!-- Donation Button -->
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align="center"><input type="hidden" name="cmd" value="_s-xclick"><input type="hidden" name="hosted_button_id" value="Q94AU5RUD4X6A"><input type="image" src="../../assets/images/about/donation/beerDonation.png" width="150px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"></form>
