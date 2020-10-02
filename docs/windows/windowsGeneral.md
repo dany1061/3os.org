@@ -19,3 +19,4 @@ description: Windows Tips & Guides, examples and simple usage
 | [VLC](https://www.videolan.org/vlc/index.html)                                                           | Video Player                  |
 | [Link Shell Extension](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)              | Symlinks For Windows          |
 | [Win Update Stop](http://schinagl.priv.at/nt/hardlinkshellext/linkshellextension.html)                   | Stops Windows 10 Auto Updates |
+| [Winaero Tweaker](https://winaero.com/downloads/winaerotweaker.zip)                                      | Winaero Tweaker               |
