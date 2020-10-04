@@ -257,7 +257,7 @@ sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheuti
 Create he missing /Users/Shared folder
 
 ```bash
-sudo mkdir /Users/Shared
+sudo mkdir -p /Users/Shared/
 ```
 
 Fix permissions for the /Users/Shared folder
