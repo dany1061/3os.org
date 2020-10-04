@@ -252,6 +252,20 @@ touch .hushlogin
 sudo killall -HUP mDNSResponder;sudo killall mDNSResponderHelper;sudo dscacheutil -flushcache
 ```
 
+## Fix Missing __/Users/Shared__ Folder
+
+Create he missing /Users/Shared folder
+
+```bash
+sudo mkdir /Users/Shared
+```
+
+Fix permissions for the /Users/Shared folder
+
+```bash
+sudo chmod -R 1777 /Users/Shared
+```
+
 ## Google Drive File Sync Fix for macOS
 
 quit Google Drive
