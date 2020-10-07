@@ -13,7 +13,7 @@ joblib==0.17.0
 jsmin==2.2.2
 livereload==2.6.3
 lunr==0.5.8
-Markdown==3.2.2
+Markdown==3.3
 MarkupSafe==1.1.1
 mkdocs==1.1.2
 mkdocs-git-revision-date-localized-plugin==0.7.2
@@ -34,5 +34,5 @@ six==1.15.0
 smmap==3.0.4
 soupsieve==2.0.1
 tornado==6.0.4
-tqdm==4.50.0
+tqdm==4.50.1
 urllib3==1.25.10
