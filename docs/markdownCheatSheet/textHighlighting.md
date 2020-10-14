@@ -1,8 +1,8 @@
 ---
-description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs.. Emphasis examples and simple usage
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs. Text Highlighting
 ---
 
-# Emphasis
+# Text Highlighting
 
 | __Markdown Syntax__                      | __Result__                          |
 |------------------------------------------|-------------------------------------|

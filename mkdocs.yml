@@ -6,7 +6,7 @@ nav:
       - Pi-Hole With DNS Over HTTPS: guides/pihole_dns.md
       - Wifi QR Image Generator: guides/wifiQrGenerator.md
       - Gmail Markas Read: guides/gmailMarkAsRead.md
-      - Raspberry Pi 3 Tor Access Point: raspberryPi/TOR-Pi.md
+      - TorPi - Raspberry Pi Tor AP: raspberryPi/TOR-Pi.md
       - Useful Links & Tools: guides/usefulLinks_Tools.md
       - Synology DSM: guides/synology.md
       - Ubiquiti EdgeRouter & Unifi: guides/ubiquiti.md
@@ -62,14 +62,16 @@ nav:
   - Markdown CheatSheet:
       - Welcome: markdownCheatSheet/welcome.md
       - Headings: markdownCheatSheet/headings.md
-      - Emphasis: markdownCheatSheet/emphasis.md
+      - Text Highlighting: markdownCheatSheet/textHighlighting.md
       - Line Breaks: markdownCheatSheet/lineBreaks.md
       - Lists: markdownCheatSheet/lists.md
       - Tables: markdownCheatSheet/tables.md
       - Links: markdownCheatSheet/links.md
       - Images: markdownCheatSheet/images.md
+      - Code Blocks: markdownCheatSheet/codeBlocks.md
       - Admonition: markdownCheatSheet/admonition.md
       - Block Quotes: markdownCheatSheet/blockQuotes.md
+      - Icons: markdownCheatSheet/icons.md
       - Emojis List: markdownCheatSheet/emoji.md
       - Embed External Sources: markdownCheatSheet/embedExternalSources.md
       - Metadata Per Page: markdownCheatSheet/metaData.md
@@ -171,6 +173,7 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.tilde
   - pyembed.markdown
 

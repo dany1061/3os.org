@@ -37,3 +37,54 @@ Change RunAtLoad to __false__ it should look like this
         <key>RunAtLoad</key>
         <false/>
 ```
+
+## Running Multi Instances of an Application
+
+Launch the Script Editor choose temporary folder
+
+Copy the command to be executed to the Script Editor
+
+```bash
+do shell script "open -n <path to application>"
+```
+
+!!! example
+    do shell script "open -n /Applications/'Visual Studio Code.app'"
+
+File > Export
+
+Use the following settings:
+
+* Export As: __Your New Application Name__
+* Where: __Applications__
+* File Format: __Application__
+
+^^Change The Icon of Your New Application:^^
+
+In __Finder__ got to __Applications__ folder.
+Right Click on the new __Your New Application__ application we just created and click __Get Info__.
+Drug the original application icon (or any other) to the  in the left corner of the "get info" menu.
+
+## Lunch Firefox Profile Manager as Application
+
+Launch the Script Editor choose temporary folder
+
+Copy the command to be executed to the Script Editor
+
+```bash
+do shell script "/Applications/Firefox.app/Contents/MacOS/firefox -ProfileManager &> /dev/null &"
+```
+
+File > Export
+
+Use the following settings:
+
+* Save As: __Firefox Profile Manager__
+* Where: __Applications__
+* File Format: __Application__
+
+^^Change The Icon of Your New Firefox Profile Manager Application:^^
+
+In __Finder__ got to __Applications__ folder.
+Right Click on the new __Firefox Profile Manager__ application we just created and click __Get Info__.
+Drug the original application to the icon in the left corner of the "get info" menu.
