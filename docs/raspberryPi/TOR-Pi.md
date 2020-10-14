@@ -12,20 +12,20 @@ description: Raspberry Pi - Raspberry Pi Tor Access Point Guide, Tor proxy, Rasp
 
 <!-- prettier-ignore-start -->
 !!! note "Totally Wireless TorPi :point_up_2:"
-      Raspberry 2 Model B  
-      2x [Edimax N150 WiFi USB Adapters](https://www.edimax.com/edimax/merchandise/merchandise_detail/data/edimax/global/wireless_adapters_n150/ew-7811un){target=_blank}  
-      Miracase 5x 5000mAh Power Bank  
+      [Raspberry 2 Model B](https://amzn.to/374jde5){target=_blank}  
+      2x [Edimax N150 WiFi USB Adapters](https://amzn.to/33V42lm){target=_blank}  
+      [Miracase 5x 5000mAh Power Bank](https://amzn.to/33TPgLQ){target=_blank}  
 
 <!-- prettier-ignore-end -->
 
 **Hardware Support List:**
 
-| **Raspberry Model** | **Cable to WiFi**   | **Cable/WiFi to WiFi** |
-|---------------------|---------------------|------------------------|
-| Raspberry 1         | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
-| Raspberry 2         | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
-| Raspberry 3         | ---                 | 1 WiFi USB Adapters    |
-| Raspberry 4         | ---                 | 1 WiFi USB Adapters    |
+| **Raspberry Model**                                   | **Cable to WiFi**   | **Cable/WiFi to WiFi** |
+| ----------------------------------------------------- | ------------------- | ---------------------- |
+| Raspberry 1                                           | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
+| Raspberry 2                                           | 1 WiFi USB Adapters | 2x WiFi USB Adapters   |
+| [Raspberry 3](https://amzn.to/2SSqQMz){target=_blank} | ---                 | 1 WiFi USB Adapters    |
+| [Raspberry 4](https://amzn.to/3186kvJ){target=_blank} | ---                 | 1 WiFi USB Adapters    |
 
 -   **Native Wifi Chipset Support**
     -   Realtek 8188 (rtl8188cus)
@@ -133,7 +133,7 @@ curl -sL https://install.raspap.com | bash
 ```
 
 | **Question**                                                 | **Answer** |
-|--------------------------------------------------------------|------------|
+| ------------------------------------------------------------ | ---------- |
 | lighttpd root: /var/www/html?                                | Y          |
 | Complete installation with these values?                     | Y          |
 | Enable HttpOnly for session cookies (Recommended)?           | Y          |
