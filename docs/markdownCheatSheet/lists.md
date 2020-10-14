@@ -1,5 +1,5 @@
 ---
-description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs.. Lists examples and simple usage
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs. Lists examples and simple usage
 ---
 
 # Lists
@@ -71,3 +71,24 @@ __Result:__
 > * list under lists
 > * under lists
 
+## Tasklists¶
+
+_Example_:
+
+```markdown
+* [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+* [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+```
+
+__Result:__
+
+* [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+* [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In hac habitasse platea dictumst
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+* [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque

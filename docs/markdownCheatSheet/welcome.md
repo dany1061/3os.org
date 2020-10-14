@@ -1,8 +1,8 @@
 ---
-description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs.. examples and simple usage
+description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs. examples and simple usage
 ---
 
-# Welcome To Markdown Cheat Sheet <small>For MkDocs</small>
+# Markdown Cheat Sheet For MkDocs With Material Theme
 
 ## What's Markdown
 
@@ -25,7 +25,7 @@ description: Markdown Cheat Sheet for MkDocs and Material Theme for MkDocs.. exa
 
 > Markdown is a lightweight markup language with plain text formatting syntax
 >> We can create Block Quotes that are nested  
->> ==Highlight== or ~~strike through~~ and more... using [emphasis](emphasis.md "emphasis")
+>> ==Highlight== or ~~strike through~~ and more... using [Text Hightlights](textHighlighting.md "Text Hightlights")
 
 * Adding [images](images.md "images") <img src="https://octodex.github.com/images/minion.png" width=100>
 * Embedding [YouTube Videos, Gists, Lucid Charts](embedExternalSources.md)
